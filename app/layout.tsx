@@ -1,5 +1,12 @@
 import type { Metadata } from 'next'
+import { Ubuntu } from 'next/font/google'
 import './globals.css'
+
+const ubuntu = Ubuntu({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '700'],
+  variable: '--font-ubuntu',
+})
 
 export const metadata: Metadata = {
   title: 'HUSSNIN CAR RECOVERY | 24/7 Professional Recovery Sheffield',
@@ -12,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className={`bg-surface dark ${ubuntu.variable}`}>
       <head>
         <link
           rel="stylesheet"
