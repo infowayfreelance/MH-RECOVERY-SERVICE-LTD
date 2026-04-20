@@ -22,7 +22,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center space-x-8">
           <Link
             href="/"
-            className={`font-['Space_Grotesk'] font-bold tracking-tight uppercase transition-all active:scale-95 duration-100 ${
+            className={`font-sans font-bold tracking-tight uppercase transition-all active:scale-95 duration-100 ${
               isActive('/')
                 ? 'text-white border-b-2 border-white pb-1'
                 : 'text-gray-300 hover:text-white hover:bg-blue-900 px-2 py-1 rounded'
@@ -32,7 +32,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/about"
-            className={`font-['Space_Grotesk'] font-bold tracking-tight uppercase transition-all active:scale-95 duration-100 ${
+            className={`font-sans font-bold tracking-tight uppercase transition-all active:scale-95 duration-100 ${
               isActive('/about')
                 ? 'text-white border-b-2 border-white pb-1'
                 : 'text-gray-300 hover:text-white hover:bg-blue-900 px-2 py-1 rounded'
@@ -42,7 +42,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/services"
-            className={`font-['Space_Grotesk'] font-bold tracking-tight uppercase transition-all active:scale-95 duration-100 ${
+            className={`font-sans font-bold tracking-tight uppercase transition-all active:scale-95 duration-100 ${
               isActive('/services')
                 ? 'text-white border-b-2 border-white pb-1'
                 : 'text-gray-300 hover:text-white hover:bg-blue-900 px-2 py-1 rounded'
@@ -52,7 +52,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/services-detailed"
-            className={`font-['Space_Grotesk'] font-bold tracking-tight uppercase transition-all active:scale-95 duration-100 ${
+            className={`font-sans font-bold tracking-tight uppercase transition-all active:scale-95 duration-100 ${
               isActive('/services-detailed')
                 ? 'text-white border-b-2 border-white pb-1'
                 : 'text-gray-300 hover:text-white hover:bg-blue-900 px-2 py-1 rounded'
@@ -62,7 +62,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/contact"
-            className={`font-['Space_Grotesk'] font-bold tracking-tight uppercase transition-all active:scale-95 duration-100 ${
+            className={`font-sans font-bold tracking-tight uppercase transition-all active:scale-95 duration-100 ${
               isActive('/contact')
                 ? 'text-white border-b-2 border-white pb-1'
                 : 'text-gray-300 hover:text-white hover:bg-blue-900 px-2 py-1 rounded'
@@ -121,7 +121,7 @@ export default function Navbar() {
             <Link
               href="/"
               onClick={() => setIsMenuOpen(false)}
-              className={`font-['Space_Grotesk'] font-bold tracking-tight uppercase transition-all ${
+              className={`font-sans font-bold tracking-tight uppercase transition-all ${
                 isActive('/')
                   ? 'text-white border-l-4 border-white pl-2'
                   : 'text-gray-300 hover:text-white hover:bg-blue-900 px-2 py-1 rounded'
@@ -132,7 +132,7 @@ export default function Navbar() {
             <Link
               href="/about"
               onClick={() => setIsMenuOpen(false)}
-              className={`font-['Space_Grotesk'] font-bold tracking-tight uppercase transition-all ${
+              className={`font-sans font-bold tracking-tight uppercase transition-all ${
                 isActive('/about')
                   ? 'text-white border-l-4 border-white pl-2'
                   : 'text-gray-300 hover:text-white hover:bg-blue-900 px-2 py-1 rounded'
@@ -143,7 +143,7 @@ export default function Navbar() {
             <Link
               href="/services"
               onClick={() => setIsMenuOpen(false)}
-              className={`font-['Space_Grotesk'] font-bold tracking-tight uppercase transition-all ${
+              className={`font-sans font-bold tracking-tight uppercase transition-all ${
                 isActive('/services')
                   ? 'text-white border-l-4 border-white pl-2'
                   : 'text-gray-300 hover:text-white hover:bg-blue-900 px-2 py-1 rounded'
@@ -154,7 +154,7 @@ export default function Navbar() {
             <Link
               href="/services-detailed"
               onClick={() => setIsMenuOpen(false)}
-              className={`font-['Space_Grotesk'] font-bold tracking-tight uppercase transition-all ${
+              className={`font-sans font-bold tracking-tight uppercase transition-all ${
                 isActive('/services-detailed')
                   ? 'text-white border-l-4 border-white pl-2'
                   : 'text-gray-300 hover:text-white hover:bg-blue-900 px-2 py-1 rounded'
@@ -165,7 +165,7 @@ export default function Navbar() {
             <Link
               href="/contact"
               onClick={() => setIsMenuOpen(false)}
-              className={`font-['Space_Grotesk'] font-bold tracking-tight uppercase transition-all ${
+              className={`font-sans font-bold tracking-tight uppercase transition-all ${
                 isActive('/contact')
                   ? 'text-white border-l-4 border-white pl-2'
                   : 'text-gray-300 hover:text-white hover:bg-blue-900 px-2 py-1 rounded'
