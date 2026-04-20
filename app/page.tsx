@@ -58,24 +58,24 @@ export default function Home() {
         </section>
 
         {/* Services Grid – Same 9 Cards */}
-        <section className="bg-surface-container-low py-24 px-6">
+        <section className="bg-surface-container-low py-12 md:py-24 px-4 md:px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 md:mb-16 gap-3 md:gap-6">
               <div>
-                <span className="text-primary font-bold tracking-[0.3em] text-xs uppercase mb-4 block">Expert Solutions</span>
-                <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight">Our Recovery Services</h2>
+                <span className="text-primary font-bold tracking-[0.3em] text-xs uppercase mb-2 md:mb-4 block">Expert Solutions</span>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tight text-balance">Our Recovery Services</h2>
               </div>
-              <div className="h-1 bg-secondary w-32 hidden md:block"></div>
+              <div className="h-1 bg-secondary w-20 md:w-32"></div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
               {servicesData.map((service, idx) => (
                 <div key={idx} className="bg-surface-container-high overflow-hidden rounded-xl flex flex-col group hover:bg-surface-container-highest transition-colors">
-                  <div className="h-48 overflow-hidden">
+                  <div className="h-40 sm:h-44 md:h-48 overflow-hidden">
                     <img src={service.img} alt={service.title} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
                   </div>
-                  <div className="p-8">
-                    <h3 className="text-xl font-bold uppercase mb-4 tracking-tight">{service.title}</h3>
-                    <p className="text-on-surface-variant text-sm font-body">{service.desc}</p>
+                  <div className="p-5 md:p-8">
+                    <h3 className="text-base md:text-xl font-bold uppercase mb-2 md:mb-4 tracking-tight leading-snug">{service.title}</h3>
+                    <p className="text-on-surface-variant text-sm font-sans leading-relaxed">{service.desc}</p>
                   </div>
                 </div>
               ))}
