@@ -123,14 +123,17 @@ export default function Footer() {
           <p className="text-on-surface-variant text-xs">
             &copy; {new Date().getFullYear()} Hussnin Car Recovery. All rights reserved.
           </p>
-          <div className="flex items-center gap-5">
-            <Link href="#" className="text-on-surface-variant hover:text-primary text-xs transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="#" className="text-on-surface-variant hover:text-primary text-xs transition-colors">
-              Terms of Service
-            </Link>
-          </div>
+          <p className="text-on-surface-variant text-xs">
+            Designed By{' '}
+            <a
+              href="https://linkedo.co.uk/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="text-primary font-semibold hover:opacity-80 transition-opacity"
+            >
+              Linkedo
+            </a>
+          </p>
         </div>
       </div>
     </footer>
