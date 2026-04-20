@@ -4,35 +4,51 @@ import Logo from './Logo'
 export default function Footer() {
   return (
     <footer className="bg-slate-950">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 px-8 py-16 max-w-7xl mx-auto">
-        {/* Left Column - Logo + Text */}
-        <div>
-         <Logo/>
-          
-          <p className="text-slate-500 font-sans text-sm tracking-wide leading-relaxed max-w-sm">
-            © 2024 HUSSNIN CAR RECOVERY. COUPE ROAD, SHEFFIELD, S3 9DP. CALL: 07799 180009
-          </p>
-        </div>
-
-        {/* Right Column - Links */}
-        <div className="grid grid-cols-2 gap-8">
-          <div className="flex flex-col space-y-4">
-            <h5 className="text-slate-200 font-bold uppercase text-xs tracking-widest mb-2">Quick Links</h5>
-            <Link href="/services" className="text-slate-500 font-sans text-sm tracking-wide hover:text-slate-300 underline">
-              Services
-            </Link>
-            <Link href="/contact" className="text-slate-500 font-sans text-sm tracking-wide hover:text-slate-300 underline">
-              Emergency Recovery
-            </Link>
+      <div className="max-w-7xl mx-auto px-6 py-12 md:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-12">
+          {/* Left Column - Logo + Text */}
+          <div className="flex flex-col gap-4">
+            <Logo />
+            <p className="text-slate-500 font-sans text-sm tracking-wide leading-relaxed max-w-sm">
+              24/7 professional car recovery across Sheffield &amp; South Yorkshire. Fast, reliable and affordable.
+            </p>
+            <p className="text-slate-600 font-sans text-xs tracking-wide leading-relaxed">
+              © {new Date().getFullYear()} HUSSNIN CAR RECOVERY. COUPE ROAD, SHEFFIELD, S3 9DP.
+            </p>
+            <a
+              href="tel:07799180009"
+              className="font-sans text-yellow-500 font-bold text-sm tracking-widest hover:text-yellow-400 transition-colors"
+            >
+              CALL: 07799 180009
+            </a>
           </div>
-          <div className="flex flex-col space-y-4">
-            <h5 className="text-slate-200 font-bold uppercase text-xs tracking-widest mb-2">Legal</h5>
-            <Link href="#" className="text-slate-500 font-sans text-sm tracking-wide hover:text-slate-300 underline">
-              Terms
-            </Link>
-            <Link href="#" className="text-slate-500 font-sans text-sm tracking-wide hover:text-slate-300 underline">
-              Privacy
-            </Link>
+
+          {/* Right Column - Links */}
+          <div className="grid grid-cols-2 gap-8">
+            <div className="flex flex-col gap-3">
+              <h5 className="text-slate-200 font-sans font-bold uppercase text-xs tracking-widest">Quick Links</h5>
+              <Link href="/" className="text-slate-500 font-sans text-sm tracking-wide hover:text-slate-300 transition-colors underline">
+                Home
+              </Link>
+              <Link href="/about" className="text-slate-500 font-sans text-sm tracking-wide hover:text-slate-300 transition-colors underline">
+                About
+              </Link>
+              <Link href="/services" className="text-slate-500 font-sans text-sm tracking-wide hover:text-slate-300 transition-colors underline">
+                Services
+              </Link>
+              <Link href="/contact" className="text-slate-500 font-sans text-sm tracking-wide hover:text-slate-300 transition-colors underline">
+                Contact
+              </Link>
+            </div>
+            <div className="flex flex-col gap-3">
+              <h5 className="text-slate-200 font-sans font-bold uppercase text-xs tracking-widest">Legal</h5>
+              <Link href="#" className="text-slate-500 font-sans text-sm tracking-wide hover:text-slate-300 transition-colors underline">
+                Terms
+              </Link>
+              <Link href="#" className="text-slate-500 font-sans text-sm tracking-wide hover:text-slate-300 transition-colors underline">
+                Privacy
+              </Link>
+            </div>
           </div>
         </div>
       </div>
