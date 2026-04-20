@@ -14,8 +14,8 @@
   --color-on-surface-variant: #c4c6cf;
   --color-outline: #8e9099;
   --color-error: #ffb4ab;
-  --font-sans: var(--font-inter);
-  --font-heading: var(--font-space-grotesk);
+  --font-sans: var(--font-ubuntu), 'Ubuntu', sans-serif;
+  --font-heading: var(--font-ubuntu), 'Ubuntu', sans-serif;
 }
 
 body {
