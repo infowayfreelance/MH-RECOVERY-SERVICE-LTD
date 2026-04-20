@@ -10,8 +10,6 @@ export default function Navbar() {
 
   const isActive = (path: string) => pathname === path
 
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
-
   const navLinks = [
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
@@ -21,7 +19,7 @@ export default function Navbar() {
   ]
 
   return (
-    <header className="bg-blue-950 sticky top-0 z-50">
+    <header className="bg-surface-container sticky top-0 z-50 border-b border-outline">
       {/* Main nav bar */}
       <nav className="flex justify-between items-center w-full px-4 md:px-6 max-w-7xl mx-auto h-16">
         {/* Logo */}
@@ -33,10 +31,10 @@ export default function Navbar() {
             <Link
               key={href}
               href={href}
-              className={`font-sans font-bold tracking-tight uppercase transition-all active:scale-95 duration-100 ${
+              className={`font-sans font-bold tracking-tight uppercase text-sm transition-all duration-100 ${
                 isActive(href)
-                  ? 'text-white border-b-2 border-white pb-1'
-                  : 'text-gray-300 hover:text-white hover:bg-blue-900 px-2 py-1 rounded'
+                  ? 'text-primary border-b-2 border-primary pb-1'
+                  : 'text-on-surface-variant hover:text-on-surface'
               }`}
             >
               {label}
@@ -48,25 +46,19 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <a
             href="tel:07799180009"
-            className="bg-yellow-500 text-black px-3 py-2 md:px-6 md:py-3 font-bold text-xs md:text-sm tracking-widest active:scale-95 duration-100 uppercase hover:bg-yellow-400 rounded whitespace-nowrap"
+            className="bg-primary text-on-primary px-3 py-2 md:px-6 md:py-3 font-bold text-xs md:text-sm tracking-widest active:scale-95 duration-100 uppercase hover:opacity-90 rounded whitespace-nowrap"
           >
             CALL NOW
           </a>
 
           {/* Hamburger — mobile only */}
           <button
-            onClick={toggleMenu}
-            className="md:hidden text-white focus:outline-none p-1"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="md:hidden text-on-surface focus:outline-none p-1"
             aria-label="Toggle menu"
             aria-expanded={isMenuOpen}
           >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {isMenuOpen ? (
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               ) : (
@@ -79,7 +71,7 @@ export default function Navbar() {
 
       {/* Mobile Dropdown */}
       {isMenuOpen && (
-        <div className="md:hidden bg-blue-950 border-t border-blue-800 shadow-lg w-full">
+        <div className="md:hidden bg-surface-container border-t border-outline shadow-lg w-full">
           <div className="flex flex-col px-6 py-4 gap-1">
             {navLinks.map(({ href, label }) => (
               <Link
@@ -88,8 +80,8 @@ export default function Navbar() {
                 onClick={() => setIsMenuOpen(false)}
                 className={`font-sans font-bold tracking-tight uppercase py-3 transition-all ${
                   isActive(href)
-                    ? 'text-white border-l-4 border-yellow-500 pl-3'
-                    : 'text-gray-300 hover:text-white hover:bg-blue-900 px-3 rounded'
+                    ? 'text-primary border-l-4 border-primary pl-3'
+                    : 'text-on-surface-variant hover:text-on-surface px-3'
                 }`}
               >
                 {label}
@@ -97,7 +89,7 @@ export default function Navbar() {
             ))}
             <a
               href="tel:07799180009"
-              className="mt-3 bg-yellow-500 text-black px-4 py-3 font-bold text-sm tracking-widest uppercase hover:bg-yellow-400 rounded text-center"
+              className="mt-3 bg-primary text-on-primary px-4 py-3 font-bold text-sm tracking-widest uppercase hover:opacity-90 rounded text-center"
             >
               CALL: 07799 180009
             </a>

@@ -1,19 +1,34 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-surface: #111318;
-  --color-on-surface: #e2e2e8;
-  --color-secondary: #c6c6c6;
-  --color-on-secondary: #2f3131;
-  --color-primary: #b1c7f2;
-  --color-primary-container: #001b3d;
-  --color-on-primary: #193053;
-  --color-surface-container-low: #1a1c20;
-  --color-surface-container-high: #282a2e;
-  --color-surface-container-highest: #333539;
-  --color-on-surface-variant: #c4c6cf;
-  --color-outline: #8e9099;
-  --color-error: #ffb4ab;
+  /* Brand: deep charcoal dark + yellow accent + off-white text */
+  --color-surface: #0f1117;
+  --color-on-surface: #f0f0f0;
+  --color-on-background: #f0f0f0;
+
+  /* Yellow accent — primary CTA colour */
+  --color-primary: #f5c518;
+  --color-on-primary: #0f1117;
+  --color-primary-container: #2a2200;
+
+  /* Muted gold — secondary highlights */
+  --color-secondary: #f5c518;
+  --color-on-secondary: #0f1117;
+
+  /* Surface layers — slightly lighter steps of the dark base */
+  --color-surface-container-low: #181b22;
+  --color-surface-container: #1e2129;
+  --color-surface-container-high: #252830;
+  --color-surface-container-highest: #2e3139;
+
+  /* Muted text / icons */
+  --color-on-surface-variant: #9ca3af;
+
+  /* Border / divider */
+  --color-outline: #374151;
+
+  --color-error: #f87171;
+
   --font-sans: var(--font-ubuntu), 'Ubuntu', sans-serif;
   --font-heading: var(--font-ubuntu), 'Ubuntu', sans-serif;
 }

@@ -10,11 +10,11 @@ export default function Home() {
         <section className="bg-surface pt-10 md:pt-24 pb-12 md:pb-16 px-4 md:px-6">
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="order-2 md:order-1">
-              <div className="inline-block bg-primary-container text-primary text-xs font-bold tracking-widest px-4 py-1 mb-4 md:mb-6 uppercase">
+              <div className="inline-block bg-primary-container text-primary text-xs font-bold tracking-widest px-4 py-1 mb-4 md:mb-6 uppercase border border-primary/30">
                 Sheffield&apos;s 24/7 Response
               </div>
-              <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-[1.1] mb-5 md:mb-8 tracking-tighter text-on-background text-balance">
-                24/7 Car Recovery in <span className="text-secondary">Sheffield</span> – Fast &amp; Reliable Service
+              <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-[1.1] mb-5 md:mb-8 tracking-tighter text-on-surface text-balance">
+                24/7 Car Recovery in <span className="text-primary">Sheffield</span> – Fast &amp; Reliable Service
               </h1>
               <p className="text-base md:text-xl text-on-surface-variant mb-6 md:mb-10 max-w-lg leading-relaxed font-sans">
                 Stuck on the road? Our professional recovery team is available 24/7 to get you back on track quickly and safely.
@@ -22,25 +22,25 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-8 md:mb-12">
                 <a
                   href="tel:07799180009"
-                  className="bg-secondary text-on-secondary py-4 md:py-5 px-6 md:px-8 font-extrabold text-base md:text-lg text-center tracking-tight active:scale-95 transition-transform"
+                  className="bg-primary text-on-primary py-4 md:py-5 px-6 md:px-8 font-extrabold text-base md:text-lg text-center tracking-tight active:scale-95 transition-transform rounded"
                 >
                   Call Now: 07799 180009
                 </a>
                 <a
                   href="tel:07799180009"
-                  className="border-2 border-outline/20 text-on-surface py-4 md:py-5 px-6 md:px-8 font-extrabold text-base md:text-lg text-center hover:bg-surface-container-high active:scale-95 transition-all"
+                  className="border-2 border-outline text-on-surface py-4 md:py-5 px-6 md:px-8 font-extrabold text-base md:text-lg text-center hover:bg-surface-container-high active:scale-95 transition-all rounded"
                 >
                   Get Immediate Help
                 </a>
               </div>
               <div className="flex flex-wrap gap-x-4 gap-y-2">
-                <span className="flex items-center gap-2 uppercase font-bold text-secondary text-[0.65rem] tracking-widest">
+                <span className="flex items-center gap-2 uppercase font-bold text-primary text-[0.65rem] tracking-widest">
                   <span className="material-symbols-outlined text-sm">check_circle</span> Fast Response
                 </span>
-                <span className="flex items-center gap-2 uppercase font-bold text-secondary text-[0.65rem] tracking-widest">
+                <span className="flex items-center gap-2 uppercase font-bold text-primary text-[0.65rem] tracking-widest">
                   <span className="material-symbols-outlined text-sm">location_on</span> Local Sheffield Team
                 </span>
-                <span className="flex items-center gap-2 uppercase font-bold text-secondary text-[0.65rem] tracking-widest">
+                <span className="flex items-center gap-2 uppercase font-bold text-primary text-[0.65rem] tracking-widest">
                   <span className="material-symbols-outlined text-sm">payments</span> Affordable Prices
                 </span>
               </div>
@@ -63,9 +63,9 @@ export default function Home() {
             <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 md:mb-16 gap-3 md:gap-6">
               <div>
                 <span className="text-primary font-bold tracking-[0.3em] text-xs uppercase mb-2 md:mb-4 block">Expert Solutions</span>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tight text-balance">Our Recovery Services</h2>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tight text-balance text-on-surface">Our Recovery Services</h2>
               </div>
-              <div className="h-1 bg-secondary w-20 md:w-32"></div>
+              <div className="h-1 bg-primary w-20 md:w-32"></div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
               {servicesData.map((service, idx) => (
@@ -86,16 +86,16 @@ export default function Home() {
         {/* Why Choose Us */}
         <section className="py-16 md:py-24 px-4 md:px-6 bg-surface">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-black uppercase mb-10 md:mb-16 tracking-tight text-center text-balance">
-              Why Choose <span className="text-secondary">Us</span>
+            <h2 className="text-3xl md:text-4xl font-black uppercase mb-10 md:mb-16 tracking-tight text-center text-balance text-on-surface">
+              Why Choose <span className="text-primary">Us</span>
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 md:gap-8">
               {whyChooseData.map((item, idx) => (
                 <div key={idx} className="text-center group">
-                  <div className="w-16 h-16 md:w-20 md:h-20 bg-surface-container-highest flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">
-                    <span className="material-symbols-outlined text-2xl md:text-3xl">{item.icon}</span>
+                  <div className="w-16 h-16 md:w-20 md:h-20 bg-surface-container-high border border-outline flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:bg-primary group-hover:text-on-primary group-hover:border-primary transition-all duration-300">
+                    <span className="material-symbols-outlined text-2xl md:text-3xl text-primary group-hover:text-on-primary transition-colors">{item.icon}</span>
                   </div>
-                  <h4 className="font-bold text-xs md:text-sm uppercase tracking-wide leading-snug">{item.text}</h4>
+                  <h4 className="font-bold text-xs md:text-sm uppercase tracking-wide leading-snug text-on-surface">{item.text}</h4>
                 </div>
               ))}
             </div>
@@ -103,19 +103,19 @@ export default function Home() {
         </section>
 
         {/* Emergency Call Banner */}
-        <section className="bg-secondary text-on-secondary py-12 md:py-16 px-4 md:px-6">
+        <section className="bg-primary py-12 md:py-16 px-4 md:px-6">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-6 md:gap-8">
             <div>
-              <h2 className="text-3xl sm:text-4xl md:text-6xl font-black uppercase tracking-tighter mb-2 text-balance">
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-black uppercase tracking-tighter mb-2 text-balance text-on-primary">
                 Need Immediate Recovery?
               </h2>
-              <p className="text-base md:text-xl font-medium opacity-80">
+              <p className="text-base md:text-xl font-medium text-on-primary opacity-80">
                 Our dispatchers are standing by. Don&apos;t wait on the roadside.
               </p>
             </div>
             <a
               href="tel:07799180009"
-              className="bg-on-secondary text-secondary py-4 md:py-6 px-8 md:px-12 text-2xl md:text-4xl font-black tracking-tight active:scale-95 transition-transform whitespace-nowrap"
+              className="bg-on-primary text-primary py-4 md:py-6 px-8 md:px-12 text-2xl md:text-4xl font-black tracking-tight active:scale-95 transition-transform whitespace-nowrap rounded hover:opacity-90"
             >
               07799 180009
             </a>
@@ -127,17 +127,17 @@ export default function Home() {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-black uppercase mb-5 md:mb-8 tracking-tight text-balance">
-                  Serving <span className="text-secondary">Sheffield</span> &amp; Nearby Areas
+                <h2 className="text-3xl md:text-4xl font-black uppercase mb-5 md:mb-8 tracking-tight text-balance text-on-surface">
+                  Serving <span className="text-primary">Sheffield</span> &amp; Nearby Areas
                 </h2>
                 <p className="text-on-surface-variant text-base md:text-lg font-sans mb-8 md:mb-12 leading-relaxed">
                   Strategically based in the heart of Sheffield, we provide rapid response recovery to the entire South Yorkshire region including Rotherham, Chesterfield, and Dronfield.
                 </p>
-                <div className="bg-surface-container p-6 md:p-8 border-l-4 border-secondary">
+                <div className="bg-surface-container p-6 md:p-8 border-l-4 border-primary rounded-r-xl">
                   <h4 className="font-black uppercase tracking-[0.2em] mb-4 text-on-surface-variant text-xs md:text-sm">Our Headquarters</h4>
                   <div className="flex items-start gap-3 md:gap-4 mb-2">
-                    <span className="material-symbols-outlined text-secondary shrink-0">location_on</span>
-                    <span className="text-lg md:text-2xl font-bold uppercase font-sans tracking-tight">Coupe Road, Sheffield, S3 9DP</span>
+                    <span className="material-symbols-outlined text-primary shrink-0">location_on</span>
+                    <span className="text-lg md:text-2xl font-bold uppercase font-sans tracking-tight text-on-surface">Coupe Road, Sheffield, S3 9DP</span>
                   </div>
                   <p className="text-on-surface-variant opacity-60 ml-9 md:ml-10 text-sm">Visit us for scheduled recovery inquiries or admin matters.</p>
                 </div>
