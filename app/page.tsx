@@ -14,7 +14,7 @@ export default function Home() {
                 Sheffield&apos;s 24/7 Response
               </div>
               <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-[1.1] mb-5 md:mb-8 tracking-tighter text-on-surface text-balance">
-                24/7 Car Recovery Service
+                24/7 Car Recovery in <span className="text-primary">Sheffield</span> – Fast &amp; Reliable Service
               </h1>
               <p className="text-base md:text-xl text-on-surface-variant mb-6 md:mb-10 max-w-lg leading-relaxed font-sans">
                 Stuck on the road? Our professional recovery team is available 24/7 to get you back on track quickly and safely.
