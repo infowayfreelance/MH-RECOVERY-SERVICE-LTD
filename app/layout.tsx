@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Ubuntu } from 'next/font/google'
 import './globals.css'
+import FloatingButtons from '@/components/FloatingButtons'
 
 const ubuntu = Ubuntu({
   subsets: ['latin'],
@@ -50,7 +51,10 @@ export default function RootLayout({
         <link rel="icon" type="image/png" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/favicon.png" />    
           </head>
-      <body className="bg-surface text-on-surface">{children}</body>
+      <body className="bg-surface text-on-surface">
+        {children}
+        <FloatingButtons />
+      </body>
     </html>
   )
 }
