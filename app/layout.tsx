@@ -41,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`bg-surface dark ${ubuntu.variable}`}>
+    <html lang="en" className={`bg-surface ${ubuntu.variable}`}>
       <head>
         <link
           rel="stylesheet"

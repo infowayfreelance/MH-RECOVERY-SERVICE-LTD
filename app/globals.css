@@ -1,10 +1,10 @@
 @import 'tailwindcss';
 
 @theme {
-  /* Brand: deep charcoal dark + yellow accent + off-white text */
-  --color-surface: #0f1117;
-  --color-on-surface: #f0f0f0;
-  --color-on-background: #f0f0f0;
+  /* Brand: silver background + navy blue accent + dark text */
+  --color-surface: #c0c0c0;
+  --color-on-surface: #0f1117;
+  --color-on-background: #0f1117;
 
   /* Navy blue — primary CTA colour */
   --color-primary: #1a3a6b;
@@ -15,19 +15,19 @@
   --color-secondary: #1a3a6b;
   --color-on-secondary: #f0f0f0;
 
-  /* Surface layers — slightly lighter steps of the dark base */
-  --color-surface-container-low: #181b22;
-  --color-surface-container: #1e2129;
-  --color-surface-container-high: #252830;
-  --color-surface-container-highest: #2e3139;
+  /* Surface layers — slightly varied silver tones */
+  --color-surface-container-low: #b8b8b8;
+  --color-surface-container: #d0d0d0;
+  --color-surface-container-high: #d8d8d8;
+  --color-surface-container-highest: #e2e2e2;
 
   /* Muted text / icons */
-  --color-on-surface-variant: #9ca3af;
+  --color-on-surface-variant: #374151;
 
   /* Border / divider */
-  --color-outline: #374151;
+  --color-outline: #9ca3af;
 
-  --color-error: #f87171;
+  --color-error: #b91c1c;
 
   --font-sans: var(--font-ubuntu), 'Ubuntu', sans-serif;
   --font-heading: var(--font-ubuntu), 'Ubuntu', sans-serif;
