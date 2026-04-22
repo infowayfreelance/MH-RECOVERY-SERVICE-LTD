@@ -19,7 +19,7 @@ export default function ServicesPage() {
           </div>
           <div className="relative z-10 max-w-[1440px] mx-auto w-full">
             <div className="max-w-3xl">
-              <span className="inline-block bg-primary-container text-primary text-xs font-bold tracking-[0.2em] uppercase px-4 py-2 mb-4 md:mb-6 border-l-4 border-primary">
+              <span className="inline-block bg-primary-container text-white text-xs font-bold tracking-[0.2em] uppercase px-4 py-2 mb-4 md:mb-6 border-l-4 border-primary">
                 24/7 TACTICAL READINESS
               </span>
               <h1 className="text-4xl sm:text-6xl md:text-8xl font-black tracking-tighter leading-none mb-5 md:mb-8 uppercase text-on-surface text-balance">

@@ -19,7 +19,7 @@ export default function About() {
           </div>
           <div className="container mx-auto px-4 md:px-8 relative z-10 py-12 md:py-0">
             <div className="max-w-4xl">
-              <span className="inline-block px-3 py-1 bg-primary-container text-primary text-xs font-bold tracking-widest uppercase mb-4 border border-primary/30">
+              <span className="inline-block px-3 py-1 bg-primary-container text-white text-xs font-bold tracking-widest uppercase mb-4 border border-primary/30">
                 Established Excellence
               </span>
               <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold text-on-surface tracking-tighter uppercase leading-[0.9] mb-4 md:mb-6 text-balance">
