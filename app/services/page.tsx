@@ -13,13 +13,13 @@ export default function ServicesPage() {
             <img
               alt="Recovery truck"
               className="w-full h-full object-cover"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhEgBYURIjd_3V6cX8DZKzuOHfIym9e2kczk-UabpZzWIZwniWCNXaPbrUicRIwxYVioHwhguRuOs_Q5r2fzY9A-BB5cRlcyh5uRKN8VQdgWKM0NwEUmBoLn7yD20IZ2nDGm9fFDxj3ZnQA9uETpUA33_IpwqNIe-ojrbNAEwmSsPkkqSSJZILoTBnIbodVEJ6-UmW86n4A6O-kuuXCM63NryUspOwjx5bSEkbPxHhcrd_cWaqqXqz4GODwhe7UwLsSR_35OM92tFL"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car-Towing-opt-H28BWF4w6lTsenxfRBBDAF8fo4DwCJ.webp"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent"></div>
           </div>
           <div className="relative z-10 max-w-[1440px] mx-auto w-full">
             <div className="max-w-3xl">
-              <span className="inline-block bg-primary-container text-primary text-xs font-bold tracking-[0.2em] uppercase px-4 py-2 mb-4 md:mb-6 border-l-4 border-primary">
+              <span className="inline-block bg-primary-container text-white text-xs font-bold tracking-[0.2em] uppercase px-4 py-2 mb-4 md:mb-6 border-l-4 border-primary">
                 24/7 TACTICAL READINESS
               </span>
               <h1 className="text-4xl sm:text-6xl md:text-8xl font-black tracking-tighter leading-none mb-5 md:mb-8 uppercase text-on-surface text-balance">
@@ -74,7 +74,7 @@ export default function ServicesPage() {
                 <img
                   alt="Professional flatbed recovery truck"
                   className="w-full h-full object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfjF1tG4cDKfM6hbbUb2mHHSKUZFQ9g0R9OV4Lxfo3Yyjv0Yw_t1KaxnDZ8CsPPbQhD6SfdDejBbs2uJ1TN9UclqM68X7ttopoF9NItAA_szb9iHxMx2eQXJkHfuAtMus4CAEJPfZcP00SzVOM7Vnh1NOhfNtre7nwVYaAk2bz4rBMNacOXr2anW0rL7xqSJZgZoZOmljGc3BhFxXo76MvyoIrgOvNWealpm-7fq3udmvRAuN5JcyI1Y_AKPZlGH_siilY7vRxh8VL"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car-Recovery-opt-jK0Oh9JpStKSKOwrFlMiRJxvD4tR9S.webp"
                 />
               </div>
             </div>
@@ -82,9 +82,9 @@ export default function ServicesPage() {
             {/* Roadside & Specialized Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-px bg-outline/10 rounded-xl overflow-hidden mt-px">
               {[
-                { icon: "build", title: "Roadside Assistance", desc: "On-site diagnostics, battery jumpstarts, and tyre changes to get you back on the move without a tow.", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuB6yiOYBC2y4sEBR5XjYjwV2N5J2xBAxChbEBxKBG9uhNfnq5IH1Y0lWENj8oLeAt5dwST09LNBR1DF9w5rF5nYYs9fq4NwcXnJiHPVH3SNXoW5s6Ky4RJoicTGWd-65wYp48FKg5OcqttwCilybmBjdMaHTTnxBftTrgNslbSmIRbz1DSeC-8gLIjIABpUL41nZsaY1CmuSkr5QygG1AHa81mnFwqdryU3iVMK6ZLfCwgSFGWlaxNkOjnEjWYwomSC14ZcOZ0Hbfgm", alt: "Roadside mechanic" },
-                { icon: "warning", title: "Accident Recovery", desc: "Specialized lifting and extraction for vehicles involved in collisions. Safe handling of damaged structural integrity.", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCxicMNZOIXMZ_OFpgQxvZiBlCY6Qd_Wthh9PL91uSvA1wIZdzSVO96r2ZoilP0RETcYfifB9gG0UHF2LwKkVbP1I3jglelPRVGaK7-N5aeU7SZQ39ZqxXu0M459Q-buqE-AEcwssCCJbkLjisZsAkSRPonWJmUa4tX2mkRJT44bFyBRaZ0-MbzIhsU2eDJdSlu5Zw6VyS15HcS6WwWLRU2NcPCT61xqmHzNICgzhqmbIeDjT9kyXebpEv1LeQPIi75F7v15DqSSYYa", alt: "Accident scene" },
-                { icon: "key", title: "Lost Keys & Lockouts", desc: "Non-destructive entry techniques for locked vehicles and transport to main dealers for key replacement.", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBqaXUWkIm5DkVUzOMRQSZArZvY8Z2dPIbZ8jd32hQWUJ6Kl_H1AerfJZIXq3KmlOxQrc_IhLx1rQLqTgPYZFCiKtibVbtcnoSZCBqLfdKj0HpiiOi8HEPqKs0nUsv3IeSvTVyIBGVMnr_Uy2fUZsael_ZX4m0H-RwzZ9AzEJOgzlEH0pXe3BPpvowMWjR3fq367DC_S9TZJ83CRZT_qldls716-O8SBDgxnGQA0Dkx272P72x4pMAup9t9CaDoul_r1K0KL5Nc252L", alt: "Car Key" },
+                { icon: "build", title: "Roadside Assistance", desc: "On-site diagnostics, battery jumpstarts, and tyre changes to get you back on the move without a tow.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre-Assistance-opt-OM8BQuNTXWNvyrSYkhmnvtYrE49kA3.webp", alt: "Mechanic changing tyre roadside in the rain" },
+                { icon: "warning", title: "Accident Recovery", desc: "Specialized lifting and extraction for vehicles involved in collisions. Safe handling of damaged structural integrity.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car-Accident--opt-5nSn8weILLIlE7yLZemJZIsYPzCld3.webp", alt: "Two cars after a front-end collision on a wet road" },
+                { icon: "key", title: "Lost Keys & Lockouts", desc: "Non-destructive entry techniques for locked vehicles and transport to main dealers for key replacement.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lost-Car-Keys-Help-opt-es7WUSGINXUJChucxN6eArWaDWNZAs.webp", alt: "Recovery technician assisting driver with lost car keys" },
               ].map((s, i) => (
                 <div key={i} className="bg-surface-container-high p-6 md:p-10">
                   <div className="mb-5 md:mb-8">
@@ -106,7 +106,7 @@ export default function ServicesPage() {
               <img
                 alt="Fleet detail"
                 className="relative z-10 w-full aspect-square object-cover rounded-xl"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmcKkzq2kYqkfWXhpxz6U0GXKOih-KOR0zIj3ujaHc1Yob6urp_I4ggx1nBYmGonuSFJ2ezi5kUzPVeihrcPOA6RrPsW14qS_Vmen3QP2ZqLOre7dBKgnIZQi0KRA4Sz4YtRIUmFVwuW6TqDwF1pRqlD7K7StL_tBedmo5FNPRtb56IY-UQb6RvhHYfB_5S393WVdyKb3jJKpnH53QbH6ILwV1Aoug3Gyuv1VghlZxny7-bDAGiVKHe-ZVuxwxZKEHtwrUkzXXQcNW"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car-Breakdown-opt-y73ndhbUFt5iANdjovdSfsAThW78ws.webp"
               />
               <div className="absolute bottom-0 right-0 bg-primary p-5 md:p-8 z-20 rounded-tl-xl">
                 <p className="text-on-primary font-black text-3xl md:text-5xl tracking-tighter">100%</p>

@@ -10,7 +10,7 @@ export default function Home() {
         <section className="bg-surface pt-10 md:pt-24 pb-12 md:pb-16 px-4 md:px-6">
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="order-2 md:order-1">
-              <div className="inline-block bg-primary-container text-primary text-xs font-bold tracking-widest px-4 py-1 mb-4 md:mb-6 uppercase border border-primary/30">
+              <div className="inline-block bg-primary-container text-white text-xs font-bold tracking-widest px-4 py-1 mb-4 md:mb-6 uppercase border border-primary/30">
                 Sheffield&apos;s 24/7 Response
               </div>
               <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-[1.1] mb-5 md:mb-8 tracking-tighter text-on-surface text-balance">
@@ -48,9 +48,9 @@ export default function Home() {
             <div className="order-1 md:order-2">
               <div className="relative aspect-[16/9] sm:aspect-square md:aspect-[4/5] bg-surface-container-low overflow-hidden rounded-xl">
                 <img
-                  alt="Modern yellow UK car recovery flatbed truck parked in an urban industrial Sheffield street at blue hour with hazard lights flashing"
+                  alt="White flatbed recovery truck loading a grey Audi on a residential Sheffield street"
                   className="w-full h-full object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2nNT6hy8H--ygxr-BuESFr47LzJzoq74T5PPdd_S7nzCbb74VYfPh5L-k1J98bykhGLCiSGdnmie7XtDLFy1LlQXxfwAyOQh5QnSS6fK02N6QwOEUsQE4n7mt4meMHpit18HSoc1aAR_HC0szPY-3BLXvl9PRWyHC1teKsygQMGDdeWSZE3ZQOqdy17BBJZQ_85cHcIDuCu5tiHrgcIyh53Arq7CpnBd-O5dLWKTWC_AmuSV9bkDZz1kQ2A6B-9Q0P3dVBuz_teH3"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car-Recovery-opt-jK0Oh9JpStKSKOwrFlMiRJxvD4tR9S.webp"
                 />
               </div>
             </div>
@@ -165,15 +165,15 @@ export default function Home() {
 
 // Data arrays for services and why choose
 const servicesData = [
-  { title: "24/7 Car Recovery Sheffield", desc: "Complete emergency recovery solutions for any vehicle type, anywhere in Sheffield, 24 hours a day.", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCFX7W2EvZ6gTYxqEMLC-QZQbMQudtasZQ2Rp1F6ZNoXbUHw9sxQd95wifKae9kDqqCj5xtzBKd7d6c946mfL1FFg0pTGqagNbP1v9gZrYkdhkAvTbsMF1BT6ZDHeSx3xEIIzcuCYJsSli9-XcYpMVaNZPSmVw_Lz41k6IpXiuaWyMJk1CsywcDdmy-2DPk19UrVi8AaC0weA-iQ3uabmEllCRWXfk-EF-Iz0_j7lDWo974sKWRYOIByZpmn3r8oQcXOrwhCR3eclI2" },
-  { title: "Emergency Jump Start Service", desc: "Quick response roadside assistance to get your flat battery boosted and you back on the road instantly.", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBwRAIMNe4NSEZIbDYmoIRDVG7W3zv3cAAZUbpNAcUHU10FQMuxsle4V5gg9M7uPFBgLHXMl273tMWzCFRah7W4MqYZ6JDycJtWKcfWHG0M0LbN5agi6VTtixkOfeqLOqTlpL0iR9f0lWADAdCPxyhpSJxEnIlddoB142IDGmnQwBmVnr1YRWMX8mjGZHXLyEp-BFdyC9Yjb1dpr1rNL5VPPVoFQYTuC9ZrmeDu0qy2Z6nXKZDUrhdH4YL36pW-zNtW_QAKQdSa_bzu" },
-  { title: "Fast Breakdown Recovery", desc: "Mechanical failure recovery specialists. Rapid response times to minimize your roadside waiting.", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAzxcfczuIZxa-JYExv6zduaZvQeTQdNvThtISs3ADj8DRMhAg9ORCc1_fO-nan1hxOhecAO82m3HPwCVy2b39UBV6m0lomxvdN4xrWvwuQtGVgVJNf2SZ2LG7lbI1Cb2ntKQ2_bYOwN5aOzjlR8wfF6FQe-ZnuOdmfFxEgAW2m7oNwNaTQVYwQVp2JEWKxIlYgXIP2OgrPlmxsaPjuF4afVbkXfeO6KDzfMtawDb-wM6VIIy7LtX1bjVbtmxi4sadsl8UjpuXvnI-d" },
-  { title: "Roadside Assistance", desc: "Minor roadside repairs and diagnostics performed on the spot by our experienced technicians.", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDiTUIDRKqOkFbGs4hboh9ts_3sun-uaKExkfRmKqjxSZSpC1tfElEa9JVp169QVsGjE-tY8lRItku_AkgCXcFqAZ10S9Db6EeaWQAHxGp1117c34f9Lg9qXu2l0pc1A5tmvbWQAwGWCjp3d1UN5oyRSITOtl0_ZmHreZ7tEcCE34DDEmtt-lV18A_-BqDLtZbJF2pROuTEhN97CIDjHR_29yM1-IdcL6pEETaHLbKXgDkDT0gE9fxSn7ughjU__FIx6miMzQ6pmi29" },
-  { title: "Car Towing Service", desc: "Safe and secure professional towing to your home, a local garage, or any destination in the UK.", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBHeBmgHGM77I-xbb1w1Adwngp2-dz8IFEVlgsYQPGVqOfMqD_VjZx4i1Ur7Y37SyyLWyYQkzi6F4BPjmQrtqF5lB3WXVe-Nn9g1SOptvcXk0YlZ1KJRRwGAwPJc3r1dHJkHV7T8r0OE536qv5Ei2qILzL4GO_h5Ld9_jOyRieYa5FcrUfpP-y_4JHN6JTsuMvzdSFPYkB9fFWUXwvv6spMS8NCbSSlK9LQUEvp2YTUxsd5GhTUqCMxkg5h2P4oztJy2sg4WrfbPGb4" },
-  { title: "Flat Battery Jump Start", desc: "Professional battery testing and jump starting for all vehicle makes including hybrid and EVs.", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAgsVjuwDltNVdOOOfrk5cYdyCd2c8oxhpaK_JJcLn7LXE1juHhThZ6ERgQeKETzX0nukgKCPPsaFHVgI4hKe4p0uBBlW-8YZ2RaX4ms9XZ5N6iV6152IejaZCxxGNtyBGi06Eeki4TV0BQVrwRNw6DJsuk3V4uKFV6kQmDpZSPGxtESCPSvZIwIBqaNGAWdyRYWmrdzu_UJ1qEoNRlgRLO4FBC_qmGujnreuAGu7nonSoQc6c7cyIKADzMf59MqQ-rSmpkJZ6-injE" },
-  { title: "Accident Recovery Sheffield", desc: "Specialized handling for vehicles involved in road traffic accidents. Secure recovery and storage available.", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDQiMRcwUXquJcRJ65wvPmp7D5_Bq9QjlrOgub7THoVk87E4C0IzYL3ziuylctmR8ltFxUAA8qEly4TsE0wo5oItjKilu2RyJTcYFYbnyaWuUXuB1oIvTTAu__wAOwzOoDjg3jltjcX6XOpmjtiX-AY3JdhFByhRRObUVwbp1khYJ3RvUP8WU8paRMKm2nN5ji3BgAyVxGAsbM_Cg0k-5P8zWjOfK9AffidRKKzyYzwp09jRmbc5CexuLsg7_g2CA9dK_ARls7z7rYs" },
-  { title: "Tyre Damage Assistance", desc: "Roadside wheel changes and tyre damage support when you don't have a spare or the right tools.", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAEmkhR0JPhkaYD7ZYZgSSOw1TLv76UsGf4DTLoqCW87nynClBt8hMzfI32mLl_a9FdBa31kNQxMkX1FefFKPxdkKlxXqLI3Aa7crBCdXWHIjyWEgasonY8AyBNodNLeTuoaQ9Z2A9oWjwfY8NkPm8LHuCBUzWYThdzzJbThvxwrdpwcCNxe92vrtGl5N-d3Xmb4AJY8YhBWdoUkdB9e23r0g7UgVPhMy4ULcXy4WEiyPYSguuk5xVuFoy6gif27i9yfwwzP59Ysl3o" },
-  { title: "Lost Car Keys Help", desc: "Entry assistance and vehicle recovery if you've been locked out or lost your vehicle keys.", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBJZSV4ppIbftrtgZd-CLYCS2SrZVkA_yrySYPChIiW87x37vX5Pz1bTFsUVVYV9t7-54wr6T6BExlBfXhh7_scALKKwWn8yF4iObXYelKylcn5ObVZrlIGWBD85OhUubc9hTu6vAbk9dCoW4-VZcVpQStSYbAWOdpqnvNDQgcHHOiDjyS5rNhEc9HstMtDG1J0zoNYIgXfaozVD-JUrAWqxDTv8leMSh7KLMe5O-Qr8asF7dKhMkuOicAjUx9sTdd36_n9zeoYQ3nO" }
+  { title: "24/7 Car Recovery Sheffield", desc: "Complete emergency recovery solutions for any vehicle type, anywhere in Sheffield, 24 hours a day.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car-Recovery-opt-jK0Oh9JpStKSKOwrFlMiRJxvD4tR9S.webp" },
+  { title: "Emergency Jump Start Service", desc: "Quick response roadside assistance to get your flat battery boosted and you back on the road instantly.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car-Jump-Start-opt-JYsT9hrxSoSxpaw7paudJH4kEG6lMt.webp" },
+  { title: "Fast Breakdown Recovery", desc: "Mechanical failure recovery specialists. Rapid response times to minimize your roadside waiting.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car-Breakdown-opt-y73ndhbUFt5iANdjovdSfsAThW78ws.webp" },
+  { title: "Roadside Assistance", desc: "Minor roadside repairs and diagnostics performed on the spot by our experienced technicians.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre-Assistance-opt-OM8BQuNTXWNvyrSYkhmnvtYrE49kA3.webp" },
+  { title: "Car Towing Service", desc: "Safe and secure professional towing to your home, a local garage, or any destination in the UK.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car-Towing-opt-H28BWF4w6lTsenxfRBBDAF8fo4DwCJ.webp" },
+  { title: "Flat Battery Jump Start", desc: "Professional battery testing and jump starting for all vehicle makes including hybrid and EVs.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT-Image-Apr-23-2026-12_05_38-AM-opt-lbXtx7bcjdmQ5gQFYCuZ28Rn9mqkhQ.webp" },
+  { title: "Accident Recovery Sheffield", desc: "Specialized handling for vehicles involved in road traffic accidents. Secure recovery and storage available.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car-Accident--opt-5nSn8weILLIlE7yLZemJZIsYPzCld3.webp" },
+  { title: "Tyre Damage Assistance", desc: "Roadside wheel changes and tyre damage support when you don't have a spare or the right tools.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre-Assistance-opt-OM8BQuNTXWNvyrSYkhmnvtYrE49kA3.webp" },
+  { title: "Lost Car Keys Help", desc: "Entry assistance and vehicle recovery if you've been locked out or lost your vehicle keys.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lost-Car-Keys-Help-opt-es7WUSGINXUJChucxN6eArWaDWNZAs.webp" }
 ]
 
 const whyChooseData = [

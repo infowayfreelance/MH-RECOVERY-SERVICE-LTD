@@ -13,13 +13,13 @@ export default function About() {
             <img
               className="w-full h-full object-cover opacity-40 mix-blend-luminosity"
               alt="Modern high-performance recovery vehicle with amber lights parked on a dark Sheffield street at night under industrial lighting"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCC28NCE1Rx407DjjLvjd-ANXVppKrWfaPzknfAUQvhS9NAWVyx5UqsGi1GTMUp6_MIWwFDB3ukSlRNXAZv309UkHlqYUeQv2QAWiB-H9ohALaSPEIRQvtrQbJvrGi5v5XpiUyBAb2-uraRxJB7_aXo4SFz0JAhXcDoXLXVflMQdAXeqFGwsfRhhxSzlkGbg6wOsRR-BbfcnfTlxOZowiLgRJQarvKmTMu75xb2LkG21k4wKuQnJ3u_AJgX4m1gS-uY9YrIXa9vXnE9"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car-Towing-opt-H28BWF4w6lTsenxfRBBDAF8fo4DwCJ.webp"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent"></div>
           </div>
           <div className="container mx-auto px-4 md:px-8 relative z-10 py-12 md:py-0">
             <div className="max-w-4xl">
-              <span className="inline-block px-3 py-1 bg-primary-container text-primary text-xs font-bold tracking-widest uppercase mb-4 border border-primary/30">
+              <span className="inline-block px-3 py-1 bg-primary-container text-white text-xs font-bold tracking-widest uppercase mb-4 border border-primary/30">
                 Established Excellence
               </span>
               <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold text-on-surface tracking-tighter uppercase leading-[0.9] mb-4 md:mb-6 text-balance">
@@ -64,7 +64,7 @@ export default function About() {
                   <img
                     className="w-full aspect-video object-cover"
                     alt="Professional mechanic team in tactical high-visibility gear working on a vehicle recovery operation in an urban setting"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHQvTnID0jaXCDeWEXqWuwzFKx9pEL3t6CcCHlCCeTKQcfkNrSxRihjg_KfxlcZGAPC7RmPWbz_yccWvbV7AonBLX1PxuVpqzNZnEEgVkTYCxXzEMiJd2lTiP_IWi7oEpm2okpFUT1wA-gOXZ7_TScsNADWmcCoatSNnNK59CWeZFGBuu65Iht38qf9vBtkx-bMYpgCL7qogiWW2J5U7ShjWp-4zkKQ6RirdltGnzG0niY0MXs_TQgPzlarqVQr_MkatznceRN_Xw_"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car-Recovery-opt-jK0Oh9JpStKSKOwrFlMiRJxvD4tR9S.webp"
                   />
                   <div className="absolute bottom-0 right-0 bg-primary p-5 md:p-8">
                     <p className="text-on-primary font-black text-2xl md:text-4xl uppercase tracking-tighter">
@@ -170,7 +170,7 @@ export default function About() {
                 <img
                   className="w-full h-full object-cover grayscale opacity-60"
                   alt="Stylized map showing the Sheffield urban area with a tactical overlay highlighting service coverage regions"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlSLuru43hPHtJMMEA90s_38HYuVksbYh6DrMGOOwq6BvrD8SUQ3xXEf7eIpNc-2MHGt93qpDDmh7gFX8Rtrzb8KMixk38L_t_sz28R1EOOPHmdqAZtIvhA73KhlkZQIesOaV-ruC7Pmi-MM35M2qHJKzYVp5Zgn-rlRQBFl9p3fXY2QzWvnRBvgrH9gHDMTuNGVQGP3gZcLF1fS50mbVJpUTByDS0skxq2VNvFLir_EmLwCdvUHKgCe7H8n_tFiAaTOhYB_7HRaZ5"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car-Breakdown-opt-y73ndhbUFt5iANdjovdSfsAThW78ws.webp"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="bg-primary/20 p-6 md:p-8 rounded-full animate-pulse">
