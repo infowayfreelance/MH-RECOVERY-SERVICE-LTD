@@ -10,7 +10,7 @@ export default function Home() {
         <section className="bg-surface pt-10 md:pt-24 pb-12 md:pb-16 px-4 md:px-6">
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="order-2 md:order-1">
-              <div className="inline-block bg-primary-container text-primary text-xs font-bold tracking-widest px-4 py-1 mb-4 md:mb-6 uppercase border border-primary/30">
+              <div className="inline-block bg-primary-container text-white text-xs font-bold tracking-widest px-4 py-1 mb-4 md:mb-6 uppercase border border-primary/30">
                 Sheffield&apos;s 24/7 Response
               </div>
               <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-[1.1] mb-5 md:mb-8 tracking-tighter text-on-surface text-balance">
