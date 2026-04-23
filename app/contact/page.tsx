@@ -25,9 +25,9 @@ export default function ContactPage() {
         <section className="relative min-h-[360px] md:min-h-[614px] flex items-center px-4 md:px-8 lg:px-24 bg-surface overflow-hidden">
           <div className="absolute inset-0 z-0 opacity-40">
             <img
-              alt="Emergency tow truck with flashing lights"
-              className="w-full h-full object-cover grayscale"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdriJYB0qX4RZYSspJtK87apFl-vS7xHJOnjpLTmYBFNYL0cNVJepHKXxyXv5tYK5TCbu3MHTTjS9M5thX3HQe-RyR_09-3E_LLcYZp8Dzr0Z7gEZSlAfT9uE_5ezoFPdsKoDtz2FUxU8z0Uylzrc6ncB5GCrupCPHKsxH9dTtYNPMVANffaBJa5FpUMK2AnPMvfMAS9oWA7cAyFbLztdH7FI-hZc9bgvME_gAqL0iYqdmRwTBylEHRWaQ0GHOi-TPAt7WOW1KQpCd"
+              alt="Front view of a blacked-out Mercedes-Benz Sprinter recovery van with custom LED lighting"
+              className="w-full h-full object-cover"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/our%20recovery%20van-yv5BCjbV8hr1cgt150c8J0X8v75rRn.jpeg"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/70 to-transparent"></div>
           </div>
