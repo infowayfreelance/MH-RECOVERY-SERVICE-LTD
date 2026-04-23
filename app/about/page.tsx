@@ -12,8 +12,8 @@ export default function About() {
           <div className="absolute inset-0 z-0">
             <img
               className="w-full h-full object-cover opacity-40 mix-blend-luminosity"
-              alt="Modern high-performance recovery vehicle with amber lights parked on a dark Sheffield street at night under industrial lighting"
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car-Towing-opt-H28BWF4w6lTsenxfRBBDAF8fo4DwCJ.webp"
+              alt="Front view of a blacked-out Mercedes-Benz Sprinter recovery van with custom LED lighting"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/our%20recovery%20van-yv5BCjbV8hr1cgt150c8J0X8v75rRn.jpeg"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent"></div>
           </div>

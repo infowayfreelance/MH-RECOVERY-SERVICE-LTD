@@ -11,9 +11,9 @@ export default function ServicesPage() {
         <section className="relative min-h-[420px] md:min-h-[716px] flex items-center pt-24 md:pt-20 pb-16 md:pb-32 px-4 md:px-6 overflow-hidden bg-surface">
           <div className="absolute inset-0 z-0 opacity-40">
             <img
-              alt="Recovery truck"
+              alt="Black Mercedes-Benz flatbed recovery truck ready for deployment"
               className="w-full h-full object-cover"
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car-Towing-opt-H28BWF4w6lTsenxfRBBDAF8fo4DwCJ.webp"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Hero%20Section%20image-TDUJ1HnPhVR1WhekWwkpOOOSw5v25V.jpeg"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent"></div>
           </div>
