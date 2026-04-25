@@ -170,15 +170,15 @@ export default function Home() {
 
 // Data arrays for services and why choose
 const servicesData = [
-  { title: "24/7 Car Recovery Sheffield", desc: "Complete emergency recovery solutions for any vehicle type, anywhere in Sheffield, 24 hours a day.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car-Recovery-opt-jK0Oh9JpStKSKOwrFlMiRJxvD4tR9S.webp" },
+  { title: "24/7 Car Recovery Sheffield", desc: "Complete emergency recovery solutions for any vehicle type, anywhere in Sheffield, 24 hours a day.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car%20recovery-MC5MPVtZNbRCigSkcyd0jkJ5pYaV6E.webp" },
   { title: "Emergency Jump Start Service", desc: "Quick response roadside assistance to get your flat battery boosted and you back on the road instantly.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car-Jump-Start-opt-JYsT9hrxSoSxpaw7paudJH4kEG6lMt.webp" },
-  { title: "Fast Breakdown Recovery", desc: "Mechanical failure recovery specialists. Rapid response times to minimize your roadside waiting.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car-Breakdown-opt-y73ndhbUFt5iANdjovdSfsAThW78ws.webp" },
-  { title: "Roadside Assistance", desc: "Minor roadside repairs and diagnostics performed on the spot by our experienced technicians.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre-Assistance-opt-OM8BQuNTXWNvyrSYkhmnvtYrE49kA3.webp" },
-  { title: "Car Towing Service", desc: "Safe and secure professional towing to your home, a local garage, or any destination in the UK.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car-Towing-opt-H28BWF4w6lTsenxfRBBDAF8fo4DwCJ.webp" },
+  { title: "Fast Breakdown Recovery", desc: "Mechanical failure recovery specialists. Rapid response times to minimize your roadside waiting.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Fast%20Breakdown%20Recovery-izgEuSmEWgvhBsjQa0npmpo09pwH0U.webp" },
+  { title: "Roadside Assistance", desc: "Minor roadside repairs and diagnostics performed on the spot by our experienced technicians.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Roadside%20Assistance-n2s08JwmDEbJ2vKRbUIOb36wdeVLIf.webp" },
+  { title: "Car Towing Service", desc: "Safe and secure professional towing to your home, a local garage, or any destination in the UK.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car%20Towing-cKXXUziiFGyNqDKKP9fj8j43gaN82V.webp" },
   { title: "Flat Battery Jump Start", desc: "Professional battery testing and jump starting for all vehicle makes including hybrid and EVs.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT-Image-Apr-23-2026-12_05_38-AM-opt-lbXtx7bcjdmQ5gQFYCuZ28Rn9mqkhQ.webp" },
-  { title: "Accident Recovery Sheffield", desc: "Specialized handling for vehicles involved in road traffic accidents. Secure recovery and storage available.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car-Accident--opt-5nSn8weILLIlE7yLZemJZIsYPzCld3.webp" },
-  { title: "Tyre Damage Assistance", desc: "Roadside wheel changes and tyre damage support when you don't have a spare or the right tools.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre-Assistance-opt-OM8BQuNTXWNvyrSYkhmnvtYrE49kA3.webp" },
-  { title: "Lost Car Keys Help", desc: "Entry assistance and vehicle recovery if you've been locked out or lost your vehicle keys.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lost-Car-Keys-Help-opt-es7WUSGINXUJChucxN6eArWaDWNZAs.webp" }
+  { title: "Accident Recovery Sheffield", desc: "Specialized handling for vehicles involved in road traffic accidents. Secure recovery and storage available.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car%20Towing-cKXXUziiFGyNqDKKP9fj8j43gaN82V.webp" },
+  { title: "Tyre Damage Assistance", desc: "Roadside wheel changes and tyre damage support when you don't have a spare or the right tools.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20Demage%20assistance-8r1QZ5Qls7ZajnSo6H2gquraMmlaCG.jpg" },
+  { title: "Lost Car Keys Help", desc: "Entry assistance and vehicle recovery if you've been locked out or lost your vehicle keys.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lost-replacement-car-keys-dc9c3589-0QM0nZZ8CCSDpf8xpoPobBFiM474eR.jpeg" }
 ]
 
 const whyChooseData = [

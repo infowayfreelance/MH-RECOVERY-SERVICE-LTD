@@ -72,9 +72,9 @@ export default function ServicesPage() {
               </div>
               <div className="lg:col-span-5 min-h-[220px] md:min-h-[400px]">
                 <img
-                  alt="Professional flatbed recovery truck"
+                  alt="White Sprinter flatbed recovery truck transporting a red Fiat 500L at a car auction site"
                   className="w-full h-full object-cover"
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car-Recovery-opt-jK0Oh9JpStKSKOwrFlMiRJxvD4tR9S.webp"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car%20recovery-MC5MPVtZNbRCigSkcyd0jkJ5pYaV6E.webp"
                 />
               </div>
             </div>
@@ -82,9 +82,9 @@ export default function ServicesPage() {
             {/* Roadside & Specialized Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-px bg-outline/10 rounded-xl overflow-hidden mt-px">
               {[
-                { icon: "build", title: "Roadside Assistance", desc: "On-site diagnostics, battery jumpstarts, and tyre changes to get you back on the move without a tow.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre-Assistance-opt-OM8BQuNTXWNvyrSYkhmnvtYrE49kA3.webp", alt: "Mechanic changing tyre roadside in the rain" },
-                { icon: "warning", title: "Accident Recovery", desc: "Specialized lifting and extraction for vehicles involved in collisions. Safe handling of damaged structural integrity.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car-Accident--opt-5nSn8weILLIlE7yLZemJZIsYPzCld3.webp", alt: "Two cars after a front-end collision on a wet road" },
-                { icon: "key", title: "Lost Keys & Lockouts", desc: "Non-destructive entry techniques for locked vehicles and transport to main dealers for key replacement.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lost-Car-Keys-Help-opt-es7WUSGINXUJChucxN6eArWaDWNZAs.webp", alt: "Recovery technician assisting driver with lost car keys" },
+                { icon: "build", title: "Roadside Assistance", desc: "On-site diagnostics, battery jumpstarts, and tyre changes to get you back on the move without a tow.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Roadside%20Assistance-n2s08JwmDEbJ2vKRbUIOb36wdeVLIf.webp", alt: "White Sprinter flatbed carrying a Cushman UTV on a sunny day" },
+                { icon: "warning", title: "Accident Recovery", desc: "Specialized lifting and extraction for vehicles involved in collisions. Safe handling of damaged structural integrity.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car%20Towing-cKXXUziiFGyNqDKKP9fj8j43gaN82V.webp", alt: "Orange Range Rover Sport strapped to a flatbed trailer on a residential street" },
+                { icon: "key", title: "Lost Keys & Lockouts", desc: "Non-destructive entry techniques for locked vehicles and transport to main dealers for key replacement.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Fast%20Breakdown%20Recovery-izgEuSmEWgvhBsjQa0npmpo09pwH0U.webp", alt: "White Sprinter flatbed carrying a blue Ford Kuga on a residential street" },
               ].map((s, i) => (
                 <div key={i} className="bg-surface-container-high p-6 md:p-10">
                   <div className="mb-5 md:mb-8">
