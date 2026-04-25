@@ -74,9 +74,9 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
               {servicesData.map((service, idx) => (
-                <div key={idx} className="bg-surface-container-high overflow-hidden rounded-xl flex flex-col group hover:bg-surface-container-highest transition-colors">
+                <div key={idx} className="bg-surface-container-high overflow-hidden rounded-xl flex flex-col group sm:hover:bg-surface-container-highest transition-colors">
                   <div className="h-40 sm:h-44 md:h-48 overflow-hidden">
-                    <img src={service.img} alt={service.title} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
+                    <img src={service.img} alt={service.title} className="w-full h-full object-cover transition-all duration-500" />
                   </div>
                   <div className="p-5 md:p-8">
                     <h3 className="text-base md:text-xl font-bold uppercase mb-2 md:mb-4 tracking-tight leading-snug">{service.title}</h3>
