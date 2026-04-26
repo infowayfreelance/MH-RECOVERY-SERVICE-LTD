@@ -49,6 +49,22 @@ export default function Home() {
                   <span className="material-symbols-outlined text-sm">payments</span> Affordable Prices
                 </span>
               </div>
+
+              {/* Service name pills */}
+              <div className="mt-6 md:mt-10 pt-6 md:pt-8 border-t border-outline">
+                <p className="text-on-surface-variant text-[0.6rem] font-bold tracking-[0.25em] uppercase mb-3 md:mb-4">Our Services</p>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                  {servicesData.map((service, idx) => (
+                    <span
+                      key={idx}
+                      className="flex items-center gap-2 bg-surface-container-high border border-outline text-on-surface text-[0.65rem] font-bold uppercase tracking-wide px-3 py-2 rounded leading-snug"
+                    >
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" aria-hidden="true" />
+                      {service.title}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
             <div className="order-1 md:order-2">
               <div className="relative aspect-[16/9] sm:aspect-square md:aspect-[4/5] bg-surface-container-low overflow-hidden rounded-xl">
@@ -78,9 +94,33 @@ export default function Home() {
                   <div className="h-40 sm:h-44 md:h-48 overflow-hidden">
                     <img src={service.img} alt={service.title} className="w-full h-full object-cover transition-all duration-500" />
                   </div>
-                  <div className="p-5 md:p-8">
+                  <div className="p-5 md:p-8 flex flex-col flex-1">
                     <h3 className="text-base md:text-xl font-bold uppercase mb-2 md:mb-4 tracking-tight leading-snug">{service.title}</h3>
-                    <p className="text-on-surface-variant text-sm font-sans leading-relaxed">{service.desc}</p>
+                    <p className="text-on-surface-variant text-sm font-sans leading-relaxed mb-5 md:mb-6 flex-1">{service.desc}</p>
+                    <div className="flex flex-col xs:flex-row sm:flex-col md:flex-row gap-2 sm:gap-3">
+                      <a
+                        href="tel:07799180009"
+                        className="flex items-center justify-center gap-2 flex-1 bg-primary text-on-primary py-3 sm:py-2.5 px-4 font-bold text-sm tracking-tight rounded active:scale-95 transition-transform hover:opacity-90 min-h-[48px] sm:min-h-0"
+                        aria-label={`Call us about ${service.title}`}
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 shrink-0" aria-hidden="true">
+                          <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2z" />
+                        </svg>
+                        Call Now
+                      </a>
+                      <a
+                        href={`https://wa.me/447799180009?text=Hello%20Hussnain%20Car%20Recovery%2C%20I%20need%20help%20with%20${encodeURIComponent(service.title)}%20please.`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center gap-2 flex-1 bg-[#25D366] text-white py-3 sm:py-2.5 px-4 font-bold text-sm tracking-tight rounded active:scale-95 transition-transform hover:bg-[#1ebe5d] min-h-[48px] sm:min-h-0"
+                        aria-label={`WhatsApp us about ${service.title}`}
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" className="w-4 h-4 shrink-0" aria-hidden="true">
+                          <path d="M16 2C8.28 2 2 8.28 2 16c0 2.48.68 4.8 1.86 6.78L2 30l7.42-1.82A13.93 13.93 0 0 0 16 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm0 25.5a11.44 11.44 0 0 1-5.84-1.6l-.42-.25-4.4 1.08 1.1-4.28-.28-.44A11.5 11.5 0 1 1 16 27.5zm6.3-8.62c-.34-.17-2.02-1-2.34-1.11-.32-.11-.55-.17-.78.17-.23.34-.9 1.11-1.1 1.34-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.75-1.69-1.02-.9-1.7-2.02-1.9-2.36-.2-.34-.02-.53.15-.7.15-.15.34-.4.51-.59.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.78-1.88-1.07-2.58-.28-.67-.57-.58-.78-.59-.2-.01-.43-.01-.66-.01-.23 0-.6.09-.91.43-.31.34-1.2 1.17-1.2 2.86s1.22 3.32 1.4 3.55c.17.23 2.4 3.67 5.82 5.15.81.35 1.45.56 1.94.72.82.26 1.56.22 2.15.13.66-.1 2.02-.82 2.3-1.62.29-.8.29-1.48.2-1.62-.08-.14-.31-.23-.65-.4z" />
+                        </svg>
+                        WhatsApp
+                      </a>
+                    </div>
                   </div>
                 </div>
               ))}
