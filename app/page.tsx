@@ -7,57 +7,74 @@ export default function Home() {
       <Navbar />
       <main>
         {/* Hero Section */}
-        <section className="bg-surface pt-10 md:pt-24 pb-12 md:pb-16 px-4 md:px-6">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+        <section className="bg-surface pt-8 md:pt-24 pb-10 md:pb-16 px-4 md:px-6">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center">
+
+            {/* Hero Image – shows first on mobile, right on desktop */}
+            <div className="order-1 md:order-2">
+              <div className="relative w-full aspect-[16/9] sm:aspect-[4/3] md:aspect-[4/5] bg-surface-container-low overflow-hidden rounded-xl">
+                <img
+                  alt="Black Mercedes-Benz flatbed recovery truck ready for deployment in Sheffield"
+                  className="w-full h-full object-cover"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Hero%20Section%20image-TDUJ1HnPhVR1WhekWwkpOOOSw5v25V.jpeg"
+                />
+              </div>
+            </div>
+
+            {/* Hero Content */}
             <div className="order-2 md:order-1">
-              <div className="inline-block bg-primary-container text-white text-xs font-bold tracking-widest px-4 py-1 mb-4 md:mb-6 uppercase border border-primary/30">
+              <div className="inline-block bg-primary-container text-white text-[0.6rem] font-bold tracking-widest px-3 py-1 mb-3 md:mb-6 uppercase border border-primary/30">
                 Sheffield&apos;s 24/7 Response
               </div>
-              <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-[1.1] mb-5 md:mb-8 tracking-tighter text-on-surface text-balance">
-                24/7 Car Recovery in <span className="text-primary">Sheffield</span> – Fast &amp; Reliable Service
+              <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] mb-4 md:mb-8 tracking-tighter text-on-surface text-balance">
+                24/7 Car Recovery in <span className="text-primary">Sheffield</span> – Fast &amp; Reliable
               </h1>
-              <p className="text-base md:text-xl text-on-surface-variant mb-6 md:mb-10 max-w-lg leading-relaxed font-sans">
+              <p className="text-sm md:text-xl text-on-surface-variant mb-5 md:mb-10 max-w-lg leading-relaxed font-sans">
                 Stuck on the road? Our professional recovery team is available 24/7 to get you back on track quickly and safely.
               </p>
-              <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-8 md:mb-12">
+
+              {/* CTA Buttons */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 mb-6 md:mb-12">
                 <a
                   href="tel:07799180009"
-                  className="bg-primary text-on-primary py-4 md:py-5 px-6 md:px-8 font-extrabold text-base md:text-lg text-center tracking-tight active:scale-95 transition-transform rounded"
+                  className="flex items-center justify-center bg-primary text-on-primary py-4 px-6 font-extrabold text-base md:text-lg text-center tracking-tight active:scale-95 transition-transform rounded min-h-[52px]"
                 >
-                  Call Now: 07799 180009
+                  Call: 07799 180009
                 </a>
                 <a
                   href="https://wa.me/447799180009?text=Hello%20Hussnain%20Car%20Recovery%2C%20I%20need%20a%20quotation%20please."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 bg-[#25D366] text-white py-4 md:py-5 px-6 md:px-8 font-extrabold text-base md:text-lg text-center hover:bg-[#1ebe5d] active:scale-95 transition-all rounded"
+                  className="flex items-center justify-center gap-2 bg-[#25D366] text-white py-4 px-6 font-extrabold text-base md:text-lg text-center hover:bg-[#1ebe5d] active:scale-95 transition-all rounded min-h-[52px]"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 shrink-0" aria-hidden="true">
                     <path d="M12.001 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2.046 21.8a.5.5 0 0 0 .637.606l4.83-1.376A9.953 9.953 0 0 0 12 22c5.523 0 10-4.477 10-10S17.524 2 12.001 2Zm0 1.5A8.5 8.5 0 1 1 12 20.5a8.454 8.454 0 0 1-4.163-1.094.75.75 0 0 0-.584-.068l-3.7 1.054 1.081-3.553a.75.75 0 0 0-.074-.6A8.458 8.458 0 0 1 3.5 12 8.5 8.5 0 0 1 12.001 3.5Zm-3.15 4.5c-.19 0-.495.071-.754.354-.26.283-1 .977-1 2.384 0 1.407 1.025 2.766 1.167 2.957.142.19 1.994 3.18 4.913 4.33 2.42.958 2.919.768 3.444.72.526-.048 1.698-.694 1.938-1.365.24-.67.24-1.244.168-1.364-.072-.12-.263-.191-.55-.334-.286-.143-1.697-.838-1.96-.934-.263-.096-.454-.143-.645.143-.19.286-.74.934-.905 1.124-.166.19-.33.214-.617.072-.286-.143-1.21-.446-2.304-1.422-.852-.759-1.427-1.697-1.594-1.983-.166-.286-.018-.44.125-.582.128-.127.287-.334.43-.5.142-.168.19-.287.285-.478.096-.19.048-.358-.024-.5-.071-.143-.635-1.558-.88-2.124-.225-.527-.46-.463-.636-.472a11.74 11.74 0 0 0-.55-.012Z"/>
                   </svg>
                   WhatsApp Us
                 </a>
               </div>
-              <div className="flex flex-wrap gap-x-4 gap-y-2">
-                <span className="flex items-center gap-2 uppercase font-bold text-primary text-[0.65rem] tracking-widest">
+
+              {/* Trust Badges */}
+              <div className="flex flex-wrap gap-x-4 gap-y-2 mb-6 md:mb-0">
+                <span className="flex items-center gap-1.5 uppercase font-bold text-primary text-[0.6rem] tracking-widest">
                   <span className="material-symbols-outlined text-sm">check_circle</span> Fast Response
                 </span>
-                <span className="flex items-center gap-2 uppercase font-bold text-primary text-[0.65rem] tracking-widest">
+                <span className="flex items-center gap-1.5 uppercase font-bold text-primary text-[0.6rem] tracking-widest">
                   <span className="material-symbols-outlined text-sm">location_on</span> Local Sheffield Team
                 </span>
-                <span className="flex items-center gap-2 uppercase font-bold text-primary text-[0.65rem] tracking-widest">
+                <span className="flex items-center gap-1.5 uppercase font-bold text-primary text-[0.6rem] tracking-widest">
                   <span className="material-symbols-outlined text-sm">payments</span> Affordable Prices
                 </span>
               </div>
 
               {/* Service name pills */}
-              <div className="mt-6 md:mt-10 pt-6 md:pt-8 border-t border-outline">
-                <p className="text-on-surface-variant text-[0.6rem] font-bold tracking-[0.25em] uppercase mb-3 md:mb-4">Our Services</p>
+              <div className="mt-5 md:mt-8 pt-5 md:pt-8 border-t border-outline">
+                <p className="text-on-surface-variant text-[0.6rem] font-bold tracking-[0.25em] uppercase mb-3">Our Services</p>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                   {servicesData.map((service, idx) => (
                     <span
                       key={idx}
-                      className="flex items-center gap-2 bg-surface-container-high border border-outline text-on-surface text-[0.65rem] font-bold uppercase tracking-wide px-3 py-2 rounded leading-snug"
+                      className="flex items-center gap-2 bg-surface-container-high border border-outline text-on-surface text-[0.6rem] font-bold uppercase tracking-wide px-2.5 py-2 rounded leading-snug"
                     >
                       <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" aria-hidden="true" />
                       {service.title}
@@ -66,15 +83,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="order-1 md:order-2">
-              <div className="relative aspect-[16/9] sm:aspect-square md:aspect-[4/5] bg-surface-container-low overflow-hidden rounded-xl">
-                <img
-                  alt="Black Mercedes-Benz flatbed recovery truck ready for deployment in Sheffield"
-                  className="w-full h-full object-cover"
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Hero%20Section%20image-TDUJ1HnPhVR1WhekWwkpOOOSw5v25V.jpeg"
-                />
-              </div>
-            </div>
+
           </div>
         </section>
 
