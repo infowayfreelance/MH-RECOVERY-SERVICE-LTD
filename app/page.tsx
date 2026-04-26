@@ -51,14 +51,15 @@ export default function Home() {
               </div>
 
               {/* Service name pills */}
-              <div className="mt-6 md:mt-8">
-                <p className="text-on-surface-variant text-[0.6rem] font-bold tracking-[0.25em] uppercase mb-3">Our Services</p>
-                <div className="flex flex-wrap gap-2">
+              <div className="mt-6 md:mt-10 pt-6 md:pt-8 border-t border-outline">
+                <p className="text-on-surface-variant text-[0.6rem] font-bold tracking-[0.25em] uppercase mb-3 md:mb-4">Our Services</p>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                   {servicesData.map((service, idx) => (
                     <span
                       key={idx}
-                      className="bg-surface-container-high border border-outline text-on-surface text-[0.65rem] font-bold uppercase tracking-wide px-3 py-1.5 rounded"
+                      className="flex items-center gap-2 bg-surface-container-high border border-outline text-on-surface text-[0.65rem] font-bold uppercase tracking-wide px-3 py-2 rounded leading-snug"
                     >
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" aria-hidden="true" />
                       {service.title}
                     </span>
                   ))}
