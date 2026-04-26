@@ -97,10 +97,10 @@ export default function Home() {
                   <div className="p-5 md:p-8 flex flex-col flex-1">
                     <h3 className="text-base md:text-xl font-bold uppercase mb-2 md:mb-4 tracking-tight leading-snug">{service.title}</h3>
                     <p className="text-on-surface-variant text-sm font-sans leading-relaxed mb-5 md:mb-6 flex-1">{service.desc}</p>
-                    <div className="flex gap-3">
+                    <div className="flex flex-col xs:flex-row sm:flex-col md:flex-row gap-2 sm:gap-3">
                       <a
                         href="tel:07799180009"
-                        className="flex items-center justify-center gap-2 flex-1 bg-primary text-on-primary py-2.5 px-4 font-bold text-sm tracking-tight rounded active:scale-95 transition-transform hover:opacity-90"
+                        className="flex items-center justify-center gap-2 flex-1 bg-primary text-on-primary py-3 sm:py-2.5 px-4 font-bold text-sm tracking-tight rounded active:scale-95 transition-transform hover:opacity-90 min-h-[48px] sm:min-h-0"
                         aria-label={`Call us about ${service.title}`}
                       >
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 shrink-0" aria-hidden="true">
@@ -112,7 +112,7 @@ export default function Home() {
                         href={`https://wa.me/447799180009?text=Hello%20Hussnain%20Car%20Recovery%2C%20I%20need%20help%20with%20${encodeURIComponent(service.title)}%20please.`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-2 flex-1 bg-[#25D366] text-white py-2.5 px-4 font-bold text-sm tracking-tight rounded active:scale-95 transition-transform hover:bg-[#1ebe5d]"
+                        className="flex items-center justify-center gap-2 flex-1 bg-[#25D366] text-white py-3 sm:py-2.5 px-4 font-bold text-sm tracking-tight rounded active:scale-95 transition-transform hover:bg-[#1ebe5d] min-h-[48px] sm:min-h-0"
                         aria-label={`WhatsApp us about ${service.title}`}
                       >
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" className="w-4 h-4 shrink-0" aria-hidden="true">
