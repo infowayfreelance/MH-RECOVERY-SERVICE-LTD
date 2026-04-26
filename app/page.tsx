@@ -49,6 +49,21 @@ export default function Home() {
                   <span className="material-symbols-outlined text-sm">payments</span> Affordable Prices
                 </span>
               </div>
+
+              {/* Service name pills */}
+              <div className="mt-6 md:mt-8">
+                <p className="text-on-surface-variant text-[0.6rem] font-bold tracking-[0.25em] uppercase mb-3">Our Services</p>
+                <div className="flex flex-wrap gap-2">
+                  {servicesData.map((service, idx) => (
+                    <span
+                      key={idx}
+                      className="bg-surface-container-high border border-outline text-on-surface text-[0.65rem] font-bold uppercase tracking-wide px-3 py-1.5 rounded"
+                    >
+                      {service.title}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
             <div className="order-1 md:order-2">
               <div className="relative aspect-[16/9] sm:aspect-square md:aspect-[4/5] bg-surface-container-low overflow-hidden rounded-xl">
