@@ -10,19 +10,19 @@ const ubuntu = Ubuntu({
 })
 
 export const metadata: Metadata = {
-  title: 'HUSSNAIN CAR RECOVERY | 24/7 Professional Recovery Sheffield',
+  title: 'MH RECOVERY SERVICE LTD| 24/7 Professional Recovery Sheffield',
   description: 'Stuck on the road? Our professional recovery team is available 24/7 to get you back on track quickly and safely.',
   openGraph: {
-    title: 'HUSSNAIN CAR RECOVERY | 24/7 Professional Recovery Sheffield',
+    title: 'MH RECOVERY SERVICE LTD| 24/7 Professional Recovery Sheffield',
     description: 'Stuck on the road? Our professional recovery team is available 24/7 to get you back on track quickly and safely.',
-    url: 'https://hussnaincarrecovery.co.uk',
-    siteName: 'Hussnain Car Recovery',
+    url: 'https://mhrrecoveryservice.co.uk',
+    siteName: 'MH RECOVERY SERVICE LTD',
     images: [
       {
         url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Hussnain%20Car%20Recovery%20%20%281%29-XaXQs3zDtYmDJjNuKL1uydY4WTMgrG.png',
         width: 1200,
         height: 630,
-        alt: 'Hussnain Car Recovery - Fast. Reliable. 24/7 Service.',
+        alt: 'MH RECOVERY SERVICE LTD - Fast. Reliable. 24/7 Service.',
       },
     ],
     locale: 'en_GB',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'HUSSNAIN CAR RECOVERY | 24/7 Professional Recovery Sheffield',
+    title: 'MH RECOVERY SERVICE | 24/7 Professional Recovery Sheffield',
     description: 'Stuck on the road? Our professional recovery team is available 24/7 to get you back on track quickly and safely.',
     images: ['https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Hussnain%20Car%20Recovery%20%20%281%29-XaXQs3zDtYmDJjNuKL1uydY4WTMgrG.png'],
   },
