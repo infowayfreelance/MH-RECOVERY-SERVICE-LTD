@@ -121,7 +121,7 @@ export default function Footer() {
       <div className="border-t border-outline">
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-5 flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-on-surface-variant text-xs">
-            &copy; {new Date().getFullYear()} Hussnin Car Recovery. All rights reserved.
+            &copy; {new Date().getFullYear()} MH Recovery Service LTD. All rights reserved.
           </p>
           <p className="text-on-surface-variant text-xs">
             Designed By{' '}
