@@ -23,8 +23,8 @@ export default function About() {
                 Established Excellence
               </span>
               <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold text-on-surface tracking-tighter uppercase leading-[0.9] mb-4 md:mb-6 text-balance">
-                About Hussnain <br />
-                <span className="text-primary">Car Recovery</span>
+                About MH <br />
+                <span className="text-primary">Recovery Service LTD</span>
               </h1>
               <p className="text-base md:text-xl text-on-surface-variant max-w-2xl font-light leading-relaxed mb-6 md:mb-10">
                 Your trusted 24/7 car recovery and roadside assistance team in Sheffield. Precision service for high-pressure situations.
@@ -52,7 +52,7 @@ export default function About() {
                 </h2>
                 <div className="space-y-4 md:space-y-6 text-base md:text-lg text-on-surface-variant leading-relaxed">
                   <p>
-                    Hussnain Car Recovery is Sheffield&apos;s premier tactical response unit for vehicle recovery. We operate with a fleet of modern, specialized recovery vehicles designed to handle everything from standard passenger cars to high-performance vehicles and small vans.
+                    MH Recovery Service LTD is Sheffield&apos;s premier tactical response unit for vehicle recovery. We operate with a fleet of modern, specialized recovery vehicles designed to handle everything from standard passenger cars to high-performance vehicles and small vans.
                   </p>
                   <p>
                     Born from the need for a more professional, reliable, and no-nonsense approach to roadside assistance in South Yorkshire, we have built our reputation on speed, transparency, and technical expertise. We don&apos;t just tow cars; we resolve emergencies.

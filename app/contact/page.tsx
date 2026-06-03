@@ -7,7 +7,7 @@ import Footer from '@/components/Footer'
 const WHATSAPP_NUMBER = '447799180009'
 
 function sendToWhatsApp(name: string, phone: string, location: string, details: string) {
-  const message = `Hello Hussnain Car Recovery,%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Location:* ${encodeURIComponent(location)}%0A*Situation:* ${encodeURIComponent(details)}%0A%0APlease send me a quotation. Thank you.`
+  const message = `Hello MH Recovery Service LTD,%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Location:* ${encodeURIComponent(location)}%0A*Situation:* ${encodeURIComponent(details)}%0A%0APlease send me a quotation. Thank you.`
   window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank')
 }
 
@@ -33,7 +33,7 @@ export default function ContactPage() {
           </div>
           <div className="relative z-10 max-w-4xl py-12 md:py-0">
             <span className="inline-block bg-primary text-on-primary px-3 py-1 text-xs font-bold tracking-widest uppercase mb-4 md:mb-6">
-              Contact Hussnain Car Recovery
+              Contact MH Recovery Service LTD
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-8xl font-black tracking-tighter leading-none mb-4 md:mb-8 uppercase text-on-surface text-balance">
               PRECISION <br />
