@@ -17,14 +17,6 @@ export const metadata: Metadata = {
     description: 'Stuck on the road? Our professional recovery team is available 24/7 to get you back on track quickly and safely.',
     url: 'https://mhrrecoveryservice.co.uk',
     siteName: 'MH RECOVERY SERVICE LTD',
-    images: [
-      {
-        url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Hussnain%20Car%20Recovery%20%20%281%29-XaXQs3zDtYmDJjNuKL1uydY4WTMgrG.png',
-        width: 1200,
-        height: 630,
-        alt: 'MH RECOVERY SERVICE LTD - Fast. Reliable. 24/7 Service.',
-      },
-    ],
     locale: 'en_GB',
     type: 'website',
   },
