@@ -5,8 +5,8 @@ export default function Logo() {
   return (
     <Link href="/" className="flex items-center">
       <Image
-        src="/Recovery solution logo.webp"
-        alt="MH Recovery Service LTD Logo"
+        src="/MH Recovery Logo-airanko.webp"
+        alt="MH Recovery Service LTd Logo"
         width={160}
         height={80}
         className="h-16 w-auto object-contain"
