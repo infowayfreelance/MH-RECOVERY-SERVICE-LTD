@@ -197,16 +197,15 @@ export default function Home() {
                 </div>
               </div>
               <div className="h-64 sm:h-80 md:h-[450px] bg-surface-container-highest relative rounded-xl overflow-hidden shadow-2xl">
-                <img
-                  alt="Abstract dark stylized map of Sheffield street grid with a silver neon glow highlight indicating central location"
-                  className="w-full h-full object-cover grayscale opacity-60"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCktzjBLRzH0x8CfA7yQtpHEikF61yOGpmTcDaoH9NsS4UsGz2fncvPqkk-hSTzPdsrT2fSUWg4CVNYnetJV28ntnbhNeA-Cm_7TZs7PpFD-2h2ixI0RQUFc34fg0AJl9IvIuxVX1XsRQtm_RmpXcKqR7KTZL0U_10MmeSncgBRDEBXzwl6ZuUIddbKuZx7eHSEul1RPHIRLV9Hpwo3pLnf-FzNRz1IWnOsjg1nJPb2o-KG89uEmbDm1CQdEV0eh4phO0UH8EYov13x"
-                />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-12 h-12 bg-secondary animate-pulse rounded-full flex items-center justify-center shadow-[0_0_40px_rgba(177,199,242,0.5)]">
-                    <span className="material-symbols-outlined text-on-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>location_on</span>
-                  </div>
-                </div>
+                <video
+                  className="w-full h-full object-cover"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                >
+                  <source src="/images/WhatsApp Video 2026-06-03 at 2.49.17 PM.mp4" type="video/mp4" />
+                </video>
               </div>
             </div>
           </div>
