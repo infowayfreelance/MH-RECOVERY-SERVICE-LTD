@@ -40,8 +40,8 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         />
-        <link rel="icon" type="image/png" href="/favicon.png" />
-        <link rel="apple-touch-icon" href="/favicon.png" />    
+        <link rel="icon" type="image/webp" href="/Recovery solution siteicon.webp" />
+        <link rel="apple-touch-icon" href="/Recovery solution siteicon.webp" />
           </head>
       <body className="bg-surface text-on-surface">
         {children}
