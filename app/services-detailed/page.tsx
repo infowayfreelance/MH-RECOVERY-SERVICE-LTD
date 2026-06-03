@@ -165,7 +165,7 @@ export default function ServicesDetailedPage() {
                 <img
                   className="w-full h-48 object-cover rounded-lg grayscale group-hover:grayscale-0 transition-all duration-500 mb-6"
                   alt="Accident recovery scene"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ_j5AXRa_iNTL_Q4gXGTnqt288o9vIPiXk03DPt7BcurxHyLpT-Y5G5KHBqhFBNIrXWoGC-2f4_LaW0b4VJYHJ2PjB1ErPmw3cTKJKgo-0iqdcbxEtyrxFizk2Rhkm2ABI6MJeVSJ4SDwfjrqkwBvu-TdRelQPygCNcMLvaXwXc4JWCEo6Zfq46D9cZN_UJr3DWzKhyQylS4it4sLfC3_9Dv03L32UYclmJtXHsCOifWH67F1Dfsa9lNguthsMST0HGCrtrTVAGCE"
+                  src="/images/Car-Accident--opt.webp"
                 />
               </div>
             </div>
