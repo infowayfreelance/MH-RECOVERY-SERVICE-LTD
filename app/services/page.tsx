@@ -83,7 +83,7 @@ export default function ServicesPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-px bg-outline/10 rounded-xl overflow-hidden mt-px">
               {[
                 { icon: "build", title: "Roadside Assistance", desc: "On-site diagnostics, battery jumpstarts, and tyre changes to get you back on the move without a tow.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Roadside%20Assistance-n2s08JwmDEbJ2vKRbUIOb36wdeVLIf.webp", alt: "White Sprinter flatbed carrying a Cushman UTV on a sunny day" },
-                { icon: "warning", title: "Accident Recovery", desc: "Specialized lifting and extraction for vehicles involved in collisions. Safe handling of damaged structural integrity.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car%20Towing-cKXXUziiFGyNqDKKP9fj8j43gaN82V.webp", alt: "Orange Range Rover Sport strapped to a flatbed trailer on a residential street" },
+                { icon: "warning", title: "Accident Recovery", desc: "Specialized lifting and extraction for vehicles involved in collisions. Safe handling of damaged structural integrity.", img: "/images/Car-Accident--opt.webp", alt: "Car accident recovery scene" },
                 { icon: "key", title: "Lost Keys & Lockouts", desc: "Non-destructive entry techniques for locked vehicles and transport to main dealers for key replacement.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Fast%20Breakdown%20Recovery-izgEuSmEWgvhBsjQa0npmpo09pwH0U.webp", alt: "White Sprinter flatbed carrying a blue Ford Kuga on a residential street" },
               ].map((s, i) => (
                 <div key={i} className="bg-surface-container-high p-6 md:p-10">
