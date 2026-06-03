@@ -16,7 +16,7 @@ export default function Home() {
                 <img
                   alt="Black Mercedes-Benz flatbed recovery truck ready for deployment in Sheffield"
                   className="w-full h-full object-cover"
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Hero%20Section%20image-TDUJ1HnPhVR1WhekWwkpOOOSw5v25V.jpeg"
+                  src="/images/MH Recovery image-airanko.webp"
                 />
               </div>
             </div>
