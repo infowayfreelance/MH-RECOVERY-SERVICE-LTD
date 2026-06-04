@@ -274,6 +274,45 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* Our Work Gallery */}
+        <section className="bg-surface-container-low py-16 md:py-24 px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-10 md:mb-14">
+              <span className="inline-block px-3 py-1 bg-primary-container text-white text-xs font-bold tracking-widest uppercase mb-4 border border-primary/30">
+                Gallery
+              </span>
+              <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-on-surface">
+                Our <span className="text-primary">Work</span>
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 justify-items-center">
+              {[
+                "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid021QPHQNk1NZ14ktgr7cknHRTBcZEfWgCapfTLNE8vRjbxGt81vmm8RadgLNeiPTcQl%26id%3D100076202805594&show_text=false&width=500",
+                "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02x3E2rz8awha4bf9PJJGaem95Nm83yTYA4eiHDZAKZ3YYcJQhsxHNXwdRPQSg8QAAl%26id%3D100076202805594&show_text=false&width=500",
+                "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid033KERUru6EXDwfCArJL1DnwWb8G1j92MfQhQiUBeR6pPmKV4FeBkSgwgjRzd4nSRql%26id%3D100076202805594&show_text=false&width=500",
+                "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02wscdB9iRFHrpvbu2dtSLCoHbTZqxNwLEG6PDhiDXH3A76jaqM3mTgi8f1DcvrpG1l%26id%3D100076202805594&show_text=false&width=500",
+                "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0FJuHT4igyL7Tf39Hd2UcGGRCYWASLLHAFhWMb2Dk21oZVNoikVkHpd18t7YQYY2yl%26id%3D100076202805594&show_text=false&width=500",
+                "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02xhSyQgec2qA3W9PYFAb8NgR5dGt1AH9wZZsc1JmvfB5pPjq2keyt8PnPdcdamSv6l%26id%3D100076202805594&show_text=false&width=500",
+                "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02ct1fPc4ewdWzpNpK1oXgfSLYhJY5oZwDffoA7pxNPawm5HfAwbQ8azxbLATBSoJ8l%26id%3D100076202805594&show_text=false&width=500",
+                "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02VTizaL3j1F5EtYJyZFkbAxA7PKdhD4DbnHKumVCBVhPnReoM4LbvZYksDT3YQjZml%26id%3D100076202805594&show_text=false&width=500",
+                "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02eFjeGnfEVZ2Hsn4ps58KMX3mLV9YZU6yVkMUju3o8dJBU9MsMfd54XKnNuqCZmLKl%26id%3D100076202805594&show_text=false&width=500",
+              ].map((src, i) => (
+                <div key={i} className="w-full flex justify-center overflow-hidden">
+                  <iframe
+                    src={src}
+                    width="500"
+                    height="375"
+                    style={{ border: 'none', overflow: 'hidden', maxWidth: '100%' }}
+                    scrolling="no"
+                    frameBorder="0"
+                    allowFullScreen
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </>
