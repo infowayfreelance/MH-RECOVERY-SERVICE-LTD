@@ -19,6 +19,14 @@ export const metadata: Metadata = {
     siteName: 'MH RECOVERY SERVICE LTD',
     locale: 'en_GB',
     type: 'website',
+    images: [
+      {
+        url: '/Open Graph MH-airanko.webp',
+        width: 1200,
+        height: 630,
+        alt: 'MH Recovery Service LTD - Fast. Reliable. 24/7 Service.',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
@@ -40,8 +48,8 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         />
-        <link rel="icon" type="image/png" href="/favicon.png" />
-        <link rel="apple-touch-icon" href="/favicon.png" />
+        <link rel="icon" type="image/webp" href="/Site-Icon MH.webp" />
+        <link rel="apple-touch-icon" href="/Site-Icon MH.webp" />
           </head>
       <body className="bg-surface text-on-surface">
         {children}
