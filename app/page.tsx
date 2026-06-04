@@ -176,6 +176,70 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Facebook Videos Section */}
+        <section className="bg-surface py-16 md:py-24 px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-10 md:mb-14">
+              <span className="inline-block px-3 py-1 bg-primary-container text-white text-xs font-bold tracking-widest uppercase mb-4 border border-primary/30">
+                In Action
+              </span>
+              <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-on-surface">
+                Watch Us <span className="text-primary">Work</span>
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center">
+              <div className="w-full flex justify-center">
+                <iframe
+                  src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1875550606411951%2F&show_text=false&width=267&t=0"
+                  width="267"
+                  height="476"
+                  style={{ border: 'none', overflow: 'hidden', maxWidth: '100%' }}
+                  scrolling="no"
+                  frameBorder="0"
+                  allowFullScreen
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                />
+              </div>
+              <div className="w-full flex justify-center">
+                <iframe
+                  src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F873741458961750%2F&show_text=false&width=267&t=0"
+                  width="267"
+                  height="476"
+                  style={{ border: 'none', overflow: 'hidden', maxWidth: '100%' }}
+                  scrolling="no"
+                  frameBorder="0"
+                  allowFullScreen
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                />
+              </div>
+              <div className="w-full flex justify-center">
+                <iframe
+                  src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F100076202805594%2Fvideos%2F1432920831085277%2F&show_text=false&width=267&t=0"
+                  width="267"
+                  height="476"
+                  style={{ border: 'none', overflow: 'hidden', maxWidth: '100%' }}
+                  scrolling="no"
+                  frameBorder="0"
+                  allowFullScreen
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                />
+              </div>
+              <div className="w-full flex justify-center">
+                <iframe
+                  src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F100076202805594%2Fvideos%2F934890138764598%2F&show_text=false&width=267&t=0"
+                  width="267"
+                  height="476"
+                  style={{ border: 'none', overflow: 'hidden', maxWidth: '100%' }}
+                  scrolling="no"
+                  frameBorder="0"
+                  allowFullScreen
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Location Section */}
         <section className="bg-surface-container-low py-16 md:py-24 px-4 md:px-6 overflow-hidden">
           <div className="max-w-7xl mx-auto">
