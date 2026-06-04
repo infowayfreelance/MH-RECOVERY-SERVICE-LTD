@@ -70,7 +70,7 @@ export default function ServicesDetailedPage() {
                 <img
                   className="w-full h-48 object-cover rounded-lg grayscale group-hover:grayscale-0 transition-all duration-500 mb-6"
                   alt="Professional flatbed recovery truck"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCNJcoMga_4XW4WWp9QeCu3lveHPNs19m6IgFp7EMM4jXkcKuDkKiI0Cy2jwjCQV45bQ_TCTFkVf82WfRsaWoGlHnN-NgB62FfZ2K1A13Q8345-ebe4ilCmFFn86oy6DXCxVW--UcbTfXczM7D6x2JJiwgfE-sj8VqwkHOBoOrIFmjexemmkRk9DRtdiR4EmpTi_fYdgRm-6B8-648DHpnFW2AVRO8g1zMcH6aLp5XrGsJHPEWMK7gKLZvG5uje5wZTBiIyxkxF0_7"
+                  src="/24 7 Car Recovery Sheffield MH.jpg"
                 />
               </div>
 
@@ -108,7 +108,7 @@ export default function ServicesDetailedPage() {
                 <img
                   className="w-full h-48 object-cover rounded-lg grayscale group-hover:grayscale-0 transition-all duration-500 mb-6"
                   alt="Vehicle breakdown on motorway"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeDa7sU_W0BURro4uug3J_9rS5l4-YOI_f3sCDo16vkWTc6EzKujMoE5mJYlV-WLi2ZPVDSAD_XJHbl406GwY1jXycAhxixUTjMLMMhJI0bQ_tSo8pBItEXQzd7XQ_-o6XtwaoQAI6nEQYXE7POaGaz6gd-o12JUyTaUmxvGEqesYrxm1id62-GVrrtj7ckyt1cGAMHm2P_qmr6e1AHv1McP5XBBA14QP1SnPXGSGgb2W1Z2DqglPn1Bt1Lb4FcpDA2LMArvLIbF98"
+                  src="/Fast Breakdown Recovery MH.jpg"
                 />
               </div>
 
@@ -127,7 +127,7 @@ export default function ServicesDetailedPage() {
                 <img
                   className="w-full h-48 object-cover rounded-lg grayscale group-hover:grayscale-0 transition-all duration-500 mb-6"
                   alt="Mechanic working on car engine"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuChBvuYsdZGNmwL7wJ8ETyYKpLY1VsUZyI-sj8nhqd9v-k8_JgPFLO5fFqMHuwDHKgRcL8aVo8BQNmLmHuguOhMVs1KlvwE7cNHYYXN-x0YEjY3ZPjRWngAhxq73fKrWZQPN8pLN92GnuYNicdxUPS7DRjum5WwgbhW_p8iB7uPkThmMxyfseeZxfsoLuZqneDUjo16nS6DlvezDi4BcoomF2mbpBVY59oESQyjggGc3cxNUN2_YKKvewf_HLg1xOpjd9sdmQxgvyvr"
+                  src="/Roadside Assistance MH.jpg"
                 />
               </div>
 
@@ -146,7 +146,7 @@ export default function ServicesDetailedPage() {
                 <img
                   className="w-full h-48 object-cover rounded-lg grayscale group-hover:grayscale-0 transition-all duration-500 mb-6"
                   alt="Towing truck lifting luxury vehicle"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTXYr-40M76gYECcJs2qzncsWlGg65dVOUDhjEgqUpuCirBeCNRQC-NzjfbtVnpCxUnQ5AfSKsuTg44FKe_Mt0dyLwQhTN8uXFbfQbIJTHjqKhDK1bJsd1g91qggHwCq8q3Tngk2pBScoRmMqVHHeqG7wNvNom8SQQhBVeq52lBgtE0HqXxdx3Ctws8zdI2CQJiobIEnAxxMM_kWY6ojK1EtsUqclezXDxi_7cccnMoyM1stbYA62KvOLy5kszjIq4gFfZ03o_AFU7"
+                  src="/Car Towing Service MH.jpg"
                 />
               </div>
 
@@ -165,7 +165,7 @@ export default function ServicesDetailedPage() {
                 <img
                   className="w-full h-48 object-cover rounded-lg grayscale group-hover:grayscale-0 transition-all duration-500 mb-6"
                   alt="Accident recovery scene"
-                  src="/images/Car-Accident--opt.webp"
+                  src="/Accident Recovery Sheffield MH.jpg"
                 />
               </div>
             </div>
