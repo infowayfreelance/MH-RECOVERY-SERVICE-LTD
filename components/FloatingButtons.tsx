@@ -4,12 +4,44 @@ import { useState } from 'react'
 
 const PHONE_NUMBER = '07799180009'
 const WHATSAPP_NUMBER = '447799180009'
+const EMAIL_ADDRESS = 'autorecovery46@gmail.com'
 
 export default function FloatingButtons() {
-  const [hovered, setHovered] = useState<'call' | 'whatsapp' | null>(null)
+  const [hovered, setHovered] = useState<'call' | 'whatsapp' | 'email' | null>(null)
 
   return (
     <div className="fixed bottom-6 right-5 z-50 flex flex-col items-end gap-3">
+      {/* Email Button */}
+      <div className="flex items-center gap-3">
+        {/* Label */}
+        <span
+          className={`bg-primary text-on-primary text-xs font-bold tracking-wide uppercase px-3 py-1.5 shadow-lg transition-all duration-300 whitespace-nowrap ${
+            hovered === 'email' ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4 pointer-events-none'
+          }`}
+        >
+          Email Us
+        </span>
+
+        <a
+          href={`mailto:${EMAIL_ADDRESS}`}
+          aria-label="Email us"
+          onMouseEnter={() => setHovered('email')}
+          onMouseLeave={() => setHovered(null)}
+          className="flex items-center justify-center w-14 h-14 rounded-full bg-primary shadow-xl active:scale-95 transition-all duration-200 hover:scale-110"
+        >
+          {/* Email SVG Icon */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            className="w-6 h-6"
+            fill="white"
+            aria-hidden="true"
+          >
+            <path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6zm2 0v.01L12 12l8-5.99V6H4zm16 2.24-7.4 5.55a1 1 0 0 1-1.2 0L4 8.24V18h16V8.24z" />
+          </svg>
+        </a>
+      </div>
+
       {/* WhatsApp Button */}
       <div className="flex items-center gap-3">
         {/* Label */}

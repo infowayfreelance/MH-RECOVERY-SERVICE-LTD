@@ -10,6 +10,8 @@ export default function Navbar() {
 
   const isActive = (path: string) => pathname === path
 
+  const whatsappHref = 'https://wa.me/447799180009?text=Hello%2C%20I%20need%20car%20recovery%20assistance.'
+
   const navLinks = [
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
@@ -68,6 +70,24 @@ export default function Navbar() {
               </div>
             </a>
             <a
+              href={whatsappHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat with us on WhatsApp"
+              className="flex items-center justify-center w-10 h-10 rounded-full hover:scale-110 active:scale-95 transition-all duration-200"
+              style={{ backgroundColor: '#25d366' }}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                className="w-5 h-5"
+                fill="white"
+                aria-hidden="true"
+              >
+                <path d="M16 2C8.28 2 2 8.28 2 16c0 2.48.68 4.8 1.86 6.78L2 30l7.42-1.82A13.93 13.93 0 0 0 16 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm0 25.5a11.44 11.44 0 0 1-5.84-1.6l-.42-.25-4.4 1.08 1.1-4.28-.28-.44A11.5 11.5 0 1 1 16 27.5zm6.3-8.62c-.34-.17-2.02-1-2.34-1.11-.32-.11-.55-.17-.78.17-.23.34-.9 1.11-1.1 1.34-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.75-1.69-1.02-.9-1.7-2.02-1.9-2.36-.2-.34-.02-.53.15-.7.15-.15.34-.4.51-.59.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.78-1.88-1.07-2.58-.28-.67-.57-.58-.78-.59-.2-.01-.43-.01-.66-.01-.23 0-.6.09-.91.43-.31.34-1.2 1.17-1.2 2.86s1.22 3.32 1.4 3.55c.17.23 2.4 3.67 5.82 5.15.81.35 1.45.56 1.94.72.82.26 1.56.22 2.15.13.66-.1 2.02-.82 2.3-1.62.29-.8.29-1.48.2-1.62-.08-.14-.31-.23-.65-.4z" />
+              </svg>
+            </a>
+            <a
               href="tel:07799180009"
               className="bg-primary text-on-primary px-5 py-3 font-bold text-xs tracking-widest uppercase hover:opacity-90 active:scale-95 transition-all"
             >
@@ -97,12 +117,32 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden bg-surface-container border-b border-outline shadow-xl">
           {/* Phone info */}
-          <div className="flex items-center gap-3 px-6 pt-5 pb-4 border-b border-outline">
-            <span className="material-symbols-outlined text-primary">phone_in_talk</span>
-            <div>
-              <p className="text-[10px] uppercase tracking-widest text-on-surface-variant">Emergency line</p>
-              <a href="tel:07799180009" className="text-base font-bold text-on-surface">07799 180009</a>
+          <div className="flex items-center justify-between gap-3 px-6 pt-5 pb-4 border-b border-outline">
+            <div className="flex items-center gap-3">
+              <span className="material-symbols-outlined text-primary">phone_in_talk</span>
+              <div>
+                <p className="text-[10px] uppercase tracking-widest text-on-surface-variant">Emergency line</p>
+                <a href="tel:07799180009" className="text-base font-bold text-on-surface">07799 180009</a>
+              </div>
             </div>
+            <a
+              href={whatsappHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat with us on WhatsApp"
+              className="flex items-center justify-center w-10 h-10 rounded-full active:scale-95 transition-all duration-200"
+              style={{ backgroundColor: '#25d366' }}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                className="w-5 h-5"
+                fill="white"
+                aria-hidden="true"
+              >
+                <path d="M16 2C8.28 2 2 8.28 2 16c0 2.48.68 4.8 1.86 6.78L2 30l7.42-1.82A13.93 13.93 0 0 0 16 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm0 25.5a11.44 11.44 0 0 1-5.84-1.6l-.42-.25-4.4 1.08 1.1-4.28-.28-.44A11.5 11.5 0 1 1 16 27.5zm6.3-8.62c-.34-.17-2.02-1-2.34-1.11-.32-.11-.55-.17-.78.17-.23.34-.9 1.11-1.1 1.34-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.75-1.69-1.02-.9-1.7-2.02-1.9-2.36-.2-.34-.02-.53.15-.7.15-.15.34-.4.51-.59.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.78-1.88-1.07-2.58-.28-.67-.57-.58-.78-.59-.2-.01-.43-.01-.66-.01-.23 0-.6.09-.91.43-.31.34-1.2 1.17-1.2 2.86s1.22 3.32 1.4 3.55c.17.23 2.4 3.67 5.82 5.15.81.35 1.45.56 1.94.72.82.26 1.56.22 2.15.13.66-.1 2.02-.82 2.3-1.62.29-.8.29-1.48.2-1.62-.08-.14-.31-.23-.65-.4z" />
+              </svg>
+            </a>
           </div>
           {/* Links */}
           <div className="flex flex-col px-6 py-3">
