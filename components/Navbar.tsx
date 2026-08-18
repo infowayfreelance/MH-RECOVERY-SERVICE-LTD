@@ -11,6 +11,8 @@ export default function Navbar() {
   const isActive = (path: string) => pathname === path
 
   const whatsappHref = 'https://wa.me/447799180009?text=Hello%2C%20I%20need%20car%20recovery%20assistance.'
+  const SECOND_PHONE_NUMBER = '+44 7438 127819'
+  const SECOND_PHONE_TEL = 'tel:+447438127819'
 
   const navLinks = [
     { href: '/', label: 'Home' },
@@ -26,6 +28,10 @@ export default function Navbar() {
         Available 24/7 &mdash; Sheffield &amp; South Yorkshire &mdash;{' '}
         <a href="tel:07799180009" className="underline underline-offset-2 hover:no-underline">
           07799 180009
+        </a>
+        {' '}or{' '}
+        <a href={SECOND_PHONE_TEL} className="underline underline-offset-2 hover:no-underline">
+          {SECOND_PHONE_NUMBER}
         </a>
       </div>
 
@@ -70,6 +76,16 @@ export default function Navbar() {
               </div>
             </a>
             <a
+              href={SECOND_PHONE_TEL}
+              className="flex items-center gap-2 text-on-surface-variant hover:text-on-surface transition-colors"
+            >
+              <span className="material-symbols-outlined text-primary text-xl">phone_in_talk</span>
+              <div className="flex flex-col leading-tight">
+                <span className="text-[10px] uppercase tracking-widest text-on-surface-variant">Or call</span>
+                <span className="text-sm font-bold text-on-surface">{SECOND_PHONE_NUMBER}</span>
+              </div>
+            </a>
+            <a
               href={whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
@@ -92,6 +108,43 @@ export default function Navbar() {
               className="bg-primary text-on-primary px-5 py-3 font-bold text-xs tracking-widest uppercase hover:opacity-90 active:scale-95 transition-all"
             >
               Emergency Help
+            </a>
+          </div>
+
+          {/* Call + WhatsApp — mobile only */}
+          <div className="flex md:hidden items-center gap-2">
+            <a
+              href="tel:07799180009"
+              aria-label="Call us now"
+              className="flex items-center justify-center w-9 h-9 rounded-full bg-primary active:scale-95 transition-all duration-200"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                className="w-[18px] h-[18px]"
+                fill="white"
+                aria-hidden="true"
+              >
+                <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2z" />
+              </svg>
+            </a>
+            <a
+              href={whatsappHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat with us on WhatsApp"
+              className="flex items-center justify-center w-9 h-9 rounded-full active:scale-95 transition-all duration-200"
+              style={{ backgroundColor: '#25d366' }}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                className="w-[18px] h-[18px]"
+                fill="white"
+                aria-hidden="true"
+              >
+                <path d="M16 2C8.28 2 2 8.28 2 16c0 2.48.68 4.8 1.86 6.78L2 30l7.42-1.82A13.93 13.93 0 0 0 16 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm0 25.5a11.44 11.44 0 0 1-5.84-1.6l-.42-.25-4.4 1.08 1.1-4.28-.28-.44A11.5 11.5 0 1 1 16 27.5zm6.3-8.62c-.34-.17-2.02-1-2.34-1.11-.32-.11-.55-.17-.78.17-.23.34-.9 1.11-1.1 1.34-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.75-1.69-1.02-.9-1.7-2.02-1.9-2.36-.2-.34-.02-.53.15-.7.15-.15.34-.4.51-.59.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.78-1.88-1.07-2.58-.28-.67-.57-.58-.78-.59-.2-.01-.43-.01-.66-.01-.23 0-.6.09-.91.43-.31.34-1.2 1.17-1.2 2.86s1.22 3.32 1.4 3.55c.17.23 2.4 3.67 5.82 5.15.81.35 1.45.56 1.94.72.82.26 1.56.22 2.15.13.66-.1 2.02-.82 2.3-1.62.29-.8.29-1.48.2-1.62-.08-.14-.31-.23-.65-.4z" />
+              </svg>
             </a>
           </div>
 
@@ -123,6 +176,8 @@ export default function Navbar() {
               <div>
                 <p className="text-[10px] uppercase tracking-widest text-on-surface-variant">Emergency line</p>
                 <a href="tel:07799180009" className="text-base font-bold text-on-surface">07799 180009</a>
+                <p className="text-[10px] uppercase tracking-widest text-on-surface-variant mt-1">Or call</p>
+                <a href={SECOND_PHONE_TEL} className="text-base font-bold text-on-surface">{SECOND_PHONE_NUMBER}</a>
               </div>
             </div>
             <a
