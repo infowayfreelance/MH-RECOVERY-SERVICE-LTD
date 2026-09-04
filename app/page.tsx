@@ -1,5 +1,7 @@
+import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import LazyVideo from '@/components/LazyVideo'
 
 export default function Home() {
   return (
@@ -13,10 +15,14 @@ export default function Home() {
             {/* Hero Image – shows first on mobile, right on desktop */}
             <div className="order-1 md:order-2">
               <div className="relative w-full aspect-[16/9] sm:aspect-[4/3] md:aspect-[4/5] bg-surface-container-low overflow-hidden rounded-xl">
-                <img
+                <Image
                   alt="Black Mercedes-Benz flatbed recovery truck ready for deployment in Sheffield"
-                  className="w-full h-full object-cover"
+                  className="object-cover"
                   src="/images/MH Recovery image-airanko.webp"
+                  fill
+                  priority
+                  fetchPriority="high"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
             </div>
@@ -100,8 +106,14 @@ export default function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
               {servicesData.map((service, idx) => (
                 <div key={idx} className="bg-surface-container-high overflow-hidden rounded-xl flex flex-col group sm:hover:bg-surface-container-highest transition-colors">
-                  <div className="h-40 sm:h-44 md:h-48 overflow-hidden">
-                    <img src={service.img} alt={service.title} className="w-full h-full object-cover transition-all duration-500" />
+                  <div className="relative h-40 sm:h-44 md:h-48 overflow-hidden">
+                    <Image
+                      src={service.img}
+                      alt={service.title}
+                      fill
+                      className="object-cover transition-all duration-500"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
                   </div>
                   <div className="p-5 md:p-8 flex flex-col flex-1">
                     <h3 className="text-base md:text-xl font-bold uppercase mb-2 md:mb-4 tracking-tight leading-snug">{service.title}</h3>
@@ -196,6 +208,7 @@ export default function Home() {
                   style={{ border: 'none', overflow: 'hidden', maxWidth: '100%' }}
                   scrolling="no"
                   frameBorder="0"
+                  loading="lazy"
                   allowFullScreen
                   allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                 />
@@ -208,6 +221,7 @@ export default function Home() {
                   style={{ border: 'none', overflow: 'hidden', maxWidth: '100%' }}
                   scrolling="no"
                   frameBorder="0"
+                  loading="lazy"
                   allowFullScreen
                   allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                 />
@@ -220,6 +234,7 @@ export default function Home() {
                   style={{ border: 'none', overflow: 'hidden', maxWidth: '100%' }}
                   scrolling="no"
                   frameBorder="0"
+                  loading="lazy"
                   allowFullScreen
                   allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                 />
@@ -232,6 +247,7 @@ export default function Home() {
                   style={{ border: 'none', overflow: 'hidden', maxWidth: '100%' }}
                   scrolling="no"
                   frameBorder="0"
+                  loading="lazy"
                   allowFullScreen
                   allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                 />
@@ -261,15 +277,10 @@ export default function Home() {
                 </div>
               </div>
               <div className="h-64 sm:h-80 md:h-[450px] bg-surface-container-highest relative rounded-xl overflow-hidden shadow-2xl">
-                <video
+                <LazyVideo
                   className="w-full h-full object-cover"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                >
-                  <source src="/images/WhatsApp Video 2026-06-03 at 2.49.17 PM.mp4" type="video/mp4" />
-                </video>
+                  src="/images/WhatsApp Video 2026-06-03 at 2.49.17 PM.mp4"
+                />
               </div>
             </div>
           </div>
@@ -305,6 +316,7 @@ export default function Home() {
                     style={{ border: 'none', overflow: 'hidden', maxWidth: '100%' }}
                     scrolling="no"
                     frameBorder="0"
+                    loading="lazy"
                     allowFullScreen
                     allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                   />

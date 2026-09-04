@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
@@ -10,10 +11,13 @@ export default function ServicesDetailedPage() {
         {/* Hero Section */}
         <section className="relative min-h-[716px] flex items-center pt-24 overflow-hidden">
           <div className="absolute inset-0 z-0">
-            <img
-              className="w-full h-full object-cover opacity-30 grayscale"
+            <Image
+              className="object-cover opacity-30 grayscale"
               alt="Modern high-performance recovery truck with amber warning lights at night"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFF_Z4p2kRwDUx5ULdbjDp-hS03KF6aVwTUmfICGnySXR6g0ahUykRNcbGUc-YeWoF3aitPI1t25utV2laTgyGaVN1pihWHdb4zLeClM_eBu_gBLyFCDY84pzDB3HvZ2v7GXS97he5X_7kCev728Xc_YZ3rN3snTjKBoG-FRtQq4TeeM80q1H8W0Qiyw-swrxA16VqCQnr_Dqciu5BCuKqvqXZILB6K4cNO5kuWckkQBfrZXRz2SyicBZPaRYhOSzs2InOJR5G9wxP"
+              fill
+              priority
+              sizes="100vw"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
           </div>
@@ -67,11 +71,15 @@ export default function ServicesDetailedPage() {
                 <p className="text-on-surface-variant font-body mb-8 flex-grow">
                   We offer round-the-clock recovery services to help you anytime, anywhere in Sheffield.
                 </p>
-                <img
-                  className="w-full h-48 object-cover rounded-lg grayscale group-hover:grayscale-0 transition-all duration-500 mb-6"
-                  alt="Professional flatbed recovery truck"
-                  src="/24 7 Car Recovery Sheffield MH.jpg"
+                <div className="relative w-full h-48 rounded-lg overflow-hidden mb-6">
+                  <Image
+                    className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                    alt="Professional flatbed recovery truck"
+                    src="/24 7 Car Recovery Sheffield MH.jpg"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
+                </div>
               </div>
 
               {/* Emergency Jump Start */}
@@ -86,11 +94,15 @@ export default function ServicesDetailedPage() {
                 <p className="text-on-surface-variant font-body mb-8 flex-grow">
                   Flat battery? Our team provides quick jump start services to get your vehicle running again.
                 </p>
-                <img
-                  className="w-full h-48 object-cover rounded-lg grayscale group-hover:grayscale-0 transition-all duration-500 mb-6"
-                  alt="Jump leads connecting to car battery"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVK8a2IoB5oxWJtBNNcPmh85A1sMxHyZFIjwF2eaQ7MjewtIKhktgVSaMJwql-518DiVVddAiyJIshR7hw_SQX8U01g2TcV9Zv5mV-5Mna4QoiJwyxqhWlerOR1FTvZtrg0fLrbQ-VBtqJZ4ysS7llAD-Kew-a5RcAdZBA65EALPW7YYVZm9wJgMCQk8RaQmd9y6n8mMKwptY3GlVSsmS6CygymTMbczW3i6baKuxtNlWbntXRzR56NSoTU06f44GT1EnAxG7-RCPC"
+                <div className="relative w-full h-48 rounded-lg overflow-hidden mb-6">
+                  <Image
+                    className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                    alt="Jump leads connecting to car battery"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVK8a2IoB5oxWJtBNNcPmh85A1sMxHyZFIjwF2eaQ7MjewtIKhktgVSaMJwql-518DiVVddAiyJIshR7hw_SQX8U01g2TcV9Zv5mV-5Mna4QoiJwyxqhWlerOR1FTvZtrg0fLrbQ-VBtqJZ4ysS7llAD-Kew-a5RcAdZBA65EALPW7YYVZm9wJgMCQk8RaQmd9y6n8mMKwptY3GlVSsmS6CygymTMbczW3i6baKuxtNlWbntXRzR56NSoTU06f44GT1EnAxG7-RCPC"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
+                </div>
               </div>
 
               {/* Fast Breakdown Recovery */}
@@ -105,11 +117,15 @@ export default function ServicesDetailedPage() {
                 <p className="text-on-surface-variant font-body mb-8 flex-grow">
                   Broken down? We’ll reach you fast and recover your vehicle safely and efficiently.
                 </p>
-                <img
-                  className="w-full h-48 object-cover rounded-lg grayscale group-hover:grayscale-0 transition-all duration-500 mb-6"
-                  alt="Vehicle breakdown on motorway"
-                  src="/Fast Breakdown Recovery MH.jpg"
+                <div className="relative w-full h-48 rounded-lg overflow-hidden mb-6">
+                  <Image
+                    className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                    alt="Vehicle breakdown on motorway"
+                    src="/Fast Breakdown Recovery MH.jpg"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
+                </div>
               </div>
 
               {/* Roadside Assistance */}
@@ -124,11 +140,15 @@ export default function ServicesDetailedPage() {
                 <p className="text-on-surface-variant font-body mb-8 flex-grow">
                   From minor issues to full breakdowns, we provide complete roadside help to keep you moving.
                 </p>
-                <img
-                  className="w-full h-48 object-cover rounded-lg grayscale group-hover:grayscale-0 transition-all duration-500 mb-6"
-                  alt="Mechanic working on car engine"
-                  src="/Roadside Assistance MH.jpg"
+                <div className="relative w-full h-48 rounded-lg overflow-hidden mb-6">
+                  <Image
+                    className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                    alt="Mechanic working on car engine"
+                    src="/Roadside Assistance MH.jpg"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
+                </div>
               </div>
 
               {/* Car Towing Service */}
@@ -143,11 +163,15 @@ export default function ServicesDetailedPage() {
                 <p className="text-on-surface-variant font-body mb-8 flex-grow">
                   Professional towing service for all vehicle types across the Sheffield region.
                 </p>
-                <img
-                  className="w-full h-48 object-cover rounded-lg grayscale group-hover:grayscale-0 transition-all duration-500 mb-6"
-                  alt="Towing truck lifting luxury vehicle"
-                  src="/Car Towing Service MH.jpg"
+                <div className="relative w-full h-48 rounded-lg overflow-hidden mb-6">
+                  <Image
+                    className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                    alt="Towing truck lifting luxury vehicle"
+                    src="/Car Towing Service MH.jpg"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
+                </div>
               </div>
 
               {/* Accident Recovery */}
@@ -162,11 +186,15 @@ export default function ServicesDetailedPage() {
                 <p className="text-on-surface-variant font-body mb-8 flex-grow">
                   We handle accident recovery safely and professionally, coordinating with all authorities.
                 </p>
-                <img
-                  className="w-full h-48 object-cover rounded-lg grayscale group-hover:grayscale-0 transition-all duration-500 mb-6"
-                  alt="Accident recovery scene"
-                  src="/Accident Recovery Sheffield MH.jpg"
+                <div className="relative w-full h-48 rounded-lg overflow-hidden mb-6">
+                  <Image
+                    className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                    alt="Accident recovery scene"
+                    src="/Accident Recovery Sheffield MH.jpg"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
+                </div>
               </div>
             </div>
           </div>
@@ -177,11 +205,13 @@ export default function ServicesDetailedPage() {
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className="relative">
-                <div className="aspect-square bg-surface-container-highest rounded-xl overflow-hidden">
-                  <img
-                    className="w-full h-full object-cover grayscale opacity-60"
+                <div className="relative aspect-square bg-surface-container-highest rounded-xl overflow-hidden">
+                  <Image
+                    className="object-cover grayscale opacity-60"
                     alt="Vehicle recovery command center"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3x9K8j7a4Pp2FnUggYVNmVx32td_0HNkLk5zsCvEVvrtiBNkOvoOpKNtuGm4zn8YZSjyjLHYWZlmbN_w96qtdKCpq0dIAcZFJYIfe1bdaTwT_uJtHY8H1QUqeWWmRvylaYh5zNK7h5e-Flyv4cAPxBWUM8BCZnRxpQKi1L5PjkUuZevtktzFjaXFAQYc8lEDMbdqSoBIm5gP0Ujn8lsPd9Is8KU-WTO3uqyBajSh5kiHSCtYwJkkWCVd2go5bte9Ctesij1lZUtoq"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
                   />
                 </div>
                 <div className="absolute -bottom-6 -right-6 bg-primary text-on-primary p-8 rounded-lg max-w-[240px]">
@@ -254,7 +284,7 @@ export default function ServicesDetailedPage() {
               Need Immediate Help?
             </h2>
             <p className="text-on-surface-variant text-xl mb-12 max-w-2xl mx-auto">
-              Our dispatch team is standing by 24 hours a day. One call and we're on our way.
+              Our dispatch team is standing by 24 hours a day. One call and we&apos;re on our way.
             </p>
             <a
               className="group relative inline-flex items-center gap-6 bg-secondary text-on-secondary px-12 py-8 rounded-lg overflow-hidden transition-all duration-300 active:scale-95"

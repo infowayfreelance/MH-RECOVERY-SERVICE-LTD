@@ -1,4 +1,5 @@
 // app/services/page.tsx
+import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
@@ -10,10 +11,13 @@ export default function ServicesPage() {
         {/* Hero Section */}
         <section className="relative min-h-[420px] md:min-h-[716px] flex items-center pt-24 md:pt-20 pb-16 md:pb-32 px-4 md:px-6 overflow-hidden bg-surface">
           <div className="absolute inset-0 z-0 opacity-40">
-            <img
+            <Image
               alt="Black Mercedes-Benz flatbed recovery truck ready for deployment"
-              className="w-full h-full object-cover"
+              className="object-cover"
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Hero%20Section%20image-TDUJ1HnPhVR1WhekWwkpOOOSw5v25V.jpeg"
+              fill
+              priority
+              sizes="100vw"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent"></div>
           </div>
@@ -70,11 +74,13 @@ export default function ServicesPage() {
                   CALL TO DEPLOY
                 </a>
               </div>
-              <div className="lg:col-span-5 min-h-[220px] md:min-h-[400px]">
-                <img
+              <div className="relative lg:col-span-5 min-h-[220px] md:min-h-[400px]">
+                <Image
                   alt="White Sprinter flatbed recovery truck transporting a red Fiat 500L at a car auction site"
-                  className="w-full h-full object-cover"
+                  className="object-cover"
                   src="/24 7 Car Recovery Sheffield MH.jpg"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 40vw"
                 />
               </div>
             </div>
@@ -92,7 +98,9 @@ export default function ServicesPage() {
                   </div>
                   <h4 className="text-xl md:text-2xl font-bold uppercase mb-3 md:mb-4 tracking-tighter text-on-surface">{s.title}</h4>
                   <p className="text-on-surface-variant text-sm leading-relaxed mb-5 md:mb-8">{s.desc}</p>
-                  <img alt={s.alt} className="w-full h-36 md:h-48 object-cover" src={s.img} />
+                  <div className="relative w-full h-36 md:h-48">
+                    <Image alt={s.alt} className="object-cover" src={s.img} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
+                  </div>
                 </div>
               ))}
             </div>
@@ -103,10 +111,13 @@ export default function ServicesPage() {
         <section className="bg-surface py-12 md:py-24 px-4 md:px-6 overflow-hidden">
           <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 items-center">
             <div className="relative">
-              <img
+              <Image
                 alt="Fleet detail"
                 className="relative z-10 w-full aspect-square object-cover rounded-xl"
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car-Breakdown-opt-y73ndhbUFt5iANdjovdSfsAThW78ws.webp"
+                width={800}
+                height={800}
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
               <div className="absolute bottom-0 right-0 bg-primary p-5 md:p-8 z-20 rounded-tl-xl">
                 <p className="text-on-primary font-black text-3xl md:text-5xl tracking-tighter">100%</p>
