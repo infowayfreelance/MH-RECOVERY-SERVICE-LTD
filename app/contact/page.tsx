@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
@@ -24,10 +25,13 @@ export default function ContactPage() {
         {/* Hero Section */}
         <section className="relative min-h-[360px] md:min-h-[614px] flex items-center px-4 md:px-8 lg:px-24 bg-surface overflow-hidden">
           <div className="absolute inset-0 z-0 opacity-40">
-            <img
+            <Image
               alt="Front view of a blacked-out Mercedes-Benz Sprinter recovery van with custom LED lighting"
-              className="w-full h-full object-cover"
+              className="object-cover"
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/our%20recovery%20van-yv5BCjbV8hr1cgt150c8J0X8v75rRn.jpeg"
+              fill
+              priority
+              sizes="100vw"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/70 to-transparent"></div>
           </div>
@@ -164,11 +168,13 @@ export default function ContactPage() {
         {/* Map Section */}
         <section className="w-full h-64 sm:h-80 md:h-[500px] bg-surface-container relative overflow-hidden">
           <div className="absolute inset-0 bg-surface/40 z-10 pointer-events-none"></div>
-          <div className="w-full h-full">
-            <img
+          <div className="relative w-full h-full">
+            <Image
               alt="Dark themed map of Sheffield area"
-              className="w-full h-full object-cover grayscale opacity-30"
+              className="object-cover grayscale opacity-30"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeuO5Nj6MvjxDl6iSBCinB4RQJOtNubkXj6d4AUBJjiH3d_Yuymx9ThOjlb4hshKlyxbq0kdk1oqqxnOcjhW4vQ0fQ5ghjQmC4m4yFvTLtcLdQkxqFSoub9Ek30C8bYoEXDWnLoyjhJgn0I9y_tdZJ7pLdbzl3IE_Fye6kNBdRpHWy4vyOOEDdRRB7EKUKOUxSDH0Uk5cx6Q2aAVF6BDMnfSrjwExJ_1hCiGAhF9HOoOnidiPPgxkvYt7ckXCAJ4MRLfD7Dn49ro0z"
+              fill
+              sizes="100vw"
             />
           </div>
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">

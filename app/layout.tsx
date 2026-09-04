@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Ubuntu } from 'next/font/google'
 import './globals.css'
 import FloatingButtons from '@/components/FloatingButtons'
+import FontLoader from '@/components/FontLoader'
 
 const ubuntu = Ubuntu({
   subsets: ['latin'],
@@ -10,6 +11,7 @@ const ubuntu = Ubuntu({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://mhrrecoveryservice.co.uk'),
   title: 'MH RECOVERY SERVICE LTD| 24/7 Professional Recovery Sheffield',
   description: 'Stuck on the road? Our professional recovery team is available 24/7 to get you back on track quickly and safely.',
   openGraph: {
@@ -44,14 +46,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`bg-surface ${ubuntu.variable}`}>
       <head>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-        />
         <link rel="icon" type="image/webp" href="/Site-Icon MH.webp" />
         <link rel="apple-touch-icon" href="/Site-Icon MH.webp" />
-          </head>
+      </head>
       <body className="bg-surface text-on-surface">
+        <FontLoader />
         {children}
         <FloatingButtons />
       </body>

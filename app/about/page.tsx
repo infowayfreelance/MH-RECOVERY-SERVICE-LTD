@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
@@ -10,10 +11,13 @@ export default function About() {
         {/* Hero Section */}
         <section className="relative min-h-[480px] md:h-[716px] flex items-center overflow-hidden bg-surface">
           <div className="absolute inset-0 z-0">
-            <img
-              className="w-full h-full object-cover opacity-40 mix-blend-luminosity"
+            <Image
+              className="object-cover opacity-40 mix-blend-luminosity"
               alt="Front view of a blacked-out Mercedes-Benz Sprinter recovery van with custom LED lighting"
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/our%20recovery%20van-yv5BCjbV8hr1cgt150c8J0X8v75rRn.jpeg"
+              fill
+              priority
+              sizes="100vw"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent"></div>
           </div>
@@ -61,10 +65,13 @@ export default function About() {
               </div>
               <div className="lg:col-span-7">
                 <div className="relative rounded-xl overflow-hidden shadow-2xl">
-                  <img
+                  <Image
                     className="w-full aspect-video object-cover"
                     alt="Professional mechanic team in tactical high-visibility gear working on a vehicle recovery operation in an urban setting"
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car-Recovery-opt-jK0Oh9JpStKSKOwrFlMiRJxvD4tR9S.webp"
+                    width={1280}
+                    height={720}
+                    sizes="(max-width: 1024px) 100vw, 60vw"
                   />
                   <div className="absolute bottom-0 right-0 bg-primary p-5 md:p-8">
                     <p className="text-on-primary font-black text-2xl md:text-4xl uppercase tracking-tighter">
@@ -167,10 +174,12 @@ export default function About() {
                 </ul>
               </div>
               <div className="lg:w-1/2 w-full h-64 sm:h-80 md:h-[400px] bg-surface-container-highest rounded-xl overflow-hidden relative border border-outline/10">
-                <img
-                  className="w-full h-full object-cover grayscale opacity-60"
+                <Image
+                  className="object-cover grayscale opacity-60"
                   alt="Stylized map showing the Sheffield urban area with a tactical overlay highlighting service coverage regions"
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car-Breakdown-opt-y73ndhbUFt5iANdjovdSfsAThW78ws.webp"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="bg-primary/20 p-6 md:p-8 rounded-full animate-pulse">
