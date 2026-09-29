@@ -12,13 +12,14 @@ const ubuntu = Ubuntu({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://mhrrecoveryservice.co.uk'),
-  title: 'MH RECOVERY SERVICE LTD| 24/7 Professional Recovery Sheffield',
-  description: 'Stuck on the road? Our professional recovery team is available 24/7 to get you back on track quickly and safely.',
+  title: 'Car Recovery Sheffield | 24/7 Help – MH Recovery Service Ltd',
+  description: 'Need car recovery in Sheffield? MH Recovery Service Ltd is available 24/7 for car recovery, breakdown recovery, vehicle towing, and jump starts across Sheffield. Call now.',
+  keywords: 'car recovery Sheffield, breakdown recovery Sheffield, vehicle recovery Sheffield, car towing Sheffield, jump start Sheffield, 24/7 recovery Sheffield',
   openGraph: {
-    title: 'MH RECOVERY SERVICE LTD| 24/7 Professional Recovery Sheffield',
-    description: 'Stuck on the road? Our professional recovery team is available 24/7 to get you back on track quickly and safely.',
+    title: 'Car Recovery Sheffield | 24/7 Help – MH Recovery Service Ltd',
+    description: 'Need car recovery in Sheffield? MH Recovery Service Ltd is available 24/7 for car recovery, breakdown recovery, vehicle towing, and jump starts across Sheffield. Call now.',
     url: 'https://mhrrecoveryservice.co.uk',
-    siteName: 'MH RECOVERY SERVICE LTD',
+    siteName: 'MH Recovery Service Ltd',
     locale: 'en_GB',
     type: 'website',
     images: [
@@ -26,14 +27,14 @@ export const metadata: Metadata = {
         url: '/Open Graph MH-airanko.webp',
         width: 1200,
         height: 630,
-        alt: 'MH Recovery Service LTD - Fast. Reliable. 24/7 Service.',
+        alt: 'MH Recovery Service Ltd – Car Recovery Sheffield 24/7',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MH RECOVERY SERVICE | 24/7 Professional Recovery Sheffield',
-    description: 'Stuck on the road? Our professional recovery team is available 24/7 to get you back on track quickly and safely.',
+    title: 'Car Recovery Sheffield | 24/7 Help – MH Recovery Service Ltd',
+    description: 'Need car recovery in Sheffield? MH Recovery Service Ltd is available 24/7 for car recovery, breakdown recovery, vehicle towing, and jump starts. Call now.',
     images: ['https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Hussnain%20Car%20Recovery%20%20%281%29-XaXQs3zDtYmDJjNuKL1uydY4WTMgrG.png'],
   },
 }
