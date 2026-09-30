@@ -9,12 +9,12 @@ export default function Home() {
       <Navbar />
       <main>
         {/* Hero Section */}
-        <section className="bg-surface pt-8 md:pt-24 pb-10 md:pb-16 px-4 md:px-6">
+        <section className="bg-surface pt-6 md:pt-14 pb-8 md:pb-12 px-4 md:px-6">
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center">
 
             {/* Hero Image – shows first on mobile, right on desktop */}
             <div className="order-1 md:order-2">
-              <div className="relative w-full aspect-[16/9] sm:aspect-[4/3] md:aspect-[4/5] bg-surface-container-low overflow-hidden rounded-xl">
+              <div className="relative w-full aspect-[16/9] sm:aspect-[16/9] md:aspect-[4/3] bg-surface-container-low overflow-hidden rounded-xl">
                 <Image
                   alt="Black Mercedes-Benz flatbed recovery truck ready for deployment in Sheffield"
                   className="object-cover"
@@ -33,7 +33,7 @@ export default function Home() {
                 Sheffield&apos;s 24/7 Response
               </div>
               <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] mb-4 md:mb-8 tracking-tighter text-on-surface text-balance">
-                Car Recovery <span className="text-primary">Sheffield</span> – 24/7 Help
+                Car Recovery <span className="text-primary">Sheffield</span> –<br />24/7 Help
               </h1>
               <p className="text-sm md:text-xl text-on-surface-variant mb-5 md:mb-10 max-w-lg leading-relaxed font-sans">
                 Car broken down? MH Recovery Service Ltd helps when your car stops working or is not safe to drive. Tell us where you are, what has happened, and where you need the car to go. We offer help day and night across Sheffield.
@@ -73,21 +73,6 @@ export default function Home() {
                 </span>
               </div>
 
-              {/* Service name pills */}
-              <div className="mt-5 md:mt-8 pt-5 md:pt-8 border-t border-outline">
-                <p className="text-on-surface-variant text-[0.6rem] font-bold tracking-[0.25em] uppercase mb-3">Our Services</p>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-                  {servicesData.map((service, idx) => (
-                    <span
-                      key={idx}
-                      className="flex items-center gap-2 bg-surface-container-high border border-outline text-on-surface text-[0.6rem] font-bold uppercase tracking-wide px-2.5 py-2 rounded leading-snug"
-                    >
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" aria-hidden="true" />
-                      {service.title}
-                    </span>
-                  ))}
-                </div>
-              </div>
             </div>
 
           </div>
@@ -118,13 +103,10 @@ export default function Home() {
         {/* Services Grid – Same 9 Cards */}
         <section className="bg-surface-container-low py-12 md:py-24 px-4 md:px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 md:mb-16 gap-3 md:gap-6">
-              <div>
-                <span className="text-primary font-bold tracking-[0.3em] text-xs uppercase mb-2 md:mb-4 block">Car Recovery Sheffield</span>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tight text-balance text-on-surface">Our Services</h2>
-                <p className="text-on-surface-variant text-sm md:text-base font-sans mt-3 max-w-xl leading-relaxed">We help with common car problems, from a flat battery to a car that needs towing. If you are unsure what kind of help you need, tell us what happened.</p>
-              </div>
-              <div className="h-1 bg-primary w-20 md:w-32"></div>
+            <div className="text-center mb-8 md:mb-16">
+              <span className="text-primary font-bold tracking-[0.3em] text-xs uppercase mb-2 md:mb-4 block">Car Recovery Sheffield</span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tight text-balance text-on-surface">Our Services</h2>
+              <p className="text-on-surface-variant text-sm md:text-base font-sans mt-3 max-w-xl leading-relaxed mx-auto">We help with common car problems, from a flat battery to a car that needs towing. If you are unsure what kind of help you need, tell us what happened.</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
               {servicesData.map((service, idx) => (
@@ -432,10 +414,8 @@ export default function Home() {
 const servicesData = [
   { title: "Car Recovery Sheffield", desc: "If your car cannot be driven, we can help move it to a garage, your home, or another place you choose. Available 24/7 across Sheffield.", img: "/24 7 Car Recovery Sheffield MH.jpg" },
   { title: "Breakdown Recovery", desc: "Has your car stopped working on the road? Tell us where you are and what went wrong so we can arrange the right help.", img: "/Fast Breakdown Recovery MH.jpg" },
-  { title: "Vehicle Recovery", desc: "We can help move a vehicle that has broken down or cannot be driven safely. Tell us the vehicle type when you get in touch.", img: "/Roadside Assistance MH.jpg" },
   { title: "Car Towing Sheffield", desc: "If your car needs to go to a garage or another place, contact us with the pickup and drop-off locations. We will discuss the job with you.", img: "/Car Towing Service MH.jpg" },
   { title: "Jump Start Service", desc: "If your car will not start because of a flat battery, get in touch. We can discuss whether a jump start is the right help for you.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car-Jump-Start-opt-JYsT9hrxSoSxpaw7paudJH4kEG6lMt.webp" },
-  { title: "Flat Battery Help", desc: "Professional battery testing and jump starting for all vehicle makes. Get in touch if you think your battery is flat.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT-Image-Apr-23-2026-12_05_38-AM-opt-lbXtx7bcjdmQ5gQFYCuZ28Rn9mqkhQ.webp" },
   { title: "Accident Recovery Sheffield", desc: "Specialised handling for vehicles involved in road traffic accidents. Secure recovery and storage available.", img: "/Accident Recovery Sheffield MH.jpg" },
   { title: "Tyre Damage Assistance", desc: "Roadside wheel changes and tyre damage support when you do not have a spare or the right tools.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20Demage%20assistance-8r1QZ5Qls7ZajnSo6H2gquraMmlaCG.jpg" },
   { title: "Lost Car Keys Help", desc: "Entry assistance and vehicle recovery if you have been locked out or lost your vehicle keys.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lost-replacement-car-keys-dc9c3589-0QM0nZZ8CCSDpf8xpoPobBFiM474eR.jpeg" }
