@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
@@ -34,6 +35,7 @@ const services = [
     img: '/24 7 Car Recovery Sheffield MH.jpg',
     alt: 'Car recovery truck transporting a vehicle in Sheffield',
     icon: 'directions_car',
+    href: '/services/car-recovery-sheffield',
   },
   {
     title: 'Breakdown Recovery',
@@ -205,6 +207,15 @@ export default function ServicesPage() {
                       <h3 className="text-base md:text-lg font-bold uppercase tracking-tight text-on-surface">{service.title}</h3>
                     </div>
                     <p className="text-on-surface-variant text-sm font-sans leading-relaxed mb-5 flex-1">{service.desc}</p>
+                    {'href' in service && service.href && (
+                      <Link
+                        href={service.href}
+                        className="text-primary text-xs font-bold uppercase tracking-widest hover:opacity-80 transition-opacity mb-3 flex items-center gap-1"
+                      >
+                        Learn more
+                        <span className="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+                      </Link>
+                    )}
                     <div className="flex flex-col xs:flex-row gap-2">
                       <a
                         href="tel:07799180009"
