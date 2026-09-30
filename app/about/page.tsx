@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import { SITE_URL, OG_IMAGE } from '@/lib/siteConfig'
 
 export const metadata: Metadata = {
   title: 'About MH Recovery Service Ltd | Sheffield Recovery Team',
@@ -12,13 +13,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'About MH Recovery Service Ltd | Sheffield Recovery Team',
     description: 'Meet MH Recovery Service Ltd, a recovery team serving Sheffield. Learn about our approach to helping drivers with breakdowns and vehicle transport.',
-    url: 'https://mhrrecoveryservice.co.uk/about',
+    url: `${SITE_URL}/about`,
     siteName: 'MH Recovery Service Ltd',
     locale: 'en_GB',
     type: 'website',
     images: [
       {
-        url: '/Open Graph MH-airanko.webp',
+        url: OG_IMAGE,
         width: 1200,
         height: 630,
         alt: 'MH Recovery Service Ltd – Car Recovery Sheffield 24/7',
@@ -30,13 +31,13 @@ export const metadata: Metadata = {
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'AboutPage',
-  url: 'https://mhrrecoveryservice.co.uk/about',
+  url: `${SITE_URL}/about`,
   name: 'About MH Recovery Service Ltd',
   description: 'MH Recovery Service Ltd is a vehicle recovery team serving Sheffield. We help drivers when their cars break down, will not start, or need to be moved.',
   mainEntity: {
     '@type': 'LocalBusiness',
     name: 'MH Recovery Service Ltd',
-    url: 'https://mhrrecoveryservice.co.uk',
+    url: SITE_URL,
     telephone: '+447799180009',
     address: {
       '@type': 'PostalAddress',

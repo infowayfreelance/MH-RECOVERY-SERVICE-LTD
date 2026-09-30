@@ -9,12 +9,12 @@ const quickLinks = [
 ]
 
 const services = [
-  'Car Recovery',
-  'Vehicle Towing',
-  'Roadside Assistance',
-  'Accident Recovery',
-  'Long Distance Recovery',
-  'Motorcycle Recovery',
+  { label: 'Car Recovery', href: '/services/car-recovery-sheffield' },
+  { label: 'Vehicle Towing', href: null },
+  { label: 'Roadside Assistance', href: null },
+  { label: 'Accident Recovery', href: null },
+  { label: 'Long Distance Recovery', href: null },
+  { label: 'Motorcycle Recovery', href: null },
 ]
 
 export default function Footer() {
@@ -37,15 +37,15 @@ export default function Footer() {
             {/* Trust badges */}
             <div className="flex flex-col gap-2 mt-2">
               <div className="flex items-center gap-2 text-xs text-on-surface-variant">
-                <span className="material-symbols-outlined text-primary text-base">verified</span>
+                <span className="material-symbols-outlined text-primary text-base" aria-hidden="true">verified</span>
                 Fully Insured &amp; Licensed
               </div>
               <div className="flex items-center gap-2 text-xs text-on-surface-variant">
-                <span className="material-symbols-outlined text-primary text-base">schedule</span>
+                <span className="material-symbols-outlined text-primary text-base" aria-hidden="true">schedule</span>
                 Available 24 Hours, 7 Days a Week
               </div>
               <div className="flex items-center gap-2 text-xs text-on-surface-variant">
-                <span className="material-symbols-outlined text-primary text-base">location_on</span>
+                <span className="material-symbols-outlined text-primary text-base" aria-hidden="true">location_on</span>
                 Coupe Road, Sheffield, S3 9DP
               </div>
             </div>
@@ -53,9 +53,9 @@ export default function Footer() {
 
           {/* Column 2 — Quick Links */}
           <div className="flex flex-col gap-4">
-            <h2 className="text-on-surface font-bold uppercase text-xs tracking-widest border-b border-outline pb-3">
+            <p className="text-on-surface font-bold uppercase text-xs tracking-widest border-b border-outline pb-3">
               Quick Links
-            </h2>
+            </p>
             <ul className="flex flex-col gap-2.5">
               {quickLinks.map(({ href, label }) => (
                 <li key={href}>
@@ -73,16 +73,26 @@ export default function Footer() {
 
           {/* Column 3 — Services */}
           <div className="flex flex-col gap-4">
-            <h2 className="text-on-surface font-bold uppercase text-xs tracking-widest border-b border-outline pb-3">
+            <p className="text-on-surface font-bold uppercase text-xs tracking-widest border-b border-outline pb-3">
               Our Services
-            </h2>
+            </p>
             <ul className="flex flex-col gap-2.5">
-              {services.map((service) => (
-                <li key={service}>
-                  <span className="text-on-surface-variant text-sm flex items-center gap-2">
-                    <span className="inline-block w-1 h-1 rounded-full bg-primary shrink-0" />
-                    {service}
-                  </span>
+              {services.map(({ label, href }) => (
+                <li key={label}>
+                  {href ? (
+                    <Link
+                      href={href}
+                      className="text-on-surface-variant text-sm hover:text-primary transition-colors flex items-center gap-2"
+                    >
+                      <span className="inline-block w-1 h-1 rounded-full bg-primary shrink-0" aria-hidden="true" />
+                      {label}
+                    </Link>
+                  ) : (
+                    <span className="text-on-surface-variant text-sm flex items-center gap-2">
+                      <span className="inline-block w-1 h-1 rounded-full bg-primary shrink-0" aria-hidden="true" />
+                      {label}
+                    </span>
+                  )}
                 </li>
               ))}
             </ul>
@@ -90,13 +100,13 @@ export default function Footer() {
 
           {/* Column 4 — Contact */}
           <div className="flex flex-col gap-4">
-            <h2 className="text-on-surface font-bold uppercase text-xs tracking-widest border-b border-outline pb-3">
+            <p className="text-on-surface font-bold uppercase text-xs tracking-widest border-b border-outline pb-3">
               Contact Us
-            </h2>
+            </p>
             <div className="flex flex-col gap-4">
               {/* Phone */}
               <a
-                href="tel:07799180009"
+                href="tel:+447799180009"
                 className="group flex flex-col gap-1 bg-surface-container-high p-4 border border-outline hover:border-primary transition-colors"
               >
                 <span className="text-[10px] uppercase tracking-widest text-on-surface-variant">Emergency Line</span>
@@ -121,7 +131,7 @@ export default function Footer() {
       <div className="border-t border-outline">
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-5 flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-on-surface-variant text-xs">
-            &copy; {new Date().getFullYear()} MH Recovery Service LTD. All rights reserved.
+            &copy; {new Date().getFullYear()} MH Recovery Service Ltd. All rights reserved.
           </p>
           <p className="text-on-surface-variant text-xs">
             Designed By{' '}

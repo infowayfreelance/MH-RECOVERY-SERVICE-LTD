@@ -3,25 +3,26 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import { SITE_URL, OG_IMAGE } from '@/lib/siteConfig'
 
 export const metadata: Metadata = {
-  title: 'Car Recovery Sheffield | MH Recovery Service Ltd',
+  title: '24/7 Car Recovery Sheffield | Vehicle Towing | MH Recovery',
   description:
-    'Need car recovery in Sheffield? MH Recovery Service Ltd can help move your car to a garage or another agreed place. Call to check availability and get a quote.',
+    '24/7 car recovery in Sheffield & South Yorkshire. Breakdown, accident and garage transfers. Call MH Recovery for a clear quote before you book.',
   alternates: {
     canonical: '/services/car-recovery-sheffield',
   },
   openGraph: {
-    title: 'Car Recovery Sheffield | MH Recovery Service Ltd',
+    title: '24/7 Car Recovery Sheffield | Vehicle Towing | MH Recovery',
     description:
-      'Need car recovery in Sheffield? MH Recovery Service Ltd can help move your car to a garage or another agreed place. Call to check availability and get a quote.',
-    url: 'https://mhrrecoveryservice.co.uk/services/car-recovery-sheffield',
+      '24/7 car recovery in Sheffield & South Yorkshire. Breakdown, accident and garage transfers. Call MH Recovery for a clear quote before you book.',
+    url: `${SITE_URL}/services/car-recovery-sheffield`,
     siteName: 'MH Recovery Service Ltd',
     locale: 'en_GB',
     type: 'website',
     images: [
       {
-        url: '/Open Graph MH-airanko.webp',
+        url: OG_IMAGE,
         width: 1200,
         height: 630,
         alt: 'MH Recovery Service Ltd – Car Recovery Sheffield 24/7',
@@ -30,10 +31,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Car Recovery Sheffield | MH Recovery Service Ltd',
+    title: '24/7 Car Recovery Sheffield | Vehicle Towing | MH Recovery',
     description:
-      'Need car recovery in Sheffield? MH Recovery Service Ltd can help move your car to a garage or another agreed place. Call to check availability and get a quote.',
-    images: ['/Open Graph MH-airanko.webp'],
+      '24/7 car recovery in Sheffield & South Yorkshire. Breakdown, accident and garage transfers. Call MH Recovery for a clear quote before you book.',
+    images: [OG_IMAGE],
   },
 }
 
@@ -41,13 +42,13 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://mhrrecoveryservice.co.uk' },
-    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://mhrrecoveryservice.co.uk/services' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: `${SITE_URL}/services` },
     {
       '@type': 'ListItem',
       position: 3,
       name: 'Car Recovery Sheffield',
-      item: 'https://mhrrecoveryservice.co.uk/services/car-recovery-sheffield',
+      item: `${SITE_URL}/services/car-recovery-sheffield`,
     },
   ],
 }
@@ -63,9 +64,9 @@ const serviceSchema = {
     name: 'Sheffield',
   },
   provider: {
-    '@type': 'LocalBusiness',
+    '@type': 'AutomotiveBusiness',
     name: 'MH Recovery Service Ltd',
-    url: 'https://mhrrecoveryservice.co.uk',
+    url: SITE_URL,
     telephone: '+447799180009',
     address: {
       '@type': 'PostalAddress',
@@ -75,8 +76,9 @@ const serviceSchema = {
       addressCountry: 'GB',
     },
     areaServed: 'Sheffield',
+    openingHours: 'Mo-Su 00:00-23:59',
   },
-  url: 'https://mhrrecoveryservice.co.uk/services/car-recovery-sheffield',
+  url: `${SITE_URL}/services/car-recovery-sheffield`,
 }
 
 const faqSchema = {
@@ -242,7 +244,7 @@ export default function CarRecoverySheffield() {
             <Image
               alt="Car recovery truck in Sheffield"
               className="object-cover"
-              src="/24 7 Car Recovery Sheffield MH.jpg"
+              src="/car-recovery-sheffield.jpg"
               fill
               priority
               sizes="100vw"
@@ -313,7 +315,7 @@ export default function CarRecoverySheffield() {
               <Image
                 alt="Car being loaded onto a recovery truck in Sheffield"
                 className="object-cover"
-                src="/Car Towing Service MH.jpg"
+                src="/car-towing-sheffield.jpg"
                 fill
                 loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -433,7 +435,7 @@ export default function CarRecoverySheffield() {
               <Image
                 alt="MH Recovery Service Ltd recovery truck on a Sheffield road"
                 className="object-cover"
-                src="/Fast Breakdown Recovery MH.jpg"
+                src="/breakdown-recovery-sheffield.jpg"
                 fill
                 loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 50vw"
