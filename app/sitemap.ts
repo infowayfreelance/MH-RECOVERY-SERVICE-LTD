@@ -1,7 +1,8 @@
 import type { MetadataRoute } from 'next'
+import { SITE_URL } from '@/lib/siteConfig'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = 'https://mhrrecoveryservice.co.uk'
+  const base = SITE_URL
   const now = new Date()
 
   return [

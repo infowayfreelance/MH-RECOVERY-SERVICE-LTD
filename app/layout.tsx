@@ -3,6 +3,7 @@ import { Ubuntu } from 'next/font/google'
 import './globals.css'
 import FloatingButtons from '@/components/FloatingButtons'
 import FontLoader from '@/components/FontLoader'
+import { SITE_URL, OG_IMAGE } from '@/lib/siteConfig'
 
 const ubuntu = Ubuntu({
   subsets: ['latin'],
@@ -11,20 +12,22 @@ const ubuntu = Ubuntu({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://mhrrecoveryservice.co.uk'),
-  title: 'Car Recovery Sheffield | 24/7 Help – MH Recovery Service Ltd',
-  description: 'Need car recovery in Sheffield? MH Recovery Service Ltd is available 24/7 for car recovery, breakdown recovery, vehicle towing, and jump starts across Sheffield. Call now.',
-  keywords: 'car recovery Sheffield, breakdown recovery Sheffield, vehicle recovery Sheffield, car towing Sheffield, jump start Sheffield, 24/7 recovery Sheffield',
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: 'Car Recovery Sheffield | 24/7 Vehicle Recovery – MH Recovery Service Ltd',
+    template: '%s | MH Recovery Service Ltd',
+  },
+  description: 'Need car recovery in Sheffield? MH Recovery Service Ltd is available 24/7 for car recovery, breakdown recovery, and vehicle towing across Sheffield. Call for a clear quote before you book.',
   openGraph: {
-    title: 'Car Recovery Sheffield | 24/7 Help – MH Recovery Service Ltd',
-    description: 'Need car recovery in Sheffield? MH Recovery Service Ltd is available 24/7 for car recovery, breakdown recovery, vehicle towing, and jump starts across Sheffield. Call now.',
-    url: 'https://mhrrecoveryservice.co.uk',
+    title: 'Car Recovery Sheffield | 24/7 Vehicle Recovery – MH Recovery Service Ltd',
+    description: 'Need car recovery in Sheffield? MH Recovery Service Ltd is available 24/7 for car recovery, breakdown recovery, and vehicle towing across Sheffield. Call for a clear quote before you book.',
+    url: SITE_URL,
     siteName: 'MH Recovery Service Ltd',
     locale: 'en_GB',
     type: 'website',
     images: [
       {
-        url: '/Open Graph MH-airanko.webp',
+        url: OG_IMAGE,
         width: 1200,
         height: 630,
         alt: 'MH Recovery Service Ltd – Car Recovery Sheffield 24/7',
@@ -33,9 +36,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Car Recovery Sheffield | 24/7 Help – MH Recovery Service Ltd',
-    description: 'Need car recovery in Sheffield? MH Recovery Service Ltd is available 24/7 for car recovery, breakdown recovery, vehicle towing, and jump starts. Call now.',
-    images: ['https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Hussnain%20Car%20Recovery%20%20%281%29-XaXQs3zDtYmDJjNuKL1uydY4WTMgrG.png'],
+    title: 'Car Recovery Sheffield | 24/7 Vehicle Recovery – MH Recovery Service Ltd',
+    description: 'Need car recovery in Sheffield? MH Recovery Service Ltd is available 24/7 for car recovery, breakdown recovery, and vehicle towing. Call now.',
+    images: [OG_IMAGE],
   },
 }
 
@@ -47,8 +50,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`bg-surface ${ubuntu.variable}`}>
       <head>
-        <link rel="icon" type="image/webp" href="/Site-Icon MH.webp" />
-        <link rel="apple-touch-icon" href="/Site-Icon MH.webp" />
+        <link rel="icon" type="image/webp" href="/site-icon.webp" />
+        <link rel="apple-touch-icon" href="/site-icon.webp" />
       </head>
       <body className="bg-surface text-on-surface">
         <FontLoader />

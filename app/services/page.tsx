@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import { SITE_URL, OG_IMAGE } from '@/lib/siteConfig'
 
 export const metadata: Metadata = {
   title: 'Vehicle Recovery Services Sheffield | MH Recovery',
@@ -13,13 +14,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Vehicle Recovery Services Sheffield | MH Recovery',
     description: 'Need vehicle recovery services in Sheffield? Get help with breakdowns, car towing, flat batteries and motorcycle recovery. Call MH Recovery Service Ltd.',
-    url: 'https://mhrrecoveryservice.co.uk/services',
+    url: `${SITE_URL}/services`,
     siteName: 'MH Recovery Service Ltd',
     locale: 'en_GB',
     type: 'website',
     images: [
       {
-        url: '/Open Graph MH-airanko.webp',
+        url: OG_IMAGE,
         width: 1200,
         height: 630,
         alt: 'MH Recovery Service Ltd – Car Recovery Sheffield 24/7',
@@ -32,7 +33,7 @@ const services = [
   {
     title: 'Car Recovery',
     desc: 'If your car is not safe to drive, we can help take it to a garage, your home, or another agreed place. Tell us where the car is and where you need it to go.',
-    img: '/24 7 Car Recovery Sheffield MH.jpg',
+    img: '/car-recovery-sheffield.jpg',
     alt: 'Car recovery truck transporting a vehicle in Sheffield',
     icon: 'directions_car',
     href: '/services/car-recovery-sheffield',
@@ -40,14 +41,14 @@ const services = [
   {
     title: 'Breakdown Recovery',
     desc: 'Has your vehicle stopped working during a journey? Contact us with your location and the problem. We can arrange recovery if you cannot carry on driving.',
-    img: '/Fast Breakdown Recovery MH.jpg',
+    img: '/breakdown-recovery-sheffield.jpg',
     alt: 'Breakdown recovery service in Sheffield',
     icon: 'build',
   },
   {
     title: 'Car Towing',
     desc: 'We can help take your car from one place to another. Share the pickup address and where it needs to go so we can discuss the tow and price.',
-    img: '/Car Towing Service MH.jpg',
+    img: '/car-towing-sheffield.jpg',
     alt: 'Car towing service in Sheffield',
     icon: 'rv_hookup',
   },
@@ -68,7 +69,7 @@ const services = [
   {
     title: 'Accident Recovery Sheffield',
     desc: 'Specialised handling for vehicles involved in road traffic accidents. Secure recovery and storage available.',
-    img: '/Accident Recovery Sheffield MH.jpg',
+    img: '/accident-recovery-sheffield.jpg',
     alt: 'Accident recovery service in Sheffield',
     icon: 'warning',
   },
