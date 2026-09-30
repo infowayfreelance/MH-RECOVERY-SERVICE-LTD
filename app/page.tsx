@@ -73,21 +73,6 @@ export default function Home() {
                 </span>
               </div>
 
-              {/* Service name pills */}
-              <div className="mt-5 md:mt-8 pt-5 md:pt-8 border-t border-outline">
-                <p className="text-on-surface-variant text-[0.6rem] font-bold tracking-[0.25em] uppercase mb-3">Our Services</p>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-                  {servicesData.map((service, idx) => (
-                    <span
-                      key={idx}
-                      className="flex items-center gap-2 bg-surface-container-high border border-outline text-on-surface text-[0.6rem] font-bold uppercase tracking-wide px-2.5 py-2 rounded leading-snug"
-                    >
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" aria-hidden="true" />
-                      {service.title}
-                    </span>
-                  ))}
-                </div>
-              </div>
             </div>
 
           </div>
@@ -118,13 +103,10 @@ export default function Home() {
         {/* Services Grid – Same 9 Cards */}
         <section className="bg-surface-container-low py-12 md:py-24 px-4 md:px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 md:mb-16 gap-3 md:gap-6">
-              <div>
-                <span className="text-primary font-bold tracking-[0.3em] text-xs uppercase mb-2 md:mb-4 block">Car Recovery Sheffield</span>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tight text-balance text-on-surface">Our Services</h2>
-                <p className="text-on-surface-variant text-sm md:text-base font-sans mt-3 max-w-xl leading-relaxed">We help with common car problems, from a flat battery to a car that needs towing. If you are unsure what kind of help you need, tell us what happened.</p>
-              </div>
-              <div className="h-1 bg-primary w-20 md:w-32"></div>
+            <div className="text-center mb-8 md:mb-16">
+              <span className="text-primary font-bold tracking-[0.3em] text-xs uppercase mb-2 md:mb-4 block">Car Recovery Sheffield</span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tight text-balance text-on-surface">Our Services</h2>
+              <p className="text-on-surface-variant text-sm md:text-base font-sans mt-3 max-w-xl leading-relaxed mx-auto">We help with common car problems, from a flat battery to a car that needs towing. If you are unsure what kind of help you need, tell us what happened.</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
               {servicesData.map((service, idx) => (
