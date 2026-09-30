@@ -52,6 +52,7 @@ const services = [
     img: '/car-towing-sheffield.jpg',
     alt: 'Car towing service in Sheffield',
     icon: 'rv_hookup',
+    href: '/services/car-towing-sheffield',
   },
   {
     title: 'Jump Starts',

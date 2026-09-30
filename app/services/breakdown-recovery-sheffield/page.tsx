@@ -515,6 +515,10 @@ export default function BreakdownRecoverySheffield() {
               <Link href="/services/car-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
                 car recovery in Sheffield
               </Link>
+              {' '}and{' '}
+              <Link href="/services/car-towing-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
+                car towing in Sheffield
+              </Link>
               {' '}and other recovery services across the area.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
