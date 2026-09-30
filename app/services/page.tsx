@@ -44,6 +44,7 @@ const services = [
     img: '/breakdown-recovery-sheffield.jpg',
     alt: 'Breakdown recovery service in Sheffield',
     icon: 'build',
+    href: '/services/breakdown-recovery-sheffield',
   },
   {
     title: 'Car Towing',

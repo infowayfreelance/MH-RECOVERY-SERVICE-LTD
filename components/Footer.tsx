@@ -10,6 +10,7 @@ const quickLinks = [
 
 const services = [
   { label: 'Car Recovery', href: '/services/car-recovery-sheffield' },
+  { label: 'Breakdown Recovery', href: '/services/breakdown-recovery-sheffield' },
   { label: 'Vehicle Towing', href: null },
   { label: 'Roadside Assistance', href: null },
   { label: 'Accident Recovery', href: null },

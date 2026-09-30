@@ -512,7 +512,11 @@ export default function CarRecoverySheffield() {
             </h2>
             <div className="h-1 w-12 bg-primary mx-auto mb-6" />
             <p className="text-on-surface-variant text-base font-sans mb-8 leading-relaxed">
-              We also help with other recovery needs in Sheffield.
+              We also help with other recovery needs in Sheffield, including{' '}
+              <Link href="/services/breakdown-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
+                breakdown recovery in Sheffield
+              </Link>
+              .
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
