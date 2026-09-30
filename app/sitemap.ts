@@ -21,6 +21,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.9,
     },
+    {
+      url: `${base}/services/car-towing-sheffield`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
     { url: `${base}/contact`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
   ]
 }
