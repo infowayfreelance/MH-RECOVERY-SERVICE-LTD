@@ -43,13 +43,6 @@ const services = [
     icon: 'build',
   },
   {
-    title: 'Vehicle Recovery',
-    desc: 'Need help moving a vehicle that cannot be driven? Tell us its type, size, and condition. We can discuss whether our recovery equipment is suitable for the job.',
-    img: '/Roadside Assistance MH.jpg',
-    alt: 'Vehicle recovery equipment loading a car',
-    icon: 'local_shipping',
-  },
-  {
     title: 'Car Towing',
     desc: 'We can help take your car from one place to another. Share the pickup address and where it needs to go so we can discuss the tow and price.',
     img: '/Car Towing Service MH.jpg',
@@ -69,6 +62,27 @@ const services = [
     img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20Demage%20assistance-8r1QZ5Qls7ZajnSo6H2gquraMmlaCG.jpg',
     alt: 'Motorcycle recovery service',
     icon: 'two_wheeler',
+  },
+  {
+    title: 'Accident Recovery Sheffield',
+    desc: 'Specialised handling for vehicles involved in road traffic accidents. Secure recovery and storage available.',
+    img: '/Accident Recovery Sheffield MH.jpg',
+    alt: 'Accident recovery service in Sheffield',
+    icon: 'warning',
+  },
+  {
+    title: 'Tyre Damage Assistance',
+    desc: 'Roadside wheel changes and tyre damage support when you do not have a spare or the right tools.',
+    img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20Demage%20assistance-8r1QZ5Qls7ZajnSo6H2gquraMmlaCG.jpg',
+    alt: 'Tyre damage assistance service',
+    icon: 'tire_repair',
+  },
+  {
+    title: 'Lost Car Keys Help',
+    desc: 'Entry assistance and vehicle recovery if you have been locked out or lost your vehicle keys.',
+    img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lost-replacement-car-keys-dc9c3589-0QM0nZZ8CCSDpf8xpoPobBFiM474eR.jpeg',
+    alt: 'Lost car keys help service',
+    icon: 'key',
   },
 ]
 
@@ -166,10 +180,10 @@ export default function ServicesPage() {
         {/* Services Section */}
         <section className="bg-surface-container-low py-12 md:py-24 px-4 md:px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="mb-8 md:mb-16">
+            <div className="mb-8 md:mb-16 text-center">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tight mb-4 text-on-surface">Our Recovery Services</h2>
-              <div className="h-1 w-16 bg-primary mb-4" />
-              <p className="text-on-surface-variant text-base md:text-lg font-sans max-w-2xl leading-relaxed">
+              <div className="h-1 w-16 bg-primary mb-4 mx-auto" />
+              <p className="text-on-surface-variant text-base md:text-lg font-sans max-w-2xl leading-relaxed mx-auto">
                 From a flat battery to a vehicle that needs moving, we help with common problems on the road. Choose a service below, or call us if you are unsure what help you need.
               </p>
             </div>
