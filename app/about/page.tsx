@@ -58,7 +58,7 @@ export default function About() {
       <main className="pt-16 md:pt-20">
 
         {/* Hero Section */}
-        <section className="relative min-h-[480px] md:h-[716px] flex items-center overflow-hidden bg-surface">
+        <section className="relative min-h-[320px] md:h-[480px] flex items-center overflow-hidden bg-surface">
           <div className="absolute inset-0 z-0">
             <Image
               className="object-cover opacity-40 mix-blend-luminosity"
@@ -75,9 +75,8 @@ export default function About() {
               <span className="inline-block px-3 py-1 bg-primary-container text-white text-xs font-bold tracking-widest uppercase mb-4 border border-primary/30">
                 Sheffield Recovery Team
               </span>
-              <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold text-on-surface tracking-tighter uppercase leading-[0.9] mb-4 md:mb-6 text-balance">
-                About MH <br />
-                <span className="text-primary">Recovery Service Ltd</span>
+              <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-on-surface tracking-tighter uppercase leading-[0.9] mb-4 md:mb-6 text-balance">
+                About MH <span className="text-primary">Recovery Service Ltd</span>
               </h1>
               <p className="text-base md:text-xl text-on-surface-variant max-w-2xl font-light leading-relaxed mb-2 md:mb-3">
                 A local team helping drivers in Sheffield.
@@ -102,7 +101,7 @@ export default function About() {
         </section>
 
         {/* Who We Are */}
-        <section className="py-14 md:py-24 bg-surface-container-low">
+        <section className="py-8 md:py-14 bg-surface-container-low">
           <div className="container mx-auto px-4 md:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-16 items-center">
               <div className="lg:col-span-5">
@@ -201,7 +200,7 @@ export default function About() {
         </section>
 
         {/* Help for Cars and Motorcycles */}
-        <section className="py-14 md:py-24 bg-surface">
+        <section className="py-8 md:py-14 bg-surface">
           <div className="container mx-auto px-4 md:px-8">
             <div className="max-w-3xl">
               <h2 className="text-3xl md:text-4xl font-bold text-on-surface uppercase tracking-tighter mb-5 md:mb-8 flex items-center gap-4">
@@ -225,9 +224,9 @@ export default function About() {
         </section>
 
         {/* Serving Sheffield */}
-        <section className="py-14 md:py-24 bg-surface-container-low">
+        <section className="py-8 md:py-14 bg-surface-container-low">
           <div className="container mx-auto px-4 md:px-8">
-            <div className="flex flex-col lg:flex-row gap-10 md:gap-16 items-center">
+            <div className="flex flex-col lg:flex-row gap-8 md:gap-12 items-center">
               <div className="lg:w-1/2 w-full">
                 <h2 className="text-3xl md:text-4xl font-bold text-on-surface uppercase tracking-tighter mb-4 md:mb-6 text-balance">
                   Serving Sheffield
@@ -239,7 +238,7 @@ export default function About() {
                   For a pickup outside Sheffield, call to check coverage. Give us both locations so we can discuss the journey.
                 </p>
               </div>
-              <div className="lg:w-1/2 w-full h-64 sm:h-80 md:h-[400px] bg-surface-container-highest rounded-xl overflow-hidden relative border border-outline/10">
+              <div className="lg:w-1/2 w-full h-48 sm:h-56 md:h-64 bg-surface-container-highest rounded-xl overflow-hidden relative border border-outline/10">
                 <Image
                   className="object-cover grayscale opacity-60"
                   alt="Sheffield area where MH Recovery Service Ltd operates"
@@ -260,7 +259,7 @@ export default function About() {
         </section>
 
         {/* Talk to Our Team */}
-        <section className="py-14 md:py-20 bg-primary relative overflow-hidden">
+        <section className="py-8 md:py-12 bg-primary relative overflow-hidden">
           <div className="container mx-auto px-4 md:px-8 relative z-10 text-center">
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-on-primary uppercase tracking-tighter mb-4 md:mb-6 text-balance">
               Talk to Our Team
