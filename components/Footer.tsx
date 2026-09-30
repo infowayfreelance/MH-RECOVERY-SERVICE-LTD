@@ -53,9 +53,9 @@ export default function Footer() {
 
           {/* Column 2 — Quick Links */}
           <div className="flex flex-col gap-4">
-            <h5 className="text-on-surface font-bold uppercase text-xs tracking-widest border-b border-outline pb-3">
+            <h2 className="text-on-surface font-bold uppercase text-xs tracking-widest border-b border-outline pb-3">
               Quick Links
-            </h5>
+            </h2>
             <ul className="flex flex-col gap-2.5">
               {quickLinks.map(({ href, label }) => (
                 <li key={href}>
@@ -73,9 +73,9 @@ export default function Footer() {
 
           {/* Column 3 — Services */}
           <div className="flex flex-col gap-4">
-            <h5 className="text-on-surface font-bold uppercase text-xs tracking-widest border-b border-outline pb-3">
+            <h2 className="text-on-surface font-bold uppercase text-xs tracking-widest border-b border-outline pb-3">
               Our Services
-            </h5>
+            </h2>
             <ul className="flex flex-col gap-2.5">
               {services.map((service) => (
                 <li key={service}>
@@ -90,9 +90,9 @@ export default function Footer() {
 
           {/* Column 4 — Contact */}
           <div className="flex flex-col gap-4">
-            <h5 className="text-on-surface font-bold uppercase text-xs tracking-widest border-b border-outline pb-3">
+            <h2 className="text-on-surface font-bold uppercase text-xs tracking-widest border-b border-outline pb-3">
               Contact Us
-            </h5>
+            </h2>
             <div className="flex flex-col gap-4">
               {/* Phone */}
               <a
