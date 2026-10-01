@@ -3,6 +3,7 @@ import { Ubuntu } from 'next/font/google'
 import './globals.css'
 import FloatingButtons from '@/components/FloatingButtons'
 import FontLoader from '@/components/FontLoader'
+import CookieBanner from '@/components/CookieBanner'
 import { SITE_URL, OG_IMAGE } from '@/lib/siteConfig'
 
 const ubuntu = Ubuntu({
@@ -57,6 +58,7 @@ export default function RootLayout({
         <FontLoader />
         {children}
         <FloatingButtons />
+        <CookieBanner />
       </body>
     </html>
   )
