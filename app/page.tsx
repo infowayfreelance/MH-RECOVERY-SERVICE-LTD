@@ -419,7 +419,8 @@ const servicesData = [
   { title: "Accident Recovery Sheffield", desc: "Specialised handling for vehicles involved in road traffic accidents. Secure recovery and storage available.", img: "/Accident Recovery Sheffield MH.jpg" },
   { title: "Tyre Damage Assistance", desc: "Roadside wheel changes and tyre damage support when you do not have a spare or the right tools.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20Demage%20assistance-8r1QZ5Qls7ZajnSo6H2gquraMmlaCG.jpg" },
   { title: "Lost Car Keys Help", desc: "Entry assistance and vehicle recovery if you have been locked out or lost your vehicle keys.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lost-replacement-car-keys-dc9c3589-0QM0nZZ8CCSDpf8xpoPobBFiM474eR.jpeg" },
-  { title: "Motorcycle Recovery", desc: "If your motorcycle breaks down or cannot be ridden, we can help move it. Tell us the bike model, its condition, and where you want it taken.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20Demage%20assistance-8r1QZ5Qls7ZajnSo6H2gquraMmlaCG.jpg" }
+  { title: "Motorcycle Recovery", desc: "If your motorcycle breaks down or cannot be ridden, we can help move it. Tell us the bike model, its condition, and where you want it taken.", img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20Demage%20assistance-8r1QZ5Qls7ZajnSo6H2gquraMmlaCG.jpg" },
+  { title: "Long Distance Recovery", desc: "Need your car transported further afield? We arrange longer journeys from Sheffield to agreed destinations. Call with both addresses to discuss the job and price.", img: "/car-towing-sheffield.jpg" }
 ]
 
 const faqData = [
