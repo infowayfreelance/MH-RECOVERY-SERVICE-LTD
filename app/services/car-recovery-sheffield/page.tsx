@@ -520,9 +520,13 @@ export default function CarRecoverySheffield() {
               <Link href="/services/car-towing-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
                 car towing in Sheffield
               </Link>
-              {' '}and{' '}
+              ,{' '}
               <Link href="/services/jump-starts-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
                 jump starts in Sheffield
+              </Link>
+              {' '}and{' '}
+              <Link href="/services/accident-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
+                accident recovery in Sheffield
               </Link>
               .
             </p>

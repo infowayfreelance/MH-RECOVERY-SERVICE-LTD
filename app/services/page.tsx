@@ -75,6 +75,7 @@ const services = [
     img: '/accident-recovery-sheffield.jpg',
     alt: 'Accident recovery service in Sheffield',
     icon: 'warning',
+    href: '/services/accident-recovery-sheffield',
   },
   {
     title: 'Tyre Damage Assistance',
