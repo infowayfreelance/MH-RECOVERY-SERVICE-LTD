@@ -224,7 +224,7 @@ export default function CarTowingSheffield() {
           </div>
 
           {/* Breadcrumb */}
-          <div className="absolute top-20 md:top-24 left-4 md:left-6 z-10">
+          <div className="hidden absolute top-20 md:top-24 left-4 md:left-6 z-10">
             <nav aria-label="Breadcrumb">
               <ol className="flex items-center gap-1.5 text-xs text-on-surface-variant flex-wrap">
                 <li><Link href="/" className="hover:text-primary transition-colors">Home</Link></li>
