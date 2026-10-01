@@ -36,6 +36,25 @@ export const metadata: Metadata = {
   },
 }
 
+const faqs = [
+  { q: 'What recovery services do you offer?', a: 'We offer car recovery, breakdown recovery, car towing, jump starts, tyre damage assistance, lost car keys help, accident recovery and long distance recovery. Call us to discuss the help you need.' },
+  { q: 'Are you available 24/7?', a: 'Yes, our phone line is open 24 hours a day, 7 days a week, including nights, weekends and bank holidays.' },
+  { q: 'Which areas do you cover?', a: 'We serve Sheffield and South Yorkshire. For nearby areas such as Rotherham, Barnsley and Doncaster, call us and we will confirm coverage.' },
+  { q: 'How much does recovery cost?', a: 'The price depends on the distance, the vehicle, its condition and the time of day. We give you a quote before you agree to the job.' },
+  { q: 'How soon can you reach me?', a: 'We give you an estimated arrival time when you call. It depends on your location and how busy we are.' },
+  { q: 'What details do you need?', a: "We need your exact location, your vehicle's make and model, a short description of the problem and where it needs to go." },
+]
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+}
+
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -66,20 +85,6 @@ const steps = [
   },
 ]
 
-const faqs = [
-  { q: 'What recovery services do you offer?', a: 'We offer car recovery, breakdown recovery, vehicle recovery, towing, jump starts, and motorcycle recovery. Call us to discuss the help you need.' },
-  { q: 'Are you available 24/7?', a: 'Yes, you can contact us day or night. We will check availability for your location when you call.' },
-  { q: 'Which areas do you cover?', a: 'We offer recovery in Sheffield. For a pickup outside the city, contact us with the location so we can check coverage.' },
-  { q: 'How much does recovery cost?', a: 'The price depends on your vehicle, its condition, and the journey. Share the pickup and drop-off details when asking for a price.' },
-  { q: 'How soon can you reach me?', a: 'Arrival time depends on your location, traffic, and availability. Call us for an estimate for your job.' },
-  { q: 'What details do you need?', a: 'We need your location, vehicle type, a short description of the problem, and the destination. Tell us about any damage that may make loading harder.' },
-  { q: 'Can you take my car to a garage?', a: 'Yes, we can arrange transport to an agreed garage. Please give us the address and check that the garage can receive your car.' },
-  { q: 'Can you take my vehicle home?', a: 'We can discuss taking it to your home. Tell us the address and whether there is enough space to unload the vehicle.' },
-  { q: 'Do you recover motorcycles?', a: 'Yes, we offer motorcycle recovery. Tell us the bike model and whether it has any damage or loading problems.' },
-  { q: 'Can you recover a vehicle that will not start?', a: 'Yes, contact us if your vehicle will not start. Tell us whether the wheels can move and whether the vehicle can steer.' },
-  { q: 'Can a jump start fix my car?', a: 'A jump start may help if the battery is flat. It will not fix every starting problem, so tell us what happens when you try to start the car.' },
-  { q: 'Can you move a car with damaged wheels?', a: 'Contact us with details of the damage. We need to check the loading needs before confirming the recovery.' },
-]
 
 export default function ServicesPage() {
   return (
@@ -87,6 +92,10 @@ export default function ServicesPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <Navbar />
       <main>

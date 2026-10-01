@@ -70,7 +70,7 @@ export const metadata: Metadata = {
   description:
     '24/7 vehicle recovery in Sheffield & South Yorkshire. Breakdown, towing, accident and long distance recovery. Call MH Recovery Service Ltd.',
   alternates: {
-    canonical: '/',
+    canonical: SITE_URL,
   },
   openGraph: {
     title: 'Vehicle Recovery Sheffield | 24/7 Breakdown & Towing',
@@ -391,6 +391,18 @@ export default function Home() {
                 />
               </div>
             </div>
+          </div>
+          <div className="mt-10 md:mt-14 rounded-xl overflow-hidden h-64 md:h-80 shadow-lg">
+            <iframe
+              src="https://maps.google.com/maps?q=Coupe+Road,+Sheffield,+S3+9DP&t=&z=16&ie=UTF8&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+              title="MH Recovery Service Ltd location on Coupe Road, Sheffield S3 9DP"
+            />
           </div>
         </section>
 
