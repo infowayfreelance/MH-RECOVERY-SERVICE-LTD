@@ -253,7 +253,7 @@ export default function CarRecoverySheffield() {
           </div>
 
           {/* Breadcrumb */}
-          <div className="absolute top-20 md:top-24 left-4 md:left-6 z-10">
+          <div className="hidden absolute top-20 md:top-24 left-4 md:left-6 z-10">
             <nav aria-label="Breadcrumb">
               <ol className="flex items-center gap-1.5 text-xs text-on-surface-variant flex-wrap">
                 <li><Link href="/" className="hover:text-primary transition-colors">Home</Link></li>
@@ -532,13 +532,9 @@ export default function CarRecoverySheffield() {
               <Link href="/services/tyre-damage-assistance-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
                 tyre damage assistance in Sheffield
               </Link>
-              ,{' '}
+              {' '}and{' '}
               <Link href="/services/lost-car-keys-help-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
                 lost car keys help in Sheffield
-              </Link>
-              {' '}and{' '}
-              <Link href="/services/long-distance-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
-                long distance recovery from Sheffield
               </Link>
               .
             </p>

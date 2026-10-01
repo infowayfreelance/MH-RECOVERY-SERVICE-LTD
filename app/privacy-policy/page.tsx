@@ -57,7 +57,7 @@ export default function PrivacyPolicy() {
       <main className="pt-20 md:pt-24 pb-16 md:pb-24 px-4 md:px-6 bg-surface">
 
         {/* Breadcrumb */}
-        <div className="max-w-3xl mx-auto mb-6">
+        <div className="hidden max-w-3xl mx-auto mb-6">
           <nav aria-label="Breadcrumb">
             <ol className="flex items-center gap-1.5 text-xs text-on-surface-variant flex-wrap">
               <li><Link href="/" className="hover:text-primary transition-colors">Home</Link></li>
