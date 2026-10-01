@@ -91,6 +91,7 @@ const services = [
     img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lost-replacement-car-keys-dc9c3589-0QM0nZZ8CCSDpf8xpoPobBFiM474eR.jpeg',
     alt: 'Lost car keys help service',
     icon: 'key',
+    href: '/services/lost-car-keys-help-sheffield',
   },
 ]
 

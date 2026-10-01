@@ -14,6 +14,7 @@ const services = [
   { label: 'Vehicle Towing', href: '/services/car-towing-sheffield' },
   { label: 'Jump Starts', href: '/services/jump-starts-sheffield' },
   { label: 'Tyre Damage Assistance', href: '/services/tyre-damage-assistance-sheffield' },
+  { label: 'Lost Car Keys Help', href: '/services/lost-car-keys-help-sheffield' },
   { label: 'Roadside Assistance', href: null },
   { label: 'Accident Recovery', href: '/services/accident-recovery-sheffield' },
   { label: 'Long Distance Recovery', href: null },
