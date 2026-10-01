@@ -14,15 +14,7 @@ const ubuntu = Ubuntu({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: {
-    default: 'Vehicle Recovery Sheffield | 24/7 Breakdown & Towing',
-    template: '%s',
-  },
-  description: '24/7 vehicle recovery in Sheffield & South Yorkshire. Breakdown, towing, accident and long distance recovery. Call MH Recovery Service Ltd.',
   openGraph: {
-    title: 'Vehicle Recovery Sheffield | 24/7 Breakdown & Towing',
-    description: '24/7 vehicle recovery in Sheffield & South Yorkshire. Breakdown, towing, accident and long distance recovery. Call MH Recovery Service Ltd.',
-    url: SITE_URL,
     siteName: 'MH Recovery Service Ltd',
     locale: 'en_GB',
     type: 'website',
@@ -37,8 +29,6 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Vehicle Recovery Sheffield | 24/7 Breakdown & Towing',
-    description: '24/7 vehicle recovery in Sheffield & South Yorkshire. Breakdown, towing, accident and long distance recovery. Call MH Recovery Service Ltd.',
     images: [OG_IMAGE],
   },
 }
