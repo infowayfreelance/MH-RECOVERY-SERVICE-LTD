@@ -39,3 +39,20 @@ export const BUSINESS = {
 
 export const OG_IMAGE = '/og-mh-recovery.webp'
 export const SITE_ICON = '/site-icon.webp'
+
+// Privacy policy — fill each field when the information is confirmed.
+// Any value left as null will cause the corresponding section to be hidden.
+export const PRIVACY_POLICY = {
+  lastUpdated: null as string | null,            // e.g. '1 October 2024'
+  contactEmail: null as string | null,            // e.g. 'privacy@mhrecoveryserviceltd.co.uk'
+  formFieldsNote: null as string | null,          // actual form fields, payment records, call recordings, identity checks
+  techInfoNote: null as string | null,            // website logs, analytics tools, technical data collected
+  purposesNote: null as string | null,            // confirm or remove processing purposes
+  lawfulBasisNote: null as string | null,         // lawful basis for each activity, including marketing/tracking
+  recipientsNote: null as string | null,          // actual recipients: operators, garages, hosting, payments, accountants
+  internationalNote: null as string | null,       // international transfers: countries, providers, safeguards
+  retentionNote: null as string | null,           // retention periods for enquiries, jobs, photos, messages, finances, logs
+  securityNote: null as string | null,            // actual security measures: access controls, storage, deletion
+  cookiesNote: null as string | null,             // cookies list, purposes, providers, durations, consent mechanism
+  automatedDecisionsNote: null as string | null,  // automated decisions with legal/significant effects
+}
