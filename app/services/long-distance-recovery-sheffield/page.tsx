@@ -471,7 +471,11 @@ export default function LongDistanceRecoverySheffield() {
             </h2>
             <div className="h-1 w-12 bg-primary mx-auto mb-6" />
             <p className="text-on-surface-variant text-base font-sans mb-8 leading-relaxed">
-              For other recovery needs, explore vehicle towing in Sheffield,{' '}
+              For other recovery needs, explore{' '}
+              <Link href="/services/car-towing-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
+                vehicle towing in Sheffield
+              </Link>
+              ,{' '}
               <Link href="/services/breakdown-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
                 breakdown recovery in Sheffield
               </Link>

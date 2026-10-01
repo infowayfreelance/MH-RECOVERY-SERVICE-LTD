@@ -483,7 +483,15 @@ export default function AccidentRecoverySheffield() {
               <Link href="/services/car-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
                 car recovery in Sheffield
               </Link>
-              , vehicle towing in Sheffield and long distance recovery from Sheffield.
+              ,{' '}
+              <Link href="/services/car-towing-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
+                vehicle towing in Sheffield
+              </Link>
+              {' '}and{' '}
+              <Link href="/services/long-distance-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
+                long distance recovery from Sheffield
+              </Link>
+              .
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

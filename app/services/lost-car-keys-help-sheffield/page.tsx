@@ -486,7 +486,11 @@ export default function LostCarKeysHelpSheffield() {
               <Link href="/services/car-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
                 car recovery in Sheffield
               </Link>
-              , roadside assistance in Sheffield and vehicle towing in Sheffield.
+              {' '}and{' '}
+              <Link href="/services/car-towing-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
+                vehicle towing in Sheffield
+              </Link>
+              . Roadside assistance in Sheffield is also available — call us to discuss your needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

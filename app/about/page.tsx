@@ -5,14 +5,14 @@ import Footer from '@/components/Footer'
 import { SITE_URL, OG_IMAGE } from '@/lib/siteConfig'
 
 export const metadata: Metadata = {
-  title: 'About MH Recovery Service Ltd | Sheffield Recovery Team',
-  description: 'Meet MH Recovery Service Ltd, a recovery team serving Sheffield. Learn about our approach to helping drivers with breakdowns and vehicle transport.',
+  title: 'About MH Recovery Service Ltd | Sheffield Recovery',
+  description: 'Meet MH Recovery Service Ltd, a Sheffield vehicle recovery business on Coupe Road. Our phone line is open 24/7. Call for a quote.',
   alternates: {
     canonical: '/about',
   },
   openGraph: {
-    title: 'About MH Recovery Service Ltd | Sheffield Recovery Team',
-    description: 'Meet MH Recovery Service Ltd, a recovery team serving Sheffield. Learn about our approach to helping drivers with breakdowns and vehicle transport.',
+    title: 'About MH Recovery Service Ltd | Sheffield Recovery',
+    description: 'Meet MH Recovery Service Ltd, a Sheffield vehicle recovery business on Coupe Road. Our phone line is open 24/7. Call for a quote.',
     url: `${SITE_URL}/about`,
     siteName: 'MH Recovery Service Ltd',
     locale: 'en_GB',
@@ -22,9 +22,15 @@ export const metadata: Metadata = {
         url: OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: 'MH Recovery Service Ltd – Car Recovery Sheffield 24/7',
+        alt: 'MH Recovery Service Ltd – Vehicle Recovery Sheffield',
       },
     ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About MH Recovery Service Ltd | Sheffield Recovery',
+    description: 'Meet MH Recovery Service Ltd, a Sheffield vehicle recovery business on Coupe Road. Our phone line is open 24/7. Call for a quote.',
+    images: [OG_IMAGE],
   },
 }
 
@@ -89,7 +95,7 @@ export default function About() {
                 MH Recovery Service Ltd is a vehicle recovery team serving Sheffield. We help drivers when their cars break down, will not start, or need to be moved.
               </p>
               <a
-                href="tel:07799180009"
+                href="tel:+447799180009"
                 className="inline-flex items-center justify-center gap-3 bg-primary text-on-primary px-6 md:px-10 py-4 md:py-5 text-base md:text-xl font-black uppercase hover:opacity-90 transition-opacity"
               >
                 <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>
@@ -273,7 +279,7 @@ export default function About() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="tel:07799180009"
+                href="tel:+447799180009"
                 className="inline-flex items-center gap-3 md:gap-4 bg-on-primary text-primary px-6 md:px-10 py-4 md:py-5 text-lg md:text-2xl font-black uppercase hover:opacity-90 transition-all active:scale-95"
               >
                 <span className="material-symbols-outlined text-xl md:text-3xl">call</span>

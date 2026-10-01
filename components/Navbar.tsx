@@ -26,7 +26,7 @@ export default function Navbar() {
       {/* Top announcement bar */}
       <div className="bg-primary text-on-primary text-center py-2 px-4 text-xs font-bold tracking-widest uppercase">
         Available 24/7 &mdash; Sheffield &amp; South Yorkshire &mdash;{' '}
-        <a href="tel:07799180009" className="underline underline-offset-2 hover:no-underline">
+        <a href="tel:+447799180009" className="underline underline-offset-2 hover:no-underline">
           07799 180009
         </a>
         {' '}or{' '}
@@ -66,10 +66,10 @@ export default function Navbar() {
           {/* Right: phone + emergency CTA */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="tel:07799180009"
+              href="tel:+447799180009"
               className="flex items-center gap-2 text-on-surface-variant hover:text-on-surface transition-colors"
             >
-              <span className="material-symbols-outlined text-primary text-xl">phone_in_talk</span>
+              <span className="material-symbols-outlined text-primary text-xl" aria-hidden="true">phone_in_talk</span>
               <div className="flex flex-col leading-tight">
                 <span className="text-[10px] uppercase tracking-widest text-on-surface-variant">Call us now</span>
                 <span className="text-sm font-bold text-on-surface">07799 180009</span>
@@ -79,9 +79,9 @@ export default function Navbar() {
               href={SECOND_PHONE_TEL}
               className="flex items-center gap-2 text-on-surface-variant hover:text-on-surface transition-colors"
             >
-              <span className="material-symbols-outlined text-primary text-xl">phone_in_talk</span>
+              <span className="material-symbols-outlined text-primary text-xl" aria-hidden="true">phone_in_talk</span>
               <div className="flex flex-col leading-tight">
-                <span className="text-[10px] uppercase tracking-widest text-on-surface-variant">Or call</span>
+                <span className="text-[10px] uppercase tracking-widest text-on-surface-variant">Alternative line</span>
                 <span className="text-sm font-bold text-on-surface">{SECOND_PHONE_NUMBER}</span>
               </div>
             </a>
@@ -104,7 +104,7 @@ export default function Navbar() {
               </svg>
             </a>
             <a
-              href="tel:07799180009"
+              href="tel:+447799180009"
               className="bg-primary text-on-primary px-5 py-3 font-bold text-xs tracking-widest uppercase hover:opacity-90 active:scale-95 transition-all"
             >
               Emergency Help
@@ -114,7 +114,7 @@ export default function Navbar() {
           {/* Call + WhatsApp — mobile only */}
           <div className="flex md:hidden items-center gap-2">
             <a
-              href="tel:07799180009"
+              href="tel:+447799180009"
               aria-label="Call us now"
               className="flex items-center justify-center w-9 h-9 rounded-full bg-primary active:scale-95 transition-all duration-200"
             >
@@ -172,11 +172,11 @@ export default function Navbar() {
           {/* Phone info */}
           <div className="flex items-center justify-between gap-3 px-6 pt-5 pb-4 border-b border-outline">
             <div className="flex items-center gap-3">
-              <span className="material-symbols-outlined text-primary">phone_in_talk</span>
+              <span className="material-symbols-outlined text-primary" aria-hidden="true">phone_in_talk</span>
               <div>
                 <p className="text-[10px] uppercase tracking-widest text-on-surface-variant">Emergency line</p>
-                <a href="tel:07799180009" className="text-base font-bold text-on-surface">07799 180009</a>
-                <p className="text-[10px] uppercase tracking-widest text-on-surface-variant mt-1">Or call</p>
+                <a href="tel:+447799180009" className="text-base font-bold text-on-surface">07799 180009</a>
+                <p className="text-[10px] uppercase tracking-widest text-on-surface-variant mt-1">Alternative line</p>
                 <a href={SECOND_PHONE_TEL} className="text-base font-bold text-on-surface">{SECOND_PHONE_NUMBER}</a>
               </div>
             </div>
@@ -220,7 +220,7 @@ export default function Navbar() {
           {/* CTA */}
           <div className="px-6 pb-5">
             <a
-              href="tel:07799180009"
+              href="tel:+447799180009"
               className="block w-full bg-primary text-on-primary py-4 font-bold text-sm tracking-widest uppercase text-center hover:opacity-90 active:scale-95 transition-all"
             >
               Get Emergency Help Now
