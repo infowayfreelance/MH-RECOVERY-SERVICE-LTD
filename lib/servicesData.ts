@@ -82,7 +82,7 @@ export const servicesData: ServiceItem[] = [
     route: '/services/accident-recovery-sheffield',
     name: 'Accident Recovery',
     anchorText: 'accident recovery in Sheffield',
-    summary: 'We can help recover your vehicle after a road traffic accident. Call us to discuss the details.',
+    summary: 'MH Recovery Service Ltd provides accident recovery in Sheffield, moving damaged cars to an agreed destination.',
     exists: true,
     img: '/Accident Recovery Sheffield MH.jpg',
     alt: 'Accident recovery service in Sheffield',
