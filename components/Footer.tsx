@@ -144,6 +144,12 @@ export default function Footer() {
             >
               Privacy Policy
             </Link>
+            <Link
+              href="/terms-and-conditions"
+              className="text-on-surface-variant text-xs hover:text-primary transition-colors"
+            >
+              Terms &amp; Conditions
+            </Link>
           </div>
           <p className="text-on-surface-variant text-xs">
             Designed By{' '}
