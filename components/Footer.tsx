@@ -1,24 +1,13 @@
 import Link from 'next/link'
 import Logo from './Logo'
+import { BUSINESS } from '@/lib/siteConfig'
+import { liveServices } from '@/lib/servicesData'
 
 const quickLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About Us' },
   { href: '/services', label: 'Our Services' },
   { href: '/contact', label: 'Contact' },
-]
-
-const services = [
-  { label: 'Car Recovery', href: '/services/car-recovery-sheffield' },
-  { label: 'Breakdown Recovery', href: '/services/breakdown-recovery-sheffield' },
-  { label: 'Vehicle Towing', href: '/services/car-towing-sheffield' },
-  { label: 'Jump Starts', href: '/services/jump-starts-sheffield' },
-  { label: 'Tyre Damage Assistance', href: '/services/tyre-damage-assistance-sheffield' },
-  { label: 'Lost Car Keys Help', href: '/services/lost-car-keys-help-sheffield' },
-  { label: 'Roadside Assistance', href: null },
-  { label: 'Accident Recovery', href: '/services/accident-recovery-sheffield' },
-  { label: 'Long Distance Recovery', href: '/services/long-distance-recovery-sheffield' },
-  { label: 'Motorcycle Recovery', href: null },
 ]
 
 export default function Footer() {
@@ -36,14 +25,16 @@ export default function Footer() {
           <div className="lg:col-span-1 flex flex-col gap-4">
             <Logo />
             <p className="text-on-surface-variant text-sm leading-relaxed max-w-xs">
-              Sheffield&apos;s trusted 24/7 car recovery service. We get you back on the road — fast, safe, and affordable.
+              24/7 vehicle recovery in Sheffield and South Yorkshire.
             </p>
             {/* Trust badges */}
             <div className="flex flex-col gap-2 mt-2">
-              <div className="flex items-center gap-2 text-xs text-on-surface-variant">
-                <span className="material-symbols-outlined text-primary text-base" aria-hidden="true">verified</span>
-                Fully Insured &amp; Licensed
-              </div>
+              {BUSINESS.insuranceDetails && (
+                <div className="flex items-center gap-2 text-xs text-on-surface-variant">
+                  <span className="material-symbols-outlined text-primary text-base" aria-hidden="true">verified</span>
+                  Fully Insured &amp; Licensed
+                </div>
+              )}
               <div className="flex items-center gap-2 text-xs text-on-surface-variant">
                 <span className="material-symbols-outlined text-primary text-base" aria-hidden="true">schedule</span>
                 Available 24 Hours, 7 Days a Week
@@ -81,22 +72,15 @@ export default function Footer() {
               Our Services
             </p>
             <ul className="flex flex-col gap-2.5">
-              {services.map(({ label, href }) => (
-                <li key={label}>
-                  {href ? (
-                    <Link
-                      href={href}
-                      className="text-on-surface-variant text-sm hover:text-primary transition-colors flex items-center gap-2"
-                    >
-                      <span className="inline-block w-1 h-1 rounded-full bg-primary shrink-0" aria-hidden="true" />
-                      {label}
-                    </Link>
-                  ) : (
-                    <span className="text-on-surface-variant text-sm flex items-center gap-2">
-                      <span className="inline-block w-1 h-1 rounded-full bg-primary shrink-0" aria-hidden="true" />
-                      {label}
-                    </span>
-                  )}
+              {liveServices.map(({ name, route }) => (
+                <li key={route}>
+                  <Link
+                    href={route}
+                    className="text-on-surface-variant text-sm hover:text-primary transition-colors flex items-center gap-2"
+                  >
+                    <span className="inline-block w-1 h-1 rounded-full bg-primary shrink-0" aria-hidden="true" />
+                    {name}
+                  </Link>
                 </li>
               ))}
             </ul>

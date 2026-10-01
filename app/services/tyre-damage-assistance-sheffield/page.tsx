@@ -479,7 +479,7 @@ export default function TyreDamageAssistanceSheffield() {
             </h2>
             <div className="h-1 w-12 bg-primary mx-auto mb-6" />
             <p className="text-on-surface-variant text-base font-sans mb-8 leading-relaxed">
-              See roadside assistance in Sheffield,{' '}
+              See{' '}
               <Link href="/services/breakdown-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
                 breakdown recovery in Sheffield
               </Link>
@@ -487,7 +487,11 @@ export default function TyreDamageAssistanceSheffield() {
               <Link href="/services/car-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
                 car recovery in Sheffield
               </Link>
-              {' '}and vehicle towing in Sheffield.
+              {' '}and{' '}
+              <Link href="/services/car-towing-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
+                vehicle towing in Sheffield
+              </Link>
+              . Roadside assistance in Sheffield is also available — call us to discuss your needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

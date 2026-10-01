@@ -471,7 +471,15 @@ export default function CarTowingSheffield() {
               <Link href="/services/breakdown-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
                 breakdown recovery in Sheffield
               </Link>
-              . For other vehicles, we offer vehicle towing in Sheffield, and we can help after a crash with accident recovery or move a car further with long distance vehicle recovery.
+              . We can also help after a crash with{' '}
+              <Link href="/services/accident-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
+                accident recovery in Sheffield
+              </Link>
+              {' '}or move a car further with{' '}
+              <Link href="/services/long-distance-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
+                long distance recovery from Sheffield
+              </Link>
+              .
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

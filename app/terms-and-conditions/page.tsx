@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import { SITE_URL, OG_IMAGE, BUSINESS, TERMS } from '@/lib/siteConfig'
 
 export const metadata: Metadata = {
-  title: 'Terms and Conditions',
+  title: 'Terms and Conditions | MH Recovery Service Ltd',
   description:
     'Read the booking, payment, cancellation and service terms for MH Recovery Service Ltd in Sheffield and South Yorkshire.',
   alternates: {

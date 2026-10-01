@@ -15,13 +15,13 @@ const ubuntu = Ubuntu({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Car Recovery Sheffield | 24/7 Vehicle Recovery – MH Recovery Service Ltd',
-    template: '%s | MH Recovery Service Ltd',
+    default: 'Vehicle Recovery Sheffield | 24/7 Breakdown & Towing',
+    template: '%s',
   },
-  description: 'Need car recovery in Sheffield? MH Recovery Service Ltd is available 24/7 for car recovery, breakdown recovery, and vehicle towing across Sheffield. Call for a clear quote before you book.',
+  description: '24/7 vehicle recovery in Sheffield & South Yorkshire. Breakdown, towing, accident and long distance recovery. Call MH Recovery Service Ltd.',
   openGraph: {
-    title: 'Car Recovery Sheffield | 24/7 Vehicle Recovery – MH Recovery Service Ltd',
-    description: 'Need car recovery in Sheffield? MH Recovery Service Ltd is available 24/7 for car recovery, breakdown recovery, and vehicle towing across Sheffield. Call for a clear quote before you book.',
+    title: 'Vehicle Recovery Sheffield | 24/7 Breakdown & Towing',
+    description: '24/7 vehicle recovery in Sheffield & South Yorkshire. Breakdown, towing, accident and long distance recovery. Call MH Recovery Service Ltd.',
     url: SITE_URL,
     siteName: 'MH Recovery Service Ltd',
     locale: 'en_GB',
@@ -31,14 +31,14 @@ export const metadata: Metadata = {
         url: OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: 'MH Recovery Service Ltd – Car Recovery Sheffield 24/7',
+        alt: 'MH Recovery Service Ltd – Vehicle Recovery Sheffield 24/7',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Car Recovery Sheffield | 24/7 Vehicle Recovery – MH Recovery Service Ltd',
-    description: 'Need car recovery in Sheffield? MH Recovery Service Ltd is available 24/7 for car recovery, breakdown recovery, and vehicle towing. Call now.',
+    title: 'Vehicle Recovery Sheffield | 24/7 Breakdown & Towing',
+    description: '24/7 vehicle recovery in Sheffield & South Yorkshire. Breakdown, towing, accident and long distance recovery. Call MH Recovery Service Ltd.',
     images: [OG_IMAGE],
   },
 }

@@ -6,16 +6,16 @@ import Footer from '@/components/Footer'
 import { SITE_URL, OG_IMAGE } from '@/lib/siteConfig'
 
 export const metadata: Metadata = {
-  title: '24/7 Car Recovery Sheffield | Vehicle Towing | MH Recovery',
+  title: 'Car Recovery Sheffield | 24/7 Vehicle Recovery',
   description:
-    '24/7 car recovery in Sheffield & South Yorkshire. Breakdown, accident and garage transfers. Call MH Recovery for a clear quote before you book.',
+    '24/7 car recovery in Sheffield & South Yorkshire. Garage, home or agreed address. Call MH Recovery Service Ltd for a clear quote.',
   alternates: {
     canonical: '/services/car-recovery-sheffield',
   },
   openGraph: {
-    title: '24/7 Car Recovery Sheffield | Vehicle Towing | MH Recovery',
+    title: 'Car Recovery Sheffield | 24/7 Vehicle Recovery',
     description:
-      '24/7 car recovery in Sheffield & South Yorkshire. Breakdown, accident and garage transfers. Call MH Recovery for a clear quote before you book.',
+      '24/7 car recovery in Sheffield & South Yorkshire. Garage, home or agreed address. Call MH Recovery Service Ltd for a clear quote.',
     url: `${SITE_URL}/services/car-recovery-sheffield`,
     siteName: 'MH Recovery Service Ltd',
     locale: 'en_GB',
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '24/7 Car Recovery Sheffield | Vehicle Towing | MH Recovery',
+    title: 'Car Recovery Sheffield | 24/7 Vehicle Recovery',
     description:
-      '24/7 car recovery in Sheffield & South Yorkshire. Breakdown, accident and garage transfers. Call MH Recovery for a clear quote before you book.',
+      '24/7 car recovery in Sheffield & South Yorkshire. Garage, home or agreed address. Call MH Recovery Service Ltd for a clear quote.',
     images: [OG_IMAGE],
   },
 }
@@ -275,7 +275,7 @@ export default function CarRecoverySheffield() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
-                  href="tel:07799180009"
+                  href="tel:+447799180009"
                   className="flex items-center justify-center gap-2 bg-primary text-on-primary py-4 px-6 font-extrabold text-base tracking-tight active:scale-95 transition-transform rounded min-h-[52px]"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 shrink-0" aria-hidden="true">
@@ -425,7 +425,7 @@ export default function CarRecoverySheffield() {
               </ul>
               <p className="text-on-surface-variant text-sm font-sans mt-6">
                 Have a question?{' '}
-                <a href="tel:07799180009" className="text-primary font-semibold hover:opacity-80 transition-opacity">
+                <a href="tel:+447799180009" className="text-primary font-semibold hover:opacity-80 transition-opacity">
                   Call us
                 </a>{' '}
                 and explain what help you need.
@@ -459,7 +459,7 @@ export default function CarRecoverySheffield() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
-                href="tel:07799180009"
+                href="tel:+447799180009"
                 className="flex items-center justify-center gap-2 bg-primary text-on-primary py-4 px-6 font-extrabold text-base tracking-tight active:scale-95 transition-transform rounded min-h-[52px]"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 shrink-0" aria-hidden="true">
@@ -532,9 +532,13 @@ export default function CarRecoverySheffield() {
               <Link href="/services/tyre-damage-assistance-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
                 tyre damage assistance in Sheffield
               </Link>
-              {' '}and{' '}
+              ,{' '}
               <Link href="/services/lost-car-keys-help-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
                 lost car keys help in Sheffield
+              </Link>
+              {' '}and{' '}
+              <Link href="/services/long-distance-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
+                long distance recovery from Sheffield
               </Link>
               .
             </p>
@@ -573,7 +577,7 @@ export default function CarRecoverySheffield() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
-                href="tel:07799180009"
+                href="tel:+447799180009"
                 className="flex items-center justify-center gap-2 bg-on-primary text-primary py-4 px-6 font-extrabold text-base tracking-tight active:scale-95 transition-transform rounded min-h-[52px] hover:opacity-90"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 shrink-0" aria-hidden="true">

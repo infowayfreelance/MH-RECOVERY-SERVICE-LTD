@@ -35,7 +35,7 @@ export default function ServicesDetailedPage() {
               </p>
               <a
                 className="inline-flex items-center justify-center bg-secondary text-on-secondary text-xl font-headline font-black uppercase px-10 py-5 tracking-tight hover:bg-white transition-colors duration-300"
-                href="tel:07799180009"
+                href="tel:+447799180009"
               >
                 Call Now: 07799 180009
               </a>
@@ -288,7 +288,7 @@ export default function ServicesDetailedPage() {
             </p>
             <a
               className="group relative inline-flex items-center gap-6 bg-secondary text-on-secondary px-12 py-8 rounded-lg overflow-hidden transition-all duration-300 active:scale-95"
-              href="tel:07799180009"
+              href="tel:+447799180009"
             >
               <span className="relative z-10 text-3xl font-headline font-black uppercase tracking-tight">
                 Call 07799 180009 Now

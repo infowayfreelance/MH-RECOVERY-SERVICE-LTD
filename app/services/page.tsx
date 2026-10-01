@@ -4,16 +4,17 @@ import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { SITE_URL, OG_IMAGE } from '@/lib/siteConfig'
+import { liveServices } from '@/lib/servicesData'
 
 export const metadata: Metadata = {
-  title: 'Vehicle Recovery Services Sheffield | MH Recovery',
-  description: 'Need vehicle recovery services in Sheffield? Get help with breakdowns, car towing, flat batteries and motorcycle recovery. Call MH Recovery Service Ltd.',
+  title: 'Recovery Services Sheffield | Towing & Breakdown',
+  description: 'All MH Recovery Service Ltd services in Sheffield: car recovery, breakdown, towing, jump starts, tyre, keys and accident recovery. Call 24/7.',
   alternates: {
     canonical: '/services',
   },
   openGraph: {
-    title: 'Vehicle Recovery Services Sheffield | MH Recovery',
-    description: 'Need vehicle recovery services in Sheffield? Get help with breakdowns, car towing, flat batteries and motorcycle recovery. Call MH Recovery Service Ltd.',
+    title: 'Recovery Services Sheffield | Towing & Breakdown',
+    description: 'All MH Recovery Service Ltd services in Sheffield: car recovery, breakdown, towing, jump starts, tyre, keys and accident recovery. Call 24/7.',
     url: `${SITE_URL}/services`,
     siteName: 'MH Recovery Service Ltd',
     locale: 'en_GB',
@@ -23,77 +24,26 @@ export const metadata: Metadata = {
         url: OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: 'MH Recovery Service Ltd – Car Recovery Sheffield 24/7',
+        alt: 'MH Recovery Service Ltd – Recovery Services Sheffield',
       },
     ],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Recovery Services Sheffield | Towing & Breakdown',
+    description: 'All MH Recovery Service Ltd services in Sheffield: car recovery, breakdown, towing, jump starts, tyre, keys and accident recovery. Call 24/7.',
+    images: [OG_IMAGE],
+  },
 }
 
-const services = [
-  {
-    title: 'Car Recovery',
-    desc: 'If your car is not safe to drive, we can help take it to a garage, your home, or another agreed place. Tell us where the car is and where you need it to go.',
-    img: '/car-recovery-sheffield.jpg',
-    alt: 'Car recovery truck transporting a vehicle in Sheffield',
-    icon: 'directions_car',
-    href: '/services/car-recovery-sheffield',
-  },
-  {
-    title: 'Breakdown Recovery',
-    desc: 'Has your vehicle stopped working during a journey? Contact us with your location and the problem. We can arrange recovery if you cannot carry on driving.',
-    img: '/breakdown-recovery-sheffield.jpg',
-    alt: 'Breakdown recovery service in Sheffield',
-    icon: 'build',
-    href: '/services/breakdown-recovery-sheffield',
-  },
-  {
-    title: 'Car Towing',
-    desc: 'We can help take your car from one place to another. Share the pickup address and where it needs to go so we can discuss the tow and price.',
-    img: '/car-towing-sheffield.jpg',
-    alt: 'Car towing service in Sheffield',
-    icon: 'rv_hookup',
-    href: '/services/car-towing-sheffield',
-  },
-  {
-    title: 'Jump Starts',
-    desc: 'A flat battery may stop your car from starting. Tell us what happens when you turn the key or press the start button. We can discuss whether a jump start may help.',
-    img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car-Jump-Start-opt-JYsT9hrxSoSxpaw7paudJH4kEG6lMt.webp',
-    alt: 'Jump start service for a flat battery',
-    icon: 'bolt',
-    href: '/services/jump-starts-sheffield',
-  },
-  {
-    title: 'Motorcycle Recovery',
-    desc: 'If your motorcycle breaks down or cannot be ridden, we can help move it. Tell us the bike model, its condition, and where you want it taken.',
-    img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20Demage%20assistance-8r1QZ5Qls7ZajnSo6H2gquraMmlaCG.jpg',
-    alt: 'Motorcycle recovery service',
-    icon: 'two_wheeler',
-  },
-  {
-    title: 'Accident Recovery Sheffield',
-    desc: 'Specialised handling for vehicles involved in road traffic accidents. Secure recovery and storage available.',
-    img: '/accident-recovery-sheffield.jpg',
-    alt: 'Accident recovery service in Sheffield',
-    icon: 'warning',
-    href: '/services/accident-recovery-sheffield',
-  },
-  {
-    title: 'Tyre Damage Assistance',
-    desc: 'Roadside wheel changes and tyre damage support when you do not have a spare or the right tools.',
-    img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20Demage%20assistance-8r1QZ5Qls7ZajnSo6H2gquraMmlaCG.jpg',
-    alt: 'Tyre damage assistance service',
-    icon: 'tire_repair',
-    href: '/services/tyre-damage-assistance-sheffield',
-  },
-  {
-    title: 'Lost Car Keys Help',
-    desc: 'Entry assistance and vehicle recovery if you have been locked out or lost your vehicle keys.',
-    img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lost-replacement-car-keys-dc9c3589-0QM0nZZ8CCSDpf8xpoPobBFiM474eR.jpeg',
-    alt: 'Lost car keys help service',
-    icon: 'key',
-    href: '/services/lost-car-keys-help-sheffield',
-  },
-]
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: `${SITE_URL}/services` },
+  ],
+}
 
 const steps = [
   {
@@ -134,6 +84,10 @@ const faqs = [
 export default function ServicesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Navbar />
       <main>
         {/* Hero Section */}
@@ -165,7 +119,7 @@ export default function ServicesPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
-                  href="tel:07799180009"
+                  href="tel:+447799180009"
                   className="flex items-center justify-center bg-primary text-on-primary py-4 px-6 font-extrabold text-base tracking-tight active:scale-95 transition-transform rounded min-h-[52px]"
                 >
                   Call for Help
@@ -197,56 +151,41 @@ export default function ServicesPage() {
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-              {services.map((service) => (
-                <div key={service.title} className="bg-surface-container-high overflow-hidden rounded-xl flex flex-col">
+              {liveServices.map((service) => (
+                <div key={service.slug} className="bg-surface-container-high overflow-hidden rounded-xl flex flex-col">
                   <div className="relative h-44 md:h-48 overflow-hidden">
                     <Image
                       src={service.img}
                       alt={service.alt}
                       fill
                       className="object-cover"
+                      loading="lazy"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                   </div>
                   <div className="p-5 md:p-8 flex flex-col flex-1">
                     <div className="flex items-center gap-3 mb-3">
                       <span className="material-symbols-outlined text-primary text-xl" aria-hidden="true">{service.icon}</span>
-                      <h3 className="text-base md:text-lg font-bold uppercase tracking-tight text-on-surface">{service.title}</h3>
+                      <h3 className="text-base md:text-lg font-bold uppercase tracking-tight text-on-surface">{service.name}</h3>
                     </div>
-                    <p className="text-on-surface-variant text-sm font-sans leading-relaxed mb-5 flex-1">{service.desc}</p>
-                    {'href' in service && service.href && (
-                      <Link
-                        href={service.href}
-                        className="text-primary text-xs font-bold uppercase tracking-widest hover:opacity-80 transition-opacity mb-3 flex items-center gap-1"
-                      >
-                        Learn more
-                        <span className="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
-                      </Link>
-                    )}
-                    <div className="flex flex-col xs:flex-row gap-2">
-                      <a
-                        href="tel:07799180009"
-                        className="flex items-center justify-center gap-2 flex-1 bg-primary text-on-primary py-3 px-4 font-bold text-sm tracking-tight rounded active:scale-95 transition-transform hover:opacity-90 min-h-[48px]"
-                        aria-label={`Call us about ${service.title}`}
-                      >
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 shrink-0" aria-hidden="true">
-                          <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2z" />
-                        </svg>
-                        Call Now
-                      </a>
-                      <a
-                        href={`https://wa.me/447799180009?text=Hello%20MH%20Recovery%20Service%20Ltd%2C%20I%20need%20help%20with%20${encodeURIComponent(service.title)}%20please.`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-2 flex-1 bg-[#25D366] text-white py-3 px-4 font-bold text-sm tracking-tight rounded active:scale-95 transition-transform hover:bg-[#1ebe5d] min-h-[48px]"
-                        aria-label={`WhatsApp us about ${service.title}`}
-                      >
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" className="w-4 h-4 shrink-0" aria-hidden="true">
-                          <path d="M16 2C8.28 2 2 8.28 2 16c0 2.48.68 4.8 1.86 6.78L2 30l7.42-1.82A13.93 13.93 0 0 0 16 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm0 25.5a11.44 11.44 0 0 1-5.84-1.6l-.42-.25-4.4 1.08 1.1-4.28-.28-.44A11.5 11.5 0 1 1 16 27.5zm6.3-8.62c-.34-.17-2.02-1-2.34-1.11-.32-.11-.55-.17-.78.17-.23.34-.9 1.11-1.1 1.34-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.75-1.69-1.02-.9-1.7-2.02-1.9-2.36-.2-.34-.02-.53.15-.7.15-.15.34-.4.51-.59.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.78-1.88-1.07-2.58-.28-.67-.57-.58-.78-.59-.2-.01-.43-.01-.66-.01-.23 0-.6.09-.91.43-.31.34-1.2 1.17-1.2 2.86s1.22 3.32 1.4 3.55c.17.23 2.4 3.67 5.82 5.15.81.35 1.45.56 1.94.72.82.26 1.56.22 2.15.13.66-.1 2.02-.82 2.3-1.62.29-.8.29-1.48.2-1.62-.08-.14-.31-.23-.65-.4z" />
-                        </svg>
-                        WhatsApp
-                      </a>
-                    </div>
+                    <p className="text-on-surface-variant text-sm font-sans leading-relaxed mb-5 flex-1">{service.summary}</p>
+                    <Link
+                      href={service.route}
+                      className="text-primary text-xs font-bold uppercase tracking-widest hover:opacity-80 transition-opacity mb-3 flex items-center gap-1"
+                    >
+                      Learn more
+                      <span className="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+                    </Link>
+                    <a
+                      href="tel:+447799180009"
+                      className="flex items-center justify-center gap-2 bg-primary text-on-primary py-3 px-4 font-bold text-sm tracking-tight rounded active:scale-95 transition-transform hover:opacity-90 min-h-[48px]"
+                      aria-label={`Call us about ${service.name}`}
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 shrink-0" aria-hidden="true">
+                        <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2z" />
+                      </svg>
+                      Call Now
+                    </a>
                   </div>
                 </div>
               ))}
@@ -373,7 +312,7 @@ export default function ServicesPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:07799180009"
+                href="tel:+447799180009"
                 className="flex items-center justify-center bg-on-primary text-primary py-4 px-8 font-black text-lg tracking-tight active:scale-95 transition-transform rounded hover:opacity-90"
               >
                 Call Now
