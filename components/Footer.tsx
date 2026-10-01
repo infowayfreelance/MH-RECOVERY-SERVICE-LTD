@@ -14,7 +14,7 @@ const services = [
   { label: 'Vehicle Towing', href: '/services/car-towing-sheffield' },
   { label: 'Jump Starts', href: '/services/jump-starts-sheffield' },
   { label: 'Roadside Assistance', href: null },
-  { label: 'Accident Recovery', href: null },
+  { label: 'Accident Recovery', href: '/services/accident-recovery-sheffield' },
   { label: 'Long Distance Recovery', href: null },
   { label: 'Motorcycle Recovery', href: null },
 ]
