@@ -17,7 +17,7 @@ const services = [
   { label: 'Lost Car Keys Help', href: '/services/lost-car-keys-help-sheffield' },
   { label: 'Roadside Assistance', href: null },
   { label: 'Accident Recovery', href: '/services/accident-recovery-sheffield' },
-  { label: 'Long Distance Recovery', href: null },
+  { label: 'Long Distance Recovery', href: '/services/long-distance-recovery-sheffield' },
   { label: 'Motorcycle Recovery', href: null },
 ]
 

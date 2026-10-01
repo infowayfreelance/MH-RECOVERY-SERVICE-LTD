@@ -531,9 +531,13 @@ export default function BreakdownRecoverySheffield() {
               <Link href="/services/tyre-damage-assistance-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
                 tyre damage assistance in Sheffield
               </Link>
-              {' '}and{' '}
+              ,{' '}
               <Link href="/services/lost-car-keys-help-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
                 lost car keys help in Sheffield
+              </Link>
+              {' '}and{' '}
+              <Link href="/services/long-distance-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
+                long distance recovery from Sheffield
               </Link>
               {' '}across the area.
             </p>

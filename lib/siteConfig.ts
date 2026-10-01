@@ -35,7 +35,18 @@ export const BUSINESS = {
   typicalResponseMinutes: null as number | null, // TODO: e.g. 45
   // Insurance / licence
   insuranceDetails: null as string | null, // TODO: confirm and add
+  // Years in business — used in Why Choose sections
+  yearsInBusinessNote: null as string | null, // e.g. 'Over 10 years serving Sheffield'
 }
+
+// Reviews — add real entries when confirmed; pages hide this section when empty.
+export interface ReviewItem {
+  author: string
+  rating: number // 1–5
+  text: string
+  date: string // e.g. '1 October 2024'
+}
+export const REVIEWS: ReviewItem[] = []
 
 export const OG_IMAGE = '/og-mh-recovery.webp'
 export const SITE_ICON = '/site-icon.webp'
