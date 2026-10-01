@@ -70,6 +70,14 @@ const services = [
     icon: 'two_wheeler',
   },
   {
+    title: 'Long Distance Recovery',
+    desc: 'Need your car transported further afield? We arrange longer journeys from Sheffield to agreed destinations. Call with both addresses to discuss the job and price.',
+    img: '/car-towing-sheffield.jpg',
+    alt: 'Long distance vehicle recovery from Sheffield',
+    icon: 'route',
+    href: '/services/long-distance-recovery-sheffield',
+  },
+  {
     title: 'Accident Recovery Sheffield',
     desc: 'Specialised handling for vehicles involved in road traffic accidents. Secure recovery and storage available.',
     img: '/accident-recovery-sheffield.jpg',
