@@ -40,6 +40,19 @@ export const BUSINESS = {
 export const OG_IMAGE = '/og-mh-recovery.webp'
 export const SITE_ICON = '/site-icon.webp'
 
+// Terms and conditions — fill each field when the information is confirmed.
+// Any value left as null will cause the corresponding paragraph to be hidden.
+export const TERMS = {
+  lastUpdated: null as string | null,           // e.g. '1 October 2024'
+  bookingConfirmationNote: null as string | null, // when booking becomes binding and how customer receives details
+  idRequirementsNote: null as string | null,    // identification or vehicle document requirements
+  unsafeCollectionNote: null as string | null,  // process for unsafe/inaccessible collection points, fair charges
+  deliveryProceduresNote: null as string | null, // vehicle handover, unattended delivery, key handling
+  paymentNote: null as string | null,           // payment methods, due date, deposit, VAT
+  cancellationPolicyNote: null as string | null, // legally reviewed cancellation policy
+  complaintsProcessNote: null as string | null, // complaints process, response target, dispute resolution
+}
+
 // Privacy policy — fill each field when the information is confirmed.
 // Any value left as null will cause the corresponding section to be hidden.
 export const PRIVACY_POLICY = {
