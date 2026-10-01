@@ -524,9 +524,13 @@ export default function CarRecoverySheffield() {
               <Link href="/services/jump-starts-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
                 jump starts in Sheffield
               </Link>
-              {' '}and{' '}
+              ,{' '}
               <Link href="/services/accident-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
                 accident recovery in Sheffield
+              </Link>
+              {' '}and{' '}
+              <Link href="/services/tyre-damage-assistance-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
+                tyre damage assistance in Sheffield
               </Link>
               .
             </p>

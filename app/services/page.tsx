@@ -83,6 +83,7 @@ const services = [
     img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20Demage%20assistance-8r1QZ5Qls7ZajnSo6H2gquraMmlaCG.jpg',
     alt: 'Tyre damage assistance service',
     icon: 'tire_repair',
+    href: '/services/tyre-damage-assistance-sheffield',
   },
   {
     title: 'Lost Car Keys Help',
