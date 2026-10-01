@@ -134,9 +134,17 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-outline">
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-5 flex flex-col sm:flex-row justify-between items-center gap-3">
-          <p className="text-on-surface-variant text-xs">
-            &copy; {new Date().getFullYear()} MH Recovery Service Ltd. All rights reserved.
-          </p>
+          <div className="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+            <p className="text-on-surface-variant text-xs">
+              &copy; {new Date().getFullYear()} MH Recovery Service Ltd. All rights reserved.
+            </p>
+            <Link
+              href="/privacy-policy"
+              className="text-on-surface-variant text-xs hover:text-primary transition-colors"
+            >
+              Privacy Policy
+            </Link>
+          </div>
           <p className="text-on-surface-variant text-xs">
             Designed By{' '}
             <a
