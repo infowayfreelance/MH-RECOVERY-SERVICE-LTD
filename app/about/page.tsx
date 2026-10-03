@@ -70,7 +70,7 @@ export default function About() {
             <Image
               className="object-cover opacity-40 mix-blend-luminosity"
               alt="Front view of a blacked-out Mercedes-Benz Sprinter recovery van with custom LED lighting"
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/our%20recovery%20van-yv5BCjbV8hr1cgt150c8J0X8v75rRn.jpeg"
+              src="/our-recovery-van.webp"
               fill
               priority
               sizes="100vw"
