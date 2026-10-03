@@ -215,7 +215,7 @@ export default function CarTowingSheffield() {
             <Image
               alt="Tow truck loading a car for towing in Sheffield"
               className="object-cover"
-              src="/car-towing-sheffield.jpg"
+              src="/car-towing-sheffield.webp"
               fill
               priority
               sizes="100vw"
@@ -423,7 +423,7 @@ export default function CarTowingSheffield() {
               <Image
                 alt="Tow truck loading a car for towing in Sheffield"
                 className="object-cover"
-                src="/car-towing-sheffield.jpg"
+                src="/car-towing-sheffield.webp"
                 fill
                 loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 50vw"

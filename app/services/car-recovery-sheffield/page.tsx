@@ -315,7 +315,7 @@ export default function CarRecoverySheffield() {
               <Image
                 alt="Car being loaded onto a recovery truck in Sheffield"
                 className="object-cover"
-                src="/car-towing-sheffield.jpg"
+                src="/car-towing-sheffield.webp"
                 fill
                 loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 50vw"

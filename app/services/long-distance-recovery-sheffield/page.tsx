@@ -276,7 +276,7 @@ export default function LongDistanceRecoverySheffield() {
               <Image
                 alt="MH Recovery Service Ltd vehicle ready for a long distance recovery from Sheffield"
                 className="object-cover"
-                src="/car-towing-sheffield.jpg"
+                src="/car-towing-sheffield.webp"
                 fill
                 loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 50vw"
