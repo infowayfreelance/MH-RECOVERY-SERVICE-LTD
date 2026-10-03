@@ -238,7 +238,7 @@ export default function BreakdownRecoverySheffield() {
             <Image
               alt="Recovery truck attending a broken-down car in Sheffield"
               className="object-cover"
-              src="/breakdown-recovery-sheffield.jpg"
+              src="/breakdown-recovery-sheffield-night.webp"
               fill
               priority
               sizes="100vw"
@@ -309,7 +309,7 @@ export default function BreakdownRecoverySheffield() {
               <Image
                 alt="Broken-down car loaded onto a flatbed recovery truck"
                 className="object-cover"
-                src="/car-towing-sheffield.webp"
+                src="/breakdown-recovery-van-loaded.webp"
                 fill
                 loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -434,7 +434,7 @@ export default function BreakdownRecoverySheffield() {
               <Image
                 alt="Recovery truck attending a broken-down car in Sheffield"
                 className="object-cover"
-                src="/breakdown-recovery-sheffield.jpg"
+                src="/breakdown-recovery-roadside.webp"
                 fill
                 loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 50vw"
