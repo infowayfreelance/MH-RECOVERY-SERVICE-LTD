@@ -188,7 +188,7 @@ export default function LongDistanceRecoverySheffield() {
             <Image
               alt="Long distance recovery vehicle ready for a Sheffield collection"
               className="object-cover"
-              src="/car-recovery-sheffield.jpg"
+              src="/long-distance-recovery-sheffield-hero.webp"
               fill
               priority
               sizes="100vw"
@@ -276,7 +276,7 @@ export default function LongDistanceRecoverySheffield() {
               <Image
                 alt="MH Recovery Service Ltd vehicle ready for a long distance recovery from Sheffield"
                 className="object-cover"
-                src="/car-towing-sheffield.webp"
+                src="/long-distance-recovery-sheffield-dispatch.webp"
                 fill
                 loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -427,7 +427,7 @@ export default function LongDistanceRecoverySheffield() {
               <Image
                 alt="MH Recovery Service Ltd collecting a vehicle for long distance recovery in Sheffield"
                 className="object-cover"
-                src="/car-recovery-sheffield.jpg"
+                src="/long-distance-recovery-sheffield-motorway.webp"
                 fill
                 loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 50vw"
