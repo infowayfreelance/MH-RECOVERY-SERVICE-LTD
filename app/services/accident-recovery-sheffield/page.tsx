@@ -215,7 +215,7 @@ export default function AccidentRecoverySheffield() {
             <Image
               alt="Accident recovery vehicle attending a damaged car in Sheffield"
               className="object-cover"
-              src="/accident-recovery-sheffield.jpg"
+              src="/accident-recovery-sheffield-hero.webp"
               fill
               priority
               sizes="100vw"
@@ -303,7 +303,7 @@ export default function AccidentRecoverySheffield() {
               <Image
                 alt="MH Recovery Service Ltd attending a vehicle after an accident in Sheffield"
                 className="object-cover"
-                src="/breakdown-recovery-sheffield.jpg"
+                src="/accident-recovery-sheffield-assessment.webp"
                 fill
                 loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -435,7 +435,7 @@ export default function AccidentRecoverySheffield() {
               <Image
                 alt="Accident recovery vehicle attending a damaged car in Sheffield"
                 className="object-cover"
-                src="/accident-recovery-sheffield.jpg"
+                src="/accident-recovery-sheffield-flatbed.webp"
                 fill
                 loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 50vw"
