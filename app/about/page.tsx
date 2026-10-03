@@ -70,7 +70,7 @@ export default function About() {
             <Image
               className="object-cover opacity-40 mix-blend-luminosity"
               alt="Front view of a blacked-out Mercedes-Benz Sprinter recovery van with custom LED lighting"
-              src="/our-recovery-van.webp"
+              src="/about-sheffield-hero.webp"
               fill
               priority
               sizes="100vw"
@@ -129,7 +129,7 @@ export default function About() {
                   <Image
                     className="w-full aspect-video object-cover"
                     alt="Recovery team working on a vehicle in Sheffield"
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car-Recovery-opt-jK0Oh9JpStKSKOwrFlMiRJxvD4tR9S.webp"
+                    src="/about-sheffield-team.webp"
                     width={1280}
                     height={720}
                     sizes="(max-width: 1024px) 100vw, 60vw"
@@ -249,7 +249,7 @@ export default function About() {
                 <Image
                   className="object-cover grayscale opacity-60"
                   alt="Sheffield area where MH Recovery Service Ltd operates"
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Car-Breakdown-opt-y73ndhbUFt5iANdjovdSfsAThW78ws.webp"
+                  src="/about-sheffield-flatbed.webp"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
