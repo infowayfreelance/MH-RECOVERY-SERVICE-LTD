@@ -215,7 +215,7 @@ export default function CarTowingSheffield() {
             <Image
               alt="Tow truck loading a car for towing in Sheffield"
               className="object-cover"
-              src="/car-towing-sheffield.webp"
+              src="/car-towing-sheffield-handover.webp"
               fill
               priority
               sizes="100vw"
@@ -294,7 +294,7 @@ export default function CarTowingSheffield() {
               <Image
                 alt="Car being towed along a Sheffield road by MH Recovery Service Ltd"
                 className="object-cover"
-                src="/breakdown-recovery-sheffield.jpg"
+                src="/car-towing-sheffield-straps.webp"
                 fill
                 loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -423,7 +423,7 @@ export default function CarTowingSheffield() {
               <Image
                 alt="Tow truck loading a car for towing in Sheffield"
                 className="object-cover"
-                src="/car-towing-sheffield.webp"
+                src="/car-towing-sheffield-city.webp"
                 fill
                 loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 50vw"
