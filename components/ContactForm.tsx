@@ -28,7 +28,7 @@ export default function ContactPageClient() {
             <Image
               alt="MH Recovery Service Ltd recovery van in Sheffield"
               className="object-cover"
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/our%20recovery%20van-yv5BCjbV8hr1cgt150c8J0X8v75rRn.jpeg"
+              src="/contact-sheffield-hero.webp"
               fill
               priority
               sizes="100vw"
