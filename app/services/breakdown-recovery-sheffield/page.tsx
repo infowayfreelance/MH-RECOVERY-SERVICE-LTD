@@ -309,7 +309,7 @@ export default function BreakdownRecoverySheffield() {
               <Image
                 alt="Broken-down car loaded onto a flatbed recovery truck"
                 className="object-cover"
-                src="/car-towing-sheffield.jpg"
+                src="/car-towing-sheffield.webp"
                 fill
                 loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 50vw"
