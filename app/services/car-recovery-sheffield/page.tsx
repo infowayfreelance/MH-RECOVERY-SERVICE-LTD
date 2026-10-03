@@ -244,7 +244,7 @@ export default function CarRecoverySheffield() {
             <Image
               alt="Car recovery truck in Sheffield"
               className="object-cover"
-              src="/car-recovery-sheffield.jpg"
+              src="/car-recovery-sheffield-hero.webp"
               fill
               priority
               sizes="100vw"
@@ -315,7 +315,7 @@ export default function CarRecoverySheffield() {
               <Image
                 alt="Car being loaded onto a recovery truck in Sheffield"
                 className="object-cover"
-                src="/car-towing-sheffield.webp"
+                src="/car-recovery-loading-sheffield.webp"
                 fill
                 loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -435,7 +435,7 @@ export default function CarRecoverySheffield() {
               <Image
                 alt="MH Recovery Service Ltd recovery truck on a Sheffield road"
                 className="object-cover"
-                src="/breakdown-recovery-sheffield.jpg"
+                src="/car-recovery-flatbed-sheffield.webp"
                 fill
                 loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 50vw"
