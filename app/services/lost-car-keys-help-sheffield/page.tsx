@@ -215,7 +215,7 @@ export default function LostCarKeysHelpSheffield() {
             <Image
               alt="MH Recovery Service Ltd vehicle attending a lost car keys call in Sheffield"
               className="object-cover"
-              src="/car-recovery-sheffield.jpg"
+              src="/lost-car-keys-sheffield-hero.webp"
               fill
               priority
               sizes="100vw"
@@ -306,7 +306,7 @@ export default function LostCarKeysHelpSheffield() {
               <Image
                 alt="MH Recovery Service Ltd attending a vehicle in Sheffield"
                 className="object-cover"
-                src="/roadside-assistance-sheffield.jpg"
+                src="/lost-car-keys-sheffield-recovery.webp"
                 fill
                 loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -438,7 +438,7 @@ export default function LostCarKeysHelpSheffield() {
               <Image
                 alt="MH Recovery Service Ltd vehicle recovery truck in Sheffield"
                 className="object-cover"
-                src="/car-recovery-sheffield.jpg"
+                src="/lost-car-keys-sheffield-locked-in.webp"
                 fill
                 loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 50vw"

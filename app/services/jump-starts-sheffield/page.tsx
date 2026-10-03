@@ -215,7 +215,7 @@ export default function JumpStartsSheffield() {
             <Image
               alt="MH Recovery Service Ltd vehicle attending a roadside call in Sheffield"
               className="object-cover"
-              src="/car-recovery-sheffield.jpg"
+              src="/jump-start-sheffield-hero.webp"
               fill
               priority
               sizes="100vw"
@@ -300,7 +300,7 @@ export default function JumpStartsSheffield() {
               <Image
                 alt="MH Recovery Service Ltd providing roadside assistance in Sheffield"
                 className="object-cover"
-                src="/roadside-assistance-sheffield.jpg"
+                src="/jump-start-sheffield-battery.webp"
                 fill
                 loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -429,7 +429,7 @@ export default function JumpStartsSheffield() {
               <Image
                 alt="MH Recovery Service Ltd vehicle attending a roadside call in Sheffield"
                 className="object-cover"
-                src="/car-recovery-sheffield.jpg"
+                src="/jump-start-sheffield-driveway.webp"
                 fill
                 loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 50vw"

@@ -215,7 +215,7 @@ export default function TyreDamageAssistanceSheffield() {
             <Image
               alt="Roadside assistance vehicle attending a tyre damage call in Sheffield"
               className="object-cover"
-              src="/roadside-assistance-sheffield.jpg"
+              src="/tyre-damage-sheffield-hero.webp"
               fill
               priority
               sizes="100vw"
@@ -303,7 +303,7 @@ export default function TyreDamageAssistanceSheffield() {
               <Image
                 alt="MH Recovery Service Ltd attending a roadside tyre assistance call in Sheffield"
                 className="object-cover"
-                src="/roadside-assistance-sheffield.jpg"
+                src="/tyre-damage-sheffield-flat.webp"
                 fill
                 loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -435,7 +435,7 @@ export default function TyreDamageAssistanceSheffield() {
               <Image
                 alt="MH Recovery Service Ltd vehicle recovery truck in Sheffield"
                 className="object-cover"
-                src="/car-recovery-sheffield.jpg"
+                src="/tyre-damage-sheffield-fitting.webp"
                 fill
                 loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 50vw"
