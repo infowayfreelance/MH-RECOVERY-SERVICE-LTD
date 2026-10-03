@@ -213,7 +213,7 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
               {liveServices.map((service) => (
-                <div key={service.slug} className="bg-surface-container-high overflow-hidden rounded-xl flex flex-col group sm:hover:bg-surface-container-highest transition-colors">
+                <Link key={service.slug} href={service.route} className="bg-surface-container-high overflow-hidden rounded-xl flex flex-col group sm:hover:bg-surface-container-highest transition-colors">
                   <div className="relative h-40 sm:h-44 md:h-48 overflow-hidden">
                     <Image
                       src={service.img}
@@ -227,14 +227,11 @@ export default function Home() {
                   <div className="p-5 md:p-8 flex flex-col flex-1">
                     <h3 className="text-base md:text-xl font-bold uppercase mb-2 md:mb-4 tracking-tight leading-snug">{service.name}</h3>
                     <p className="text-on-surface-variant text-sm font-sans leading-relaxed mb-5 md:mb-6 flex-1">{service.summary}</p>
-                    <Link
-                      href={service.route}
-                      className="flex items-center justify-center bg-primary text-on-primary py-3 px-4 font-bold text-sm tracking-tight rounded active:scale-95 transition-transform hover:opacity-90"
-                    >
+                    <span className="flex items-center justify-center bg-primary text-on-primary py-3 px-4 font-bold text-sm tracking-tight rounded active:scale-95 transition-transform hover:opacity-90">
                       Learn more
-                    </Link>
+                    </span>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
