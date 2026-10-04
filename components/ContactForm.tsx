@@ -168,28 +168,17 @@ export default function ContactPageClient() {
         </section>
 
         {/* Map Section */}
-        <section className="w-full h-64 sm:h-80 md:h-[500px] bg-surface-container relative overflow-hidden">
-          <div className="absolute inset-0 bg-surface/40 z-10 pointer-events-none"></div>
-          <div className="relative w-full h-full">
-            <Image
-              alt="Map showing Sheffield area, South Yorkshire"
-              className="object-cover grayscale opacity-30"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeuO5Nj6MvjxDl6iSBCinB4RQJOtNubkXj6d4AUBJjiH3d_Yuymx9ThOjlb4hshKlyxbq0kdk1oqqxnOcjhW4vQ0fQ5ghjQmC4m4yFvTLtcLdQkxqFSoub9Ek30C8bYoEXDWnLoyjhJgn0I9y_tdZJ7pLdbzl3IE_Fye6kNBdRpHWy4vyOOEDdRRB7EKUKOUxSDH0Uk5cx6Q2aAVF6BDMnfSrjwExJ_1hCiGAhF9HOoOnidiPPgxkvYt7ckXCAJ4MRLfD7Dn49ro0z"
-              fill
-              sizes="100vw"
-            />
-          </div>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
-            <div className="relative">
-              <div className="absolute -inset-6 md:-inset-8 bg-primary/20 rounded-full animate-pulse"></div>
-              <div className="bg-primary text-on-primary p-3 md:p-4 rounded-full shadow-2xl relative z-30">
-                <span className="material-symbols-outlined text-2xl md:text-4xl" aria-hidden="true">local_shipping</span>
-              </div>
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 md:mt-4 bg-surface-container-highest px-3 md:px-4 py-1 md:py-2 rounded text-[9px] md:text-[10px] font-bold text-on-surface uppercase tracking-widest whitespace-nowrap border border-primary/30">
-                MH Recovery Service Ltd
-              </div>
-            </div>
-          </div>
+        <section className="w-full h-64 sm:h-80 md:h-[500px] overflow-hidden">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1731.6297063803272!2d-1.4621604!3d53.3959602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2aedd84647d64d99%3A0x3a8110a229539be!2sMH%20RECOVERY%20SERVICE%20LTD!5e1!3m2!1sen!2s!4v1791104368224!5m2!1sen!2s"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="strict-origin-when-cross-origin"
+            title="MH Recovery Service Ltd location on Coupe Road, Sheffield S3 9DP"
+          />
         </section>
 
         {/* Quick CTA */}
