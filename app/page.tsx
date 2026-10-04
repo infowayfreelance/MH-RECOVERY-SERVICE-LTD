@@ -391,13 +391,13 @@ export default function Home() {
           </div>
           <div className="mt-10 md:mt-14 rounded-xl overflow-hidden h-64 md:h-80 shadow-lg">
             <iframe
-              src="https://maps.google.com/maps?q=Coupe+Road,+Sheffield,+S3+9DP&t=&z=16&ie=UTF8&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1731.6297063803272!2d-1.4621604!3d53.3959602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2aedd84647d64d99%3A0x3a8110a229539be!2sMH%20RECOVERY%20SERVICE%20LTD!5e1!3m2!1sen!2s!4v1791104368224!5m2!1sen!2s"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               loading="lazy"
               allowFullScreen
-              referrerPolicy="no-referrer-when-downgrade"
+              referrerPolicy="strict-origin-when-cross-origin"
               title="MH Recovery Service Ltd location on Coupe Road, Sheffield S3 9DP"
             />
           </div>
