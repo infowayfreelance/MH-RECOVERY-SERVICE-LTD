@@ -34,24 +34,37 @@ export const metadata: Metadata = {
   },
 }
 
-const structuredData = {
+const aboutPageSchema = {
   '@context': 'https://schema.org',
   '@type': 'AboutPage',
   url: `${SITE_URL}/about`,
   name: 'About MH Recovery Service Ltd',
   description: 'MH Recovery Service Ltd is a vehicle recovery team serving Sheffield. We help drivers when their cars break down, will not start, or need to be moved.',
   mainEntity: {
-    '@type': 'LocalBusiness',
+    '@type': 'AutomotiveBusiness',
     name: 'MH Recovery Service Ltd',
     url: SITE_URL,
     telephone: '+447799180009',
     address: {
       '@type': 'PostalAddress',
+      streetAddress: 'Coupe Road',
       addressLocality: 'Sheffield',
+      postalCode: 'S3 9DP',
+      addressRegion: 'South Yorkshire',
       addressCountry: 'GB',
     },
-    areaServed: 'Sheffield',
+    openingHours: 'Mo-Su 00:00-23:59',
+    areaServed: ['Sheffield', 'Rotherham', 'Barnsley', 'Doncaster', 'South Yorkshire'],
   },
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: 'About', item: `${SITE_URL}/about` },
+  ],
 }
 
 export default function About() {
@@ -60,7 +73,11 @@ export default function About() {
       <Navbar />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <main className="pt-16 md:pt-20">
 
@@ -73,6 +90,7 @@ export default function About() {
               src="/about-sheffield-hero.webp"
               fill
               priority
+              fetchPriority="high"
               sizes="100vw"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent"></div>
