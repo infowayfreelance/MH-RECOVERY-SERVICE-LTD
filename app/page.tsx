@@ -65,6 +65,13 @@ const faqPageSchema = {
   })),
 }
 
+const webSiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  url: SITE_URL,
+  name: BUSINESS.name,
+}
+
 export const metadata: Metadata = {
   title: 'Vehicle Recovery Sheffield | 24/7 Breakdown & Towing',
   description:
@@ -108,6 +115,10 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
       />
       <Navbar />
       <main>
