@@ -4,6 +4,8 @@ import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import LazyVideo from '@/components/LazyVideo'
+import FBVideoEmbed from '@/components/FBVideoEmbed'
+import LazyMap from '@/components/LazyMap'
 import { liveServices } from '@/lib/servicesData'
 import { SITE_URL, OG_IMAGE, BUSINESS } from '@/lib/siteConfig'
 
@@ -23,17 +25,6 @@ const whyChooseData = [
   { icon: 'phone_in_talk', text: 'Call Any Time for a Quote' },
 ]
 
-const galleryPosts = [
-  'https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid021QPHQNk1NZ14ktgr7cknHRTBcZEfWgCapfTLNE8vRjbxGt81vmm8RadgLNeiPTcQl%26id%3D100076202805594&show_text=false&width=500',
-  'https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02x3E2rz8awha4bf9PJJGaem95Nm83yTYA4eiHDZAKZ3YYcJQhsxHNXwdRPQSg8QAAl%26id%3D100076202805594&show_text=false&width=500',
-  'https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid033KERUru6EXDwfCArJL1DnwWb8G1j92MfQhQiUBeR6pPmKV4FeBkSgwgjRzd4nSRql%26id%3D100076202805594&show_text=false&width=500',
-  'https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02wscdB9iRFHrpvbu2dtSLCoHbTZqxNwLEG6PDhiDXH3A76jaqM3mTgi8f1DcvrpG1l%26id%3D100076202805594&show_text=false&width=500',
-  'https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0FJuHT4igyL7Tf39Hd2UcGGRCYWASLLHAFhWMb2Dk21oZVNoikVkHpd18t7YQYY2yl%26id%3D100076202805594&show_text=false&width=500',
-  'https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02xhSyQgec2qA3W9PYFAb8NgR5dGt1AH9wZZsc1JmvfB5pPjq2keyt8PnPdcdamSv6l%26id%3D100076202805594&show_text=false&width=500',
-  'https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02ct1fPc4ewdWzpNpK1oXgfSLYhJY5oZwDffoA7pxNPawm5HfAwbQ8azxbLATBSoJ8l%26id%3D100076202805594&show_text=false&width=500',
-  'https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02VTizaL3j1F5EtYJyZFkbAxA7PKdhD4DbnHKumVCBVhPnReoM4LbvZYksDT3YQjZml%26id%3D100076202805594&show_text=false&width=500',
-  'https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02eFjeGnfEVZ2Hsn4ps58KMX3mLV9YZU6yVkMUju3o8dJBU9MsMfd54XKnNuqCZmLKl%26id%3D100076202805594&show_text=false&width=500',
-]
 
 const localBusinessSchema = {
   '@context': 'https://schema.org',
@@ -355,18 +346,7 @@ export default function Home() {
                 { src: 'https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F100076202805594%2Fvideos%2F934890138764598%2F&show_text=false&width=267&t=0', title: 'MH Recovery Service Ltd recovery video 4' },
               ].map(({ src, title }) => (
                 <div key={src} className="w-full flex justify-center">
-                  <iframe
-                    src={src}
-                    width="267"
-                    height="476"
-                    style={{ border: 'none', overflow: 'hidden', maxWidth: '100%' }}
-                    scrolling="no"
-                    frameBorder="0"
-                    loading="lazy"
-                    allowFullScreen
-                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                    title={title}
-                  />
+                  <FBVideoEmbed src={src} title={title} />
                 </div>
               ))}
             </div>
@@ -401,16 +381,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-10 md:mt-14 rounded-xl overflow-hidden h-64 md:h-80 shadow-lg">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1731.6297063803272!2d-1.4621604!3d53.3959602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2aedd84647d64d99%3A0x3a8110a229539be!2sMH%20RECOVERY%20SERVICE%20LTD!5e1!3m2!1sen!2s!4v1791104368224!5m2!1sen!2s"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              loading="lazy"
-              allowFullScreen
-              referrerPolicy="strict-origin-when-cross-origin"
-              title="MH Recovery Service Ltd location on Coupe Road, Sheffield S3 9DP"
-            />
+            <LazyMap />
           </div>
         </section>
 
@@ -441,33 +412,27 @@ export default function Home() {
 
         {/* Our Work Gallery */}
         <section className="bg-surface-container-low py-16 md:py-24 px-4 md:px-6">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-10 md:mb-14">
-              <span className="inline-block px-3 py-1 bg-primary-container text-white text-xs font-bold tracking-widest uppercase mb-4 border border-primary/30">
-                Gallery
-              </span>
-              <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-on-surface">
-                Our <span className="text-primary">Work</span>
-              </h2>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 justify-items-center">
-              {galleryPosts.map((src, i) => (
-                <div key={i} className="w-full flex justify-center overflow-hidden">
-                  <iframe
-                    src={src}
-                    width="500"
-                    height="375"
-                    style={{ border: 'none', overflow: 'hidden', maxWidth: '100%' }}
-                    scrolling="no"
-                    frameBorder="0"
-                    loading="lazy"
-                    allowFullScreen
-                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                    title={`MH Recovery Service Ltd work photo ${i + 1}`}
-                  />
-                </div>
-              ))}
-            </div>
+          <div className="max-w-3xl mx-auto text-center">
+            <span className="inline-block px-3 py-1 bg-primary-container text-white text-xs font-bold tracking-widest uppercase mb-4 border border-primary/30">
+              Gallery
+            </span>
+            <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-on-surface mb-4">
+              Our <span className="text-primary">Work</span>
+            </h2>
+            <p className="text-on-surface-variant font-sans text-base leading-relaxed mb-8">
+              We regularly share photos and updates from our recovery jobs across Sheffield and South Yorkshire. Follow us on Facebook to see our latest work.
+            </p>
+            <a
+              href="https://www.facebook.com/people/MH-Recovery-Service-Ltd/100076202805594/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-[#1877F2] text-white px-8 py-4 font-bold text-base rounded hover:opacity-90 active:scale-95 transition-all"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="w-5 h-5 shrink-0" aria-hidden="true">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+              View Our Work on Facebook
+            </a>
           </div>
         </section>
 
