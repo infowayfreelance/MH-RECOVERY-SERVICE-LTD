@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import type React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
@@ -137,30 +138,70 @@ const faqSchema = {
   ],
 }
 
-const faqs = [
+const faqs: { q: string; a: React.ReactNode }[] = [
   {
     q: 'What is breakdown recovery?',
     a: 'Breakdown recovery is the process of collecting a vehicle that cannot be driven and transporting it to a garage or another agreed location. We use a flatbed truck or suitable recovery equipment depending on the vehicle and its condition.',
   },
   {
     q: 'How much does breakdown recovery in Sheffield cost?',
-    a: "The cost depends on your location, the vehicle's condition and where it needs to go. Call us or send a message with these details and we will give you a quote.",
+    a: (
+      <>
+        The cost depends on your location, the vehicle&apos;s condition and where it needs to go.{' '}
+        <Link href="/contact" className="text-primary font-semibold hover:opacity-80 transition-opacity">
+          Contact us
+        </Link>{' '}
+        with these details and we will give you a quote.
+      </>
+    ),
   },
   {
     q: 'Do you cover South Yorkshire as well as Sheffield?',
-    a: 'We cover Sheffield and South Yorkshire. If your vehicle is outside this area, contact us to check whether we can help.',
+    a: (
+      <>
+        We cover Sheffield and South Yorkshire. If your vehicle is outside this area,{' '}
+        <Link href="/contact" className="text-primary font-semibold hover:opacity-80 transition-opacity">
+          contact us
+        </Link>{' '}
+        to check whether we can help.
+      </>
+    ),
   },
   {
     q: 'My vehicle will not start — can you recover it?',
-    a: 'Yes. Tell us where the vehicle is and what has happened. If it cannot be driven, we can arrange to collect it and take it to a garage.',
+    a: (
+      <>
+        Yes. Tell us where the vehicle is and what has happened. If it cannot be driven, we can arrange to collect it and take it to a garage. For more advice, see our guide on{' '}
+        <Link href="/blog/car-recovery-without-keys" className="text-primary font-semibold hover:opacity-80 transition-opacity">
+          recovering a car without keys
+        </Link>
+        .
+      </>
+    ),
   },
   {
     q: 'Can you recover a vehicle after an accident?',
-    a: 'If your vehicle has been damaged and cannot be driven, tell us about its condition and location. We will check whether our equipment is right for the job before we agree to collect it.',
+    a: (
+      <>
+        If your vehicle has been damaged and cannot be driven, tell us about its condition and location. We will check whether our equipment is right for the job before we agree to collect it. See our dedicated{' '}
+        <Link href="/services/accident-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
+          accident recovery in Sheffield
+        </Link>{' '}
+        page for more details.
+      </>
+    ),
   },
   {
     q: 'What information do I need when I call?',
-    a: 'Have your location or postcode ready, along with your vehicle make and model, a description of the problem and the address you want the vehicle taken to. Tell us if the vehicle cannot roll or has any access problems.',
+    a: (
+      <>
+        Have your location or postcode ready, along with your vehicle make and model, a description of the problem and the address you want the vehicle taken to. Tell us if the vehicle cannot roll or has any access problems.{' '}
+        <Link href="/contact" className="text-primary font-semibold hover:opacity-80 transition-opacity">
+          Send us a message
+        </Link>{' '}
+        if you prefer to share these details in writing.
+      </>
+    ),
   },
 ]
 
@@ -200,17 +241,29 @@ const situations = [
   {
     icon: 'no_crash',
     title: 'Vehicle Will Not Start',
-    desc: 'A flat battery, fuel problem or mechanical fault can leave you stranded at home or in a car park. We can recover the vehicle if it cannot be driven.',
+    desc: (
+      <>
+        A <Link href="/services/jump-starts-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">flat battery</Link>, fuel problem or mechanical fault can leave you stranded at home or in a car park. We can recover the vehicle if it cannot be driven. If you have <Link href="/services/lost-car-keys-help-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">lost your car keys</Link> or been locked out, we can help with that too.
+      </>
+    ),
   },
   {
     icon: 'build',
     title: 'Needs to Reach a Garage',
-    desc: 'If your vehicle cannot be driven to a garage for repairs, we can collect it and take it to the mechanic you have chosen.',
+    desc: (
+      <>
+        If your vehicle cannot be driven to a garage for repairs, our <Link href="/services/car-towing-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">car towing service</Link> can collect it and take it to the mechanic you have chosen.
+      </>
+    ),
   },
   {
     icon: 'warning',
     title: 'Damaged After an Accident',
-    desc: 'A vehicle damaged in an accident may not be safe to drive. Tell us the condition and location and we will check if we can help.',
+    desc: (
+      <>
+        A vehicle damaged in an accident may not be safe to drive. Tell us the condition and location and we will check if we can help. Our <Link href="/services/accident-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">accident recovery service</Link> handles vehicles that cannot be driven after a collision.
+      </>
+    ),
   },
 ]
 
@@ -242,6 +295,7 @@ export default function BreakdownRecoverySheffield() {
               fill
               priority
               sizes="100vw"
+              quality={50}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent" />
           </div>
@@ -299,10 +353,10 @@ export default function BreakdownRecoverySheffield() {
                 A breakdown can happen anywhere — on a main road, in a car park or on your driveway. When your vehicle stops working and cannot be driven safely, we can arrange to collect it and take it where you need it to go.
               </p>
               <p className="text-on-surface-variant text-base font-sans mb-4 leading-relaxed">
-                We use a flatbed recovery truck or appropriate equipment to transport your vehicle without putting further strain on it. Tell us your location, the vehicle type and what has happened and we will check whether we can help.
+                We use a <Link href="/services/car-towing-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">flatbed recovery truck</Link> or appropriate equipment to transport your vehicle without putting further strain on it. Tell us your location, the vehicle type and what has happened and we will check whether we can help.
               </p>
               <p className="text-on-surface-variant text-base font-sans leading-relaxed">
-                We serve Sheffield and the surrounding South Yorkshire area. If you are not sure whether we cover your location, call us and we will check.
+                We serve Sheffield and the surrounding South Yorkshire area. If you are not sure whether we cover your location, <Link href="/contact" className="text-primary font-semibold hover:opacity-80 transition-opacity">contact us</Link> and we will check.
               </p>
             </div>
             <div className="relative h-64 sm:h-80 md:h-[380px] overflow-hidden rounded-xl">
@@ -405,7 +459,7 @@ export default function BreakdownRecoverySheffield() {
                 Why Choose <span className="text-primary">MH Recovery Service Ltd?</span>
               </h2>
               <p className="text-on-surface-variant text-base font-sans mb-6 leading-relaxed">
-                We&apos;re a local Sheffield business and we answer the phone day and night.
+                We&apos;re a local Sheffield business and we answer the phone day and night. <Link href="/about" className="text-primary font-semibold hover:opacity-80 transition-opacity">Find out more about MH Recovery Service Ltd</Link>.
               </p>
               <ul className="flex flex-col gap-4">
                 {[
@@ -424,10 +478,10 @@ export default function BreakdownRecoverySheffield() {
               </ul>
               <p className="text-on-surface-variant text-sm font-sans mt-6">
                 Have a question?{' '}
-                <a href="tel:+447799180009" className="text-primary font-semibold hover:opacity-80 transition-opacity">
-                  Call us
-                </a>{' '}
-                and explain what help you need.
+                <Link href="/contact" className="text-primary font-semibold hover:opacity-80 transition-opacity">
+                  Contact us
+                </Link>{' '}
+                or <a href="tel:+447799180009" className="text-primary font-semibold hover:opacity-80 transition-opacity">call us</a> and explain what help you need.
               </p>
             </div>
             <div className="relative h-64 sm:h-80 md:h-[380px] overflow-hidden rounded-xl">
@@ -454,7 +508,7 @@ export default function BreakdownRecoverySheffield() {
               We provide breakdown recovery throughout Sheffield and the wider South Yorkshire area. When you call, share your exact location or postcode and we will check whether we can reach you.
             </p>
             <p className="text-on-surface-variant text-base font-sans mb-8 leading-relaxed">
-              If your vehicle is outside this area, contact us and we will let you know whether we can help.
+              If your vehicle is outside this area, <Link href="/contact" className="text-primary font-semibold hover:opacity-80 transition-opacity">contact us</Link> and we will let you know whether we can help. For longer journeys, see our <Link href="/services/long-distance-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">long distance recovery from Sheffield</Link>.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a

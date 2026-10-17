@@ -2,15 +2,15 @@ import type { Metadata } from 'next'
 import { Ubuntu } from 'next/font/google'
 import Script from 'next/script'
 import './globals.css'
-import FloatingButtons from '@/components/FloatingButtons'
 import FontLoader from '@/components/FontLoader'
-import CookieBanner from '@/components/CookieBanner'
+import ClientShell from '@/components/ClientShell'
 import { SITE_URL, OG_IMAGE } from '@/lib/siteConfig'
 
 const ubuntu = Ubuntu({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '700'],
+  weight: ['400', '700'],
   variable: '--font-ubuntu',
+  display: 'optional',
 })
 
 export const metadata: Metadata = {
@@ -42,6 +42,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`bg-surface ${ubuntu.variable}`}>
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="icon" type="image/webp" href="/site-icon.webp" />
         <link rel="apple-touch-icon" href="/site-icon.webp" />
       </head>
@@ -56,8 +58,7 @@ export default function RootLayout({
         />
         <FontLoader />
         {children}
-        <FloatingButtons />
-        <CookieBanner />
+        <ClientShell />
       </body>
     </html>
   )
