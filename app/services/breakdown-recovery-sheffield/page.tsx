@@ -242,6 +242,7 @@ export default function BreakdownRecoverySheffield() {
               fill
               priority
               sizes="100vw"
+              quality={50}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent" />
           </div>
