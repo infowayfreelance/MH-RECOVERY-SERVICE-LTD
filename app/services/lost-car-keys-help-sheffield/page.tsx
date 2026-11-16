@@ -6,16 +6,16 @@ import Footer from '@/components/Footer'
 import { SITE_URL, OG_IMAGE, BUSINESS } from '@/lib/siteConfig'
 
 export const metadata: Metadata = {
-  title: 'Lost Car Keys Help Sheffield | 24/7',
+  title: 'Lost Car Keys Sheffield | Entry & Recovery Help 24/7',
   description:
-    'Lost car keys help Sheffield from MH Recovery Service Ltd. Serving Sheffield and South Yorkshire. Call our 24/7 phone line to discuss your next step.',
+    'Lost or locked-in car keys in Sheffield? MH Recovery Service Ltd offers vehicle entry assistance and recovery without keys. Phone line open 24/7: 07799 180009.',
   alternates: {
     canonical: '/services/lost-car-keys-help-sheffield',
   },
   openGraph: {
-    title: 'Lost Car Keys Help Sheffield | 24/7',
+    title: 'Lost Car Keys Sheffield | Entry & Recovery Help 24/7',
     description:
-      'Lost car keys help Sheffield from MH Recovery Service Ltd. Serving Sheffield and South Yorkshire. Call our 24/7 phone line to discuss your next step.',
+      'Lost or locked-in car keys in Sheffield? MH Recovery Service Ltd offers vehicle entry assistance and recovery without keys. Phone line open 24/7: 07799 180009.',
     url: `${SITE_URL}/services/lost-car-keys-help-sheffield`,
     siteName: 'MH Recovery Service Ltd',
     locale: 'en_GB',
@@ -239,7 +239,7 @@ export default function LostCarKeysHelpSheffield() {
           <div className="relative z-10 max-w-7xl mx-auto w-full">
             <div className="max-w-2xl">
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tighter leading-[1.05] mb-4 md:mb-6 uppercase text-on-surface text-balance">
-                Lost Car Keys Help <span className="text-primary">in Sheffield</span>
+                Lost or Locked-In Car Keys <span className="text-primary">in Sheffield</span>
               </h1>
               <p className="text-on-surface-variant text-base md:text-lg mb-6 max-w-xl leading-relaxed font-sans">
                 {BUSINESS.name} provides lost car keys help in Sheffield, including vehicle entry assistance and recovery when needed. We are based on {BUSINESS.address.street}, and our phone line is open 24 hours a day, 7 days a week. Call {BUSINESS.phonePrimary} for a quote and an estimated arrival time before agreeing to the job.
@@ -491,6 +491,10 @@ export default function LostCarKeysHelpSheffield() {
                 vehicle towing in Sheffield
               </Link>
               . Roadside assistance in Sheffield is also available — call us to discuss your needs.
+              {' '}If your car has to be moved without keys, read our guide:{' '}
+              <Link href="/blog/car-recovery-without-keys" className="text-primary font-semibold hover:opacity-80 transition-opacity">
+                can a car be recovered without keys?
+              </Link>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

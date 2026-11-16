@@ -547,6 +547,10 @@ export default function CarRecoveryWithoutKeysPage() {
 
               <p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">
                 If you need car recovery without keys in Sheffield, contact MH Recovery Service Ltd to discuss the job.
+                {' '}If your keys are locked inside the car, see our{' '}
+                <Link href="/services/lost-car-keys-help-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
+                  lost car keys help in Sheffield
+                </Link>.
               </p>
               <p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">
                 Share your vehicle details, collection location and destination. Explain that the keys are unavailable and mention any access problems.
