@@ -6,16 +6,16 @@ import Footer from '@/components/Footer'
 import { SITE_URL, OG_IMAGE, BUSINESS } from '@/lib/siteConfig'
 
 export const metadata: Metadata = {
-  title: 'Lost Car Keys Sheffield | Entry & Recovery Help 24/7',
+  title: "Lost Car Keys Sheffield | Entry & Recovery | MH Recovery",
   description:
-    'Lost or locked-in car keys in Sheffield? MH Recovery Service Ltd offers vehicle entry assistance and recovery without keys. Phone line open 24/7: 07799 180009.',
+    "Lost or locked-in car keys in Sheffield? MH Recovery Service Ltd helps with vehicle entry and recovery without keys. Phone line open 24/7: 07799 180009.",
   alternates: {
     canonical: '/services/lost-car-keys-help-sheffield',
   },
   openGraph: {
-    title: 'Lost Car Keys Sheffield | Entry & Recovery Help 24/7',
+    title: "Lost Car Keys Sheffield | Entry & Recovery | MH Recovery",
     description:
-      'Lost or locked-in car keys in Sheffield? MH Recovery Service Ltd offers vehicle entry assistance and recovery without keys. Phone line open 24/7: 07799 180009.',
+    "Lost or locked-in car keys in Sheffield? MH Recovery Service Ltd helps with vehicle entry and recovery without keys. Phone line open 24/7: 07799 180009.",
     url: `${SITE_URL}/services/lost-car-keys-help-sheffield`,
     siteName: 'MH Recovery Service Ltd',
     locale: 'en_GB',
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Lost Car Keys Help Sheffield | 24/7',
+    title: "Lost Car Keys Sheffield | Entry & Recovery | MH Recovery",
     description:
-      'Lost car keys help Sheffield from MH Recovery Service Ltd. Serving Sheffield and South Yorkshire. Call our 24/7 phone line to discuss your next step.',
+    "Lost or locked-in car keys in Sheffield? MH Recovery Service Ltd helps with vehicle entry and recovery without keys. Phone line open 24/7: 07799 180009.",
     images: [OG_IMAGE],
   },
 }
@@ -82,87 +82,58 @@ const serviceSchema = {
   url: `${SITE_URL}/services/lost-car-keys-help-sheffield`,
 }
 
+const faqs = [
+  {
+    "q": "Can you help if my keys are locked inside the car?",
+    "a": "Yes, we provide vehicle entry assistance for locked-in keys. Call us with your location, vehicle make and model, and we will explain the next step."
+  },
+  {
+    "q": "Can you recover my car if I have lost my keys completely?",
+    "a": "Yes, we can arrange recovery without keys using a suitable collection method. Give us the vehicle location, registration and make and model on the call."
+  },
+  {
+    "q": "What if my key fob has stopped working?",
+    "a": "Call us and describe the problem. Tell us whether the physical key blade still turns the lock. We can discuss what assistance is possible based on your vehicle and situation."
+  },
+  {
+    "q": "Can you cut or programme a new key for my car?",
+    "a": "This page covers vehicle entry assistance and recovery. An auto locksmith or vehicle dealer can explain replacement key options."
+  },
+  {
+    "q": "What details should I give when I call?",
+    "a": "Give us your location, vehicle registration, make and model, and describe the key problem. Tell us whether the keys are inside the car, lost entirely or not working."
+  },
+  {
+    "q": "Is the phone line open at night?",
+    "a": "Yes, our phone line is open 24 hours a day, 7 days a week. We give you an estimated arrival time on the call."
+  },
+  {
+    "q": "What documents do I need if I've lost my car keys?",
+    "a": "Auto locksmiths and dealers usually ask for proof that you own the vehicle, such as the V5C logbook, and photo ID before they make a new key. Before any entry or collection, we'll tell you on the call what we need to see."
+  },
+  {
+    "q": "My keyless fob has stopped working. Does that mean the key is lost?",
+    "a": "Not necessarily. Many keyless fobs have a hidden emergency key blade for the door, and some cars will start if you hold the fob against a marked spot near the steering column or start button. Check your handbook. If the car still won't open or start, call us and describe what happens."
+  },
+  {
+    "q": "Can you take my car to a main dealer or an auto locksmith?",
+    "a": "Yes. Where recovery is arranged, we collect the car and deliver it to the destination you agree on the call, such as a main dealer, an auto locksmith's premises or your home."
+  },
+  {
+    "q": "Do you help with lost car keys in Rotherham, Barnsley or Doncaster?",
+    "a": "Call us with the vehicle's location and we'll confirm whether we can cover it before you agree to anything."
+  }
+]
+
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'Can you help if my keys are locked inside the car?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes, we provide vehicle entry assistance for locked-in keys. Call us with your location, vehicle make and model, and we will explain the next step.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Can you recover my car if I have lost my keys completely?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes, we can arrange recovery without keys using a suitable collection method. Give us the vehicle location, registration and make and model on the call.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What if my key fob has stopped working?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Call us and describe the problem. Tell us whether the physical key blade still turns the lock. We can discuss what assistance is possible based on your vehicle and situation.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Can you cut or programme a new key for my car?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'This page covers vehicle entry assistance and recovery. An auto locksmith or vehicle dealer can explain replacement key options.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What details should I give when I call?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Give us your location, vehicle registration, make and model, and describe the key problem. Tell us whether the keys are inside the car, lost entirely or not working.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Is the phone line open at night?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes, our phone line is open 24 hours a day, 7 days a week. We give you an estimated arrival time on the call.',
-      },
-    },
-  ],
+  mainEntity: faqs.map(({ q, a }) => ({
+    '@type': 'Question',
+    name: q,
+    acceptedAnswer: { '@type': 'Answer', text: a },
+  })),
 }
-
-const faqs = [
-  {
-    q: 'Can you help if my keys are locked inside the car?',
-    a: 'Yes, we provide vehicle entry assistance for locked-in keys. Call us with your location, vehicle make and model, and we will explain the next step.',
-  },
-  {
-    q: 'Can you recover my car if I have lost my keys completely?',
-    a: 'Yes, we can arrange recovery without keys using a suitable collection method. Give us the vehicle location, registration and make and model on the call.',
-  },
-  {
-    q: 'What if my key fob has stopped working?',
-    a: 'Call us and describe the problem. Tell us whether the physical key blade still turns the lock. We can discuss what assistance is possible based on your vehicle and situation.',
-  },
-  {
-    q: 'Can you cut or programme a new key for my car?',
-    a: 'This page covers vehicle entry assistance and recovery. An auto locksmith or vehicle dealer can explain replacement key options.',
-  },
-  {
-    q: 'What details should I give when I call?',
-    a: 'Give us your location, vehicle registration, make and model, and describe the key problem. Tell us whether the keys are inside the car, lost entirely or not working.',
-  },
-  {
-    q: 'Is the phone line open at night?',
-    a: 'Yes, our phone line is open 24 hours a day, 7 days a week. We give you an estimated arrival time on the call.',
-  },
-]
 
 const steps = [
   {
@@ -276,6 +247,41 @@ export default function LostCarKeysHelpSheffield() {
           </div>
         </section>
 
+        <section className="py-10 md:py-16 bg-surface px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-3 text-on-surface">
+                Lost Your Car Keys in Sheffield? What to Do First
+              </h2>
+              <div className="h-1 w-12 bg-primary mx-auto mb-4" />
+            </div>
+            <div className="max-w-3xl mx-auto flex flex-col gap-4 text-on-surface-variant text-base font-sans leading-relaxed">
+              <ol className="flex flex-col gap-4">
+                <li className="relative flex items-start gap-3">
+                  <span className="text-5xl font-black text-primary/20 leading-none select-none">1</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong className="text-on-surface">Make sure you're safe.</strong> If the car is beside moving traffic, stand well away from the road. If anyone is hurt or in danger, call 999.</p>
+                </li>
+                <li className="relative flex items-start gap-3">
+                  <span className="text-5xl font-black text-primary/20 leading-none select-none">2</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong className="text-on-surface">Check for a spare.</strong> If there's a spare key at home, someone bringing it to you is usually the quickest fix.</p>
+                </li>
+                <li className="relative flex items-start gap-3">
+                  <span className="text-5xl font-black text-primary/20 leading-none select-none">3</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong className="text-on-surface">Check your cover.</strong> Some motor insurance and breakdown policies include key cover. It's worth checking before you pay for a replacement.</p>
+                </li>
+                <li className="relative flex items-start gap-3">
+                  <span className="text-5xl font-black text-primary/20 leading-none select-none">4</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong className="text-on-surface">Think about security.</strong> If your keys were stolen, or were lost with something showing your address, report it to the police and ask the locksmith or dealer to remove the lost key from the car's system.</p>
+                </li>
+                <li className="relative flex items-start gap-3">
+                  <span className="text-5xl font-black text-primary/20 leading-none select-none">5</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong className="text-on-surface">Decide what you need:</strong> getting into the car, a new key, or moving the car somewhere it can be dealt with. Then call us on 07799 180009 and we'll explain the options.</p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
         {/* Lost Keys, Locked-In Keys or Non-Working Keys */}
         <section className="py-10 md:py-16 bg-surface-container-low px-4 md:px-6">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
@@ -335,8 +341,89 @@ export default function LostCarKeysHelpSheffield() {
                 If the keys are lost and the car cannot be moved, we can discuss recovery options. Give us the vehicle registration and a detailed description of its position, including nearby landmarks or a full postcode.
               </p>
               <p>
-                An auto locksmith or vehicle dealer can explain replacement key options. Yorkshire Auto Keys and other local providers may be able to assist with key cutting and programming once the car is accessible.
+                For a replacement key, contact an auto locksmith or your vehicle's main dealer. They can cut and programme a new key once the car is accessible, and can usually remove the lost key from the car's system so it no longer works.
               </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-10 md:py-16 bg-surface px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-3 text-on-surface">
+                Proof of Ownership and What to Have Ready
+              </h2>
+              <div className="h-1 w-12 bg-primary mx-auto mb-4" />
+            </div>
+            <div className="max-w-3xl mx-auto flex flex-col gap-4 text-on-surface-variant text-base font-sans leading-relaxed">
+              <p>Anyone who opens, moves or makes a key for a car has to be sure it's yours. Locksmiths and dealers usually ask for the <strong>V5C logbook</strong> and <strong>photo ID</strong> before cutting a new key. Before any entry or collection, we'll tell you on the call what we need to see. It also helps to have:</p>
+              <ul className="flex flex-col gap-4">
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed">the registration, make, model and year;</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed">the exact location: full postcode, street name, or the car park entrance and level;</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed">whether the car is on a public road, in a private car park or on private land.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-10 md:py-16 bg-surface px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-3 text-on-surface">
+                Moving a Car Without Keys
+              </h2>
+              <div className="h-1 w-12 bg-primary mx-auto mb-4" />
+            </div>
+            <div className="max-w-3xl mx-auto flex flex-col gap-4 text-on-surface-variant text-base font-sans leading-relaxed">
+              <p>Without a key, the steering may stay locked, an automatic may be stuck in Park and the parking brake may not release. Tight parking spaces make it harder too. Tell us what you know about these when you call, but don't force anything. If the car is electric or hybrid, tell us that as well. Recovery moves the car somewhere safe, such as a dealer, an auto locksmith or your home; it doesn't replace the key. Read more in our guide: <Link href="/blog/car-recovery-without-keys" className="text-primary font-semibold hover:opacity-80 transition-opacity">can a car be recovered without keys?</Link></p>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-10 md:py-16 bg-surface px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-3 text-on-surface">
+                Locksmith, Dealer or Recovery: Who Should You Call?
+              </h2>
+              <div className="h-1 w-12 bg-primary mx-auto mb-4" />
+            </div>
+            <div className="max-w-3xl mx-auto flex flex-col gap-4 text-on-surface-variant text-base font-sans leading-relaxed">
+              <ul className="flex flex-col gap-4">
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong>A spare key is available</strong> — ask someone to bring it.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong>Keys locked inside the car</strong> — call us for vehicle entry assistance.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong>All keys lost or damaged</strong> — an auto locksmith or main dealer for a replacement key.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong>The car needs moving before a new key can be made</strong> — call us for <Link href="/services/car-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">car recovery</Link>.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong>The car also has a flat battery or a fault</strong> — tell us both problems; see <Link href="/services/jump-starts-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">jump starts</Link> and <Link href="/services/breakdown-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">breakdown recovery</Link>.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong>The dealer is outside Sheffield</strong> — ask about <Link href="/services/long-distance-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">long-distance recovery</Link>.</p>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
