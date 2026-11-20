@@ -42,6 +42,13 @@ const breadcrumbSchema = {
 
 const posts = [
   {
+    "href": "/blog/accident-recovery-sheffield",
+    "title": "Been in a Car Accident in Sheffield? What to Do Next, and How Recovery Usually Works",
+    "description": "What to do after a car accident in Sheffield: safety first, which details to exchange, when to call the police, and how vehicle recovery usually works.",
+    "image": "/blog-accident-recovery-sheffield-featured.webp",
+    "imageAlt": "Hatchback with mild front bumper damage parked safely beside a Sheffield street"
+},
+  {
     "href": "/blog/car-park-recovery-sheffield",
     "title": "Broken Down in a Sheffield Car Park? How Recovery Works in Multi-Storeys and Tight Spaces",
     "description": "What happens if your car breaks down in a Sheffield car park or multi-storey: how to stay safe, what to tell the operator, and how recovery usually works in tight spaces.",
