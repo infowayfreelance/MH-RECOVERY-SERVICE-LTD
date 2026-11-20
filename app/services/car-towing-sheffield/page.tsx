@@ -6,16 +6,16 @@ import Footer from '@/components/Footer'
 import { SITE_URL, OG_IMAGE, BUSINESS } from '@/lib/siteConfig'
 
 export const metadata: Metadata = {
-  title: 'Car Towing Sheffield | 24/7 Tow Truck Service',
+  title: 'Car Towing Sheffield | 24/7 Tow Truck | MH Recovery',
   description:
-    'Car towing in Sheffield and South Yorkshire, 24/7. Call MH Recovery Service Ltd for a quote and estimated arrival time before you agree.',
+    'Car towing in Sheffield for non-runners, MOT failures and cars with no keys, from home, garage or car park. Quote before you agree. Call 07799 180009.',
   alternates: {
     canonical: '/services/car-towing-sheffield',
   },
   openGraph: {
-    title: 'Car Towing Sheffield | 24/7 Tow Truck Service',
+    title: 'Car Towing Sheffield | 24/7 Tow Truck | MH Recovery',
     description:
-      'Car towing in Sheffield and South Yorkshire, 24/7. Call MH Recovery Service Ltd for a quote and estimated arrival time before you agree.',
+      'Car towing in Sheffield for non-runners, MOT failures and cars with no keys, from home, garage or car park. Quote before you agree. Call 07799 180009.',
     url: `${SITE_URL}/services/car-towing-sheffield`,
     siteName: 'MH Recovery Service Ltd',
     locale: 'en_GB',
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Car Towing Sheffield | 24/7 Tow Truck Service',
+    title: 'Car Towing Sheffield | 24/7 Tow Truck | MH Recovery',
     description:
-      'Car towing in Sheffield and South Yorkshire, 24/7. Call MH Recovery Service Ltd for a quote and estimated arrival time before you agree.',
+      'Car towing in Sheffield for non-runners, MOT failures and cars with no keys, from home, garage or car park. Quote before you agree. Call 07799 180009.',
     images: [OG_IMAGE],
   },
 }
@@ -82,61 +82,6 @@ const serviceSchema = {
   url: `${SITE_URL}/services/car-towing-sheffield`,
 }
 
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'What is the difference between car towing and car recovery?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Towing is moving a car from one place to another, often planned in advance. Recovery usually means rescuing a car after a breakdown or accident, and we cover that on our car recovery page.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: "Can you tow a car that won't start?",
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes, we can move a car that will not start. Tell us on the call so we can prepare the right way to load it.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Do I need to be with the car?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Not always, but it helps. If you cannot be there, tell us who will hand over the keys and confirm the address with us.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Can you tow a car from a garage or from my home?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes, we can collect from a garage, a home or a car park. Give us both addresses when you call.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Can you tow an automatic car?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes, but tell us it is an automatic when you call. This helps us choose the safest way to move it.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What should I tell you when I call?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: "Give us the car's make and model, its location, where it is going, and whether it starts or rolls. Tell us about any damage or access problems too.",
-      },
-    },
-  ],
-}
-
 const faqs = [
   {
     q: 'What is the difference between car towing and car recovery?',
@@ -162,7 +107,35 @@ const faqs = [
     q: 'What should I tell you when I call?',
     a: "Give us the car's make and model, its location, where it is going, and whether it starts or rolls. Tell us about any damage or access problems too.",
   },
+  {"q": "How much does car towing cost in Sheffield?", "a": "It depends on the distance, the car's condition and how easy it is to reach. We give you a quote and an estimated arrival time before you agree to anything."},
+  {"q": "Can you tow a car if I've lost the keys?", "a": "Often, yes. Tell us on the call that there are no keys, so we can plan how to load it. Our [lost car keys help](/services/lost-car-keys-help-sheffield) page explains more. Read our guide to [moving a car without keys](/blog/car-recovery-without-keys)."},
+  {"q": "Can you tow a car from a multi-storey car park?", "a": "Tell us the car park, the level and any barriers or low entrances when you call. We'll confirm whether we can reach the car before quoting."},
+  {"q": "Can you take a car that failed its MOT to a garage?", "a": "Yes. If the car isn't roadworthy, towing it to the garage is the safe and legal option. Give us both addresses when you call."},
 ]
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map(({ q, a }) => ({
+    '@type': 'Question',
+    name: q,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: a.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1'),
+    },
+  })),
+}
+
+function renderFaqAnswer(answer: string) {
+  return answer.split(/(\[[^\]]+\]\([^)]+\))/g).map((part, index) => {
+    const link = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/)
+    return link ? (
+      <Link key={index} href={link[2]} className="text-primary font-semibold hover:opacity-80 transition-opacity">
+        {link[1]}
+      </Link>
+    ) : part
+  })
+}
 
 const steps = [
   {
@@ -242,7 +215,7 @@ export default function CarTowingSheffield() {
                 Car Towing <span className="text-primary">in Sheffield</span>
               </h1>
               <p className="text-on-surface-variant text-base md:text-lg mb-6 max-w-xl leading-relaxed font-sans">
-                {BUSINESS.name} provides car towing in Sheffield and across South Yorkshire from our base on {BUSINESS.address.street}. Call us on {BUSINESS.phonePrimary}. The phone line is open 24 hours a day, 7 days a week.
+                {BUSINESS.name} provides car towing in Sheffield and across South Yorkshire from our base on {BUSINESS.address.street}. Need a tow truck in Sheffield? Tell us where the car is and where it needs to go. Call us on {BUSINESS.phonePrimary}. The phone line is open 24 hours a day, 7 days a week.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
@@ -329,6 +302,55 @@ export default function CarTowingSheffield() {
           </div>
         </section>
 
+        <section className="py-10 md:py-16 bg-surface px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-3 text-on-surface">Towing Jobs We Handle Around Sheffield</h2>
+              <div className="h-1 w-12 bg-primary mx-auto mb-4" />
+            </div>
+            <div className="max-w-3xl mx-auto flex flex-col gap-4 text-on-surface-variant text-base font-sans leading-relaxed">
+              <ul className="flex flex-col gap-4">
+                <li className="flex items-start gap-3"><span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span><p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong>MOT failures:</strong> a car that has failed its MOT and can't legally be driven, moved to the garage doing the repairs.</p></li>
+                <li className="flex items-start gap-3"><span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span><p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong>Garage to home, or home to garage:</strong> for a repair, a service or storage.</p></li>
+                <li className="flex items-start gap-3"><span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span><p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong>Cars that won't start:</strong> a non-runner on a drive, a street or a car park.</p></li>
+                <li className="flex items-start gap-3"><span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span><p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong>Cars bought from a seller:</strong> collected from the seller's address and delivered to yours.</p></li>
+                <li className="flex items-start gap-3"><span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span><p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong>Cars with no keys:</strong> tell us on the call. If you've lost the keys, see our <Link href="/services/lost-car-keys-help-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">lost car keys help</Link>.</p></li>
+                <li className="flex items-start gap-3"><span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span><p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong>Cars that have been sitting for months:</strong> flat tyres, seized brakes or a dead battery. Tell us so we can plan the right loading method.</p></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-10 md:py-16 bg-surface px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-3 text-on-surface">Towing From Car Parks, Driveways and Tight Streets</h2>
+              <div className="h-1 w-12 bg-primary mx-auto mb-4" />
+            </div>
+            <div className="max-w-3xl mx-auto flex flex-col gap-4 text-on-surface-variant text-base font-sans leading-relaxed">
+              <p>Many tows in Sheffield start somewhere awkward: a multi-storey or retail park car park, a steep drive, or a narrow terraced street with cars parked on both sides. Give us the exact location, the car park name and level if it's in one, and anything that could affect access, such as a barrier, low entrance or tight turn. We'll confirm how we can reach the car before we give you a quote. If you've broken down in a car park, our guide to <Link href="/blog/car-park-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">car park recovery in Sheffield</Link> explains what to do while you wait.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-10 md:py-16 bg-surface px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-3 text-on-surface">Before Your Car Is Collected</h2>
+              <div className="h-1 w-12 bg-primary mx-auto mb-4" />
+            </div>
+            <div className="max-w-3xl mx-auto flex flex-col gap-4 text-on-surface-variant text-base font-sans leading-relaxed">
+              <ul className="flex flex-col gap-4">
+                <li className="flex items-start gap-3"><span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span><p className="text-on-surface-variant text-sm font-sans leading-relaxed">Have the keys ready, including the locking wheel nut key if you have one.</p></li>
+                <li className="flex items-start gap-3"><span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span><p className="text-on-surface-variant text-sm font-sans leading-relaxed">Take valuables and personal items out of the car.</p></li>
+                <li className="flex items-start gap-3"><span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span><p className="text-on-surface-variant text-sm font-sans leading-relaxed">Take a few photos of the car's condition before it's loaded.</p></li>
+                <li className="flex items-start gap-3"><span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span><p className="text-on-surface-variant text-sm font-sans leading-relaxed">Tell us if the car is lowered, automatic, has a flat tyre or won't roll or steer.</p></li>
+                <li className="flex items-start gap-3"><span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span><p className="text-on-surface-variant text-sm font-sans leading-relaxed">Confirm the full drop-off address and who will receive the car if you won't be there.</p></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
         {/* How It Works */}
         <section className="py-10 md:py-16 bg-surface-container-low px-4 md:px-6 border-y border-outline/10">
           <div className="max-w-7xl mx-auto">
@@ -364,7 +386,7 @@ export default function CarTowingSheffield() {
               We tow cars throughout Sheffield, including the city centre, Hillsborough, Crookes, Meadowhall, Attercliffe, Handsworth, Darnall, Heeley, Woodseats and Ecclesall. We cover the S1, S2 and S3 postcodes and the rest of the city.
             </p>
             <p className="text-on-surface-variant text-base font-sans mb-8 leading-relaxed">
-              Towing along the M1, A61 or Sheffield Parkway is not a problem for us, so cars can also be moved between Sheffield and other parts of South Yorkshire. For nearby areas such as Rotherham, Barnsley and Doncaster, call us and we will confirm coverage.
+              Towing along the M1, A61 or Sheffield Parkway is not a problem for us, so cars can also be moved between Sheffield and other parts of South Yorkshire. For nearby areas such as Rotherham, Barnsley and Doncaster, call us and we will confirm coverage. If your car has broken down on the M1 or a main road rather than needing a planned move, call us for <Link href="/services/breakdown-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">breakdown recovery in Sheffield</Link> instead.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
@@ -451,7 +473,7 @@ export default function CarTowingSheffield() {
                     </span>
                   </summary>
                   <div className="px-5 pb-5 pt-1">
-                    <p className="text-on-surface-variant text-sm font-sans leading-relaxed">{a}</p>
+                    <p className="text-on-surface-variant text-sm font-sans leading-relaxed">{renderFaqAnswer(a)}</p>
                   </div>
                 </details>
               ))}
