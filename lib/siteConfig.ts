@@ -9,8 +9,8 @@ export const BUSINESS = {
   phonePrimaryTel: 'tel:+447799180009',
   phonePrimaryIntl: '+447799180009',
   phonePrimaryWA: '447799180009',
-  phoneSecondary: '+44 7438 127819',
-  phoneSecondaryTel: 'tel:+447438127819',
+  phoneSecondary: null,
+  phoneSecondaryTel: null,
   // Domain email — update when set up
   emailDomain: null as string | null, // TODO: set to 'info@mhrecoveryserviceltd.co.uk'
   address: {

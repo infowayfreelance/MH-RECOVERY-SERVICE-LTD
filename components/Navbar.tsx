@@ -11,8 +11,6 @@ export default function Navbar() {
   const isActive = (path: string) => pathname === path
 
   const whatsappHref = 'https://wa.me/447799180009?text=Hello%2C%20I%20need%20car%20recovery%20assistance.'
-  const SECOND_PHONE_NUMBER = '+44 7438 127819'
-  const SECOND_PHONE_TEL = 'tel:+447438127819'
 
   const navLinks = [
     { href: '/', label: 'Home' },
@@ -29,10 +27,6 @@ export default function Navbar() {
         Available 24/7 &mdash; Sheffield &amp; South Yorkshire &mdash;{' '}
         <a href="tel:+447799180009" className="underline underline-offset-2 hover:no-underline">
           07799 180009
-        </a>
-        {' '}or{' '}
-        <a href={SECOND_PHONE_TEL} className="underline underline-offset-2 hover:no-underline">
-          {SECOND_PHONE_NUMBER}
         </a>
       </div>
 
@@ -74,16 +68,6 @@ export default function Navbar() {
               <div className="flex flex-col leading-tight">
                 <span className="text-[10px] uppercase tracking-widest text-on-surface-variant">Call us now</span>
                 <span className="text-sm font-bold text-on-surface">07799 180009</span>
-              </div>
-            </a>
-            <a
-              href={SECOND_PHONE_TEL}
-              className="flex items-center gap-2 text-on-surface-variant hover:text-on-surface transition-colors"
-            >
-              <span className="material-symbols-outlined text-primary text-xl" aria-hidden="true">phone_in_talk</span>
-              <div className="flex flex-col leading-tight">
-                <span className="text-[10px] uppercase tracking-widest text-on-surface-variant">Alternative line</span>
-                <span className="text-sm font-bold text-on-surface">{SECOND_PHONE_NUMBER}</span>
               </div>
             </a>
             <a
@@ -177,8 +161,6 @@ export default function Navbar() {
               <div>
                 <p className="text-[10px] uppercase tracking-widest text-on-surface-variant">Emergency line</p>
                 <a href="tel:+447799180009" className="text-base font-bold text-on-surface">07799 180009</a>
-                <p className="text-[10px] uppercase tracking-widest text-on-surface-variant mt-1">Alternative line</p>
-                <a href={SECOND_PHONE_TEL} className="text-base font-bold text-on-surface">{SECOND_PHONE_NUMBER}</a>
               </div>
             </div>
             <a
