@@ -7,16 +7,16 @@ import Footer from '@/components/Footer'
 import { SITE_URL, OG_IMAGE } from '@/lib/siteConfig'
 
 export const metadata: Metadata = {
-  title: 'Breakdown Recovery Sheffield | 24/7 Car Towing',
+  title: 'Breakdown Recovery Sheffield 24/7 | MH Recovery Service',
   description:
-    '24/7 breakdown recovery in Sheffield & South Yorkshire. Flatbed recovery to your garage or home. Call MH Recovery Service Ltd for a clear quote.',
+    'Broken down in Sheffield? MH Recovery Service Ltd recovers cars and vans from roads, car parks and driveways across South Yorkshire. Call 07799 180009.',
   alternates: {
     canonical: '/services/breakdown-recovery-sheffield',
   },
   openGraph: {
-    title: 'Breakdown Recovery Sheffield | 24/7 Car Towing',
+    title: 'Breakdown Recovery Sheffield 24/7 | MH Recovery Service',
     description:
-      '24/7 breakdown recovery in Sheffield & South Yorkshire. Flatbed recovery to your garage or home. Call MH Recovery Service Ltd for a clear quote.',
+      'Broken down in Sheffield? MH Recovery Service Ltd recovers cars and vans from roads, car parks and driveways across South Yorkshire. Call 07799 180009.',
     url: `${SITE_URL}/services/breakdown-recovery-sheffield`,
     siteName: 'MH Recovery Service Ltd',
     locale: 'en_GB',
@@ -32,110 +32,172 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Breakdown Recovery Sheffield | 24/7 Car Towing',
+    title: 'Breakdown Recovery Sheffield 24/7 | MH Recovery Service',
     description:
-      '24/7 breakdown recovery in Sheffield & South Yorkshire. Flatbed recovery to your garage or home. Call MH Recovery Service Ltd for a clear quote.',
+      'Broken down in Sheffield? MH Recovery Service Ltd recovers cars and vans from roads, car parks and driveways across South Yorkshire. Call 07799 180009.',
     images: [OG_IMAGE],
   },
 }
 
-const breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
-    { '@type': 'ListItem', position: 2, name: 'Services', item: `${SITE_URL}/services` },
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      '@type': 'ListItem',
-      position: 3,
-      name: 'Breakdown Recovery Sheffield',
-      item: `${SITE_URL}/services/breakdown-recovery-sheffield`,
-    },
-  ],
-}
-
-const serviceSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Service',
-  name: 'Breakdown Recovery Sheffield',
-  serviceType: 'Breakdown recovery',
-  description:
-    '24/7 breakdown recovery in Sheffield and South Yorkshire. MH Recovery Service Ltd collects broken-down vehicles and transports them to a garage or agreed location.',
-  areaServed: [
-    { '@type': 'City', name: 'Sheffield' },
-    { '@type': 'AdministrativeArea', name: 'South Yorkshire' },
-  ],
-  provider: {
-    '@type': 'AutomotiveBusiness',
-    name: 'MH Recovery Service Ltd',
-    url: SITE_URL,
-    telephone: '+447799180009',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'Coupe Road',
-      addressLocality: 'Sheffield',
-      postalCode: 'S3 9DP',
-      addressCountry: 'GB',
-    },
-    areaServed: 'Sheffield',
-    openingHours: 'Mo-Su 00:00-23:59',
-  },
-  url: `${SITE_URL}/services/breakdown-recovery-sheffield`,
-}
-
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'What is breakdown recovery?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Breakdown recovery is the process of collecting a vehicle that cannot be driven and transporting it to a garage or another agreed location. We use a flatbed truck or suitable recovery equipment depending on the vehicle and its condition.',
-      },
+      "@type": "BreadcrumbList",
+      "@id": "https://mhrecoveryserviceltd.co.uk/services/breakdown-recovery-sheffield#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://mhrecoveryserviceltd.co.uk"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://mhrecoveryserviceltd.co.uk/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Breakdown Recovery Sheffield",
+          "item": "https://mhrecoveryserviceltd.co.uk/services/breakdown-recovery-sheffield"
+        }
+      ]
     },
     {
-      '@type': 'Question',
-      name: 'How much does breakdown recovery in Sheffield cost?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'The cost depends on your location, the vehicle\'s condition and where it needs to go. Call us or send a message with these details and we will give you a quote.',
-      },
+      "@type": "Service",
+      "@id": "https://mhrecoveryserviceltd.co.uk/services/breakdown-recovery-sheffield#service",
+      "name": "Breakdown Recovery Sheffield",
+      "serviceType": "Breakdown recovery",
+      "url": "https://mhrecoveryserviceltd.co.uk/services/breakdown-recovery-sheffield",
+      "description": "Breakdown recovery in Sheffield and South Yorkshire. MH Recovery Service Ltd collects broken-down cars and vans from roads, car parks and driveways and transports them to a garage or agreed address.",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Sheffield"
+        },
+        {
+          "@type": "City",
+          "name": "Rotherham"
+        },
+        {
+          "@type": "City",
+          "name": "Barnsley"
+        },
+        {
+          "@type": "City",
+          "name": "Doncaster"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "South Yorkshire"
+        }
+      ],
+      "provider": {
+        "@type": "AutomotiveBusiness",
+        "name": "MH Recovery Service Ltd",
+        "url": "https://mhrecoveryserviceltd.co.uk",
+        "telephone": "+447799180009",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Coupe Road",
+          "addressLocality": "Sheffield",
+          "postalCode": "S3 9DP",
+          "addressCountry": "GB"
+        },
+        "areaServed": "Sheffield",
+        "openingHours": "Mo-Su 00:00-23:59"
+      }
     },
     {
-      '@type': 'Question',
-      name: 'Do you cover South Yorkshire as well as Sheffield?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'We cover Sheffield and South Yorkshire. If your vehicle is outside this area, contact us to check whether we can help.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'My vehicle will not start — can you recover it?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. Tell us where the vehicle is and what has happened. If it cannot be driven, we can arrange to collect it and take it to a garage.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Can you recover a vehicle after an accident?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'If your vehicle has been damaged and cannot be driven, tell us about its condition and location. We will check whether our equipment is right for the job before we agree to collect it.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What information do I need when I call?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Have your location or postcode ready, along with your vehicle make and model, a description of the problem and the address you want the vehicle taken to. Tell us if the vehicle cannot roll or has any access problems.',
-      },
-    },
-  ],
+      "@type": "FAQPage",
+      "@id": "https://mhrecoveryserviceltd.co.uk/services/breakdown-recovery-sheffield#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is breakdown recovery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Breakdown recovery is the process of collecting a vehicle that cannot be driven and transporting it to a garage or another agreed location. We use a flatbed truck or suitable recovery equipment depending on the vehicle and its condition."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does breakdown recovery in Sheffield cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The cost depends on your location, the vehicle's condition and where it needs to go. Contact us with these details and we will give you a quote."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you cover South Yorkshire as well as Sheffield?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We cover Sheffield and South Yorkshire. If your vehicle is outside this area, contact us to check whether we can help."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "My vehicle will not start — can you recover it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Tell us where the vehicle is and what has happened. If it cannot be driven, we can arrange to collect it and take it to a garage. For more advice, see our guide on recovering a car without keys."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you recover a vehicle after an accident?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If your vehicle has been damaged and cannot be driven, tell us about its condition and location. We will check whether our equipment is right for the job before we agree to collect it. See our dedicated accident recovery in Sheffield page for more details."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What information do I need when I call?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Have your location or postcode ready, along with your vehicle make and model, a description of the problem and the address you want the vehicle taken to. Tell us if the vehicle cannot roll or has any access problems. Send us a message if you prefer to share these details in writing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need breakdown cover to use your service?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. You can call us directly without breakdown cover or a membership. We'll give you a quote for the job before you agree, based on where the vehicle is, its condition and where it needs to go."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "I've broken down on the M1 near Sheffield. What should I do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Get off the carriageway if you can, ideally at the next exit or into an emergency area. Switch on your hazard lights, get out on the side away from traffic if it's safe and wait behind the barrier. If you're stuck in a live lane or can't get out safely, stay in the vehicle with your seat belt on and call 999. Then call us on 07799 180009 with the junction number or the nearest marker post."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you recover my car from a car park or driveway?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Often, yes. Tell us the car park name, the entrance and level, or the driveway access, and whether the car rolls and steers. We'll check access before we set off and tell you how we'll move it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you cover Rotherham, Barnsley and Doncaster?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We're based on Coupe Road in Sheffield and regularly work in Rotherham, Barnsley and Doncaster as well as across Sheffield. Call 07799 180009 with your postcode and we'll confirm."
+          }
+        }
+      ]
+    }
+  ]
 }
 
 const faqs: { q: string; a: React.ReactNode }[] = [
@@ -203,6 +265,10 @@ const faqs: { q: string; a: React.ReactNode }[] = [
       </>
     ),
   },
+  {"q": "Do I need breakdown cover to use your service?", "a": "No. You can call us directly without breakdown cover or a membership. We'll give you a quote for the job before you agree, based on where the vehicle is, its condition and where it needs to go."},
+  {"q": "I've broken down on the M1 near Sheffield. What should I do?", "a": "Get off the carriageway if you can, ideally at the next exit or into an emergency area. Switch on your hazard lights, get out on the side away from traffic if it's safe and wait behind the barrier. If you're stuck in a live lane or can't get out safely, stay in the vehicle with your seat belt on and call 999. Then call us on 07799 180009 with the junction number or the nearest marker post."},
+  {"q": "Can you recover my car from a car park or driveway?", "a": "Often, yes. Tell us the car park name, the entrance and level, or the driveway access, and whether the car rolls and steers. We'll check access before we set off and tell you how we'll move it."},
+  {"q": "Do you cover Rotherham, Barnsley and Doncaster?", "a": "We're based on Coupe Road in Sheffield and regularly work in Rotherham, Barnsley and Doncaster as well as across Sheffield. Call 07799 180009 with your postcode and we'll confirm."},
 ]
 
 const steps = [
@@ -272,15 +338,7 @@ export default function BreakdownRecoverySheffield() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <Navbar />
       <main>
@@ -338,6 +396,42 @@ export default function BreakdownRecoverySheffield() {
                   Get a Quote
                 </Link>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-10 md:py-16 bg-surface px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-3 text-on-surface">
+                Broken Down in Sheffield? What to Do First
+              </h2>
+              <div className="h-1 w-12 bg-primary mx-auto mb-4" />
+            </div>
+            <div className="max-w-3xl mx-auto flex flex-col gap-4 text-on-surface-variant text-base font-sans leading-relaxed">
+              <ol className="flex flex-col gap-4">
+                <li className="relative flex items-start gap-3">
+                  <span className="text-5xl font-black text-primary/20 leading-none select-none">1</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong className="text-on-surface">Get somewhere safe.</strong> If the car still moves, pull off the road or into a car park or lay-by.</p>
+                </li>
+                <li className="relative flex items-start gap-3">
+                  <span className="text-5xl font-black text-primary/20 leading-none select-none">2</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong className="text-on-surface">Hazard lights on.</strong> At night, keep your sidelights on too.</p>
+                </li>
+                <li className="relative flex items-start gap-3">
+                  <span className="text-5xl font-black text-primary/20 leading-none select-none">3</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong className="text-on-surface">Get out on the side away from traffic</strong> if it's safe, and wait behind a barrier or well back from the road.</p>
+                </li>
+                <li className="relative flex items-start gap-3">
+                  <span className="text-5xl font-black text-primary/20 leading-none select-none">4</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong className="text-on-surface">If anyone is hurt, or you're stuck in a live lane, call 999 first.</strong> </p>
+                </li>
+                <li className="relative flex items-start gap-3">
+                  <span className="text-5xl font-black text-primary/20 leading-none select-none">5</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong className="text-on-surface">Call us on 07799 180009</strong> with your postcode, street name, or the road and nearest junction, plus your vehicle details.</p>
+                </li>
+              </ol>
+              <p>Based on the <a href="https://www.gov.uk/guidance/the-highway-code/breakdowns-and-incidents-274-to-287" className="text-primary font-semibold hover:opacity-80 transition-opacity">Highway Code breakdown rules</a>.</p>
             </div>
           </div>
         </section>
@@ -427,6 +521,59 @@ export default function BreakdownRecoverySheffield() {
           </div>
         </section>
 
+        <section className="py-10 md:py-16 bg-surface px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-3 text-on-surface">
+                Common Reasons Cars Break Down
+              </h2>
+              <div className="h-1 w-12 bg-primary mx-auto mb-4" />
+            </div>
+            <div className="max-w-3xl mx-auto flex flex-col gap-4 text-on-surface-variant text-base font-sans leading-relaxed">
+              <ul className="flex flex-col gap-4">
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong>Flat or failing battery:</strong> often after cold nights or short trips. Try a <Link href="/services/jump-starts-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">jump start</Link> first; if the car still won't run, we can recover it.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong>Starter motor, clutch or gearbox problems:</strong> the car won't turn over, won't go into gear or won't drive. These usually need a garage, so we take it there.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong>Overheating:</strong> if the temperature warning comes on, stop when it's safe and switch off. Don't keep driving.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong>Tyre damage:</strong> a puncture or blowout. See <Link href="/services/tyre-damage-assistance-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">tyre damage assistance</Link>.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong>Fuel problems:</strong> running out, or putting the wrong fuel in. Don't start the engine if you've misfuelled.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong>Warning lights and limp mode:</strong> if the car won't drive normally, it's safer to recover it than to push on.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-10 md:py-16 bg-surface px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-3 text-on-surface">
+                Broken Down on the M1 or Sheffield Parkway
+              </h2>
+              <div className="h-1 w-12 bg-primary mx-auto mb-4" />
+            </div>
+            <div className="max-w-3xl mx-auto flex flex-col gap-4 text-on-surface-variant text-base font-sans leading-relaxed">
+              <p>On the M1 around Sheffield (junctions 33 to 36), the Sheffield Parkway or a fast dual carriageway, try to leave at the next exit or stop in an emergency area. Switch on your hazard lights, get out on the side away from traffic if it's safe, and wait behind the barrier. Don't put out a warning triangle on a motorway. If you're stuck in a live lane or can't get out safely, stay in the vehicle with your seat belt on and call 999. Then call us with the junction number, the direction you were travelling, or the number on the nearest marker post, so we can find you.</p>
+            </div>
+          </div>
+        </section>
+
         {/* How It Works */}
         <section className="py-10 md:py-16 bg-surface px-4 md:px-6 border-y border-outline/10">
           <div className="max-w-7xl mx-auto">
@@ -505,10 +652,10 @@ export default function BreakdownRecoverySheffield() {
             </h2>
             <div className="h-1 w-12 bg-primary mx-auto mb-6" />
             <p className="text-on-surface-variant text-base font-sans mb-4 leading-relaxed">
-              We provide breakdown recovery throughout Sheffield and the wider South Yorkshire area. When you call, share your exact location or postcode and we will check whether we can reach you.
+              We recover broken-down cars and vans across Sheffield, including the city centre, Hillsborough, Crookes, Meadowhall, Attercliffe, Darnall, Handsworth, Heeley, Woodseats and Ecclesall, and the S1, S2 and S3 postcodes. On the roads, we cover the M1, the A61, the A57 and the Sheffield Parkway. We're based on Coupe Road, Sheffield S3 9DP, and regularly work in Rotherham, Barnsley and Doncaster.
             </p>
             <p className="text-on-surface-variant text-base font-sans mb-8 leading-relaxed">
-              If your vehicle is outside this area, <Link href="/contact" className="text-primary font-semibold hover:opacity-80 transition-opacity">contact us</Link> and we will let you know whether we can help. For longer journeys, see our <Link href="/services/long-distance-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">long distance recovery from Sheffield</Link>.
+              When you call, share your exact location or postcode and we'll check whether we can reach you. If your vehicle is outside this area, <Link href="/contact" className="text-primary font-semibold hover:opacity-80 transition-opacity">contact us</Link> and we'll let you know whether we can help. For longer journeys, see our <Link href="/services/long-distance-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">long distance recovery from Sheffield</Link>.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
