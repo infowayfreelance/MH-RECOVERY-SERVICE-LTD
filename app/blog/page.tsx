@@ -42,6 +42,13 @@ const breadcrumbSchema = {
 
 const posts = [
   {
+    "href": "/blog/how-to-get-car-towed-to-garage-sheffield",
+    "title": "How to Get Your Car Towed to a Garage in Sheffield: A Step-by-Step Guide",
+    "description": "Need your car towed to a garage in Sheffield? What to sort with the garage first, what to tell the recovery driver, MOT rules, and how the tow usually works.",
+    "image": "/blog-car-towed-to-garage-sheffield-featured.webp",
+    "imageAlt": "Car loaded on a flatbed recovery truck outside a garage workshop in Sheffield"
+},
+  {
     "href": "/blog/accident-recovery-sheffield",
     "title": "Been in a Car Accident in Sheffield? What to Do Next, and How Recovery Usually Works",
     "description": "What to do after a car accident in Sheffield: safety first, which details to exchange, when to call the police, and how vehicle recovery usually works.",
