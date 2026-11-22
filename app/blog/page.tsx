@@ -42,6 +42,13 @@ const breadcrumbSchema = {
 
 const posts = [
   {
+    "href": "/blog/long-distance-car-recovery-cost-sheffield",
+    "title": "How Is Long-Distance Car Recovery Priced? Questions to Ask Before You Book From Sheffield",
+    "description": "What affects the cost of long-distance car recovery from Sheffield, what to tell the operator for an accurate quote, and the questions to ask before you book.",
+    "image": "/blog-long-distance-recovery-cost-sheffield-featured.webp",
+    "imageAlt": "Flatbed recovery truck carrying a car on a motorway near Sheffield at dusk"
+},
+  {
     "href": "/blog/how-to-get-car-towed-to-garage-sheffield",
     "title": "How to Get Your Car Towed to a Garage in Sheffield: A Step-by-Step Guide",
     "description": "Need your car towed to a garage in Sheffield? What to sort with the garage first, what to tell the recovery driver, MOT rules, and how the tow usually works.",
