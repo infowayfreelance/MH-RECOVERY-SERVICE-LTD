@@ -25,40 +25,41 @@ const breadcrumbSchema = {
 const articleSchema = {
     '@context': 'https://schema.org', '@type': 'BlogPosting', headline: title, description,
     url: `${SITE_URL}${path}`, image: `${SITE_URL}${featuredImage}`,
+    dateModified: '2026-11-23',
     author: { '@type': 'Organization', name: BUSINESS.name, url: SITE_URL },
     publisher: { '@type': 'Organization', name: BUSINESS.name, url: SITE_URL },
     mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}${path}` },
 };
 const faqs = [
   {
-    "q": "What should I do immediately after a car accident in Sheffield?",
-    "a": "Stop when it is safe, switch off the engine, put your hazard lights on, and check for injuries. Call 999 if anyone is in danger, seriously hurt, or the road is blocked. Then exchange details, and take photos only if it is safe."
+    "q": "What should I do first after a car accident in Sheffield?",
+    "a": "Put safety first. Stop safely, use your hazard lights and check everyone. Call 999 for immediate danger or serious injury. Once it is safe, exchange details and consider how to move the car."
   },
   {
-    "q": "Do I have to call the police after a minor collision?",
-    "a": "Not always. South Yorkshire Police says no report is needed if you have exchanged details, nobody was injured and there are no allegations of driving offences. You must report it if you could not exchange details, if anyone was injured, or if you suspect a driving offence. If you are unsure, check the official guidance or call 101."
+    "q": "Do I need to report a small collision to the police?",
+    "a": "It depends on the circumstances. South Yorkshire Police requires a report if details could not be exchanged, anyone was injured or you suspect a driving offence. Check its guidance or call 101 if unsure."
   },
   {
-    "q": "What details should I swap with the other driver?",
-    "a": "Name, address, vehicle registration and, if requested, insurance details. The MIB also recommends contact numbers, plus the time, date and location. If there are witnesses, ask for their details too."
+    "q": "What information should I exchange with the other driver?",
+    "a": "Exchange names, addresses and registrations, and provide insurance details if requested. Save contact numbers too. Make a note of the location and any witnesses, without putting yourself near moving traffic to gather information."
   },
   {
-    "q": "Can I drive the car home if it still starts?",
-    "a": "Only if it is safe and the car is in a fit condition to be on the road. Starting the engine does not mean the wheels, steering, brakes, lights or bodywork are sound. If you are in any doubt, arrange recovery instead."
+    "q": "Can I drive away because the car still starts?",
+    "a": "A running engine does not prove the car is roadworthy. Damage to wheels, steering, brakes or other parts may make driving unsafe. If you have doubts, arrange an assessment or recovery rather than testing it on the road."
   },
   {
-    "q": "Who should I call to recover the car — my insurer or a local recovery firm?",
-    "a": "You can do either, and many people do both. Your insurer can tell you what the policy covers and may arrange collection. You can also call a local firm such as MH Recovery Service Ltd. This article cannot say which option your policy requires."
+    "q": "Should my insurer book recovery or can I call someone myself?",
+    "a": "Ask your insurer what your policy covers and whether it is arranging collection. You can also call a local operator. Tell each party about any existing arrangements and check the position before making a separate booking."
   },
   {
-    "q": "Who pays for accident recovery?",
-    "a": "It depends on the policies and on liability, which this article cannot decide. Ask your insurer, and do not rely on a roadside promise about who will pick up the bill."
+    "q": "Who will pay for recovering the car?",
+    "a": "That depends on cover, liability and the arrangements you agree. Ask your insurer about your own situation. A recovery booking does not establish fault or guarantee that another person or insurer will meet the bill."
   },
   {
-    "q": "Can MH Recovery Service Ltd recover a car after an accident in Sheffield?",
-    "a": "Yes. MH Recovery Service Ltd provides accident recovery in Sheffield and South Yorkshire. Explain where the car is, what damage you can see, whether it will roll or steer, and where you would like it taken."
+    "q": "Can MH Recovery Service Ltd help after a Sheffield collision?",
+    "a": "Yes. Contact MH Recovery Service Ltd about accident recovery in Sheffield and South Yorkshire. Explain the location, visible damage, access and destination. Say if you do not know whether the car will roll or steer."
   }
-]
+];
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -94,110 +95,74 @@ export default function AccidentRecoverySheffieldPage() {
           </div>
         </section>
 
-<article className="py-10 md:py-16 px-4 md:px-6">
-<div className="max-w-3xl mx-auto">
-<section className="mb-10">
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">If you have just been in a collision in or around Sheffield, the first few minutes can feel chaotic. The first job is simpler than the insurance claim or the damaged bumper: stay safe, check for injuries, and only then exchange details and think about the vehicle.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">This guide is a calm checklist for accident recovery in Sheffield after a road traffic collision — sometimes called an RTC, though we will keep to plain language after this. It follows <a href="https://www.southyorkshire.police.uk/advice/advice-and-information/rs/road-safety/collisions/" className="text-primary font-semibold hover:opacity-80 transition-opacity">South Yorkshire Police advice on road collisions</a> and the <a href="https://www.mib.org.uk/learn-about-insurance/what-to-do-after-an-accident/" className="text-primary font-semibold hover:opacity-80 transition-opacity">Motor Insurers' Bureau guidance on what to do during and after a vehicle accident</a>. It is practical information, not legal advice and not insurance advice. If anything is in doubt, follow the official sources and the emergency services.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">If the car cannot be driven afterwards, <Link href="/services/accident-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">accident recovery in Sheffield</Link> is how a damaged vehicle is usually moved to an agreed destination — home, a garage, or wherever your insurer has asked you to take it.</p>
+<article className="py-10 md:py-16 px-4 md:px-6"><div className="max-w-3xl mx-auto">
+<p className="text-on-surface-variant text-sm font-sans mb-6">Last updated: <time dateTime="2026-11-23">23 November 2026</time></p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">A collision can leave you standing beside a damaged car with several decisions to make at once. You may need to ring someone at home, speak to the other driver and work out whether the car can move.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">This guide to accident recovery in Sheffield puts those jobs in order. Start with people and traffic, then record what happened. Once the immediate danger has passed, you can decide who to call and where the vehicle should go.</p>
+<section className="mb-10"><h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">What should you do first after a collision?</h2><div className="h-1 w-10 bg-primary mb-6" />
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Stop safely, check everyone and get emergency help where needed. Recovery comes after those first steps, even if the car is blocking your plans for the rest of the day.</p>
+<ol className="list-decimal pl-6 space-y-2 mb-6 text-on-surface-variant text-base font-sans leading-relaxed"><li>Stop as soon as it is safe. Switch off the engine and turn on the hazard lights.</li><li>Check yourself and your passengers. Call 999 for serious injury, immediate danger, a suspected serious offence or a blocked or dangerously obstructed road.</li><li>Keep away from moving traffic. Follow the emergency services' instructions if they are there.</li><li>Exchange the necessary details when you can do that safely. Make notes rather than relying on memory.</li><li>Decide how to deal with the car only after people are safe. Contact your insurer or a recovery operator if it cannot be driven.</li></ol>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">You may hear someone call the incident an RTC. That means road traffic collision. You do not need to know that term to explain what has happened when you phone for help.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">A useful starting point is the <a href="https://www.southyorkshire.police.uk/advice/advice-and-information/rs/road-safety/collisions/" className="text-primary font-semibold hover:opacity-80 transition-opacity">South Yorkshire Police collision guidance</a>. This article offers practical guidance, not legal or insurance advice. The police and emergency services take priority over any checklist you read here.</p>
 </section>
-<section className="mb-10">
-<h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">Short answer: what to do in the first few minutes</h2>
-<div className="h-1 w-10 bg-primary mb-6" />
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Work through this in order.</p>
-<ol className="list-decimal pl-6 space-y-2 mb-6 text-on-surface-variant text-base font-sans leading-relaxed">
-<li>Stop as soon as it is safe to do so. South Yorkshire Police is clear: you must stop at the scene.</li>
-<li>Switch off the engine and switch on your hazard lights.</li>
-<li>Check yourself and your passengers for injuries. If anyone is in danger, seriously hurt, or the road is blocked, call 999.</li>
-<li>Stay out of live traffic. Do not walk into the road for photographs or broken parts.</li>
-<li>Exchange details with anyone involved: name, address, registration, and insurance details if they are requested.</li>
-<li>Take photos and notes only if you can do so from a safe place.</li>
-<li>Do not admit fault or speculate about the cause at the scene.</li>
-<li>If the car cannot be driven safely, call your insurer, a recovery operator, or both. Tell them whether the car will roll or steer, and where you would like it taken.</li>
-</ol>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">You do not have to settle blame at the roadside. You do have to stay safe and gather the facts.</p>
+<section className="mb-10"><h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">Where should you wait while help is coming?</h2><div className="h-1 w-10 bg-primary mb-6" />
+<div className="relative h-56 sm:h-72 md:h-80 overflow-hidden rounded-xl mb-6"><Image src="/blog-accident-scene-stay-safe.webp" alt="Safe position away from traffic beside a Sheffield accident scene" fill loading="lazy" sizes="(max-width: 768px) 100vw, 768px" className="object-cover" /></div>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Wait somewhere away from traffic if you can reach it safely. A car stopped after a collision can still be struck by another vehicle, so standing beside its bumper does not make you safe.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">On an ordinary Sheffield street, look for a pavement or another place clear of passing vehicles. Do not stand between the damaged cars. Keep children with you and avoid gathering a group around the damage.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">On a motorway or other high-speed road, the <a href="https://www.gov.uk/guidance/the-highway-code/breakdowns-and-incidents-274-to-287" className="text-primary font-semibold hover:opacity-80 transition-opacity">Highway Code's incident guidance</a> explains what to do. If safe to leave, use the side away from traffic and get well away, behind a barrier where there is one.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">If you cannot reach safety or leave safely on a motorway, keep your seat belt and hazard lights on and call 999 for the police. Do not step into a live lane to try to make the situation better.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Do not move an injured person unless they face immediate danger. Describe the situation to the emergency call handler and follow their instructions. Avoid trying to inspect underneath the car or collect belongings while traffic is passing close by.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Never put a warning triangle on a motorway. On other roads, only use one if you can do so safely. No photograph, broken trim or dropped bag is worth walking into traffic for.</p>
 </section>
-<section className="mb-10">
-<h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">Stay safe, then check for injuries</h2>
-<div className="h-1 w-10 bg-primary mb-6" />
-<div className="relative h-56 sm:h-72 md:h-80 overflow-hidden rounded-xl mb-6">
-<Image src="/blog-accident-scene-stay-safe.webp" alt="Safe position away from traffic beside a Sheffield accident scene" fill loading="lazy" sizes="(max-width: 768px) 100vw, 768px" className="object-cover" />
-</div>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Switch off the engine if it is safe, and put your hazard lights on. Other traffic may still be moving around you. If you can get yourself and your passengers away from the traffic without stepping into the road, do that. On a motorway or a fast dual carriageway, get behind a barrier if you can, and do not go back to the vehicle unless you have to. On ordinary roads, stay on the pavement or a verge, well clear of passing cars.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Check yourself first, then your passengers. The Motor Insurers' Bureau notes that adrenaline can mask symptoms, so do not rush this check. Call 999 if anyone is seriously injured or in danger, if you believe a serious offence has been committed, or if the collision has caused a blockage or a dangerous obstruction of the road, as South Yorkshire Police advises.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">If you notice smoke, fire, leaking fuel or another immediate danger, leave the vehicle. Do not gather debris from the carriageway or stand between vehicles in a live lane. If the emergency services are already there, follow their instructions.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">If you have a warning triangle and you are on an ordinary, non-motorway road, the MIB suggests placing it 40 to 50 metres behind the vehicle — only if you can do so safely. Never step into live traffic to set one out, and do not place a warning triangle on a motorway carriageway.</p>
+<section className="mb-10"><h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">What information should you save before you leave?</h2><div className="h-1 w-10 bg-primary mb-6" />
+<div className="relative h-56 sm:h-72 md:h-80 overflow-hidden rounded-xl mb-6"><Image src="/blog-accident-details-and-photos.webp" alt="Recording vehicle details and photographs after a collision" fill loading="lazy" sizes="(max-width: 768px) 100vw, 768px" className="object-cover" /></div>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Make one clear record of the people, vehicles and location. It is easier to deal with the next call when those details are together, rather than scattered across messages and half-remembered conversations.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">The <a href="https://www.mib.org.uk/learn-about-insurance/what-to-do-after-an-accident/" className="text-primary font-semibold hover:opacity-80 transition-opacity">Motor Insurers' Bureau advice after an accident</a> covers exchanging information and recording evidence. Note names, addresses, contact numbers, registrations and insurance details. Ask witnesses whether they are willing to give you a contact number.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">If safe, photograph the damage and the wider scene. Keep a note of the date, time and place. Speak factually; do not guess what caused the crash or agree responsibility at the roadside.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">For your own record, separate what you saw from what someone told you. For example, record that a wheel appears pushed backwards rather than trying to name a damaged part. You can pass on another person's account without treating it as your own observation.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">If you have several photos, keep the originals together. Give your insurer the information it asks for and save any reference numbers with your notes. You should not have to recreate the whole conversation each time someone calls back.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">If another driver leaves or refuses to give details, call 101 while still at the scene, as the police advise. Record whatever you can safely see. Do not follow them or put yourself at risk trying to get a better photograph.</p>
 </section>
-<section className="mb-10">
-<h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">Details, photos and what not to do</h2>
-<div className="h-1 w-10 bg-primary mb-6" />
-<div className="relative h-56 sm:h-72 md:h-80 overflow-hidden rounded-xl mb-6">
-<Image src="/blog-accident-details-and-photos.webp" alt="Recording vehicle details and photographs after a collision" fill loading="lazy" sizes="(max-width: 768px) 100vw, 768px" className="object-cover" />
-</div>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Once everyone is safe, exchange details with anyone involved. South Yorkshire Police lists your name, address and the car registration number, and says you should provide your insurance details if requested. The MIB also includes contact information. Stay factual, and write the details down or save them on your phone.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">If you cannot get those details, or the other person has left without giving them, South Yorkshire Police advises calling 101 while you are still at the scene. Try to note the registration, the make and colour of the other vehicle, and the direction it went.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Photographs help later, but only take them if you can do so without walking into the road. The MIB suggests photographing vehicle positions, the damage, the road layout and any relevant signs or markings. Note the time, date and exact location — a street name, a junction, or a nearby Sheffield landmark. If there are witnesses, ask for their contact details.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Do not admit fault or speculate about the cause at the scene. The MIB is clear on this: stay factual and avoid making assumptions. A casual “sorry” at the roadside can be taken the wrong way later. Stick to the facts and leave liability to the insurers. This is not legal advice.</p>
+<section className="mb-10"><h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">Does every bump need a police report?</h2><div className="h-1 w-10 bg-primary mb-6" />
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Not every collision needs reporting, but certain circumstances do. South Yorkshire Police says a report is required if details could not be exchanged, someone was injured or you suspect the other person committed a driving offence.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">The same guidance says no report is needed where details have been exchanged, nobody was injured and there are no allegations of driving offences. If your situation does not fit neatly, check the official guidance or call 101.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Use 999 for an emergency rather than waiting to complete an online form. For a non-emergency report, follow the reporting route on the police website. Keep your submission and reference number for your records.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Telling a recovery operator what happened does not replace reporting to the police or informing your insurer. These are separate conversations with different purposes. The recovery call concerns moving the vehicle; it does not settle your reporting duties.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">The MIB also advises contacting your insurer promptly, including when you do not intend to claim. Ask what information it needs from you and what you should do next under your policy.</p>
 </section>
-<section className="mb-10">
-<h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">When to report the collision</h2>
-<div className="h-1 w-10 bg-primary mb-6" />
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">You do not automatically have to call the police after every bump in Sheffield, but there are times when you must.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">According to <a href="https://www.southyorkshire.police.uk/advice/advice-and-information/rs/road-safety/collisions/" className="text-primary font-semibold hover:opacity-80 transition-opacity">South Yorkshire Police</a>, you do not need to report a collision if you have exchanged details, nobody was injured and there are no allegations of driving offences.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">You must report it if you were unable to exchange details at the scene, if anyone was injured, or if you suspect that the other person may have committed a driving offence. When a report is required, you must make it no matter who was at fault. Failing to stop, or failing to report when you should, can be an offence.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">You can report a collision online through the South Yorkshire Police website. Download a copy of the form and keep the reference number for your insurer.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">This is not legal advice. If you are unsure, check the official collisions page or call 101.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Even when the police do not need to be involved, contact your insurer as soon as you reasonably can. The MIB advises reporting the accident even if you do not plan to make a claim, and checking your policy so you understand what you are covered for.</p>
+<section className="mb-10"><h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">Can you drive it home if the engine still runs?</h2><div className="h-1 w-10 bg-primary mb-6" />
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">An engine starting does not tell you whether the whole car is safe. After a collision, damaged steering, wheels, brakes or loose bodywork can make a short trip a poor choice.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Do not attempt a test drive to see whether something is wrong. If you already know a tyre is damaged, a wheel is out of position, fluid is escaping or a panel is hanging loose, explain that when you call.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Other concerns include deployed airbags, damaged lights, poor visibility through the windscreen or controls that no longer feel normal. A photograph or a running engine cannot prove roadworthiness. If you are unsure, seek a proper assessment and arrange recovery instead of guessing.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Our <Link href="/services/accident-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">accident recovery in Sheffield service</Link> page explains how to ask for help moving a collision-damaged vehicle. Describe the damage in everyday language. You do not need a diagnosis before making the call.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">If the car is already parked somewhere safe but needs taking elsewhere, see <Link href="/services/car-towing-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">car towing in Sheffield</Link>. Give the collection point and proposed destination so the operator can discuss the actual move.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">A collision in a multi-storey brings another question: can the operator reach the car? Tell them about the entrance, level and tight turns. Our <Link href="/blog/car-park-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">car park recovery guide</Link> covers those access details without assuming every location is reachable.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">If the keys have gone missing or are locked inside, mention that before collection. The <Link href="/blog/car-recovery-without-keys" className="text-primary font-semibold hover:opacity-80 transition-opacity">guide to car recovery without keys</Link> explains why the operator needs to know. Do not force the car to move just to answer a question.</p>
 </section>
-<section className="mb-10">
-<h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">If the car cannot be driven</h2>
-<div className="h-1 w-10 bg-primary mb-6" />
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">An engine that still starts is not the same as a car that is safe, or in a fit condition, to drive. From a safe place, look at the wheels, tyres, lights, bodywork and anything underneath.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Do not drive the car if:</p>
-<ul className="list-disc pl-6 space-y-2 mb-6 text-on-surface-variant text-base font-sans leading-relaxed">
-<li>a wheel is bent, a tyre is damaged, or the car sits at an odd angle</li>
-<li>the steering, brakes or pedals do not feel normal</li>
-<li>the airbags have deployed</li>
-<li>fluid is leaking, or you can smell fuel</li>
-<li>lights or indicators you need are smashed</li>
-<li>bodywork is hanging off, or could come loose</li>
-<li>the windscreen is badly cracked in your line of sight</li>
-</ul>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">If any of that is true, leave the car where it is — as long as it is not creating a further danger — and arrange recovery. Driving a damaged vehicle can make the damage worse and put other road users at risk.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Call your insurer, a recovery operator, or both. Tell them your exact location in Sheffield, what you can see, whether the car will roll or steer, whether you have the keys, and whether the emergency services are still managing the scene. Do not try to move the car just to answer those questions.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">If the collision happened in a car park or a multi-storey, our guide to <Link href="/blog/car-park-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">car park recovery in Sheffield</Link> covers tight ramps and height barriers. If the keys are lost, damaged or locked inside, see <Link href="/blog/car-recovery-without-keys" className="text-primary font-semibold hover:opacity-80 transition-opacity">car recovery without keys</Link>.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">MH Recovery Service Ltd provides <Link href="/services/accident-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">accident recovery in Sheffield</Link>. There is more about <Link href="/services/car-towing-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">car towing in Sheffield</Link> if the vehicle needs to be moved rather than driven.</p>
+<section className="mb-10"><h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">What should you tell the recovery operator?</h2><div className="h-1 w-10 bg-primary mb-6" />
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Give the operator enough information to plan collection without asking you to take risks. Start with where you are and whether emergency services are controlling the scene.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">A simple call note can include:</p>
+<ul className="list-disc pl-6 space-y-2 mb-6 text-on-surface-variant text-base font-sans leading-relaxed"><li>Collection: the street, postcode or nearby landmark, plus which entrance reaches the car.</li><li>Vehicle: make, model and registration, with any damage you can see from safety.</li><li>Movement: whether you know it will roll and steer, and whether the keys are available.</li><li>Access: surrounding vehicles, a narrow approach or any restrictions you already know about.</li><li>Destination: the full address, who will receive it and whether that place is open.</li></ul>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">It is fine to say you do not know whether the wheels turn. Explain what you can see and leave the inspection to the operator. Do not release the handbrake or push a damaged car to find out.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Agree the destination before the vehicle leaves. If your insurer names a garage or another receiving address, pass that on. If you want it taken home, discuss access there as well as at the collection point.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">For a garage drop-off, ask who will accept the keys. A workshop name alone may leave the driver looking for the right entrance or person. Have a contact ready if the receiving business needs to explain where the vehicle should go.</p>
 </section>
-<section className="mb-10">
-<h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">What recovery usually looks like</h2>
-<div className="h-1 w-10 bg-primary mb-6" />
-<div className="relative h-56 sm:h-72 md:h-80 overflow-hidden rounded-xl mb-6">
-<Image src="/blog-accident-flatbed-recovery-sheffield.webp" alt="Damaged car being loaded onto a flatbed recovery vehicle in Sheffield" fill loading="lazy" sizes="(max-width: 768px) 100vw, 768px" className="object-cover" />
-</div>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Accident recovery is the practical job of moving a damaged vehicle to an agreed destination. It is not a judgment about fault.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">The operator usually needs:</p>
-<ul className="list-disc pl-6 space-y-2 mb-6 text-on-surface-variant text-base font-sans leading-relaxed">
-<li>your location, including a postcode or a clear landmark</li>
-<li>the vehicle type, and whether it is petrol, diesel, hybrid or electric if you know</li>
-<li>whether the car rolls, steers and has its keys</li>
-<li>any obvious wheel damage or fluid on the ground</li>
-<li>where the car should go: home, a garage, or a destination your insurer has given you</li>
-</ul>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">If a wheel is jammed, missing, or pressed against the body, a tow that relies on the car rolling may not be suitable. A flatbed is often used after a collision because the vehicle travels on the truck's platform rather than on its own wheels. The right method still depends on the damage and the access around the car.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Take your belongings with you if it is safe — documents, chargers, child seats and bags. Do not assume the car will be stored in a particular way or for a set time; that depends on where it is taken and what your insurer or garage agrees. This article cannot set storage rules or fees.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">If the emergency services are still at the scene, follow their instructions and tell the operator whether the vehicle can be collected.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">You can read more about <Link href="/services/car-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">car recovery in Sheffield</Link> and <Link href="/services/breakdown-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">breakdown recovery in Sheffield</Link> if the problem is not collision damage.</p>
+<section className="mb-10"><h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">How does collection usually work?</h2><div className="h-1 w-10 bg-primary mb-6" />
+<div className="relative h-56 sm:h-72 md:h-80 overflow-hidden rounded-xl mb-6"><Image src="/blog-accident-flatbed-recovery-sheffield.webp" alt="Damaged car being loaded onto a flatbed recovery vehicle in Sheffield" fill loading="lazy" sizes="(max-width: 768px) 100vw, 768px" className="object-cover" /></div>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">The operator assesses the car and the space around it before choosing a loading method. The damage, wheel position and available access all matter. Two cars with similar-looking bumper damage may need different handling.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">A flatbed carries the vehicle on its platform. This can suit collision damage where relying on the car's own wheels would be unsuitable. It is not a promise that one method works for every damaged vehicle or collection point.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Keep clear while the operator loads. Let them manage the equipment and tell you where to stand. If the police or traffic officers still control the scene, their directions remain important throughout collection.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Take necessary belongings only when access is safe and permitted. Think about house keys, medicines, work items and anything you need that evening. Ask before returning to the vehicle once loading has started.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Before leaving, confirm where the car is going and how you will receive an update. Do not assume you can travel in the recovery vehicle; ask about your own onward arrangements separately.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Our <Link href="/services/car-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">car recovery service</Link> covers moving a car that cannot be driven. If a mechanical fault caused the stop without a collision, the <Link href="/services/breakdown-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">breakdown recovery page</Link> may better match what has happened.</p>
 </section>
-<section className="mb-10">
-<h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">Who arranges and who pays</h2>
-<div className="h-1 w-10 bg-primary mb-6" />
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">There is no single rule for who organises recovery after a collision, and this article cannot tell you who will pay.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Often your insurer is involved. You may have recovery included in the policy, or the insurer may ask a contracted operator to collect the car. You can also call a local recovery firm yourself, especially if you need the vehicle moved before you have spoken to the insurer.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Payment depends on your policy, the other driver's policy, and questions of liability. Those are matters for insurers, not for a recovery article. A local firm can discuss the job with you on the call, but nobody at the roadside can honestly promise that “the other side will pay”.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Keep the details you exchanged, and ask your insurer to explain what your policy covers. If the other driver was uninsured or left the scene, tell the police and your insurer. The MIB may be able to help in some uninsured or untraced cases, which is a question for them and for your insurer, not something this guide can decide.</p>
-</section>
-</div>
-</article>{/* FAQ Section */}
+<section className="mb-10"><h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">Should you call your insurer or arrange recovery yourself?</h2><div className="h-1 w-10 bg-primary mb-6" />
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Start with your insurer where practical, especially if you want to understand your cover before booking. You can also speak to a local recovery firm. Explain if another operator is already involved so the arrangements stay clear.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Ask your insurer whether it is arranging collection, whether it needs to approve a destination and what your policy covers. If you make your own booking, ask how that affects any claim. This guide cannot answer those policy questions for you.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Do not treat a roadside opinion about blame as confirmation that someone else will pay. Recovery, repair and storage arrangements can involve different decisions. Ask who you are booking with, what you are agreeing to and what records to keep.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">No article can set storage terms for a vehicle it has not assessed or decide how long it will remain somewhere. Ask the receiving garage or operator about those arrangements directly. Keep their answers alongside your insurer's instructions.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">If accounts differ between people involved, record each conversation and ask the relevant organisation to clarify its own position. Moving the car does not, by itself, resolve responsibility for the collision or the final insurance outcome.</p>
+</section></div></article>{/* FAQ Section */}
         <section className="py-10 md:py-16 bg-surface-container-low px-4 md:px-6">
           <div className="max-w-3xl mx-auto">
             <div className="mb-8 text-center">
@@ -225,12 +190,10 @@ export default function AccidentRecoverySheffieldPage() {
 <section className="py-10 md:py-14 px-4 md:px-6 bg-surface">
 <div className="max-w-3xl mx-auto">
 <section className="mb-10">
-<h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">Need the car moved in Sheffield?</h2>
-<div className="h-1 w-10 bg-primary mb-6" />
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">If the car cannot be driven after a collision in Sheffield, you do not have to settle the insurance position before you ask for the vehicle to be moved.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Stay safe, keep the details you exchanged, and tell the operator your location and what you can see.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">MH Recovery Service Ltd is based at Coupe Road, Sheffield S3 9DP, and provides vehicle recovery after accidents in Sheffield and South Yorkshire.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Need the car moved? Call MH Recovery Service Ltd on <strong>07799 180009</strong>, or use our <Link href="/contact" className="text-primary font-semibold hover:opacity-80 transition-opacity">contact page</Link>. Tell us where the vehicle is and what has happened, so we can discuss the recovery options.</p>
+<h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">Need help moving the car in Sheffield?</h2><div className="h-1 w-10 bg-primary mb-6" />
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Once everyone is safe, call MH Recovery Service Ltd to discuss moving your damaged car. Have the collection location and a possible destination ready. Tell us about anything you cannot check safely, rather than trying to find out yourself.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">We provide vehicle recovery in Sheffield and South Yorkshire from Coupe Road, Sheffield S3 9DP. Call <strong>07799 180009</strong> to discuss the job. Our phone line is open 24/7.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Prefer to send the details? Use our <Link href="/contact" className="text-primary font-semibold hover:opacity-80 transition-opacity">contact page</Link>. Keep following any police instructions while you arrange collection, and ask your insurer about cover and the next steps for your claim.</p>
 </section>
 <a href="tel:+447799180009" className="inline-flex items-center justify-center gap-2 bg-primary text-on-primary py-4 px-6 font-extrabold text-base tracking-tight rounded min-h-[52px]">Call 07799 180009</a>
 </div>
