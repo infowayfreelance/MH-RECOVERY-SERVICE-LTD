@@ -6,16 +6,16 @@ import Footer from '@/components/Footer'
 import { SITE_URL, OG_IMAGE } from '@/lib/siteConfig'
 
 export const metadata: Metadata = {
-  title: 'Car Recovery Sheffield | 24/7 Vehicle Recovery',
+  title: 'Car Recovery Sheffield 24/7 | MH Recovery Service',
   description:
-    '24/7 car recovery in Sheffield & South Yorkshire. Garage, home or agreed address. Call MH Recovery Service Ltd for a clear quote.',
+    "Car won't drive? MH Recovery Service Ltd collects cars from homes, streets and car parks in Sheffield and takes them to your garage. Call 07799 180009.",
   alternates: {
     canonical: '/services/car-recovery-sheffield',
   },
   openGraph: {
-    title: 'Car Recovery Sheffield | 24/7 Vehicle Recovery',
+    title: 'Car Recovery Sheffield 24/7 | MH Recovery Service',
     description:
-      '24/7 car recovery in Sheffield & South Yorkshire. Garage, home or agreed address. Call MH Recovery Service Ltd for a clear quote.',
+      "Car won't drive? MH Recovery Service Ltd collects cars from homes, streets and car parks in Sheffield and takes them to your garage. Call 07799 180009.",
     url: `${SITE_URL}/services/car-recovery-sheffield`,
     siteName: 'MH Recovery Service Ltd',
     locale: 'en_GB',
@@ -31,137 +31,149 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Car Recovery Sheffield | 24/7 Vehicle Recovery',
+    title: 'Car Recovery Sheffield 24/7 | MH Recovery Service',
     description:
-      '24/7 car recovery in Sheffield & South Yorkshire. Garage, home or agreed address. Call MH Recovery Service Ltd for a clear quote.',
+      "Car won't drive? MH Recovery Service Ltd collects cars from homes, streets and car parks in Sheffield and takes them to your garage. Call 07799 180009.",
     images: [OG_IMAGE],
   },
 }
 
+const faqs = [
+  {
+    "q": "How much does car recovery in Sheffield cost?",
+    "a": "The cost depends on your car's location, its condition and where it needs to go. Share these details so we can give you a quote."
+  },
+  {
+    "q": "How soon can you collect my car?",
+    "a": "Collection time depends on availability, your location and the job. Call us for the current estimated time."
+  },
+  {
+    "q": "Can you collect a car from my home?",
+    "a": "Contact us with your address and car details. Tell us if there is a narrow drive, low entrance or limited space."
+  },
+  {
+    "q": "Can you take my car to my chosen garage?",
+    "a": "Tell us the garage address when you ask for a quote. We will check the route and agree on the destination with you."
+  },
+  {
+    "q": "Can you recover a damaged car?",
+    "a": "Tell us how the car is damaged and whether its wheels can move. We will check if we can handle the job and what equipment is needed."
+  },
+  {
+    "q": "What details do you need when I call?",
+    "a": "We need your location, car make and model, what has happened and the delivery address. Tell us if the car cannot roll or is hard to reach."
+  },
+  {
+    "q": "What is the difference between car recovery and breakdown recovery?",
+    "a": "Breakdown recovery is for a car that has stopped on the road and needs help now. Car recovery covers any car that cannot be driven and needs moving, for example from your home, a street or a car park to a garage. Call us and we will tell you which help fits your situation."
+  },
+  {
+    "q": "Can you collect my car from a car park?",
+    "a": "Often, yes. Tell us the car park name, the entrance and the level or bay, and whether the car rolls and steers. We will check access before we set off."
+  },
+  {
+    "q": "Can you recover my car if I have lost the keys?",
+    "a": "Tell us the car is without keys when you call. A car with no keys may not roll or steer, so we need to plan how to load it. See our [lost car keys help in Sheffield](/services/lost-car-keys-help-sheffield) page."
+  },
+  {
+    "q": "How do I get my car ready for collection?",
+    "a": "Take out your valuables, have the keys ready if you have them, and tell us if the handbrake is stuck, a tyre is flat or the car will not go into neutral. If it is an automatic, electric or hybrid car, tell us when you call."
+  }
+]
+
 const breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
-    { '@type': 'ListItem', position: 2, name: 'Services', item: `${SITE_URL}/services` },
+  "@type": "BreadcrumbList",
+  "@id": "https://mhrecoveryserviceltd.co.uk/services/car-recovery-sheffield#breadcrumb",
+  "itemListElement": [
     {
-      '@type': 'ListItem',
-      position: 3,
-      name: 'Car Recovery Sheffield',
-      item: `${SITE_URL}/services/car-recovery-sheffield`,
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://mhrecoveryserviceltd.co.uk"
     },
-  ],
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://mhrecoveryserviceltd.co.uk/services"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Car Recovery Sheffield",
+      "item": "https://mhrecoveryserviceltd.co.uk/services/car-recovery-sheffield"
+    }
+  ]
 }
 
 const serviceSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Service',
-  name: 'Car Recovery Sheffield',
-  description:
-    'Car recovery service in Sheffield. MH Recovery Service Ltd can collect your car from an agreed location and move it to a garage or another agreed place.',
-  areaServed: {
-    '@type': 'City',
-    name: 'Sheffield',
-  },
-  provider: {
-    '@type': 'AutomotiveBusiness',
-    name: 'MH Recovery Service Ltd',
-    url: SITE_URL,
-    telephone: '+447799180009',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'Coupe Road',
-      addressLocality: 'Sheffield',
-      postalCode: 'S3 9DP',
-      addressCountry: 'GB',
+  "@type": "Service",
+  "@id": "https://mhrecoveryserviceltd.co.uk/services/car-recovery-sheffield#service",
+  "name": "Car Recovery Sheffield",
+  "description": "Car recovery service in Sheffield. MH Recovery Service Ltd can collect your car from an agreed location and move it to a garage or another agreed place.",
+  "serviceType": "Car recovery",
+  "url": "https://mhrecoveryserviceltd.co.uk/services/car-recovery-sheffield",
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Sheffield"
     },
-    areaServed: 'Sheffield',
-    openingHours: 'Mo-Su 00:00-23:59',
-  },
-  url: `${SITE_URL}/services/car-recovery-sheffield`,
+    {
+      "@type": "City",
+      "name": "Rotherham"
+    },
+    {
+      "@type": "City",
+      "name": "Barnsley"
+    },
+    {
+      "@type": "City",
+      "name": "Doncaster"
+    }
+  ],
+  "provider": {
+    "@type": "AutomotiveBusiness",
+    "name": "MH Recovery Service Ltd",
+    "url": "https://mhrecoveryserviceltd.co.uk",
+    "telephone": "+447799180009",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Coupe Road",
+      "addressLocality": "Sheffield",
+      "postalCode": "S3 9DP",
+      "addressCountry": "GB"
+    },
+    "areaServed": "Sheffield",
+    "openingHours": "Mo-Su 00:00-23:59"
+  }
 }
 
-const faqSchema = {
+const schema = {
   '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
+  '@graph': [
+    breadcrumbSchema,
+    serviceSchema,
     {
-      '@type': 'Question',
-      name: 'How much does car recovery in Sheffield cost?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'The cost depends on your car\'s location, its condition and where it needs to go. Share these details so we can give you a quote.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'How soon can you collect my car?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Collection time depends on availability, your location and the job. Call us for the current estimated time.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Can you collect a car from my home?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Contact us with your address and car details. Tell us if there is a narrow drive, low entrance or limited space.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Can you take my car to my chosen garage?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Tell us the garage address when you ask for a quote. We will check the route and agree on the destination with you.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Can you recover a damaged car?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Tell us how the car is damaged and whether its wheels can move. We will check if we can handle the job and what equipment is needed.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What details do you need when I call?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'We need your location, car make and model, what has happened and the delivery address. Tell us if the car cannot roll or is hard to reach.',
-      },
+      '@type': 'FAQPage',
+      '@id': `${SITE_URL}/services/car-recovery-sheffield#faq`,
+      mainEntity: faqs.map(({ q, a }) => ({
+        '@type': 'Question', name: q,
+        acceptedAnswer: { '@type': 'Answer', text: a.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') },
+      })),
     },
   ],
 }
 
-const faqs = [
-  {
-    q: 'How much does car recovery in Sheffield cost?',
-    a: "The cost depends on your car's location, its condition and where it needs to go. Share these details so we can give you a quote.",
-  },
-  {
-    q: 'How soon can you collect my car?',
-    a: 'Collection time depends on availability, your location and the job. Call us for the current estimated time.',
-  },
-  {
-    q: 'Can you collect a car from my home?',
-    a: 'Contact us with your address and car details. Tell us if there is a narrow drive, low entrance or limited space.',
-  },
-  {
-    q: 'Can you take my car to my chosen garage?',
-    a: 'Tell us the garage address when you ask for a quote. We will check the route and agree on the destination with you.',
-  },
-  {
-    q: 'Can you recover a damaged car?',
-    a: 'Tell us how the car is damaged and whether its wheels can move. We will check if we can handle the job and what equipment is needed.',
-  },
-  {
-    q: 'What details do you need when I call?',
-    a: "We need your location, car make and model, what has happened and the delivery address. Tell us if the car cannot roll or is hard to reach.",
-  },
-]
+function renderFaqAnswer(answer: string) {
+  return answer.split(/(\[[^\]]+\]\([^)]+\))/g).map((part, index) => {
+    const link = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/)
+    return link ? (
+      <Link key={index} href={link[2]} className="text-primary font-semibold hover:opacity-80 transition-opacity">
+        {link[1]}
+      </Link>
+    ) : part
+  })
+}
 
 const steps = [
   {
@@ -225,15 +237,7 @@ export default function CarRecoverySheffield() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <Navbar />
       <main>
@@ -352,6 +356,55 @@ export default function CarRecoverySheffield() {
           </div>
         </section>
 
+        <section className="py-10 md:py-16 bg-surface px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-3 text-on-surface">
+                Where We Collect Your Car From
+              </h2>
+              <div className="h-1 w-12 bg-primary mx-auto mb-4" />
+            </div>
+            <div className="max-w-3xl mx-auto flex flex-col gap-4 text-on-surface-variant text-base font-sans leading-relaxed">
+              <ul className="flex flex-col gap-4">
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong>Your home or driveway.</strong> Tell us if the drive is narrow, steep or has a low entrance.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong>A street or residential road.</strong> Tell us the street name and the nearest house number or landmark.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong>A car park.</strong> Tell us the car park name, the entrance and the level or bay. See our <Link href="/blog/car-park-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">car park recovery guide</Link>.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong>Your workplace or a garage forecourt.</strong> Tell us who we should speak to on site.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed"><strong>The roadside after a breakdown.</strong> See <Link href="/services/breakdown-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">breakdown recovery in Sheffield</Link> for what to do first while you wait.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-10 md:py-16 bg-surface px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-3 text-on-surface">
+                Where We Can Take Your Car
+              </h2>
+              <div className="h-1 w-12 bg-primary mx-auto mb-4" />
+            </div>
+            <div className="max-w-3xl mx-auto flex flex-col gap-4 text-on-surface-variant text-base font-sans leading-relaxed">
+              <p>We can take your car to a garage for repairs or an MOT, a body shop, your home, or another address you agree with us. Tell us the full address and any opening times when you ask for a quote. If the garage is closed, tell us so we can agree another drop-off. For trips further away, see <Link href="/services/long-distance-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">long distance recovery from Sheffield</Link>. Our guide explains <Link href="/blog/how-to-get-car-towed-to-garage-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">how to get your car towed to a garage in Sheffield</Link>.</p>
+            </div>
+          </div>
+        </section>
+
         {/* Common Situations */}
         <section className="py-10 md:py-16 bg-surface-container-low px-4 md:px-6">
           <div className="max-w-7xl mx-auto">
@@ -399,6 +452,41 @@ export default function CarRecoverySheffield() {
                   <p className="text-on-surface-variant text-sm font-sans leading-relaxed">{desc}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-10 md:py-16 bg-surface px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-3 text-on-surface">
+                Getting Your Car Ready for Collection
+              </h2>
+              <div className="h-1 w-12 bg-primary mx-auto mb-4" />
+            </div>
+            <div className="max-w-3xl mx-auto flex flex-col gap-4 text-on-surface-variant text-base font-sans leading-relaxed">
+              <ul className="flex flex-col gap-4">
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed">Take out your valuables and anything you need.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed">Have the keys ready if you have them. Lost them? See <Link href="/services/lost-car-keys-help-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">lost car keys help</Link> and our guide to <Link href="/blog/car-recovery-without-keys" className="text-primary font-semibold hover:opacity-80 transition-opacity">car recovery without keys</Link>.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed">Tell us if the handbrake is stuck, a tyre is flat or the car will not go into neutral.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed">Tell us if it is an automatic, electric or hybrid car, or if it is lowered.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" aria-hidden="true">check_circle</span>
+                  <p className="text-on-surface-variant text-sm font-sans leading-relaxed">Tell us if anything is leaking or the car has accident damage. For accidents, see <Link href="/services/accident-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">accident recovery in Sheffield</Link>.</p>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
@@ -452,10 +540,10 @@ export default function CarRecoverySheffield() {
             </h2>
             <div className="h-1 w-12 bg-primary mx-auto mb-6" />
             <p className="text-on-surface-variant text-base font-sans mb-4 leading-relaxed">
-              Need car recovery in Sheffield? Send us your exact location or postcode. We will check whether we can reach your car and collect it from that spot.
+              We collect cars across Sheffield, including the city centre, Hillsborough, Crookes, Meadowhall, Attercliffe, Darnall, Handsworth, Heeley, Woodseats and Ecclesall, and the S1, S2 and S3 postcodes. We are based on Coupe Road, Sheffield S3 9DP, and also work in Rotherham, Barnsley and Doncaster.
             </p>
             <p className="text-on-surface-variant text-base font-sans mb-8 leading-relaxed">
-              If your car is outside Sheffield, contact us to check coverage.
+              Send us your exact location or postcode. We will check whether we can reach your car and collect it from that spot. If your car is outside these areas, <Link href="/contact" className="text-primary font-semibold hover:opacity-80 transition-opacity">contact us</Link> to check coverage.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
@@ -496,7 +584,7 @@ export default function CarRecoverySheffield() {
                     </span>
                   </summary>
                   <div className="px-5 pb-5 pt-1">
-                    <p className="text-on-surface-variant text-sm font-sans leading-relaxed">{a}</p>
+                    <p className="text-on-surface-variant text-sm font-sans leading-relaxed">{renderFaqAnswer(a)}</p>
                   </div>
                 </details>
               ))}
