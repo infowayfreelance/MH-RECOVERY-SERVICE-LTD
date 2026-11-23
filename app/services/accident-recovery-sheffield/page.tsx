@@ -6,16 +6,16 @@ import Footer from '@/components/Footer'
 import { SITE_URL, OG_IMAGE, BUSINESS } from '@/lib/siteConfig'
 
 export const metadata: Metadata = {
-  title: 'Accident Recovery Sheffield | 24/7 Phone Line',
+  title: 'Accident Recovery Sheffield | MH Recovery Service Ltd',
   description:
-    'Accident recovery Sheffield from MH Recovery Service Ltd. Serving Sheffield and South Yorkshire. Call our 24/7 phone line to discuss recovery.',
+    'Accident recovery in Sheffield for cars that can’t be driven after a collision. Call MH Recovery Service Ltd on 07799 180009 to arrange collection.',
   alternates: {
     canonical: '/services/accident-recovery-sheffield',
   },
   openGraph: {
-    title: 'Accident Recovery Sheffield | 24/7 Phone Line',
+    title: 'Accident Recovery Sheffield | MH Recovery Service Ltd',
     description:
-      'Accident recovery Sheffield from MH Recovery Service Ltd. Serving Sheffield and South Yorkshire. Call our 24/7 phone line to discuss recovery.',
+      'Accident recovery in Sheffield for cars that can’t be driven after a collision. Call MH Recovery Service Ltd on 07799 180009 to arrange collection.',
     url: `${SITE_URL}/services/accident-recovery-sheffield`,
     siteName: 'MH Recovery Service Ltd',
     locale: 'en_GB',
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Accident Recovery Sheffield | 24/7 Phone Line',
+    title: 'Accident Recovery Sheffield | MH Recovery Service Ltd',
     description:
-      'Accident recovery Sheffield from MH Recovery Service Ltd. Serving Sheffield and South Yorkshire. Call our 24/7 phone line to discuss recovery.',
+      'Accident recovery in Sheffield for cars that can’t be driven after a collision. Call MH Recovery Service Ltd on 07799 180009 to arrange collection.',
     images: [OG_IMAGE],
   },
 }
@@ -82,87 +82,58 @@ const serviceSchema = {
   url: `${SITE_URL}/services/accident-recovery-sheffield`,
 }
 
+const faqs = [
+  {
+    "q": "Can you recover my car after an accident?",
+    "a": "Yes, we provide accident recovery for damaged cars in Sheffield. Describe the damage and collection position when you call."
+  },
+  {
+    "q": "What details do you need to arrange recovery?",
+    "a": "We need your exact location, registration, vehicle details, damage description and destination. Tell us whether emergency services are still managing the scene."
+  },
+  {
+    "q": "Can you recover a car that will not roll?",
+    "a": "We can recover cars that will not roll using a suitable loading method. Explain any wheel damage without trying to move the car yourself."
+  },
+  {
+    "q": "Where can you take my car?",
+    "a": "We can deliver your car to an agreed garage or address. Confirm that someone can receive it or that a suitable drop-off place has been arranged."
+  },
+  {
+    "q": "Can I call about accident recovery at night?",
+    "a": "Yes, our phone line is open 24 hours a day, 7 days a week. Your quote and estimated arrival time are given during the call."
+  },
+  {
+    "q": "Will my insurance cover recovery?",
+    "a": "Your insurer can confirm whether your policy covers recovery. Contact them for any questions about your claim."
+  },
+  {
+    "q": "Should I move my car before you arrive?",
+    "a": "No, not unless it is safe and the police or emergency services have said you can. Keep away from moving traffic, switch on your hazard lights and wait in a safe place. Tell us what you can see without trying to move the car."
+  },
+  {
+    "q": "Can you take my car to the garage or bodyshop my insurer chose?",
+    "a": "Yes, we can deliver the car to an agreed garage, bodyshop or address. Give us the full address when you call, and check with the garage that it can receive the car and where to leave it."
+  },
+  {
+    "q": "What if my car has already been taken away after the accident?",
+    "a": "Call us with the address where the car is now and any reference number you were given. We will explain whether we can collect it and what the place needs to see, such as keys or proof of who you are."
+  },
+  {
+    "q": "Do I have to report the accident?",
+    "a": "If someone is injured and you do not show your insurance certificate at the time, the Highway Code says you must report it to the police as soon as possible and within 24 hours. If anyone is hurt or in danger, call 999 first. Your insurer can advise on reporting a claim."
+  }
+]
+
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'Can you recover my car after an accident?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes, we provide accident recovery for damaged cars in Sheffield. Describe the damage and collection position when you call.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What details do you need to arrange recovery?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'We need your exact location, registration, vehicle details, damage description and destination. Tell us whether emergency services are still managing the scene.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Can you recover a car that will not roll?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'We can recover cars that will not roll using a suitable loading method. Explain any wheel damage without trying to move the car yourself.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Where can you take my car?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'We can deliver your car to an agreed garage or address. Confirm that someone can receive it or that a suitable drop-off place has been arranged.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Can I call about accident recovery at night?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes, our phone line is open 24 hours a day, 7 days a week. Your quote and estimated arrival time are given during the call.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Will my insurance cover recovery?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Your insurer can confirm whether your policy covers recovery. Contact them for any questions about your claim.',
-      },
-    },
-  ],
+  '@id': `${SITE_URL}/services/accident-recovery-sheffield#faq`,
+  mainEntity: faqs.map(({ q, a }) => ({
+    '@type': 'Question', name: q,
+    acceptedAnswer: { '@type': 'Answer', text: a },
+  })),
 }
-
-const faqs = [
-  {
-    q: 'Can you recover my car after an accident?',
-    a: 'Yes, we provide accident recovery for damaged cars in Sheffield. Describe the damage and collection position when you call.',
-  },
-  {
-    q: 'What details do you need to arrange recovery?',
-    a: 'We need your exact location, registration, vehicle details, damage description and destination. Tell us whether emergency services are still managing the scene.',
-  },
-  {
-    q: 'Can you recover a car that will not roll?',
-    a: 'We can recover cars that will not roll using a suitable loading method. Explain any wheel damage without trying to move the car yourself.',
-  },
-  {
-    q: 'Where can you take my car?',
-    a: 'We can deliver your car to an agreed garage or address. Confirm that someone can receive it or that a suitable drop-off place has been arranged.',
-  },
-  {
-    q: 'Can I call about accident recovery at night?',
-    a: 'Yes, our phone line is open 24 hours a day, 7 days a week. Your quote and estimated arrival time are given during the call.',
-  },
-  {
-    q: 'Will my insurance cover recovery?',
-    a: 'Your insurer can confirm whether your policy covers recovery. Contact them for any questions about your claim.',
-  },
-]
 
 const steps = [
   {
@@ -338,6 +309,63 @@ export default function AccidentRecoverySheffield() {
           </div>
         </section>
 
+        <section className="py-10 md:py-16 bg-surface px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-3 text-on-surface">What to Do at the Scene</h2>
+              <div className="h-1 w-12 bg-primary mx-auto mb-4" />
+            </div>
+            <div className="max-w-3xl mx-auto flex flex-col gap-4 text-on-surface-variant text-base font-sans leading-relaxed">
+              <p>Keep it simple and stay safe:</p>
+              <ol className="list-decimal pl-6 space-y-2">
+                <li><strong>Stop in a place of relative safety</strong> if you can, and switch on your hazard lights.</li>
+                <li><strong>If anyone is hurt or in danger, call 999.</strong></li>
+                <li><strong>Move uninjured people away from the vehicles</strong> to a safe place, away from moving traffic.</li>
+                <li><strong>Do not walk into the road</strong> to collect parts or take photos.</li>
+                <li><strong>Swap details</strong> with the other driver if it is safe, and write down the location.</li>
+                <li><strong>Call us when everyone is safe</strong> and tell us where the car is and what you can see.</li>
+              </ol>
+              <p>This follows the Highway Code&apos;s advice on <a href="https://www.gov.uk/guidance/the-highway-code/breakdowns-and-incidents-274-to-287" className="text-primary font-semibold hover:opacity-80 transition-opacity">breakdowns and incidents</a>, including the rules on what to do if you are involved in a collision.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-10 md:py-16 bg-surface px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-3 text-on-surface">Where Your Car Can Go After an Accident</h2>
+              <div className="h-1 w-12 bg-primary mx-auto mb-4" />
+            </div>
+            <div className="max-w-3xl mx-auto flex flex-col gap-4 text-on-surface-variant text-base font-sans leading-relaxed">
+              <p>We can deliver your car to:</p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li><strong>A garage or bodyshop</strong> you or your insurer have chosen</li>
+                <li><strong>Your home address</strong></li>
+                <li><strong>Another agreed address</strong></li>
+              </ul>
+              <p>Give us the full address when you call. Check that the place can receive the car and tell us where it should be left. If your insurer has told you to use a particular repairer, ask them for the address and any claim reference. You can also read how we plan <Link href="/services/long-distance-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">long distance recovery from Sheffield</Link> if the destination is further away.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-10 md:py-16 bg-surface px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-3 text-on-surface">Accident Recovery, Breakdown Recovery or Car Recovery?</h2>
+              <div className="h-1 w-12 bg-primary mx-auto mb-4" />
+            </div>
+            <div className="max-w-3xl mx-auto flex flex-col gap-4 text-on-surface-variant text-base font-sans leading-relaxed">
+              <ul className="list-disc pl-6 space-y-2">
+                <li><strong>Accident recovery</strong> is for a car damaged in a collision. That is this page.</li>
+                <li><strong><Link href="/services/breakdown-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">Breakdown recovery</Link></strong> is for a car that has stopped working: engine, battery or warning lights.</li>
+                <li><strong><Link href="/services/car-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">Car recovery</Link></strong> is for moving a car that can&apos;t be driven to a garage or another address.</li>
+                <li><strong><Link href="/services/car-towing-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">Car towing</Link></strong> is for moving cars between agreed addresses, such as from home to a garage. Tell us the car&apos;s condition so we can plan the loading method.</li>
+              </ul>
+              <p>If you&apos;re not sure which one you need, call and explain what happened.</p>
+            </div>
+          </div>
+        </section>
+
         {/* How It Works */}
         <section className="py-10 md:py-16 bg-surface-container-low px-4 md:px-6 border-y border-outline/10">
           <div className="max-w-7xl mx-auto">
@@ -464,6 +492,9 @@ export default function AccidentRecoverySheffield() {
                   </summary>
                   <div className="px-5 pb-5 pt-1">
                     <p className="text-on-surface-variant text-sm font-sans leading-relaxed">{a}</p>
+                    {q === 'Can you take my car to the garage or bodyshop my insurer chose?' && (
+                      <Link href="/contact" className="text-primary font-semibold hover:opacity-80 transition-opacity">Get a Quote</Link>
+                    )}
                   </div>
                 </details>
               ))}
@@ -492,6 +523,7 @@ export default function AccidentRecoverySheffield() {
                 long distance recovery from Sheffield
               </Link>
               .
+                          {' '}Read our guide to <Link href="/blog/accident-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">what to do after an accident in Sheffield</Link>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
