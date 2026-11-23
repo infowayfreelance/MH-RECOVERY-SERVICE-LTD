@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   alternates: { canonical: path },
   openGraph: {
     title, description, url: `${SITE_URL}${path}`, siteName: BUSINESS.name,
-    locale: 'en_GB', type: 'article', publishedTime: '2026-11-22',
+    locale: 'en_GB', type: 'article', publishedTime: '2026-11-22', modifiedTime: '2026-11-23',
     images: [{ url: featuredImage, alt: 'Flatbed recovery truck carrying a car on a motorway near Sheffield at dusk' }],
   },
   twitter: { card: 'summary_large_image', title, description, images: [featuredImage] },
@@ -26,7 +26,7 @@ const articleSchema = {
   "description": "What affects the cost of long-distance car recovery from Sheffield, what to tell the operator for an accurate quote, and the questions to ask before you book.",
   "image": "https://mhrecoveryserviceltd.co.uk/blog-long-distance-recovery-cost-sheffield-featured.webp",
   "datePublished": "2026-11-22",
-  "dateModified": "2026-11-22",
+  "dateModified": "2026-11-23",
   "author": {
     "@type": "Organization",
     "name": "MH Recovery Service Ltd",
@@ -70,32 +70,32 @@ const breadcrumbSchema = {
 }
 const faqs = [
   {
-    "q": "How much does long-distance car recovery cost from Sheffield?",
-    "a": "It depends on the distance, the vehicle, its condition, access at each end and timing. Call with the collection and delivery postcodes and the car's details for a quote before you agree."
+    "q": "How do I find out the cost of long-distance recovery from Sheffield?",
+    "a": "Ask for a quote using both addresses, the car details, its condition and access information. Explain any fixed collection or delivery requirement. Confirm what the total includes before you agree to the booking."
   },
   {
-    "q": "Is long-distance car recovery charged per mile?",
-    "a": "Some companies mention a rate per mile, but the total usually depends on the whole job, including the journey to and from the car and the work at each end. Compare the total price for your specific job."
+    "q": "Does a price per mile tell me the full cost?",
+    "a": "Not on its own. Ask how collection, loading, delivery and any other agreed work fit into the total. Compare quotes for the same journey and vehicle condition rather than comparing headline mileage figures."
   },
   {
-    "q": "Can you move a car that won't start?",
-    "a": "Yes. Non-running cars can be transported. Tell the operator whether it rolls, steers and brakes, so the right equipment is sent."
+    "q": "What if my car will not start or has locked wheels?",
+    "a": "Describe those problems at the start of your enquiry. Say whether you know it will roll, steer and brake. The operator needs to assess the loading requirements before agreeing the move; do not move it yourself to test it."
   },
   {
-    "q": "Do I need to be there when the car is collected?",
-    "a": "Someone usually needs to be there to hand over the keys and confirm the car, unless other arrangements are agreed. Someone should also be at the delivery address to receive it."
+    "q": "Can the car go to a garage outside Sheffield?",
+    "a": "Ask MH Recovery Service Ltd about your proposed destination. Supply the full address, receiving contact and access instructions so the journey and handover can be discussed before booking."
   },
   {
-    "q": "Can you take my car outside Sheffield?",
-    "a": "Yes. MH Recovery Service Ltd arranges longer journeys from Sheffield to agreed destinations. Give us the delivery postcode so we can confirm."
+    "q": "Do I have to attend collection and delivery?",
+    "a": "Agree attendance and key handover with the operator before booking. If someone else will act for you, make sure they know the arrangements. Do not assume an unattended collection or drop-off is acceptable without agreement."
   },
   {
-    "q": "What details do you need for a quote?",
-    "a": "Both postcodes, the vehicle's make, model and registration, its condition, whether you have the keys, access at each end and when you need it moved. Photos help."
+    "q": "Does flexible timing mean a cheaper quote?",
+    "a": "There is no guaranteed discount. Tell the operator which dates or times could work and ask about available arrangements. Compare the total for the option you are actually offered, including any receiving restrictions."
   },
   {
-    "q": "Will the price change on the day?",
-    "a": "A quote is based on the details you give. If the car's condition, location or access is different from what was described, ask the operator to explain any change before work goes ahead."
+    "q": "What should I do if something changes after the quote?",
+    "a": "Contact the operator before collection. Explain changes to the vehicle, access, destination or timing and ask whether they affect the agreement. Clarify any revised arrangements before the job proceeds."
   }
 ]
 const faqSchema = {
@@ -131,207 +131,79 @@ export default function LongDistanceRecoveryCostSheffieldPage() {
           </div>
         </section>
 
-<article className="py-10 md:py-16 px-4 md:px-6">
-<div className="max-w-3xl mx-auto">
-<section className="mb-10">
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Maybe you have bought a car in Sheffield and need it taken home to the other end of the country. Maybe your car broke down while you were visiting family in Hillsborough and it needs to go back to your own garage. Or maybe a non-runner has been sat on a drive in Woodseats for months and it is finally time to move it.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Whatever the reason, the first question is usually the same: "How much will it cost?" The honest answer is that it depends on the job. This guide explains what actually goes into a long-distance recovery price, what to tell the operator so your quote is accurate, and the questions worth asking before you agree to anything.</p>
+<article className="py-10 md:py-16 px-4 md:px-6"><div className="max-w-3xl mx-auto">
+<p className="text-on-surface-variant text-sm font-sans mb-6">Last updated: <time dateTime="2026-11-23">23 November 2026</time></p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">You need a car moved from Sheffield, but the destination is well beyond the local garage. Before you book, you want to know what you are paying for and whether the quote covers the journey you actually need.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Long-distance car recovery cost makes more sense when you describe the whole move. This guide helps you prepare that description, compare replies and ask about anything unclear. There are no price tables here: your vehicle, addresses and collection arrangements need their own quote.</p>
+<section className="mb-10"><h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">What do you need to know before asking about cost?</h2><div className="h-1 w-10 bg-primary mb-6" />
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Start with both addresses, the car's condition and when the receiving person can accept it. Those details give the operator a useful starting point. A rough distance alone leaves out the work of collecting and unloading the vehicle.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">You might be returning a broken-down car to your usual repairer, collecting a purchase or moving a non-runner off a driveway. Tell the operator which it is. You do not need to decide whether the job should be called recovery or transport.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">For a longer move, our <Link href="/services/long-distance-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">long distance recovery service</Link> is the place to start. MH Recovery Service Ltd discusses the job and gives you a quote before you agree.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">A useful quote describes the move clearly enough that you can recognise your own circumstances in it. If it seems to assume an easy collection but your car has locked wheels, ask for that point to be checked before booking.</p>
 </section>
-<section className="mb-10">
-<h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">The short answer</h2>
-<div className="h-1 w-10 bg-primary mb-6" />
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">
-<strong>Long-distance recovery is usually quoted per job, based on the whole journey, the vehicle and its condition.</strong> The more accurately you describe all three, the more accurate your quote will be.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">The main things that affect the price are:</p>
-<ul className="list-disc pl-6 space-y-2 mb-6 text-on-surface-variant text-base font-sans leading-relaxed">
-<li>the <strong>distance</strong> and route, including how the truck gets to the car and back;</li>
-<li>the <strong>vehicle's size and weight</strong>;</li>
-<li>the <strong>vehicle's condition</strong>: whether it starts, rolls, steers and brakes, and whether you have the keys;</li>
-<li>
-<strong>access</strong> at the collection and delivery points;</li>
-<li>
-<strong>timing</strong>, such as whether it is urgent or can be planned;</li>
-<li>any <strong>extras</strong>, such as waiting time or a second stop.</li>
-</ul>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Always ask for a quote before you agree, and check what it includes.</p>
+<section className="mb-10"><h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">Why does a mileage figure leave questions unanswered?</h2><div className="h-1 w-10 bg-primary mb-6" />
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Mileage describes the journey, but it does not describe loading, access or delivery. Before comparing a per-mile figure with another offer, ask what the final amount would cover for your actual collection and destination.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">For example, a car parked in an open yard presents a different collection problem from one trapped behind other vehicles. Even if both destinations are equally far away, the operator needs to understand the different work at the start.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Ask whether the quoted total includes the operator's travel to the collection, the delivery journey and any travel afterwards. Do not assume every firm calculates those parts in the same way. You need the agreed total, not a calculation based on guesswork.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">The route also needs confirming. Give the full delivery address rather than only naming a town. If there is a particular entrance or approach the receiving site wants used, pass that on before the operator works through the journey.</p>
 </section>
-<section className="mb-10">
-<h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">Why can't recovery companies just give a price per mile?</h2>
-<div className="h-1 w-10 bg-primary mb-6" />
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">
-<strong>Because miles are only part of the job.</strong> A long trip with an easy, rolling car can be simpler than a shorter one with a car that has locked wheels in a tight back lane.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Some companies do talk about a rate per mile, but the total cost still depends on the work at each end of the journey. When you compare quotes, look at the total price for your specific job rather than a headline rate.</p>
+<section className="mb-10"><h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">Which vehicle details can change the loading plan?</h2><div className="h-1 w-10 bg-primary mb-6" />
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">The make, model and actual condition matter more than a description such as 'just a small car'. Identify the vehicle properly and explain anything unusual about it, including modifications or damage that could affect loading.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Tell the operator whether it starts, rolls, steers and brakes, as far as you know. These are separate questions. An engine that runs does not confirm that a stuck handbrake will release or that a damaged wheel can turn.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Mention flat tyres, seized brakes, locked steering, low bodywork or anything hanging beneath the car. If it has been standing unused, say that too. Clear information lets the operator discuss the job before turning up with an incomplete picture.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">You do not need to diagnose the fault. 'The rear wheel will not turn' is useful information without naming a failed part. If you have not checked whether it moves, say so rather than trying to push it to find out.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Missing keys belong in the first conversation. Ask about the arrangements for your particular vehicle instead of assuming access to the door is the only issue. Our <Link href="/blog/car-recovery-without-keys" className="text-primary font-semibold hover:opacity-80 transition-opacity">car recovery without keys guide</Link> explains the questions that can come up.</p>
 </section>
-<section className="mb-10">
-<h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">What affects the cost of long-distance car recovery?</h2>
-<div className="h-1 w-10 bg-primary mb-6" />
-<h3 className="text-base font-bold uppercase tracking-tight text-on-surface mb-2">How far is it, and which way is the truck going?</h3>
-
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">
-<strong>Distance is the biggest single factor, but it is not just the miles from A to B.</strong> The recovery truck has to get to your car, carry it to the destination, and then return.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">So a quote will usually take into account:</p>
-<ul className="list-disc pl-6 space-y-2 mb-6 text-on-surface-variant text-base font-sans leading-relaxed">
-<li>where the truck is starting from;</li>
-<li>the collection address;</li>
-<li>the delivery address;</li>
-<li>the route, including motorways such as the M1 and any tolls or charges on the way.</li>
-</ul>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">That is why operators ask for <strong>both postcodes</strong> before they quote.</p>
-<h3 className="text-base font-bold uppercase tracking-tight text-on-surface mb-2">What kind of vehicle is it?</h3>
-
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">
-<strong>Bigger and heavier vehicles may need a different truck or more careful loading.</strong> A small hatchback is a different job from a large SUV, a long-wheelbase van or a lowered car with very little ground clearance.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Tell the operator:</p>
-<ul className="list-disc pl-6 space-y-2 mb-6 text-on-surface-variant text-base font-sans leading-relaxed">
-<li>the make and model;</li>
-<li>whether it is a car, a van or something else;</li>
-<li>any modifications, such as lowered suspension, a body kit or very wide wheels.</li>
-</ul>
-<h3 className="text-base font-bold uppercase tracking-tight text-on-surface mb-2">Does it start, roll, steer and brake?</h3>
-
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">
-<strong>A car that rolls and steers is usually quicker and simpler to load than one that doesn't.</strong> If the wheels are locked, the steering is stuck, a tyre is flat or the car has been in an accident, the driver may need extra equipment or time.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Be honest about the car's condition. If you say it rolls freely and it turns out the handbrake is seized on, the job takes longer than planned, and that can affect the price or the timing on the day.</p>
-<h3 className="text-base font-bold uppercase tracking-tight text-on-surface mb-2">Do you have the keys?</h3>
-
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">
-<strong>Having the keys makes things easier, but a car without keys can often still be moved.</strong> Without keys, the steering lock and gear position can make loading harder. If you have lost the keys, say so when you call. Our guide to <Link href="https://mhrecoveryserviceltd.co.uk/blog/car-recovery-without-keys" className="text-primary font-semibold hover:opacity-80 transition-opacity">car recovery without keys</Link> explains how that usually works.</p>
-<h3 className="text-base font-bold uppercase tracking-tight text-on-surface mb-2">What is access like at each end?</h3>
-<div className="relative h-56 sm:h-72 md:h-80 overflow-hidden rounded-xl mb-6">
-<Image src="/blog-long-distance-recovery-steep-street-access.webp" alt="Recovery truck parked on a steep terraced street in Sheffield" fill loading="lazy" sizes="(max-width: 768px) 100vw, 768px" className="object-cover" />
-</div>
-
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">
-<strong>Narrow streets, steep hills, underground car parks and tight driveways can all add time.</strong> Sheffield has plenty of steep roads and terraced streets where parking is tight, so it is worth thinking about where the truck can safely stop and how close it can get to the car.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Mention:</p>
-<ul className="list-disc pl-6 space-y-2 mb-6 text-on-surface-variant text-base font-sans leading-relaxed">
-<li>whether the car is on a road, a driveway, in a garage or in a car park;</li>
-<li>any height limits, gates or barriers;</li>
-<li>whether there is space for a recovery truck at the delivery address.</li>
-</ul>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">If the car is in a multi-storey or underground car park, read our guide to <Link href="https://mhrecoveryserviceltd.co.uk/blog/car-park-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">car park recovery in Sheffield</Link>.</p>
-<h3 className="text-base font-bold uppercase tracking-tight text-on-surface mb-2">When do you need it moved?</h3>
-
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">
-<strong>A planned move can often be scheduled more flexibly than an urgent one.</strong> If you can be flexible about the day or time, say so. If it has to happen at a specific time, for example because a garage or buyer is expecting it, mention that too.</p>
-<h3 className="text-base font-bold uppercase tracking-tight text-on-surface mb-2">Are there any extras?</h3>
-
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Ask whether anything could be added on top of the quote, such as:</p>
-<ul className="list-disc pl-6 space-y-2 mb-6 text-on-surface-variant text-base font-sans leading-relaxed">
-<li>waiting time if nobody is there at collection or delivery;</li>
-<li>an extra stop on the way;</li>
-<li>storage if the vehicle cannot be delivered straight away.</li>
-</ul>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">There is nothing wrong with extras, as long as you know about them in advance.</p>
+<section className="mb-10"><h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">What does the operator need to know about access?</h2><div className="h-1 w-10 bg-primary mb-6" />
+<div className="relative h-56 sm:h-72 md:h-80 overflow-hidden rounded-xl mb-6"><Image src="/blog-long-distance-recovery-steep-street-access.webp" alt="Recovery truck parked on a steep terraced street in Sheffield" fill loading="lazy" sizes="(max-width: 768px) 100vw, 768px" className="object-cover" /></div>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Describe how the truck could reach the car and where it could unload at the other end. Both locations matter. A straightforward collection can still lead to a difficult delivery if the destination has not been discussed.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">In Sheffield, tell the operator about a steep driveway, closely parked cars or a narrow approach where relevant. Describe the situation you can see. You do not have to decide whether a particular truck will fit.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">If a gate is locked, explain who can open it. If the car is behind another vehicle, arrange access with the person responsible where possible. Tell the operator about anything you cannot resolve before collection.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">For a car park, give the name, entrance and level or bay. Mention a low entrance, barrier or tight turn without guessing whether it can be negotiated. Our <Link href="/blog/car-park-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">car park recovery guide</Link> covers the details worth sharing.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Ask the receiving person the same access questions. A garage's postal address may point to its office rather than its unloading area. Get the correct entrance and a contact name so the driver has someone to speak to if needed.</p>
 </section>
-<section className="mb-10">
-<h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">What should I tell the operator to get an accurate quote?</h2>
-<div className="h-1 w-10 bg-primary mb-6" />
-<div className="relative h-56 sm:h-72 md:h-80 overflow-hidden rounded-xl mb-6">
-<Image src="/blog-long-distance-recovery-photos-before-loading.webp" alt="Car owner photographing their car on a driveway before collection" fill loading="lazy" sizes="(max-width: 768px) 100vw, 768px" className="object-cover" />
-</div>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">
-<strong>The more detail you give on the first call, the fewer surprises later.</strong> Have this ready:</p>
-<ul className="list-disc pl-6 space-y-2 mb-6 text-on-surface-variant text-base font-sans leading-relaxed">
-<li>
-<strong>Collection address and postcode</strong>, and where exactly the car is parked;</li>
-<li>
-<strong>Delivery address and postcode</strong>, and the name and number of whoever will receive it;</li>
-<li>
-<strong>Vehicle make, model and registration</strong>;</li>
-<li>
-<strong>Condition</strong>: does it start, roll, steer and brake? Any accident damage or flat tyres?</li>
-<li>
-<strong>Keys</strong>: do you have them, and will they travel with the car?</li>
-<li>
-<strong>Access</strong>: tight streets, height limits, gates, or anything else the driver should know;</li>
-<li>
-<strong>Timing</strong>: when it needs collecting and any delivery deadline;</li>
-<li>
-<strong>Photos</strong>, if you can send them, of the car and where it is parked.</li>
-</ul>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">At MH Recovery Service Ltd, we discuss the full journey with you and give you a quote before you agree, so you know where you stand before anything is booked.</p>
+<section className="mb-10"><h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">How do timing and extra arrangements affect the enquiry?</h2><div className="h-1 w-10 bg-primary mb-6" />
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Explain any fixed collection or delivery requirement when you request the quote. A garage closing time, seller's availability or someone needing to unlock a yard is part of the plan, rather than a detail to add after booking.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">If your dates are flexible, tell the operator and ask what options are available. Flexibility does not guarantee a lower price. It simply gives you a chance to discuss a workable arrangement instead of assuming one particular slot is essential.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Ask about additional stops separately. Collecting keys from another address or changing the destination creates a different request from one direct collection and delivery. Make sure everyone understands the same sequence of events.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Waiting and storage also need clear answers. Ask whether either could arise, how it would be handled and what you would need to agree. This article cannot set another business's terms or promise that any extra arrangement is included.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">If the garage cannot receive the car, settle the alternative before collection. Do not assume the operator can keep it somewhere or leave it outside. The address and receiving arrangements need agreeing along with the journey.</p>
 </section>
-<section className="mb-10">
-<h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">What questions should I ask before I book?</h2>
-<div className="h-1 w-10 bg-primary mb-6" />
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">
-<strong>A few simple questions can save a lot of hassle.</strong> Before you agree to a long-distance recovery, ask:</p>
-<ol className="list-decimal pl-6 space-y-2 mb-6 text-on-surface-variant text-base font-sans leading-relaxed">
-<li>
-<strong>Is the price for the whole journey, collection to delivery?</strong>
-</li>
-<li>
-<strong>What does the quote include, and is there anything that could be added on the day?</strong>
-</li>
-<li>
-<strong>What happens if the car doesn't roll, or the condition is different from what I described?</strong>
-</li>
-<li>
-<strong>Will you carry the car on a flatbed, or tow it?</strong> For long trips, many owners prefer the car to be carried.</li>
-<li>
-<strong>Can you give me an estimated collection time?</strong>
-</li>
-<li>
-<strong>Who needs to be there at collection and delivery, and what if they're late?</strong>
-</li>
-<li>
-<strong>How do I pay, and when?</strong>
-</li>
-<li>
-<strong>Is the vehicle insured while it is being transported?</strong> Ask the operator what cover applies and check your own policy too.</li>
-</ol>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">If an answer is not clear, ask again. A good operator will be happy to explain.</p>
+<section className="mb-10"><h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">What should you send with a quote request?</h2><div className="h-1 w-10 bg-primary mb-6" />
+<div className="relative h-56 sm:h-72 md:h-80 overflow-hidden rounded-xl mb-6"><Image src="/blog-long-distance-recovery-photos-before-loading.webp" alt="Car owner photographing their car on a driveway before collection" fill loading="lazy" sizes="(max-width: 768px) 100vw, 768px" className="object-cover" /></div>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Send one complete description rather than several messages with changing destinations. Keep a copy so you can give the same information to each operator if you decide to compare quotes.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Include:</p>
+<ul className="list-disc pl-6 space-y-2 mb-6 text-on-surface-variant text-base font-sans leading-relaxed"><li>The full collection address and where the car sits within the property or site.</li><li>The delivery address, correct entrance and receiving person's contact details.</li><li>The vehicle's make, model and registration.</li><li>Whether it starts, rolls, steers and brakes, including anything you have not checked.</li><li>Whether the keys are available and who will hand them over.</li><li>Access concerns at both ends and any fixed timing requirements.</li></ul>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Photographs can support that description. If safe, show the car and the space around it, not only the fault you are worried about. Explain anything the picture does not show, such as a locked gate further along the approach.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Take pictures from safe positions. Do not enter traffic, crawl beneath the vehicle or release its handbrake to improve a photograph. The operator can ask follow-up questions without you trying to carry out an inspection.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Before sending the request, check that your destination is confirmed. If you are still choosing a garage, say so. A quote for one journey should not be treated as agreement to take the car to any address later selected.</p>
 </section>
-<section className="mb-10">
-<h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">How can I keep the cost down?</h2>
-<div className="h-1 w-10 bg-primary mb-6" />
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">
-<strong>You can't change the distance, but you can make the job as smooth as possible.</strong>
-</p>
-<ul className="list-disc pl-6 space-y-2 mb-6 text-on-surface-variant text-base font-sans leading-relaxed">
-<li>
-<strong>Give accurate details</strong> so the right truck and equipment are sent first time.</li>
-<li>
-<strong>Have the keys ready</strong>, and the car unlocked if possible.</li>
-<li>
-<strong>Make sure the car can be reached</strong>: move other cars, open gates and clear the way.</li>
-<li>
-<strong>Have someone at both ends</strong> at the agreed times, to avoid waiting.</li>
-<li>
-<strong>Be flexible on timing</strong> if you can.</li>
-<li>
-<strong>Remove valuables and loose items</strong> from the car before collection.</li>
-<li>
-<strong>Take photos</strong> of the car's condition before it is loaded, for your own records.</li>
-</ul>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">For more on preparing a car for collection, see our step-by-step guide on <Link href="https://mhrecoveryserviceltd.co.uk/blog/how-to-get-car-towed-to-garage-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">how to get your car towed to a garage in Sheffield</Link>.</p>
+<section className="mb-10"><h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">Which questions make two quotes easier to compare?</h2><div className="h-1 w-10 bg-primary mb-6" />
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Compare the whole agreed job, using the same details for both enquiries. When you search for car recovery prices or tow truck prices, a short headline can miss the collection conditions that matter to you.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Ask each operator:</p>
+<ol className="list-decimal pl-6 space-y-2 mb-6 text-on-surface-variant text-base font-sans leading-relaxed"><li>Does this total cover collection and delivery at the addresses I supplied?</li><li>Have you allowed for the vehicle condition and access I described?</li><li>What loading and transport method are you proposing?</li><li>Could anything change the quote, and how would we discuss that before work proceeds?</li><li>Who needs to attend at each end, and how will the keys be handed over?</li><li>What are the payment arrangements, and what booking details will I receive?</li></ol>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">You can also ask what cover applies during transport and check any questions with your own insurer. Do not infer an insurance arrangement from the vehicle being on a recovery truck. Ask for a clear explanation relevant to the booking.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">If one answer is vague, ask a specific follow-up. For instance, 'Is unloading into that yard included?' is easier to answer than 'Are there any surprises?' Keep the reply with the details of the quote.</p>
 </section>
-<section className="mb-10">
-<h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">What about the cheapest quote?</h2>
-<div className="h-1 w-10 bg-primary mb-6" />
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">
-<strong>The cheapest quote is only a good deal if it covers the same job.</strong> When you compare prices, check that each quote:</p>
-<ul className="list-disc pl-6 space-y-2 mb-6 text-on-surface-variant text-base font-sans leading-relaxed">
-<li>is for the full journey;</li>
-<li>includes the same type of transport, such as flatbed rather than towing;</li>
-<li>accounts for the car's real condition;</li>
-<li>doesn't leave out extras that you will be charged later.</li>
-</ul>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">A clear quote from an operator who has asked the right questions is usually better value than a vague one that changes on the day.</p>
+<section className="mb-10"><h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">Can preparation help avoid unnecessary complications?</h2><div className="h-1 w-10 bg-primary mb-6" />
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Good preparation helps the operator work with the situation you described. It does not guarantee a discount, but it can prevent an avoidable access or handover problem from becoming part of collection day.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Have the keys ready and remove personal belongings you will need. Take photographs of the car's condition for your records. Tell the receiving person what will arrive and how you expect the keys to reach them.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Where safe and within your control, clear items blocking the approach. Do not move a damaged car or try to free a seized wheel yourself. If access remains blocked, tell the operator before they set off.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">For delivery to a workshop, our <Link href="/blog/how-to-get-car-towed-to-garage-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">guide to getting your car towed to a garage</Link> covers receiving instructions and preparation in more detail. A named contact and a confirmed unloading point help keep the handover clear.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Let the operator know if anything changes after the quote. The car may have developed a flat tyre, or the garage may want it elsewhere. Ask whether the change affects the booking rather than hoping it will make no difference.</p>
 </section>
-<section className="mb-10">
-<h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">Is it a recovery or a planned transport?</h2>
-<div className="h-1 w-10 bg-primary mb-6" />
-<div className="relative h-56 sm:h-72 md:h-80 overflow-hidden rounded-xl mb-6">
-<Image src="/blog-long-distance-recovery-flatbed-motorway.webp" alt="Car strapped securely on a flatbed recovery truck travelling on a motorway" fill loading="lazy" sizes="(max-width: 768px) 100vw, 768px" className="object-cover" />
-</div>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">
-<strong>It can be either, and the questions are the same.</strong> If your car has broken down far from home, you need recovery. If you have bought a car, are moving house or need a non-runner moved, it is more of a planned transport. Both are covered by our <Link href="https://mhrecoveryserviceltd.co.uk/services/long-distance-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">long distance recovery service</Link>.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">If your car has broken down locally and just needs to go to a nearby garage, our <Link href="https://mhrecoveryserviceltd.co.uk/services/car-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">car recovery in Sheffield</Link> and <Link href="https://mhrecoveryserviceltd.co.uk/services/car-towing-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">car towing in Sheffield</Link> pages explain how that works.</p>
+<section className="mb-10"><h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">Should you choose the lowest quote?</h2><div className="h-1 w-10 bg-primary mb-6" />
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Choose after checking what each offer includes. A lower total may suit you, but you cannot compare it fairly if it assumes a different vehicle condition, transport method or destination.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Check that both quotes account for the car you actually have. An offer based on a freely rolling vehicle needs clarification if yours has locked wheels. Do not hide the problem to obtain a lower starting figure.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">A search for 'car recovery near me prices' may help you find an operator, but proximity alone does not define the delivery job. Ask about the full journey from your collection point to the agreed address.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">You should be able to explain what you have booked in a few plain sentences. If you cannot tell whether delivery, unloading or a second stop is part of it, clarify those points before agreeing.</p>
 </section>
-</div>
-</article>{/* FAQ Section */}
+<section className="mb-10"><h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">Is the enquiry different for a breakdown and a planned move?</h2><div className="h-1 w-10 bg-primary mb-6" />
+<div className="relative h-56 sm:h-72 md:h-80 overflow-hidden rounded-xl mb-6"><Image src="/blog-long-distance-recovery-flatbed-motorway.webp" alt="Car strapped securely on a flatbed recovery truck travelling on a motorway" fill loading="lazy" sizes="(max-width: 768px) 100vw, 768px" className="object-cover" /></div>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">The reason for moving the car matters, but the core information stays the same: location, destination, condition and access. Explain whether the car has just stopped or whether it is safely parked awaiting a planned collection.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">For a local move, our <Link href="/services/car-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">car recovery in Sheffield page</Link> explains collection enquiries. The <Link href="/services/car-towing-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">car towing service page</Link> also covers moves to garages and other agreed addresses. You can describe the job without choosing technical terms.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">For a longer journey, make sure the person receiving the car knows the plan before collection. An urgent need to move it does not remove the need for an agreed destination. Ask what can be arranged using the details you have.</p>
+</section></div></article>{/* FAQ Section */}
         <section className="py-10 md:py-16 bg-surface-container-low px-4 md:px-6">
           <div className="max-w-3xl mx-auto">
             <div className="mb-8 text-center">
@@ -359,11 +231,10 @@ export default function LongDistanceRecoveryCostSheffieldPage() {
 <section className="py-10 md:py-14 px-4 md:px-6 bg-surface">
 <div className="max-w-3xl mx-auto">
 <section className="mb-10">
-<h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">Need long-distance recovery from Sheffield?</h2>
-<div className="h-1 w-10 bg-primary mb-6" />
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">
-<strong>MH Recovery Service Ltd</strong> arranges <Link href="https://mhrecoveryserviceltd.co.uk/services/long-distance-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">long distance recovery</Link> from Sheffield and South Yorkshire to agreed destinations, from our base on Coupe Road, Sheffield S3 9DP. Call us on <strong>07799 180009</strong> or send a WhatsApp message with both postcodes and your car's details, and we will discuss the journey and give you a quote before you agree. Our phone line is open 24 hours a day, 7 days a week.</p>
-<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">You can also use our <Link href="https://mhrecoveryserviceltd.co.uk/contact" className="text-primary font-semibold hover:opacity-80 transition-opacity">contact page</Link>, or read more guides on the <Link href="https://mhrecoveryserviceltd.co.uk/blog" className="text-primary font-semibold hover:opacity-80 transition-opacity">MH Recovery blog</Link>.</p>
+<h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 text-on-surface">Ready to ask about your journey from Sheffield?</h2><div className="h-1 w-10 bg-primary mb-6" />
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">Call MH Recovery Service Ltd on <strong>07799 180009</strong> to discuss your collection point, destination and vehicle. Have both postcodes and any access details ready so we can talk through the job and provide a quote before you agree.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">We are based on Coupe Road, Sheffield S3 9DP. Our phone line is open 24/7. You can also send the details through our <Link href="/contact" className="text-primary font-semibold hover:opacity-80 transition-opacity">contact page</Link>, with any questions you want answered before booking.</p>
+<p className="text-on-surface-variant text-base font-sans leading-relaxed mb-4">For more help preparing a car for collection or describing an awkward location, visit the <Link href="/blog" className="text-primary font-semibold hover:opacity-80 transition-opacity">MH Recovery blog</Link>. Keep your agreed journey and handover details together, ready for collection day.</p>
 </section>
 <a href="tel:+447799180009" className="inline-flex items-center justify-center gap-2 bg-primary text-on-primary py-4 px-6 font-extrabold text-base tracking-tight rounded min-h-[52px]">Call 07799 180009</a>
 </div>
