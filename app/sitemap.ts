@@ -57,6 +57,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.9,
     },
+    { url: `${base}/blog/jump-start-car-on-a-hill-sheffield`, lastModified: new Date('2026-11-23'), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     {
       url: `${base}/blog/car-recovery-without-keys`,

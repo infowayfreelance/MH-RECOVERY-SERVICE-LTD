@@ -42,6 +42,13 @@ const breadcrumbSchema = {
 
 const posts = [
   {
+  "href": "/blog/jump-start-car-on-a-hill-sheffield",
+  "title": "Car Won't Start on a Steep Sheffield Street? Is It Safe to Jump Start on a Hill?",
+  "description": "Flat battery on a steep Sheffield street? When a jump start on a hill is safe, why a push or bump start isn't, and when to call for help or recovery.",
+  "image": "/blog-jump-start-car-on-a-hill-sheffield-featured.webp",
+  "imageAlt": "Technician jump starting a car parked on a steep Sheffield street."
+},
+  {
     "href": "/blog/long-distance-car-recovery-cost-sheffield",
     "title": "How Is Long-Distance Car Recovery Priced? Questions to Ask Before You Book From Sheffield",
     "description": "What affects the cost of long-distance car recovery from Sheffield, what to tell the operator for an accurate quote, and the questions to ask before you book.",
