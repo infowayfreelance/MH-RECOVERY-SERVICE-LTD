@@ -6,16 +6,16 @@ import Footer from '@/components/Footer'
 import { SITE_URL, OG_IMAGE, BUSINESS } from '@/lib/siteConfig'
 
 export const metadata: Metadata = {
-  title: 'Jump Start Service Sheffield | 24/7 Phone Line',
+  title: 'Jump Start Service Sheffield | MH Recovery Service Ltd',
   description:
-    'Jump start service Sheffield. MH Recovery Service Ltd serves Sheffield and South Yorkshire. Call our 24/7 phone line to discuss your car.',
+    'Flat battery in Sheffield? MH Recovery Service Ltd gives jump starts at home, in car parks or at the roadside. Call 07799 180009 for a quote first.',
   alternates: {
     canonical: '/services/jump-starts-sheffield',
   },
   openGraph: {
-    title: 'Jump Start Service Sheffield | 24/7 Phone Line',
+    title: 'Jump Start Service Sheffield | MH Recovery Service Ltd',
     description:
-      'Jump start service Sheffield. MH Recovery Service Ltd serves Sheffield and South Yorkshire. Call our 24/7 phone line to discuss your car.',
+      'Flat battery in Sheffield? MH Recovery Service Ltd gives jump starts at home, in car parks or at the roadside. Call 07799 180009 for a quote first.',
     url: `${SITE_URL}/services/jump-starts-sheffield`,
     siteName: 'MH Recovery Service Ltd',
     locale: 'en_GB',
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Jump Start Service Sheffield | 24/7 Phone Line',
+    title: 'Jump Start Service Sheffield | MH Recovery Service Ltd',
     description:
-      'Jump start service Sheffield. MH Recovery Service Ltd serves Sheffield and South Yorkshire. Call our 24/7 phone line to discuss your car.',
+      'Flat battery in Sheffield? MH Recovery Service Ltd gives jump starts at home, in car parks or at the roadside. Call 07799 180009 for a quote first.',
     images: [OG_IMAGE],
   },
 }
@@ -54,115 +54,91 @@ const breadcrumbSchema = {
 }
 
 const serviceSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Service',
-  name: 'Jump Start Service Sheffield',
-  serviceType: 'Jump start service',
-  description:
-    'Jump start service in Sheffield and South Yorkshire. MH Recovery Service Ltd provides car jump start help when a flat battery stops your journey.',
-  areaServed: [
-    { '@type': 'City', name: 'Sheffield' },
-    { '@type': 'AdministrativeArea', name: 'South Yorkshire' },
-  ],
-  provider: {
-    '@type': 'AutomotiveBusiness',
-    name: 'MH Recovery Service Ltd',
-    url: SITE_URL,
-    telephone: '+447799180009',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'Coupe Road',
-      addressLocality: 'Sheffield',
-      postalCode: 'S3 9DP',
-      addressCountry: 'GB',
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://mhrecoveryserviceltd.co.uk/services/jump-starts-sheffield#service",
+  "name": "Jump Start Service Sheffield",
+  "serviceType": "Jump start service",
+  "description": "Jump start help in Sheffield and South Yorkshire when a flat battery stops your car, at home, in car parks or at the roadside. MH Recovery Service Ltd gives a quote and an estimated arrival time on the call, and explains the recovery option if the car still will not start.",
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Sheffield"
     },
-    areaServed: 'Sheffield',
-    openingHours: 'Mo-Su 00:00-23:59',
+    {
+      "@type": "AdministrativeArea",
+      "name": "South Yorkshire"
+    }
+  ],
+  "provider": {
+    "@type": "AutomotiveBusiness",
+    "name": "MH Recovery Service Ltd",
+    "url": "https://mhrecoveryserviceltd.co.uk",
+    "telephone": "+447799180009",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Coupe Road",
+      "addressLocality": "Sheffield",
+      "postalCode": "S3 9DP",
+      "addressCountry": "GB"
+    },
+    "areaServed": "Sheffield",
+    "openingHours": "Mo-Su 00:00-23:59"
   },
-  url: `${SITE_URL}/services/jump-starts-sheffield`,
-}
-
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'Can you jump start my car at home?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes, we provide jump starts at home in Sheffield. Tell us your address and where the car is parked.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What details do you need for a jump start?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'We need your location, registration, make, model and a description of what happens when you try to start the car. Please mention access limits and any earlier attempts to start it.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Will a jump start fix my battery?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'No, a jump start does not repair the battery. If the problem returns, ask a garage to find the cause.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What if my car still will not start?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Recovery is the next option to discuss if the car remains stopped. We agree the destination and quote with you before arranging the move.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Can I call for help at night?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes, our phone line is open 24 hours a day, 7 days a week. We give you an estimated arrival time during the call.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Do you cover outside Sheffield?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'We serve Sheffield and South Yorkshire. For nearby areas such as Rotherham, Barnsley and Doncaster, call us and we will confirm coverage.',
-      },
-    },
-  ],
+  "url": "https://mhrecoveryserviceltd.co.uk/services/jump-starts-sheffield"
 }
 
 const faqs = [
   {
-    q: 'Can you jump start my car at home?',
-    a: 'Yes, we provide jump starts at home in Sheffield. Tell us your address and where the car is parked.',
+    "q": "Can you jump start my car at home?",
+    "a": "Yes, we provide jump starts at home in Sheffield. Tell us your address and where the car is parked."
   },
   {
-    q: 'What details do you need for a jump start?',
-    a: 'We need your location, registration, make, model and a description of what happens when you try to start the car. Please mention access limits and any earlier attempts to start it.',
+    "q": "What details do you need for a jump start?",
+    "a": "We need your location, registration, make, model and a description of what happens when you try to start the car. Please mention access limits and any earlier attempts to start it."
   },
   {
-    q: 'Will a jump start fix my battery?',
-    a: 'No, a jump start does not repair the battery. If the problem returns, ask a garage to find the cause.',
+    "q": "Will a jump start fix my battery?",
+    "a": "No, a jump start does not repair the battery. If the problem returns, ask a garage to find the cause."
   },
   {
-    q: 'What if my car still will not start?',
-    a: 'Recovery is the next option to discuss if the car remains stopped. We agree the destination and quote with you before arranging the move.',
+    "q": "What if my car still will not start?",
+    "a": "Recovery is the next option to discuss if the car remains stopped. We agree the destination and quote with you before arranging the move."
   },
   {
-    q: 'Can I call for help at night?',
-    a: 'Yes, our phone line is open 24 hours a day, 7 days a week. We give you an estimated arrival time during the call.',
+    "q": "Can I call for help at night?",
+    "a": "Yes, our phone line is open 24 hours a day, 7 days a week. We give you an estimated arrival time during the call."
   },
   {
-    q: 'Do you cover outside Sheffield?',
-    a: 'We serve Sheffield and South Yorkshire. For nearby areas such as Rotherham, Barnsley and Doncaster, call us and we will confirm coverage.',
+    "q": "Do you cover outside Sheffield?",
+    "a": "We serve Sheffield and South Yorkshire. For nearby areas such as Rotherham, Barnsley and Doncaster, call us and we will confirm coverage."
   },
+  {
+    "q": "Can you jump start a car in a car park?",
+    "a": "Tell us the car park name, the level and the space, and whether there is a barrier or a low entrance. We will explain on the call how the job can be handled. Read our guide to car park recovery in Sheffield."
+  },
+  {
+    "q": "Can you jump start a hybrid or electric car?",
+    "a": "Tell us the car is hybrid or electric, with the make and model, when you call. We will tell you on the call whether a jump start is suitable or whether recovery is the better option. Do not connect jump leads to a hybrid or electric car without checking the handbook first."
+  },
+  {
+    "q": "Why does my battery keep going flat?",
+    "a": "Common causes are short journeys that do not recharge the battery, a car left unused for a while, something left switched on, an ageing battery or a fault in the charging system. A jump start gets the car going but does not find the cause, so ask a garage to test the battery and charging system."
+  },
+  {
+    "q": "What should I do after a jump start?",
+    "a": "Keep the engine running and, if the car drives normally, take a longer drive rather than switching off straight away. If a warning light stays on or the car will not restart, call us to talk about recovery, and have the battery and charging system checked by a garage."
+  }
 ]
+
+const faqSchema = {
+  '@context': 'https://schema.org', '@type': 'FAQPage',
+  '@id': `${SITE_URL}/services/jump-starts-sheffield#faq`,
+  mainEntity: faqs.map(({ q, a }) => ({
+    '@type': 'Question', name: q,
+    acceptedAnswer: { '@type': 'Answer', text: a },
+  })),
+}
 
 const steps = [
   {
@@ -356,6 +332,54 @@ export default function JumpStartsSheffield() {
           </div>
         </section>
 
+        <section className="py-10 md:py-16 bg-surface px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-3 text-on-surface">Signs Your Battery Is Getting Weak</h2>
+              <div className="h-1 w-12 bg-primary mx-auto mb-4" />
+            </div>
+            <div className="max-w-3xl mx-auto flex flex-col gap-4 text-on-surface-variant text-base font-sans leading-relaxed">
+<p>A battery often gives warnings before it stops the car. Look out for:</p>              <ul className="list-disc pl-6 space-y-2"><li>The engine turning over slowly, especially on a cold morning.</li><li>A clicking sound when you turn the key or press start.</li><li>Dim lights, or the dashboard flickering when you try to start.</li><li>A battery warning light while you drive.</li><li>Needing a jump start more than once in a short time.</li></ul><p>These signs point to the battery or the charging system, but they do not prove which. Tell us what you notice, and ask a garage to test both.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-10 md:py-16 bg-surface px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-3 text-on-surface">Why Car Batteries Go Flat in Winter</h2>
+              <div className="h-1 w-12 bg-primary mx-auto mb-4" />
+            </div>
+            <div className="max-w-3xl mx-auto flex flex-col gap-4 text-on-surface-variant text-base font-sans leading-relaxed">
+<p>Cold weather makes it harder for a battery to start the engine. Short journeys do not give it time to recharge, and a car left parked for a few weeks can lose charge on its own. Lights, an interior light or a charger left plugged in can also drain it overnight. An older battery is more likely to struggle when all of these come together. Parked on a steep street? Read our guide to <Link href="/blog/jump-start-car-on-a-hill-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">jump starting a car on a hill in Sheffield</Link>.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-10 md:py-16 bg-surface px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-3 text-on-surface">Quick Checks Before You Call</h2>
+              <div className="h-1 w-12 bg-primary mx-auto mb-4" />
+            </div>
+            <div className="max-w-3xl mx-auto flex flex-col gap-4 text-on-surface-variant text-base font-sans leading-relaxed">
+              <ul className="list-disc pl-6 space-y-2"><li>Make sure the lights and interior lights are off.</li><li>In an automatic, check the gear selector is in Park.</li><li>If the car has keyless start, the key fob battery may be weak. Your handbook explains how to start the car with a weak fob.</li><li>If the steering is locked, turn the wheel gently while you try to start.</li><li>Do not keep trying to start a car that only clicks. It can drain the battery further.</li></ul><p>If you have lost the key rather than the battery going flat, see our <Link href="/services/lost-car-keys-help-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">lost car keys help in Sheffield</Link>.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-10 md:py-16 bg-surface px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-3 text-on-surface">After the Jump Start: What to Do Next</h2>
+              <div className="h-1 w-12 bg-primary mx-auto mb-4" />
+            </div>
+            <div className="max-w-3xl mx-auto flex flex-col gap-4 text-on-surface-variant text-base font-sans leading-relaxed">
+              <ol className="list-decimal pl-6 space-y-2"><li><strong>Keep the engine running.</strong> Do not switch off straight away.</li><li><strong>Take a longer drive</strong> if the car drives normally, so the battery can recharge.</li><li><strong>Book a garage check</strong> of the battery and charging system, especially if it has gone flat before.</li><li><strong>If the car still will not start</strong>, we explain the recovery option on the call. See <Link href="/services/breakdown-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">breakdown recovery in Sheffield</Link>, <Link href="/services/car-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">car recovery in Sheffield</Link> and our guide on <Link href="/blog/how-to-get-car-towed-to-garage-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">how to get a car towed to a garage in Sheffield</Link>.</li></ol>
+            </div>
+          </div>
+        </section>
+
         {/* Coverage */}
         <section className="py-10 md:py-16 bg-surface px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
@@ -457,7 +481,11 @@ export default function JumpStartsSheffield() {
                     </span>
                   </summary>
                   <div className="px-5 pb-5 pt-1">
-                    <p className="text-on-surface-variant text-sm font-sans leading-relaxed">{a}</p>
+                    <p className="text-on-surface-variant text-sm font-sans leading-relaxed">
+                      {q === 'Can you jump start a car in a car park?' ? (
+                        <>Tell us the car park name, the level and the space, and whether there is a barrier or a low entrance. We will explain on the call how the job can be handled. Read our guide to <Link href="/blog/car-park-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">car park recovery in Sheffield</Link>.</>
+                      ) : a}
+                    </p>
                   </div>
                 </details>
               ))}
