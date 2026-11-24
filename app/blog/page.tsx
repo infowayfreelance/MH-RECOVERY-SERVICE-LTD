@@ -42,6 +42,13 @@ const breadcrumbSchema = {
 
 const posts = [
   {
+  "href": "/blog/broken-down-on-the-m1-near-sheffield",
+  "title": "Broken Down on the M1 Near Sheffield? What to Do, Step by Step",
+  "description": "Broken down on the M1 around Sheffield? Where to stop, how to stay safe, what to do in a live lane, who to call and how recovery to a garage or home works.",
+  "image": "/broken-down-on-the-m1-near-sheffield-featured.webp",
+  "imageAlt": "Car stopped in a motorway emergency area with people waiting safely behind the barrier."
+},
+  {
   "href": "/blog/jump-start-car-on-a-hill-sheffield",
   "title": "Car Won't Start on a Steep Sheffield Street? Is It Safe to Jump Start on a Hill?",
   "description": "Flat battery on a steep Sheffield street? When a jump start on a hill is safe, why a push or bump start isn't, and when to call for help or recovery.",
