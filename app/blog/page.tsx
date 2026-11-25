@@ -42,6 +42,13 @@ const breadcrumbSchema = {
 
 const posts = [
   {
+  "href": "/blog/leaving-a-broken-down-car-on-the-road-sheffield",
+  "title": "Can I Leave My Broken-Down Car on the Road in Sheffield? Your Questions Answered",
+  "description": "Car died outside your house or on a Sheffield street? How long it can stay, parking, tax and insurance rules, when it can be removed and how to move it.",
+  "image": "/blog/leaving-a-broken-down-car-on-the-road-sheffield/broken-down-car-on-the-road-sheffield-featured.webp",
+  "imageAlt": "Broken-down car parked on a steep terraced street in Sheffield."
+},
+  {
   "href": "/blog/broken-down-on-the-m1-near-sheffield",
   "title": "Broken Down on the M1 Near Sheffield? What to Do, Step by Step",
   "description": "Broken down on the M1 around Sheffield? Where to stop, how to stay safe, what to do in a live lane, who to call and how recovery to a garage or home works.",
@@ -190,3 +197,4 @@ export default function BlogPage() {
     </>
   )
 }
+
