@@ -6,16 +6,16 @@ import Footer from '@/components/Footer'
 import { SITE_URL, OG_IMAGE, BUSINESS, REVIEWS } from '@/lib/siteConfig'
 
 export const metadata: Metadata = {
-  title: 'Long Distance Recovery Sheffield',
+  title: "Long Distance Vehicle Recovery Sheffield | MH Recovery",
   description:
-    'Long distance recovery Sheffield from MH Recovery Service Ltd. Sheffield and South Yorkshire collections. Call our 24/7 line to discuss your journey.',
+    'Long distance recovery from Sheffield and South Yorkshire to an agreed destination. Call MH Recovery Service Ltd on 07799 180009 for a quote.',
   alternates: {
     canonical: '/services/long-distance-recovery-sheffield',
   },
   openGraph: {
-    title: 'Long Distance Recovery Sheffield',
+    title: "Long Distance Vehicle Recovery Sheffield | MH Recovery",
     description:
-      'Long distance recovery Sheffield from MH Recovery Service Ltd. Sheffield and South Yorkshire collections. Call our 24/7 line to discuss your journey.',
+      'Long distance recovery from Sheffield and South Yorkshire to an agreed destination. Call MH Recovery Service Ltd on 07799 180009 for a quote.',
     url: `${SITE_URL}/services/long-distance-recovery-sheffield`,
     siteName: 'MH Recovery Service Ltd',
     locale: 'en_GB',
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Long Distance Recovery Sheffield',
+    title: "Long Distance Vehicle Recovery Sheffield | MH Recovery",
     description:
-      'Long distance recovery Sheffield from MH Recovery Service Ltd. Sheffield and South Yorkshire collections. Call our 24/7 line to discuss your journey.',
+      'Long distance recovery from Sheffield and South Yorkshire to an agreed destination. Call MH Recovery Service Ltd on 07799 180009 for a quote.',
     images: [OG_IMAGE],
   },
 }
@@ -54,114 +54,169 @@ const breadcrumbSchema = {
 }
 
 const serviceSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Service',
-  name: 'Long Distance Recovery Sheffield',
-  serviceType: 'Long distance vehicle recovery',
-  description:
-    'Long distance recovery from Sheffield to an agreed destination. MH Recovery Service Ltd collects vehicles in Sheffield and South Yorkshire and delivers them to the agreed address.',
-  areaServed: [
-    { '@type': 'City', name: 'Sheffield' },
-    { '@type': 'AdministrativeArea', name: 'South Yorkshire' },
-  ],
-  provider: {
-    '@type': 'AutomotiveBusiness',
-    name: 'MH Recovery Service Ltd',
-    url: SITE_URL,
-    telephone: '+447799180009',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'Coupe Road',
-      addressLocality: 'Sheffield',
-      postalCode: 'S3 9DP',
-      addressCountry: 'GB',
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://mhrecoveryserviceltd.co.uk/services/long-distance-recovery-sheffield#service",
+  "name": "Long Distance Recovery Sheffield",
+  "serviceType": "Long distance vehicle recovery",
+  "description": "Long distance recovery from Sheffield to an agreed destination. MH Recovery Service Ltd collects vehicles in Sheffield and South Yorkshire and delivers them to the agreed address, including non-running cars.",
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Sheffield"
     },
-    areaServed: 'Sheffield',
-    openingHours: 'Mo-Su 00:00-23:59',
+    {
+      "@type": "AdministrativeArea",
+      "name": "South Yorkshire"
+    }
+  ],
+  "provider": {
+    "@type": "AutomotiveBusiness",
+    "name": "MH Recovery Service Ltd",
+    "url": "https://mhrecoveryserviceltd.co.uk",
+    "telephone": "+447799180009",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Coupe Road",
+      "addressLocality": "Sheffield",
+      "postalCode": "S3 9DP",
+      "addressCountry": "GB"
+    },
+    "areaServed": "Sheffield",
+    "openingHours": "Mo-Su 00:00-23:59"
   },
-  url: `${SITE_URL}/services/long-distance-recovery-sheffield`,
+  "url": "https://mhrecoveryserviceltd.co.uk/services/long-distance-recovery-sheffield"
 }
 
 const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://mhrecoveryserviceltd.co.uk/services/long-distance-recovery-sheffield#faq",
+  "mainEntity": [
     {
-      '@type': 'Question',
-      name: 'Can you take my car outside Sheffield?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes, we arrange longer journeys from Sheffield to agreed destinations. Give us the delivery postcode so coverage can be confirmed.',
-      },
+      "@type": "Question",
+      "name": "Can you take my car outside Sheffield?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we arrange longer journeys from Sheffield to agreed destinations. Give us the delivery postcode so coverage can be confirmed."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'Can you collect a car that will not start?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes, we transport non-running cars on agreed long distance jobs. Tell us whether the car can roll and steer, and whether you have its keys.',
-      },
+      "@type": "Question",
+      "name": "Can you collect a car that will not start?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we transport non-running cars on agreed long distance jobs. Tell us whether the car can roll and steer, and whether you have its keys."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'What details do you need for a quote?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'We need both addresses, your vehicle details and its condition. Include access restrictions and the receiving contact\'s details.',
-      },
+      "@type": "Question",
+      "name": "What details do you need for a quote?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We need both addresses, your vehicle details and its condition. Include access restrictions and the receiving contact's details."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'Can you deliver to my chosen garage?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes, we can deliver to a garage agreed when booking. Confirm that it will accept the vehicle and where it should be left.',
-      },
+      "@type": "Question",
+      "name": "Can you deliver to my chosen garage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we can deliver to a garage agreed when booking. Confirm that it will accept the vehicle and where it should be left."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'Can I travel with my car?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Passenger travel is not automatically included in a vehicle recovery booking. Tell us how many people need transport before agreeing to the job.',
-      },
+      "@type": "Question",
+      "name": "Can I travel with my car?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Passenger travel is not automatically included in a vehicle recovery booking. Tell us how many people need transport before agreeing to the job."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'Can I arrange long distance recovery in advance?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes, planned collection arrangements can be agreed in advance. Call with your preferred collection date and destination details.',
-      },
+      "@type": "Question",
+      "name": "Can I arrange long distance recovery in advance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, planned collection arrangements can be agreed in advance. Call with your preferred collection date and destination details."
+      }
     },
-  ],
+    {
+      "@type": "Question",
+      "name": "Should I repair my car where it broke down or bring it back?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on what is wrong and who can fix it. Ask the garage for a clear diagnosis first. A simple repair may be quicker where the car is. A bigger job may be easier with a garage you already know. Whichever you choose, call us with both addresses and we will explain the options."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do before the vehicle is collected?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Remove personal belongings and valuables. Have the keys ready. Take photos of the car from all sides so its condition is on record. Tell us about any damage, missing keys or wheels that will not turn. Make sure someone can hand over the vehicle and someone can receive it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is long distance recovery different from breakdown recovery?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Breakdown recovery is help at the roadside and a move to a nearby garage or address. Long distance recovery is a planned journey to an agreed destination further away. If you are still at the roadside, tell us when you call so we can explain which service you need."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to be there at collection and delivery?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Someone needs to be able to hand over the vehicle and its keys, and someone needs to receive it. That can be a garage or another person you name. Give us their contact number when you call and we will confirm the arrangements."
+      }
+    }
+  ]
 }
 
 const faqs = [
   {
-    q: 'Can you take my car outside Sheffield?',
-    a: 'Yes, we arrange longer journeys from Sheffield to agreed destinations. Give us the delivery postcode so coverage can be confirmed.',
+    "q": "Can you take my car outside Sheffield?",
+    "a": "Yes, we arrange longer journeys from Sheffield to agreed destinations. Give us the delivery postcode so coverage can be confirmed."
   },
   {
-    q: 'Can you collect a car that will not start?',
-    a: 'Yes, we transport non-running cars on agreed long distance jobs. Tell us whether the car can roll and steer, and whether you have its keys.',
+    "q": "Can you collect a car that will not start?",
+    "a": "Yes, we transport non-running cars on agreed long distance jobs. Tell us whether the car can roll and steer, and whether you have its keys."
   },
   {
-    q: 'What details do you need for a quote?',
-    a: "We need both addresses, your vehicle details and its condition. Include access restrictions and the receiving contact's details.",
+    "q": "What details do you need for a quote?",
+    "a": "We need both addresses, your vehicle details and its condition. Include access restrictions and the receiving contact's details."
   },
   {
-    q: 'Can you deliver to my chosen garage?',
-    a: 'Yes, we can deliver to a garage agreed when booking. Confirm that it will accept the vehicle and where it should be left.',
+    "q": "Can you deliver to my chosen garage?",
+    "a": "Yes, we can deliver to a garage agreed when booking. Confirm that it will accept the vehicle and where it should be left."
   },
   {
-    q: 'Can I travel with my car?',
-    a: 'Passenger travel is not automatically included in a vehicle recovery booking. Tell us how many people need transport before agreeing to the job.',
+    "q": "Can I travel with my car?",
+    "a": "Passenger travel is not automatically included in a vehicle recovery booking. Tell us how many people need transport before agreeing to the job."
   },
   {
-    q: 'Can I arrange long distance recovery in advance?',
-    a: 'Yes, planned collection arrangements can be agreed in advance. Call with your preferred collection date and destination details.',
+    "q": "Can I arrange long distance recovery in advance?",
+    "a": "Yes, planned collection arrangements can be agreed in advance. Call with your preferred collection date and destination details."
   },
+  {
+    "q": "Should I repair my car where it broke down or bring it back?",
+    "a": "It depends on what is wrong and who can fix it. Ask the garage for a clear diagnosis first. A simple repair may be quicker where the car is. A bigger job may be easier with a garage you already know. Whichever you choose, call us with both addresses and we will explain the options."
+  },
+  {
+    "q": "What should I do before the vehicle is collected?",
+    "a": "Remove personal belongings and valuables. Have the keys ready. Take photos of the car from all sides so its condition is on record. Tell us about any damage, missing keys or wheels that will not turn. Make sure someone can hand over the vehicle and someone can receive it."
+  },
+  {
+    "q": "Is long distance recovery different from breakdown recovery?",
+    "a": "Yes. Breakdown recovery is help at the roadside and a move to a nearby garage or address. Long distance recovery is a planned journey to an agreed destination further away. If you are still at the roadside, tell us when you call so we can explain which service you need."
+  },
+  {
+    "q": "Do I need to be there at collection and delivery?",
+    "a": "Someone needs to be able to hand over the vehicle and its keys, and someone needs to receive it. That can be a garage or another person you name. Give us their contact number when you call and we will confirm the arrangements."
+  }
 ]
 
 export default function LongDistanceRecoverySheffield() {
@@ -215,7 +270,7 @@ export default function LongDistanceRecoverySheffield() {
                 Long Distance Recovery <span className="text-primary">in Sheffield</span>
               </h1>
               <p className="text-on-surface-variant text-base md:text-lg mb-6 max-w-xl leading-relaxed font-sans">
-                {BUSINESS.name} provides long distance recovery from Sheffield to an agreed destination. Based on {BUSINESS.address.street}, we help arrange vehicle moves when a local drop-off does not meet your needs. Call {BUSINESS.phonePrimary} on our 24/7 phone line for a quote and an estimated arrival time before agreeing to the job.
+                {BUSINESS.name} provides long distance recovery from Sheffield to an agreed destination. Based on {BUSINESS.address.street}, we help arrange vehicle moves when a local drop-off does not meet your needs. It is a planned journey, not roadside help: for a breakdown at the roadside, see <Link href="/services/breakdown-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">breakdown recovery in Sheffield</Link>. Call {BUSINESS.phonePrimary} on our 24/7 phone line for a quote and an estimated arrival time before agreeing to the job.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
@@ -314,6 +369,33 @@ export default function LongDistanceRecoverySheffield() {
           </div>
         </section>
 
+        <section className="py-10 md:py-16 bg-surface px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-3 text-on-surface">Repair It Where It Broke Down, or Bring It Back?</h2>
+              <div className="h-1 w-12 bg-primary mx-auto mb-4" />
+            </div>
+            <div className="max-w-3xl mx-auto flex flex-col gap-4 text-on-surface-variant text-base font-sans leading-relaxed">
+              <p>After a breakdown away from home you have two choices. You can have the car repaired where it is, or you can have it brought back to Sheffield or to a garage you trust.</p>
+              <ul className="flex flex-col gap-4 mt-6"><li><strong>Ask for a diagnosis first.</strong> A simple fault may be quick to fix where the car is. A larger job may be easier with a garage you already know.</li><li><strong>Check your cover.</strong> Your breakdown policy or car insurance may already include recovery. Read the policy before you arrange a journey.</li><li><strong>Work out the people.</strong> The car and the passengers are separate problems. Plan how you will get home as well as how the car will.</li></ul>
+              <p>When you know what you want, call us with both addresses and we will explain the options.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-10 md:py-16 bg-surface px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-3 text-on-surface">Before We Collect the Vehicle</h2>
+              <div className="h-1 w-12 bg-primary mx-auto mb-4" />
+            </div>
+            <div className="max-w-3xl mx-auto flex flex-col gap-4 text-on-surface-variant text-base font-sans leading-relaxed">
+              <p>A little preparation makes collection smoother:</p>
+              <ul className="flex flex-col gap-4 mt-6"><li>Remove personal belongings and valuables.</li><li>Have the keys ready, or tell us if they are missing.</li><li>Take photos of the car from all sides so its condition is on record.</li><li>Tell us about damage, flat tyres or wheels that will not turn.</li><li>Make sure someone can hand over the car, and someone can receive it at the other end.</li><li>Tell the receiving garage that the car is arriving by recovery and where it should be left.</li></ul>
+            </div>
+          </div>
+        </section>
+
         {/* How It Works */}
         <section className="py-10 md:py-16 bg-surface-container-low px-4 md:px-6 border-y border-outline/10">
           <div className="max-w-7xl mx-auto">
@@ -325,7 +407,7 @@ export default function LongDistanceRecoverySheffield() {
             </div>
             <div className="max-w-3xl mx-auto text-on-surface-variant text-base font-sans leading-relaxed text-center">
               <p>
-                Call with the collection point, destination and vehicle condition. We discuss the full journey, give you a quote and provide an estimated arrival time before you agree. Once the arrangements are confirmed, we collect the vehicle and deliver it to the agreed address. Tell us promptly if either location or the receiving contact changes.
+                Call with the collection point, destination and vehicle condition. We discuss the full journey, give you a quote and provide an estimated arrival time before you agree. Once the arrangements are confirmed, we collect the vehicle and deliver it to the agreed address. Tell us as soon as either location or the receiving contact changes.
               </p>
             </div>
           </div>
@@ -348,7 +430,7 @@ export default function LongDistanceRecoverySheffield() {
               If collection is on or near the M1, A61 or Sheffield Parkway, give your direction of travel and nearest junction or landmark. Attendance at these road locations needs confirmation on the call.
             </p>
             <p className="text-on-surface-variant text-base font-sans mb-8 leading-relaxed">
-              For nearby areas such as Rotherham, Barnsley and Doncaster, call us and we will confirm coverage. For a longer delivery, give us the destination postcode so the journey can be agreed.
+              For nearby areas such as Rotherham, Barnsley and Doncaster, call us and we will confirm coverage. For a longer delivery, give us the destination postcode so the journey can be agreed. Read our guide to <Link href="/blog/long-distance-car-recovery-cost-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">long distance car recovery costs in Sheffield</Link> to see what affects a quote.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
@@ -370,12 +452,26 @@ export default function LongDistanceRecoverySheffield() {
           </div>
         </section>
 
+        <section className="py-10 md:py-16 bg-surface px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-3 text-on-surface">Planned Journey or Breakdown Help?</h2>
+              <div className="h-1 w-12 bg-primary mx-auto mb-4" />
+            </div>
+            <div className="max-w-3xl mx-auto flex flex-col gap-4 text-on-surface-variant text-base font-sans leading-relaxed">
+              <p>Long distance recovery is a planned journey to an agreed destination. Other situations call for different help:</p>
+              <ul className="flex flex-col gap-4 mt-6"><li>At the roadside now: <Link href="/services/breakdown-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">breakdown recovery in Sheffield</Link>.</li><li>Moving a car to a nearby garage or home: <Link href="/services/car-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">car recovery in Sheffield</Link> or <Link href="/services/car-towing-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">vehicle towing in Sheffield</Link>.</li><li>After a crash: <Link href="/services/accident-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">accident recovery in Sheffield</Link>.</li><li>A car left in a car park: see our guide to <Link href="/blog/car-park-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">car park recovery in Sheffield</Link>.</li></ul>
+              <p>Not sure which one you need? Call us and explain what has happened.</p>
+            </div>
+          </div>
+        </section>
+
         {/* Why Choose */}
         <section className="py-10 md:py-16 bg-surface-container-low px-4 md:px-6">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
             <div>
               <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tighter mb-4 leading-tight text-on-surface">
-                Why Choose <span className="text-primary">{BUSINESS.name}?</span>
+                Why Choose{' '}<span className="text-primary">{BUSINESS.name}?</span>
               </h2>
               <p className="text-on-surface-variant text-base font-sans mb-4 leading-relaxed">
                 We are a Sheffield business with a phone line that answers enquiries day and night. You can discuss both ends of the journey and receive a quote before committing to the move.
@@ -455,7 +551,9 @@ export default function LongDistanceRecoverySheffield() {
                     </span>
                   </summary>
                   <div className="px-5 pb-5 pt-1">
-                    <p className="text-on-surface-variant text-sm font-sans leading-relaxed">{a}</p>
+                    <p className="text-on-surface-variant text-sm font-sans leading-relaxed">{q === 'Is long distance recovery different from breakdown recovery?' ? (
+                      <>Yes. <Link href="/services/breakdown-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">Breakdown recovery</Link>{a.slice('Yes. Breakdown recovery'.length)}</>
+                    ) : a}</p>
                   </div>
                 </details>
               ))}
@@ -558,3 +656,4 @@ export default function LongDistanceRecoverySheffield() {
     </>
   )
 }
+
