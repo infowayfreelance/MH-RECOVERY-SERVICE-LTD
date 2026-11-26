@@ -42,6 +42,13 @@ const breadcrumbSchema = {
 
 const posts = [
   {
+  "href": "/blog/broken-down-on-the-snake-pass-a57",
+  "title": "Broken Down on the Snake Pass (A57)? What to Do Between Sheffield and the Peaks",
+  "description": "Broken down on the Snake Pass? Safe stopping, poor phone signal, winter road checks and what to tell recovery when arranging a move back to Sheffield.",
+  "image": "/blog/broken-down-on-the-snake-pass-a57/broken-down-snake-pass-a57-featured.webp",
+  "imageAlt": "Car with hazard lights on in a lay-by on the Snake Pass"
+},
+  {
   "href": "/blog/leaving-a-broken-down-car-on-the-road-sheffield",
   "title": "Can I Leave My Broken-Down Car on the Road in Sheffield? Your Questions Answered",
   "description": "Car died outside your house or on a Sheffield street? How long it can stay, parking, tax and insurance rules, when it can be removed and how to move it.",
@@ -197,4 +204,5 @@ export default function BlogPage() {
     </>
   )
 }
+
 
