@@ -6,16 +6,16 @@ import Footer from '@/components/Footer'
 import { SITE_URL, OG_IMAGE, BUSINESS } from '@/lib/siteConfig'
 
 export const metadata: Metadata = {
-  title: 'Tyre Damage Assistance Sheffield | 24/7',
+  title: "Flat Tyre & Tyre Damage Help Sheffield | MH Recovery",
   description:
-    'Tyre damage assistance Sheffield from MH Recovery Service Ltd. Serving Sheffield and South Yorkshire. Call our 24/7 phone line to discuss help.',
+    'Flat or damaged tyre in Sheffield? We fit your usable spare or recover the car to a tyre centre or garage. MH Recovery Service Ltd, 24/7 on 07799 180009.',
   alternates: {
     canonical: '/services/tyre-damage-assistance-sheffield',
   },
   openGraph: {
-    title: 'Tyre Damage Assistance Sheffield | 24/7',
+    title: "Flat Tyre & Tyre Damage Help Sheffield | MH Recovery",
     description:
-      'Tyre damage assistance Sheffield from MH Recovery Service Ltd. Serving Sheffield and South Yorkshire. Call our 24/7 phone line to discuss help.',
+      'Flat or damaged tyre in Sheffield? We fit your usable spare or recover the car to a tyre centre or garage. MH Recovery Service Ltd, 24/7 on 07799 180009.',
     url: `${SITE_URL}/services/tyre-damage-assistance-sheffield`,
     siteName: 'MH Recovery Service Ltd',
     locale: 'en_GB',
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Tyre Damage Assistance Sheffield | 24/7',
+    title: "Flat Tyre & Tyre Damage Help Sheffield | MH Recovery",
     description:
-      'Tyre damage assistance Sheffield from MH Recovery Service Ltd. Serving Sheffield and South Yorkshire. Call our 24/7 phone line to discuss help.',
+      'Flat or damaged tyre in Sheffield? We fit your usable spare or recover the car to a tyre centre or garage. MH Recovery Service Ltd, 24/7 on 07799 180009.',
     images: [OG_IMAGE],
   },
 }
@@ -54,114 +54,181 @@ const breadcrumbSchema = {
 }
 
 const serviceSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Service',
-  name: 'Tyre Damage Assistance Sheffield',
-  serviceType: 'Tyre damage assistance',
-  description:
-    'Tyre damage assistance in Sheffield and South Yorkshire. MH Recovery Service Ltd provides spare wheel fitting and vehicle recovery when a tyre cannot be repaired roadside.',
-  areaServed: [
-    { '@type': 'City', name: 'Sheffield' },
-    { '@type': 'AdministrativeArea', name: 'South Yorkshire' },
-  ],
-  provider: {
-    '@type': 'AutomotiveBusiness',
-    name: 'MH Recovery Service Ltd',
-    url: SITE_URL,
-    telephone: '+447799180009',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'Coupe Road',
-      addressLocality: 'Sheffield',
-      postalCode: 'S3 9DP',
-      addressCountry: 'GB',
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://mhrecoveryserviceltd.co.uk/services/tyre-damage-assistance-sheffield#service",
+  "name": "Tyre Damage Assistance Sheffield",
+  "serviceType": "Tyre damage assistance",
+  "description": "Flat and damaged tyre assistance in Sheffield and South Yorkshire. MH Recovery Service Ltd fits a usable spare wheel where it is safe to work, or recovers the vehicle to an agreed tyre centre, garage or address.",
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Sheffield"
     },
-    areaServed: 'Sheffield',
-    openingHours: 'Mo-Su 00:00-23:59',
+    {
+      "@type": "AdministrativeArea",
+      "name": "South Yorkshire"
+    }
+  ],
+  "provider": {
+    "@type": "AutomotiveBusiness",
+    "name": "MH Recovery Service Ltd",
+    "url": "https://mhrecoveryserviceltd.co.uk",
+    "telephone": "+447799180009",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Coupe Road",
+      "addressLocality": "Sheffield",
+      "postalCode": "S3 9DP",
+      "addressCountry": "GB"
+    },
+    "areaServed": "Sheffield",
+    "openingHours": "Mo-Su 00:00-23:59"
   },
-  url: `${SITE_URL}/services/tyre-damage-assistance-sheffield`,
+  "url": "https://mhrecoveryserviceltd.co.uk/services/tyre-damage-assistance-sheffield"
 }
 
 const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://mhrecoveryserviceltd.co.uk/services/tyre-damage-assistance-sheffield#faq",
+  "mainEntity": [
     {
-      '@type': 'Question',
-      name: 'Can you help with a flat tyre in Sheffield?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes, we provide flat tyre assistance in Sheffield. Tell us your location and whether you have a usable spare wheel.',
-      },
+      "@type": "Question",
+      "name": "Can you help with a flat tyre in Sheffield?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we provide flat tyre assistance in Sheffield. Tell us your location and whether you have a usable spare wheel."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'Can you fit my spare wheel?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes, we can fit a usable spare where there is safe working space. Mention whether you have the locking wheel nut key.',
-      },
+      "@type": "Question",
+      "name": "Can you fit my spare wheel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we can fit a usable spare where there is safe working space. Mention whether you have the locking wheel nut key."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'What if I have no spare tyre?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'We can recover your car to an agreed destination if you have no usable spare. Share the tyre centre or garage address when arranging collection.',
-      },
+      "@type": "Question",
+      "name": "What if I have no spare tyre?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We can recover your car to an agreed destination if you have no usable spare. Share the tyre centre or garage address when arranging collection."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'Do you repair or replace tyres?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'This page covers spare wheel assistance and recovery. Tell us if you need puncture repair or a new tyre so the service included in your quote is clear.',
-      },
+      "@type": "Question",
+      "name": "Do you repair or replace tyres?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This page covers spare wheel assistance and recovery. Tell us if you need puncture repair or a new tyre so the service included in your quote is clear."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'What details should I give you?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Give us your location, registration, vehicle model and which tyre is damaged. Also describe your spare wheel and any access restrictions.',
-      },
+      "@type": "Question",
+      "name": "What details should I give you?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Give us your location, registration, vehicle model and which tyre is damaged. Also describe your spare wheel and any access restrictions."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'Can I call for tyre help at night?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes, our phone line is open 24 hours a day, 7 days a week. We give you an estimated arrival time on the call.',
-      },
+      "@type": "Question",
+      "name": "Can I call for tyre help at night?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, our phone line is open 24 hours a day, 7 days a week. We give you an estimated arrival time on the call."
+      }
     },
-  ],
+    {
+      "@type": "Question",
+      "name": "Can I drive on a temporary space-saver spare?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but only as a short-term fix. Temporary spares usually have a lower speed limit, shown on a sticker on the wheel or in your handbook. Drive gently and get the damaged tyre repaired or replaced soon."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "My car has a tyre repair kit instead of a spare. Can you help?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tell us when you call. A repair kit may not work on a large puncture, a cut or sidewall damage. If the tyre can't be used safely, we can recover the car to a tyre centre, garage or your home."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if the locking wheel nut key is missing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tell us before we set off. Without the key the wheel may not come off, so recovering the car to a tyre centre or garage can be the better option. We'll explain the choice and the quote on the call."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if more than one tyre is damaged?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If two or more tyres are flat, or the wheel itself is bent or cracked, one spare won't be enough. We can recover the vehicle to an agreed tyre centre, garage or address instead."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it safe to change a wheel on a steep Sheffield street?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A car on a jack can move on a steep slope, so don't try it yourself if the car is on a hill or a camber. Tell us how steep the street is and how the car is parked. If it isn't safe to fit the spare there, we'll recover the vehicle instead."
+      }
+    }
+  ]
 }
 
 const faqs = [
   {
-    q: 'Can you help with a flat tyre in Sheffield?',
-    a: 'Yes, we provide flat tyre assistance in Sheffield. Tell us your location and whether you have a usable spare wheel.',
+    "q": "Can you help with a flat tyre in Sheffield?",
+    "a": "Yes, we provide flat tyre assistance in Sheffield. Tell us your location and whether you have a usable spare wheel."
   },
   {
-    q: 'Can you fit my spare wheel?',
-    a: 'Yes, we can fit a usable spare where there is safe working space. Mention whether you have the locking wheel nut key.',
+    "q": "Can you fit my spare wheel?",
+    "a": "Yes, we can fit a usable spare where there is safe working space. Mention whether you have the locking wheel nut key."
   },
   {
-    q: 'What if I have no spare tyre?',
-    a: 'We can recover your car to an agreed destination if you have no usable spare. Share the tyre centre or garage address when arranging collection.',
+    "q": "What if I have no spare tyre?",
+    "a": "We can recover your car to an agreed destination if you have no usable spare. Share the tyre centre or garage address when arranging collection."
   },
   {
-    q: 'Do you repair or replace tyres?',
-    a: 'This page covers spare wheel assistance and recovery. Tell us if you need puncture repair or a new tyre so the service included in your quote is clear.',
+    "q": "Do you repair or replace tyres?",
+    "a": "This page covers spare wheel assistance and recovery. Tell us if you need puncture repair or a new tyre so the service included in your quote is clear."
   },
   {
-    q: 'What details should I give you?',
-    a: 'Give us your location, registration, vehicle model and which tyre is damaged. Also describe your spare wheel and any access restrictions.',
+    "q": "What details should I give you?",
+    "a": "Give us your location, registration, vehicle model and which tyre is damaged. Also describe your spare wheel and any access restrictions."
   },
   {
-    q: 'Can I call for tyre help at night?',
-    a: 'Yes, our phone line is open 24 hours a day, 7 days a week. We give you an estimated arrival time on the call.',
+    "q": "Can I call for tyre help at night?",
+    "a": "Yes, our phone line is open 24 hours a day, 7 days a week. We give you an estimated arrival time on the call."
   },
+  {
+    "q": "Can I drive on a temporary space-saver spare?",
+    "a": "Yes, but only as a short-term fix. Temporary spares usually have a lower speed limit, shown on a sticker on the wheel or in your handbook. Drive gently and get the damaged tyre repaired or replaced soon."
+  },
+  {
+    "q": "My car has a tyre repair kit instead of a spare. Can you help?",
+    "a": "Tell us when you call. A repair kit may not work on a large puncture, a cut or sidewall damage. If the tyre can't be used safely, we can recover the car to a tyre centre, garage or your home."
+  },
+  {
+    "q": "What if the locking wheel nut key is missing?",
+    "a": "Tell us before we set off. Without the key the wheel may not come off, so recovering the car to a tyre centre or garage can be the better option. We'll explain the choice and the quote on the call."
+  },
+  {
+    "q": "What if more than one tyre is damaged?",
+    "a": "If two or more tyres are flat, or the wheel itself is bent or cracked, one spare won't be enough. We can recover the vehicle to an agreed tyre centre, garage or address instead."
+  },
+  {
+    "q": "Is it safe to change a wheel on a steep Sheffield street?",
+    "a": "A car on a jack can move on a steep slope, so don't try it yourself if the car is on a hill or a camber. Tell us how steep the street is and how the car is parked. If it isn't safe to fit the spare there, we'll recover the vehicle instead."
+  }
 ]
 
 const steps = [
@@ -338,6 +405,31 @@ export default function TyreDamageAssistanceSheffield() {
           </div>
         </section>
 
+        <section className="py-10 md:py-16 bg-surface px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-3 text-on-surface">Full-Size Spare, Temporary Spare or No Spare?</h2>
+              <div className="h-1 w-12 bg-primary mx-auto mb-4" />
+            </div>
+            <div className="max-w-3xl mx-auto flex flex-col gap-4 text-on-surface-variant text-base font-sans leading-relaxed">
+              <ul className="flex flex-col gap-4"><li><strong>Full-size spare:</strong> if it is inflated and in good condition, we can fit it where there is safe space and you can carry on.</li><li><strong>Temporary space-saver spare:</strong> we can fit it, but it is a short-term fix. These spares usually have a lower speed limit, shown on the wheel or in your handbook. Plan to replace the damaged tyre soon.</li><li><strong>Tyre repair kit only:</strong> many newer cars have a kit instead of a spare. It may not work on a large hole, a cut or sidewall damage. Tell us what your car has.</li><li><strong>No usable spare:</strong> we can recover the vehicle to an agreed tyre centre, garage or your home.</li></ul>
+              <p>Not sure what you have? The spare or kit is usually under the boot floor. Check only if the car is parked safely away from traffic.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-10 md:py-16 bg-surface px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-3 text-on-surface">Flat Tyre on a Hill or a Narrow Sheffield Street</h2>
+              <div className="h-1 w-12 bg-primary mx-auto mb-4" />
+            </div>
+            <div className="max-w-3xl mx-auto flex flex-col gap-4 text-on-surface-variant text-base font-sans leading-relaxed">
+              <p>Many Sheffield streets are steep, cambered or lined with parked cars. A car on a jack can move on a slope, so don't try to change the wheel yourself if the car is on a hill. When you call, tell us how steep the street is, which way the car is facing and how much space there is around the damaged wheel. If it isn't safe to fit the spare where the car is, we will recover the vehicle instead.</p>
+            </div>
+          </div>
+        </section>
+
         {/* How It Works */}
         <section className="py-10 md:py-16 bg-surface-container-low px-4 md:px-6 border-y border-outline/10">
           <div className="max-w-7xl mx-auto">
@@ -398,12 +490,38 @@ export default function TyreDamageAssistanceSheffield() {
           </div>
         </section>
 
+        <section className="py-10 md:py-16 bg-surface px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-3 text-on-surface">Signs a Tyre Is Too Damaged to Drive On</h2>
+              <div className="h-1 w-12 bg-primary mx-auto mb-4" />
+            </div>
+            <div className="max-w-3xl mx-auto flex flex-col gap-4 text-on-surface-variant text-base font-sans leading-relaxed">
+              <p>Stop and call for help if you see any of these:</p>
+              <ul className="flex flex-col gap-4"><li>a bulge, cut or crack in the sidewall</li><li>the tyre has come away from the rim, or the wheel is bent after a pothole or kerb strike</li><li>the tyre is flat or keeps losing air, or the tyre pressure warning light stays on</li><li>the tread is worn below the legal limit (the Highway Code sets a minimum of 1.6 mm for cars: <a href="https://www.gov.uk/guidance/the-highway-code/annex-6-vehicle-maintenance-safety-and-security" target="_blank" rel="noopener" className="text-primary font-semibold hover:opacity-80 transition-opacity">Annex 6</a>)</li></ul>
+              <p>Driving on a flat tyre can damage the wheel and make the car hard to control. Leave it where it is if you are parked safely.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-10 md:py-16 bg-surface px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-3 text-on-surface">Tyre Trouble on the M1, A61 or Sheffield Parkway</h2>
+              <div className="h-1 w-12 bg-primary mx-auto mb-4" />
+            </div>
+            <div className="max-w-3xl mx-auto flex flex-col gap-4 text-on-surface-variant text-base font-sans leading-relaxed">
+              <p>On a fast road, your safety comes first. If anyone is in danger, call 999 first. Switch on your hazard lights and reach a place of relative safety if you can, such as an exit, service area, lay-by, emergency area or hard shoulder where available. Do not assume every road has a hard shoulder or emergency area. Leave by the left-hand doors, away from traffic, only if it is safe and possible. Wait well away from the car and moving traffic, behind a barrier if one is safely accessible. Check for drops or unsafe ground. If you cannot reach a place of relative safety or cannot leave safely, stay in the car with seat belts and hazard lights on and call 999 immediately for the police. Don't try to change the wheel yourself. Follow the Highway Code's <a href="https://www.gov.uk/guidance/the-highway-code/breakdowns-and-incidents-274-to-287" target="_blank" rel="noopener" className="text-primary font-semibold hover:opacity-80 transition-opacity">breakdown and incident rules</a>. Once safe, call 07799 180009 with the road, your direction of travel and the nearest junction or marker post. Attendance at these locations must be confirmed during the call. Our guide to <Link href="/blog/broken-down-on-the-m1-near-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">breaking down on the M1 near Sheffield</Link> has more detail.</p>
+            </div>
+          </div>
+        </section>
+
         {/* Why Choose */}
         <section className="py-10 md:py-16 bg-surface-container-low px-4 md:px-6">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
             <div>
               <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tighter mb-4 leading-tight text-on-surface">
-                Why Choose <span className="text-primary">{BUSINESS.name}?</span>
+                Why Choose{' '}<span className="text-primary">{BUSINESS.name}?</span>
               </h2>
               <p className="text-on-surface-variant text-base font-sans mb-6 leading-relaxed">
                 {BUSINESS.name} is based in Sheffield, with a phone line open day and night. We explain the proposed job and give you a quote and an estimated arrival time before you agree.
@@ -491,7 +609,7 @@ export default function TyreDamageAssistanceSheffield() {
               <Link href="/services/car-towing-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">
                 vehicle towing in Sheffield
               </Link>
-              . Roadside assistance in Sheffield is also available — call us to discuss your needs.
+              . Roadside assistance in Sheffield is also available — call us to discuss your needs. If the car is stuck in a car park, read our guide to <Link href="/blog/car-park-recovery-sheffield" className="text-primary font-semibold hover:opacity-80 transition-opacity">car park recovery in Sheffield</Link>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -566,3 +684,4 @@ export default function TyreDamageAssistanceSheffield() {
     </>
   )
 }
+
