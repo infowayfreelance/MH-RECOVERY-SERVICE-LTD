@@ -42,6 +42,13 @@ const breadcrumbSchema = {
 
 const posts = [
   {
+  "href": "/blog/lost-car-keys-sheffield",
+  "title": "Lost Your Car Keys in Sheffield? Your Next Steps",
+  "description": "Lost car keys in Sheffield? Check your spare and cover. A locksmith or dealer makes new keys; MH Recovery Service Ltd helps with entry and recovery.",
+  "image": "/blog/lost-car-keys-sheffield/lost-car-keys-sheffield-featured.webp",
+  "imageAlt": "Driver realising the car keys are missing"
+},
+  {
   "href": "/blog/broken-down-on-the-snake-pass-a57",
   "title": "Broken Down on the Snake Pass (A57)? What to Do Between Sheffield and the Peaks",
   "description": "Broken down on the Snake Pass? Safe stopping, poor phone signal, winter road checks and what to tell recovery when arranging a move back to Sheffield.",
@@ -204,5 +211,6 @@ export default function BlogPage() {
     </>
   )
 }
+
 
 
