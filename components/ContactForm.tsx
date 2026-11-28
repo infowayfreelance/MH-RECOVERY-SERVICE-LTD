@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
@@ -90,6 +91,14 @@ export default function ContactPageClient() {
                 </p>
                 <p className="text-on-surface-variant text-sm leading-relaxed">Including bank holidays. Call any time.</p>
               </div>
+        <section className="sm:col-span-2 lg:col-span-1">
+            <h2 className="text-2xl md:text-4xl font-black text-on-surface mb-3 md:mb-4 uppercase tracking-tighter">Call or WhatsApp: Which Should You Use?</h2>
+            <ul className="text-on-surface-variant text-sm md:text-base leading-relaxed space-y-4">
+              <li><strong>Call 07799 180009</strong> if your vehicle has broken down or been in an accident and you need help now, or if you are somewhere that doesn&apos;t feel safe. A call lets us ask the questions we need to help you.</li>
+              <li><strong>Use the WhatsApp form</strong> if you are safe and want a quote, if you are planning a collection for later, or if you want to send details or photos of the vehicle.</li>
+              <li><strong>If anyone is hurt</strong> or the vehicle is blocking a dangerous stretch of road, call 999 first, then call us. The Highway Code&apos;s <a href="https://www.gov.uk/guidance/the-highway-code/breakdowns-and-incidents-274-to-287" target="_blank" rel="noopener" className="text-primary underline">breakdowns and incidents rules</a> explain what to do while you wait.</li>
+            </ul>
+        </section>
             </div>
 
             {/* Contact Form */}
@@ -99,6 +108,7 @@ export default function ContactPageClient() {
               </h2>
               <p className="text-on-surface-variant mb-6 md:mb-10 text-sm md:text-base">
                 Fill in the form below and we will send you a quote via WhatsApp.
+                Not sure what to write? See <Link href="#form-help" className="text-primary underline">what to put in each box</Link> below.
               </p>
               <form
                 className="space-y-4 md:space-y-6"
@@ -167,6 +177,22 @@ export default function ContactPageClient() {
           </div>
         </section>
 
+        <section id="form-help" className="px-4 md:px-8 lg:px-24 py-12 md:py-24 bg-surface-container-low">
+            <h2 className="text-2xl md:text-4xl font-black text-on-surface mb-3 md:mb-4 uppercase tracking-tighter">What to Put in Each Box</h2>
+            <ul className="text-on-surface-variant text-sm md:text-base leading-relaxed space-y-4">
+              <li><strong>Full Name:</strong> the person we should speak to.</li>
+              <li><strong>Phone Number:</strong> a mobile you will keep switched on, so we can call you back.</li>
+              <li><strong>Location:</strong> the street and postcode, or the car park name. If you don&apos;t know, give a nearby landmark or junction and share your location pin once WhatsApp opens.</li>
+              <li><strong>Situation Details:</strong> what has happened, the make and model, whether the car starts, rolls and steers, whether you have the keys, and where you want it taken.</li>
+            </ul>
+            <p className="text-on-surface-variant text-sm md:text-base leading-relaxed">When you press <strong>Send on WhatsApp</strong>, your details open in WhatsApp, ready to send to us. We reply with a quote, and nothing is booked until you agree.</p>
+        </section>
+
+        <section className="px-4 md:px-8 lg:px-24 py-12 md:py-24 bg-surface-container-low">
+            <h2 className="text-2xl md:text-4xl font-black text-on-surface mb-3 md:mb-4 uppercase tracking-tighter">Not an Emergency? Booking a Planned Collection</h2>
+            <p className="text-on-surface-variant text-sm md:text-base leading-relaxed">You can also contact us to plan a move in advance: a non-running car going to a garage or MOT, a vehicle you&apos;ve bought, or a longer journey out of South Yorkshire. Tell us where the vehicle is, where it needs to go and when it needs to be there. See <Link href="/services/car-recovery-sheffield" className="text-primary underline">car recovery</Link>, <Link href="/services/car-towing-sheffield" className="text-primary underline">vehicle towing</Link> and <Link href="/services/long-distance-recovery-sheffield" className="text-primary underline">long distance recovery</Link>, or read our guide to <Link href="/blog/how-to-get-car-towed-to-garage-sheffield" className="text-primary underline">getting a car towed to a garage in Sheffield</Link>.</p>
+        </section>
+
         {/* Map Section */}
         <section className="w-full h-64 sm:h-80 md:h-[500px] overflow-hidden">
           <iframe
@@ -181,6 +207,79 @@ export default function ContactPageClient() {
           />
         </section>
 
+        <section id="faq" className="bg-surface py-16 md:py-24 px-4 md:px-6">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-10 md:mb-14">
+              <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-on-surface">Common <span className="text-primary">Questions</span></h2>
+            </div>
+            <div className="space-y-0 divide-y divide-outline">
+              <details className="group py-5">
+                <summary className="flex justify-between items-start gap-4 cursor-pointer list-none font-bold text-base md:text-lg text-on-surface tracking-tight">
+                  <h3 className="flex-1">Is your phone line really open 24/7?</h3>
+                  <span className="material-symbols-outlined text-primary shrink-0 transition-transform group-open:rotate-180 mt-0.5" aria-hidden="true">expand_more</span>
+                </summary>
+                <p className="mt-3 text-on-surface-variant font-sans text-sm md:text-base leading-relaxed">Yes. Our phone line is open 24 hours a day, 7 days a week, including bank holidays. Call 07799 180009 at any time.</p>
+              </details>
+              <details className="group py-5">
+                <summary className="flex justify-between items-start gap-4 cursor-pointer list-none font-bold text-base md:text-lg text-on-surface tracking-tight">
+                  <h3 className="flex-1">Should I call or send a WhatsApp message?</h3>
+                  <span className="material-symbols-outlined text-primary shrink-0 transition-transform group-open:rotate-180 mt-0.5" aria-hidden="true">expand_more</span>
+                </summary>
+                <p className="mt-3 text-on-surface-variant font-sans text-sm md:text-base leading-relaxed">Call 07799 180009 if you need help now or you are somewhere unsafe. Use the WhatsApp form if you are safe and want a quote, or if you want to send details or photos of the vehicle.</p>
+              </details>
+              <details className="group py-5">
+                <summary className="flex justify-between items-start gap-4 cursor-pointer list-none font-bold text-base md:text-lg text-on-surface tracking-tight">
+                  <h3 className="flex-1">What should I write in the Situation Details box?</h3>
+                  <span className="material-symbols-outlined text-primary shrink-0 transition-transform group-open:rotate-180 mt-0.5" aria-hidden="true">expand_more</span>
+                </summary>
+                <p className="mt-3 text-on-surface-variant font-sans text-sm md:text-base leading-relaxed">What has happened, the make and model, whether the car starts, rolls and steers, whether you have the keys, and where you want it taken. A short, clear message is enough.</p>
+              </details>
+              <details className="group py-5">
+                <summary className="flex justify-between items-start gap-4 cursor-pointer list-none font-bold text-base md:text-lg text-on-surface tracking-tight">
+                  <h3 className="flex-1">What if I don&apos;t know exactly where I am?</h3>
+                  <span className="material-symbols-outlined text-primary shrink-0 transition-transform group-open:rotate-180 mt-0.5" aria-hidden="true">expand_more</span>
+                </summary>
+                <p className="mt-3 text-on-surface-variant font-sans text-sm md:text-base leading-relaxed">Give us the road name, a nearby shop, pub or junction, and which way you were travelling. If you can, share your location pin on WhatsApp so we can see where you are.</p>
+              </details>
+              <details className="group py-5">
+                <summary className="flex justify-between items-start gap-4 cursor-pointer list-none font-bold text-base md:text-lg text-on-surface tracking-tight">
+                  <h3 className="flex-1">Will you give me a price before you come out?</h3>
+                  <span className="material-symbols-outlined text-primary shrink-0 transition-transform group-open:rotate-180 mt-0.5" aria-hidden="true">expand_more</span>
+                </summary>
+                <p className="mt-3 text-on-surface-variant font-sans text-sm md:text-base leading-relaxed">Yes. Fill in the form and we will send you a quote via WhatsApp, or ask for a price when you call. Nothing is booked until you agree.</p>
+              </details>
+              <details className="group py-5">
+                <summary className="flex justify-between items-start gap-4 cursor-pointer list-none font-bold text-base md:text-lg text-on-surface tracking-tight">
+                  <h3 className="flex-1">Can someone else contact you for me?</h3>
+                  <span className="material-symbols-outlined text-primary shrink-0 transition-transform group-open:rotate-180 mt-0.5" aria-hidden="true">expand_more</span>
+                </summary>
+                <p className="mt-3 text-on-surface-variant font-sans text-sm md:text-base leading-relaxed">Yes. A friend or family member can call or message us, but they will need your exact location, your phone number and the vehicle details, and we may need to speak to you to confirm them.</p>
+              </details>
+              <details className="group py-5">
+                <summary className="flex justify-between items-start gap-4 cursor-pointer list-none font-bold text-base md:text-lg text-on-surface tracking-tight">
+                  <h3 className="flex-1">Do you only cover Sheffield?</h3>
+                  <span className="material-symbols-outlined text-primary shrink-0 transition-transform group-open:rotate-180 mt-0.5" aria-hidden="true">expand_more</span>
+                </summary>
+                <p className="mt-3 text-on-surface-variant font-sans text-sm md:text-base leading-relaxed">We provide 24/7 vehicle recovery in Sheffield and South Yorkshire. For longer journeys, see our <Link href="/services/long-distance-recovery-sheffield" className="text-primary underline">long distance recovery</Link> service.</p>
+              </details>
+              <details className="group py-5">
+                <summary className="flex justify-between items-start gap-4 cursor-pointer list-none font-bold text-base md:text-lg text-on-surface tracking-tight">
+                  <h3 className="flex-1">Can I book a planned collection rather than an emergency?</h3>
+                  <span className="material-symbols-outlined text-primary shrink-0 transition-transform group-open:rotate-180 mt-0.5" aria-hidden="true">expand_more</span>
+                </summary>
+                <p className="mt-3 text-on-surface-variant font-sans text-sm md:text-base leading-relaxed">Yes. If your car needs to go to a garage, an MOT or a new address, call or use the form to tell us where it is, where it needs to go and when. Our guide to <Link href="/blog/how-to-get-car-towed-to-garage-sheffield" className="text-primary underline">getting your car towed to a garage in Sheffield</Link> explains what to expect.</p>
+              </details>
+              <details className="group py-5">
+                <summary className="flex justify-between items-start gap-4 cursor-pointer list-none font-bold text-base md:text-lg text-on-surface tracking-tight">
+                  <h3 className="flex-1">What should I do while I wait for you?</h3>
+                  <span className="material-symbols-outlined text-primary shrink-0 transition-transform group-open:rotate-180 mt-0.5" aria-hidden="true">expand_more</span>
+                </summary>
+                <p className="mt-3 text-on-surface-variant font-sans text-sm md:text-base leading-relaxed">Stay somewhere safe, away from traffic, and keep your phone switched on so we can reach you. If you are on a busy road, the Highway Code&apos;s <a href="https://www.gov.uk/guidance/the-highway-code/breakdowns-and-incidents-274-to-287" target="_blank" rel="noopener" className="text-primary underline">breakdown rules</a> explain where to wait.</p>
+              </details>
+            </div>
+          </div>
+        </section>
+
         {/* Quick CTA */}
         <section className="bg-primary px-4 md:px-8 lg:px-24 py-12 md:py-20 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 text-center md:text-left">
           <div>
@@ -188,7 +287,7 @@ export default function ContactPageClient() {
               Call Now for Immediate Help
             </h2>
             <p className="text-on-primary/80 font-medium tracking-tight text-sm md:text-base">
-              Our phone line is open 24/7 across Sheffield and South Yorkshire.
+              Our phone line is open 24/7 across Sheffield and South Yorkshire. If anyone is hurt or the vehicle is in a dangerous position, call 999 first.
             </p>
           </div>
           <a
@@ -205,3 +304,4 @@ export default function ContactPageClient() {
     </>
   )
 }
+
