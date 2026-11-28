@@ -7,14 +7,14 @@ import { SITE_URL, OG_IMAGE } from '@/lib/siteConfig'
 import { liveServices } from '@/lib/servicesData'
 
 export const metadata: Metadata = {
-  title: 'Recovery Services Sheffield | Towing & Breakdown',
-  description: 'All MH Recovery Service Ltd services in Sheffield: car recovery, breakdown, towing, jump starts, tyre, keys and accident recovery. Call 24/7.',
+  title: "Recovery Services Sheffield | MH Recovery Service Ltd",
+  description: "24/7 car recovery, breakdown, towing, jump starts, tyre help, lost keys and accident recovery in Sheffield. Call MH Recovery Service Ltd: 07799 180009.",
   alternates: {
     canonical: '/services',
   },
   openGraph: {
-    title: 'Recovery Services Sheffield | Towing & Breakdown',
-    description: 'All MH Recovery Service Ltd services in Sheffield: car recovery, breakdown, towing, jump starts, tyre, keys and accident recovery. Call 24/7.',
+    title: "Recovery Services Sheffield | MH Recovery Service Ltd",
+    description: "24/7 car recovery, breakdown, towing, jump starts, tyre help, lost keys and accident recovery in Sheffield. Call MH Recovery Service Ltd: 07799 180009.",
     url: `${SITE_URL}/services`,
     siteName: 'MH Recovery Service Ltd',
     locale: 'en_GB',
@@ -30,30 +30,165 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Recovery Services Sheffield | Towing & Breakdown',
-    description: 'All MH Recovery Service Ltd services in Sheffield: car recovery, breakdown, towing, jump starts, tyre, keys and accident recovery. Call 24/7.',
+    title: "Recovery Services Sheffield | MH Recovery Service Ltd",
+    description: "24/7 car recovery, breakdown, towing, jump starts, tyre help, lost keys and accident recovery in Sheffield. Call MH Recovery Service Ltd: 07799 180009.",
     images: [OG_IMAGE],
   },
 }
 
 const faqs = [
-  { q: 'What recovery services do you offer?', a: 'We offer car recovery, breakdown recovery, car towing, jump starts, tyre damage assistance, lost car keys help, accident recovery and long distance recovery. Call us to discuss the help you need.' },
-  { q: 'Are you available 24/7?', a: 'Yes, our phone line is open 24 hours a day, 7 days a week, including nights, weekends and bank holidays.' },
-  { q: 'Which areas do you cover?', a: 'We serve Sheffield and South Yorkshire. For nearby areas such as Rotherham, Barnsley and Doncaster, call us and we will confirm coverage.' },
-  { q: 'How much does recovery cost?', a: 'The price depends on the distance, the vehicle, its condition and the time of day. We give you a quote before you agree to the job.' },
-  { q: 'How soon can you reach me?', a: 'We give you an estimated arrival time when you call. It depends on your location and how busy we are.' },
-  { q: 'What details do you need?', a: "We need your exact location, your vehicle's make and model, a short description of the problem and where it needs to go." },
+  {
+    "q": "What recovery services do you offer?",
+    "a": "We offer car recovery, breakdown recovery, car towing, jump starts, tyre damage assistance, lost car keys help, accident recovery and long distance recovery. Call us to discuss the help you need."
+  },
+  {
+    "q": "Are you available 24/7?",
+    "a": "Yes, our phone line is open 24 hours a day, 7 days a week, including nights, weekends and bank holidays."
+  },
+  {
+    "q": "Which areas do you cover?",
+    "a": "We serve Sheffield and South Yorkshire. For nearby areas such as Rotherham, Barnsley and Doncaster, call us and we will confirm coverage."
+  },
+  {
+    "q": "How much does recovery cost?",
+    "a": "The price depends on the distance, the vehicle, its condition and the time of day. We give you a quote before you agree to the job."
+  },
+  {
+    "q": "How soon can you reach me?",
+    "a": "We give you an estimated arrival time when you call. It depends on your location and how busy we are."
+  },
+  {
+    "q": "What details do you need?",
+    "a": "We need your exact location, your vehicle's make and model, a short description of the problem and where it needs to go."
+  },
+  {
+    "q": "Which service do I need if I am not sure?",
+    "a": "Call 07799 180009 and tell us what happened. As a guide: if the car will not start, see jump starts; if it has stopped on the road, breakdown recovery; if it needs moving to a garage or home, car recovery or vehicle towing; after a collision, accident recovery. We will help you work out which fits."
+  },
+  {
+    "q": "What should I do first if I break down on a Sheffield road?",
+    "a": "Get yourself and your passengers to a place of relative safety if you can, switch on your hazard lights and keep away from moving traffic. The Highway Code's breakdown and incident rules explain the steps. Once you are safe, call us on 07799 180009 with your location."
+  },
+  {
+    "q": "Why do you ask whether the vehicle rolls and steers?",
+    "a": "These details affect how the vehicle can be loaded. A car that cannot roll or steer may need different equipment, so tell us before we arrive."
+  },
+  {
+    "q": "Can you help if my car is in a car park?",
+    "a": "Often, yes. Tell us which car park and where the car is parked, and about any barrier heights or tight spaces. Our guide to car park recovery in Sheffield explains what to expect."
+  },
+  {
+    "q": "Can you recover my car if I have lost the keys?",
+    "a": "Tell us when you call. Lost keys can change how a car is loaded, and our lost car keys help page and the guide on recovering a car without keys explain more."
+  },
+  {
+    "q": "Can you recover a motorcycle?",
+    "a": "We also offer motorcycle recovery for bikes that cannot be ridden. Tell us the make and model and whether the bike starts, rolls and steers when you call."
+  }
 ]
 
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
+  '@id': `${SITE_URL}/services#faq`,
   mainEntity: faqs.map((faq) => ({
     '@type': 'Question',
     name: faq.q,
     acceptedAnswer: { '@type': 'Answer', text: faq.a },
   })),
 }
+
+const collectionSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "https://mhrecoveryserviceltd.co.uk/services#page",
+  "name": "Recovery Services in Sheffield",
+  "url": "https://mhrecoveryserviceltd.co.uk/services",
+  "description": "Car recovery, breakdown recovery, towing, jump starts, tyre damage assistance, lost car keys help, accident recovery and long distance recovery in Sheffield and South Yorkshire from MH Recovery Service Ltd.",
+  "about": {
+    "@type": "AutomotiveBusiness",
+    "name": "MH Recovery Service Ltd",
+    "url": "https://mhrecoveryserviceltd.co.uk",
+    "telephone": "+447799180009",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Coupe Road",
+      "addressLocality": "Sheffield",
+      "postalCode": "S3 9DP",
+      "addressCountry": "GB"
+    },
+    "areaServed": "Sheffield",
+    "openingHours": "Mo-Su 00:00-23:59"
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Car Recovery",
+        "url": "https://mhrecoveryserviceltd.co.uk/services/car-recovery-sheffield"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Breakdown Recovery",
+        "url": "https://mhrecoveryserviceltd.co.uk/services/breakdown-recovery-sheffield"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Vehicle Towing",
+        "url": "https://mhrecoveryserviceltd.co.uk/services/car-towing-sheffield"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Jump Starts",
+        "url": "https://mhrecoveryserviceltd.co.uk/services/jump-starts-sheffield"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Tyre Damage Assistance",
+        "url": "https://mhrecoveryserviceltd.co.uk/services/tyre-damage-assistance-sheffield"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "Lost Car Keys Help",
+        "url": "https://mhrecoveryserviceltd.co.uk/services/lost-car-keys-help-sheffield"
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "name": "Accident Recovery",
+        "url": "https://mhrecoveryserviceltd.co.uk/services/accident-recovery-sheffield"
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "name": "Long Distance Recovery",
+        "url": "https://mhrecoveryserviceltd.co.uk/services/long-distance-recovery-sheffield"
+      }
+    ]
+  }
+}
+
+const faqAnswers = [
+  <>We offer car recovery, breakdown recovery, car towing, jump starts, tyre damage assistance, lost car keys help, accident recovery and long distance recovery. Call us to discuss the help you need.</>,
+  <>Yes, our phone line is open 24 hours a day, 7 days a week, including nights, weekends and bank holidays.</>,
+  <>We serve Sheffield and South Yorkshire. For nearby areas such as Rotherham, Barnsley and Doncaster, call us and we will confirm coverage.</>,
+  <>The price depends on the distance, the vehicle, its condition and the time of day. We give you a quote before you agree to the job.</>,
+  <>We give you an estimated arrival time when you call. It depends on your location and how busy we are.</>,
+  <>We need your exact location, your vehicle&apos;s make and model, a short description of the problem and where it needs to go.</>,
+  <>Call 07799 180009 and tell us what happened. As a guide: if the car will not start, see <Link href="/services/jump-starts-sheffield" className="text-primary underline">jump starts</Link>; if it has stopped on the road, <Link href="/services/breakdown-recovery-sheffield" className="text-primary underline">breakdown recovery</Link>; if it needs moving to a garage or home, <Link href="/services/car-recovery-sheffield" className="text-primary underline">car recovery</Link> or <Link href="/services/car-towing-sheffield" className="text-primary underline">vehicle towing</Link>; after a collision, <Link href="/services/accident-recovery-sheffield" className="text-primary underline">accident recovery</Link>. We will help you work out which fits.</>,
+  <>Get yourself and your passengers to a place of relative safety if you can, switch on your hazard lights and keep away from moving traffic. The Highway Code&apos;s <a href="https://www.gov.uk/guidance/the-highway-code/breakdowns-and-incidents-274-to-287" target="_blank" rel="noopener" className="text-primary underline">breakdown and incident rules</a> explain the steps. Once you are safe, call us on 07799 180009 with your location.</>,
+  <>These details affect how the vehicle can be loaded. A car that cannot roll or steer may need different equipment, so tell us before we arrive.</>,
+  <>Often, yes. Tell us which car park and where the car is parked, and about any barrier heights or tight spaces. Our guide to <Link href="/blog/car-park-recovery-sheffield" className="text-primary underline">car park recovery in Sheffield</Link> explains what to expect.</>,
+  <>Tell us when you call. Lost keys can change how a car is loaded, and our <Link href="/services/lost-car-keys-help-sheffield" className="text-primary underline">lost car keys help</Link> page and the guide on <Link href="/blog/car-recovery-without-keys" className="text-primary underline">recovering a car without keys</Link> explain more.</>,
+  <>We also offer motorcycle recovery for bikes that cannot be ridden. Tell us the make and model and whether the bike starts, rolls and steers when you call.</>
+]
 
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
@@ -97,6 +232,7 @@ export default function ServicesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }} />
       <Navbar />
       <main>
         {/* Hero Section */}
@@ -202,6 +338,23 @@ export default function ServicesPage() {
           </div>
         </section>
 
+        <section className="bg-surface py-12 md:py-20 px-4 md:px-6">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tight mb-6 text-on-surface">Which Recovery Service Do You Need?</h2>
+            <p className="text-on-surface-variant text-base md:text-lg font-sans leading-relaxed mb-4">Not sure which service fits? Match what has happened to the page below, or call 07799 180009 and we&apos;ll help you work it out.</p>
+            <ul className="text-on-surface-variant text-base md:text-lg font-sans leading-relaxed">
+              <li><strong>The car won&apos;t start or has a flat battery:</strong> <Link href="/services/jump-starts-sheffield" className="text-primary underline">jump starts</Link>.</li>
+              <li><strong>The car has stopped working on the road:</strong> <Link href="/services/breakdown-recovery-sheffield" className="text-primary underline">breakdown recovery</Link>.</li>
+              <li><strong>The car can&apos;t be driven and needs moving to a garage, home or another agreed place:</strong> <Link href="/services/car-recovery-sheffield" className="text-primary underline">car recovery</Link>.</li>
+              <li><strong>You need a car taken from one place to another:</strong> <Link href="/services/car-towing-sheffield" className="text-primary underline">vehicle towing</Link>.</li>
+              <li><strong>You have a flat or damaged tyre and no spare or tools:</strong> <Link href="/services/tyre-damage-assistance-sheffield" className="text-primary underline">tyre damage assistance</Link>.</li>
+              <li><strong>You are locked out or have lost your keys:</strong> <Link href="/services/lost-car-keys-help-sheffield" className="text-primary underline">lost car keys help</Link>.</li>
+              <li><strong>You have had a collision:</strong> <Link href="/services/accident-recovery-sheffield" className="text-primary underline">accident recovery</Link>.</li>
+              <li><strong>The vehicle needs to go further afield:</strong> <Link href="/services/long-distance-recovery-sheffield" className="text-primary underline">long distance recovery</Link>.</li>
+            </ul>
+          </div>
+        </section>
+
         {/* Equipment Section */}
         <section className="bg-surface py-12 md:py-20 px-4 md:px-6">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
@@ -255,6 +408,13 @@ export default function ServicesPage() {
           </div>
         </section>
 
+        <section className="bg-surface py-12 md:py-20 px-4 md:px-6">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tight mb-6 text-on-surface">What Happens When You Call</h2>
+            <p className="text-on-surface-variant text-base md:text-lg font-sans leading-relaxed mb-4">We will ask where you are, what the vehicle is and what has happened, and where it needs to go. We will ask whether the vehicle starts, rolls and steers, because that affects how it is loaded. We will then discuss the help needed, availability and price, and you can ask for an estimated arrival time. You agree the job before we start. If you are still choosing a garage, tell us and we can talk it through while you decide.</p>
+          </div>
+        </section>
+
         {/* Sheffield Coverage */}
         <section className="bg-surface py-12 md:py-20 px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
@@ -265,8 +425,15 @@ export default function ServicesPage() {
               We help drivers who need local recovery in Sheffield. Give us your postcode, road name, or a nearby landmark so we can find your location.
             </p>
             <p className="text-on-surface-variant text-base md:text-lg font-sans leading-relaxed">
-              If you are outside Sheffield, call to check coverage. Tell us both the pickup and drop-off locations before arranging the job.
+              If you are outside Sheffield, call to check coverage. Tell us both the pickup and drop-off locations before arranging the job. For breakdowns on the M1 around Sheffield, see our guide to <Link href="/blog/broken-down-on-the-m1-near-sheffield" className="text-primary underline">what to do on the M1 near Sheffield</Link>.
             </p>
+          </div>
+        </section>
+
+        <section className="bg-surface py-12 md:py-20 px-4 md:px-6">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tight mb-6 text-on-surface">Telling Us Where You Are in Sheffield</h2>
+            <p className="text-on-surface-variant text-base md:text-lg font-sans leading-relaxed mb-4">Sheffield has steep hills, narrow terraced streets and busy main roads, so a precise location helps. Give us your postcode, the road name or a nearby landmark. If you are on the M1, tell us your direction of travel and the nearest junction number or marker post. If you are stopped on a main road, say which one and which way you were heading. If you are in a car park, tell us which one and which level. If you are somewhere dangerous, move to a place of relative safety first if you can; the Highway Code&apos;s <a href="https://www.gov.uk/guidance/the-highway-code/breakdowns-and-incidents-274-to-287" target="_blank" rel="noopener" className="text-primary underline">breakdown and incident rules</a> explain how. For guides to specific places, see <Link href="/blog/broken-down-on-the-m1-near-sheffield" className="text-primary underline">broken down on the M1 near Sheffield</Link> and <Link href="/blog/broken-down-on-the-snake-pass-a57" className="text-primary underline">broken down on the Snake Pass (A57)</Link>.</p>
           </div>
         </section>
 
@@ -280,8 +447,22 @@ export default function ServicesPage() {
               Have your vehicle make, model, and registration ready if you can. Tell us whether it starts, rolls, and steers, as these details can affect how it is loaded.
             </p>
             <p className="text-on-surface-variant text-base md:text-lg font-sans leading-relaxed">
-              If you are still choosing a garage, let us know. We can discuss the recovery while you confirm where the vehicle should go.
+              If you are still choosing a garage, let us know. We can discuss the recovery while you confirm where the vehicle should go. If you want to know what to expect when your car is towed to a garage, read <Link href="/blog/how-to-get-car-towed-to-garage-sheffield" className="text-primary underline">how to get your car towed to a garage in Sheffield</Link>.
             </p>
+          </div>
+        </section>
+
+        <section className="bg-surface py-12 md:py-20 px-4 md:px-6">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tight mb-6 text-on-surface">Sheffield Driver Guides</h2>
+            <ul className="text-on-surface-variant text-base md:text-lg font-sans leading-relaxed">
+              <li><Link href="/blog/how-to-get-car-towed-to-garage-sheffield" className="text-primary underline">How to get your car towed to a garage in Sheffield</Link>: what to sort with the garage first and what to tell the recovery driver.</li>
+              <li><Link href="/blog/car-park-recovery-sheffield" className="text-primary underline">Car park recovery in Sheffield</Link>: what to expect if your car breaks down in a car park or multi-storey.</li>
+              <li><Link href="/blog/accident-recovery-sheffield" className="text-primary underline">Accident recovery in Sheffield</Link>: what to do next after a collision.</li>
+              <li><Link href="/blog/jump-start-car-on-a-hill-sheffield" className="text-primary underline">Can you jump start a car on a hill?</Link>: when it&apos;s safe and when to call for help.</li>
+              <li><Link href="/blog/leaving-a-broken-down-car-on-the-road-sheffield" className="text-primary underline">Can I leave a broken-down car on the road?</Link>: how long it can stay and how to move it.</li>
+              <li><Link href="/blog/car-recovery-without-keys" className="text-primary underline">Can a car be recovered without keys?</Link> and <Link href="/blog/long-distance-car-recovery-cost-sheffield" className="text-primary underline">long-distance car recovery: what affects the cost</Link>.</li>
+            </ul>
           </div>
         </section>
 
@@ -297,13 +478,13 @@ export default function ServicesPage() {
               </h2>
             </div>
             <div className="space-y-0 divide-y divide-outline">
-              {faqs.map((faq) => (
+              {faqs.map((faq, index) => (
                 <details key={faq.q} className="group py-5">
                   <summary className="flex justify-between items-start gap-4 cursor-pointer list-none font-bold text-base md:text-lg text-on-surface tracking-tight">
                     <h3 className="flex-1">{faq.q}</h3>
                     <span className="material-symbols-outlined text-primary shrink-0 transition-transform group-open:rotate-180 mt-0.5" aria-hidden="true">expand_more</span>
                   </summary>
-                  <p className="mt-3 text-on-surface-variant font-sans text-sm md:text-base leading-relaxed">{faq.a}</p>
+                  <p className="mt-3 text-on-surface-variant font-sans text-sm md:text-base leading-relaxed">{faqAnswers[index]}</p>
                 </details>
               ))}
             </div>
@@ -342,3 +523,4 @@ export default function ServicesPage() {
     </>
   )
 }
+
